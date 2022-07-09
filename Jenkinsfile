@@ -40,6 +40,8 @@ pipeline {
            steps {
 		    dir('/home/dockuser/workspace/scmfolder') {
 	        checkout scm
+	         @echo off
+                 echo GIT_COMMIT %GIT_COMMIT% 
 	         getGitCommit()
 		     sh "echo Branch Name: $BRANCH_NAME"
 		     sh 'echo "$BRANCH_NAME branch checked out into scmfolder"'
@@ -116,3 +118,14 @@ def sendSlackNotifcation()
 		slackSend color : "danger", message: "${buildSummary}", channel: '#cicd'
 		}
 }
+
+
+def getGitCommit() {
+    git_commit = sh (
+        script: 'git rev-parse HEAD',
+        returnStdout: true
+    ).trim()
+    return git_commit
+}
+Footer
+
