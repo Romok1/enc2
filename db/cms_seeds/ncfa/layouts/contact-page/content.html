@@ -1,0 +1,21 @@
+[attributes]
+---
+label: Contact Page
+app_layout: application
+position: 0
+
+[content]
+{{ cms:partial "layouts/nav" }}
+{{ cms:text title, render: false }}
+{{ cms:text nav_label, render: false }}
+{{ cms:text email, render: false}}
+{{ cms:text content, render: false}}
+
+<main class="container--large">
+  {{ cms:partial "contact/contact_form" }}
+</main>
+
+[js]
+
+
+[css]

@@ -1,0 +1,15 @@
+.ecoregion-list {
+  margin-bottom: $dashboard-section-separation;
+
+  &__title {
+    @include dashboard-sub-heading;
+  }
+
+  &__intro {
+    @include dashboard-intro;
+  }
+
+  &__cell--ecoregion {
+    display: flex;
+  }
+}

@@ -1,0 +1,25 @@
+@mixin hidden-input($width: 0) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: rem-calc(1);
+  margin: - rem-calc(1);
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+  width: rem-calc(1);
+  opacity: 0;
+
+  position: absolute;
+  left: $width / 2;
+}
+
+@mixin fake-focus {
+  outline-width: rem-calc(2);
+  outline-style: solid;
+  outline-color: Highlight;
+  
+  @media (-webkit-min-device-pixel-ratio:0) {
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+  }
+}

@@ -1,0 +1,158 @@
+//--------------------------------------------------
+// variables
+//--------------------------------------------------
+
+$record-padding: rem-calc(14);
+$indicators-height-medium: rem-calc(401);
+$indicators-height-large: rem-calc(426);
+
+//--------------------------------------------------
+// classes
+//--------------------------------------------------
+
+.ratings-records {
+  &::-webkit-scrollbar {
+    width: rem-calc(6);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba($sg-grey-dark, 0.7);
+    border-radius: rem-calc(8);
+  }
+
+  @include breakpoint($small) {
+    max-height: $indicators-height-medium;
+    overflow: auto;
+    padding-right: rem-calc(16);
+  }
+
+  @include breakpoint($medium) {
+    max-height: $indicators-height-large;
+  }
+}
+
+.ratings-records__items {
+  @include ul--unstyled;
+}
+
+.ratings-records__item {
+  &:last-child {
+    @include breakpoint($small) {
+      margin-bottom: 0;
+    }
+  }
+
+  .ratings-records__items--collapsed & {
+    &:nth-child(n+6) {
+      display: none;
+
+      @include breakpoint($small) {
+        display: block;
+      }
+    }
+  }
+}
+
+.ratings-records__button {
+  @include button--border;
+  @include button--full;
+
+  @include breakpoint($small) {
+    display: none;
+  }
+}
+
+.ratings-record {
+  border: $border-thin $sg-grey;
+  padding: $record-padding #{$record-padding * 2} $record-padding $record-padding;
+
+  position: relative;
+
+  @include breakpoint($medium) {
+    padding-right: $record-padding;
+  }
+
+  @include breakpoint($large) {
+    padding-right: rem-calc(100);
+  }
+}
+
+.ratings-record__heading {
+  color: $sg-grey-dark;
+  line-height: 1.2;
+  font-size: rem-calc(18);
+  font-weight: $regular;
+  margin: 0 0 rem-calc(6);
+
+  @include breakpoint($small) {
+    font-weight: $light;
+  }
+}
+
+.ratings-record__text {
+  font-size: rem-calc(14);
+  margin: 0;
+}
+
+.ratings-record__link {
+  font-size: 0;
+  font-weight: $regular;
+  line-height: 1;
+  margin: 0;
+  padding-right: rem-calc(20);
+
+  position: absolute;
+  top: 50%;
+  right: $record-padding / 2;
+
+  transform: translateY(-50%);
+
+  @include breakpoint($large) {
+    font-size: rem-calc(14);
+    padding-right: $record-padding;
+    right: $record-padding;
+  }
+
+  &::after {
+    background-image: image-url('icons/Drop-Arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: rem-calc(20);
+    height: rem-calc(10);
+
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    transform: rotate(-90deg) translateX(25%);
+
+    @include breakpoint($large) {
+      width: rem-calc(12);
+      height: rem-calc(6);
+    }
+  }
+}
+
+.ratings-record__modal-trigger {
+  @include appearance-none;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}

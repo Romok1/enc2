@@ -1,0 +1,22 @@
+[attributes]
+---
+label: Data Page
+app_layout: application
+position: 0
+
+[content]
+{{ cms:partial "layouts/header" }}
+{{ cms:text nav_label, render: false }}
+{{ cms:text title, render: false }}
+{{ cms:markdown description, render: false}}
+<main class="container--medium page-padding--top">
+  {{ cms:markdown content }}
+  {{ cms:partial "resources/index"}}
+</main>
+
+[js]
+
+
+[css]
+
+

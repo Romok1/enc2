@@ -1,0 +1,19 @@
+<%= render partial: 'layouts/header', locals: {title: title} %>
+<main class="list-page__container">
+  <p class="paragraph--no-margin"><%= description %></p>
+  <div class="list-page__item-container">
+    <% items.each do |item| %>
+      <div class="list-item list-page__item flex flex-v-center">
+        <h2 class="list-item__title list-item__title--inline">
+          <% if defined?(item_path) %>
+            <%= link_to item.name, item_path.(item.id), class: 'a--underline'  %>
+          <% else %>
+            <%= item.name %>
+          <% end %>
+        </h2>
+        <p class="list-item__description paragraph--no-margin"><%= description_for(item, "") %></p>
+      </div>
+    <% end %>
+  </div>
+</main>
+<%= render 'application/explore_footer'%>

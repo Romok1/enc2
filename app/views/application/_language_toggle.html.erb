@@ -1,0 +1,16 @@
+<expandable-item :is-arrow-white="true" class="language-toggle">
+  <template slot="header">
+    <span class="language-toggle__toggle"><%= t('name') %></span>
+  </template>
+  <template slot="content">
+    <ul class="language-toggle__dropdown ul--unstyled">
+      <% @locales_available.each do |locale| %>
+        <li class="language-toggle__option">
+          <%= I18n.with_locale(locale) { link_to(t('name'), translated_url(locale)) } %>
+        </li>
+      <% end %>
+    </ul>
+  </template>
+</expandable-item>
+
+

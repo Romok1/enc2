@@ -1,0 +1,5 @@
+es:
+  auth:
+    sign_in: Login
+    sign_up: Sign Up
+    account_details: Account Details

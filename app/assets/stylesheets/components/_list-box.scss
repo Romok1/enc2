@@ -1,0 +1,138 @@
+.list-box {
+  &__title {
+    @extend .item-padding;
+  
+    background-color: $white;
+    border: $sg-grey-dark $border-regular;
+    margin: 0 auto rem-calc(20) auto;
+    width: rem-calc(230);
+  
+    position: relative;
+  
+    &::after {
+      background: $sg-grey-dark;
+      content: '';
+      width: rem-calc(2); height: rem-calc(22);
+  
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+    }
+  }
+  
+    &__title-text {
+      margin: 0;
+      text-align: center;
+    }
+  
+  &__container {
+    @extend .item-padding;
+    
+    background: $white;
+    border: $sg-grey-dark $border-thin;
+  }
+
+    &__flex-container {
+      justify-content: center;
+      margin-bottom: $list-item-margin-large / 2;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      &--small {
+        margin-bottom: 0;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        @include breakpoint($small) {
+          margin-bottom: $list-item-margin-large / 2;
+          overflow-x: hidden; 
+          
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+
+      &--collapsed {
+        height: $list-box-item-height-xlarge + $list-item-margin-large;
+      }
+    }
+
+    &__item {
+      &--small {
+        @extend .list-item;
+        @extend .flex-column;
+        align-items: flex-start;
+    
+        margin: $list-item-margin-large / 2;
+        width: $list-box-item-width-small; height: $list-box-item-height-large;
+    
+        @include breakpoint($small) {
+          width: $list-box-item-width-medium; height: $list-box-item-height-xlarge;
+        }
+      }
+    
+      &--medium {
+        @extend .list-item;
+        @extend .flex-column;
+        align-items: flex-start;
+    
+        margin: $list-item-margin-large / 2;
+        width: $list-box-item-width-medium; min-height: $list-box-item-height-small;
+    
+        @include breakpoint($small) {
+          height: $list-box-item-height-medium;
+        }
+
+        @include breakpoint($medium) {
+          width: $list-box-item-width-large; height: $list-box-item-height-xsmall;
+        }
+      }
+    }
+
+    &__item-description {
+      width: 100%;
+    }
+
+      &__filler {
+        margin: 0 $list-item-margin-large / 2;
+        height: 0;
+        display: none;
+
+        @include breakpoint($small) { display: block; }
+
+        &--small {
+          width: $list-box-item-width-small;
+
+          @include breakpoint($small) { width: $list-box-item-width-medium; };
+        }
+
+        &--medium {
+          width: $list-box-item-width-medium;
+
+          @include breakpoint($medium) { width: $list-box-item-width-large; };
+        }
+      }
+  
+      &__toggle {
+        background-color: $sg-grey-dark;
+        color: $white;
+        height: rem-calc(45);
+
+        display: none;
+
+        @include breakpoint($small) { display: flex; }
+
+        &--expanded {
+          @include flip-child-drop-arrow('list-box__toggle-arrow');
+        }
+      }
+
+      &__toggle-arrow {
+        margin-left: rem-calc(10);
+      }
+}

@@ -1,0 +1,41 @@
+.ecoregion-categories {
+  margin-top: rem-calc(50);
+
+  &.ecoregion-categories--modal {
+    margin-top: 0;
+  }
+
+  &__title {
+    @include dashboard-sub-heading;
+    margin-top: 0;
+
+    .ecoregion-categories--modal & {
+      display: none;
+    }
+  }
+  
+  &__text {
+    margin-bottom: rem-calc(34);
+    width: calc(50% - #{$dashboard-column-margin-desktop} / 2);
+
+    .ecoregion-categories--modal & {
+      width: auto;
+      max-width: rem-calc(650);
+    }
+  }
+
+  &__intro {
+    @include dashboard-paragraph;
+  }
+
+  &__data-source {
+    @include dashboard-sub-heading;
+    margin: 0;
+  }
+
+  &__diagram-container {
+    margin: auto;
+    width: 100%;
+    max-width: rem-calc(700);
+  }
+}

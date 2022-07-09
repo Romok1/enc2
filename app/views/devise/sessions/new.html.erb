@@ -1,0 +1,9 @@
+<%= render partial: 'layouts/nav' %>
+
+<div class="devise">
+  <div class="devise__container">
+    <h2><%= t('devise.ctas.sign_in') %></h2>
+    <login-form></login-form>
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

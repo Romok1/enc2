@@ -1,0 +1,93 @@
+$max-card-width: rem-calc(400);
+$max-card-height: rem-calc(570);
+$card-padding: rem-calc(24);
+
+.card-holder {
+  @extend .gutters;
+
+  flex-direction: column;
+
+  @include breakpoint($medium) { flex-direction: row; }
+}
+
+.card {
+  background-color: $sg-grey-xlight;
+  margin-bottom: $list-item-margin-medium;
+  padding: $card-padding;
+  width: 100%; //max-width doesn't work in IE
+
+  position: relative;
+
+  @include breakpoint(440) {
+    width: $max-card-width;
+  }
+
+  @include between($small, $medium) {
+    margin-bottom: $list-item-margin-large;
+    padding: rem-calc(50 70);
+    width: 100%; height: auto;
+
+    flex-direction: row;
+  }
+
+  @include breakpoint($medium) {
+    margin-bottom: 0;
+    margin-right: $list-item-margin-medium;
+    width: $max-card-width; height: $max-card-height;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  &__img {
+    border-radius: 50%;
+    padding-top: 60%;
+    width: 60%;
+
+    @include between($small, $medium) {
+      padding: 0;
+      margin: 0;
+      width: rem-calc(190); height: rem-calc(190);
+    }
+  }
+
+  &__content {
+    width: 100%; //IE Fix
+
+    @include between($small, $medium) {
+      margin-left: rem-calc(25);
+    }
+  }
+
+    &__title {
+      @include breakpoint($medium) { min-height: 2.4em; }
+      @include between($small, $medium) { margin-top: 0; }
+
+      margin-bottom: rem-calc(10);
+    }
+
+    &__description {
+      @include between($small, $medium) { height: auto; }
+      margin: 0;
+    }
+
+    &__button {
+      font-size: rem-calc(20);
+      font-weight: bold;
+      margin-top: rem-calc(8);
+
+      display: block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      @include breakpoint($medium) {
+        position: absolute;
+        bottom: $card-padding;
+        left: $card-padding;
+      }
+    }
+}

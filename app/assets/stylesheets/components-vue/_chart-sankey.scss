@@ -1,0 +1,64 @@
+//--------------------------------------------------
+// variables
+//--------------------------------------------------
+
+//--------------------------------------------------
+// mixins
+//--------------------------------------------------
+@mixin sankey-tooltip-bold {
+  font-weight: bold;
+  
+  display: block;
+}
+
+//--------------------------------------------------
+// classes
+//--------------------------------------------------
+.sankey__tooltip {
+  text-align: left;
+  max-width: rem-calc(428);
+}
+
+.sankey__tooltip-flow { 
+  @include sankey-tooltip-bold; 
+  margin-bottom: rem-calc(10);
+}
+
+.sankey__tooltip-header {
+  margin-bottom: rem-calc(8);
+  
+  display: flex;
+  align-items: center;
+}
+
+.sankey__tooltip-icon {
+  margin-bottom: 0; 
+
+  display: inline-block;
+
+  &::before { 
+    margin-right: rem-calc(6); 
+  }
+}
+
+.sankey__tooltip-title { 
+  @include sankey-tooltip-bold; 
+  line-height: 1;
+
+  display: inline-block; 
+}
+
+.sankey__tooltip-description {
+  font-size: rem-calc(14);
+  font-weight: normal;
+}
+
+.am-chart--sankey {
+  .chartdiv {
+    min-height: rem-calc(500);
+
+    tspan {
+      pointer-events: none;
+    }
+  }
+}

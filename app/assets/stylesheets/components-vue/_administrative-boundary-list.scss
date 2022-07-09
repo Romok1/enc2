@@ -1,0 +1,9 @@
+.administrative-boundary-list {
+  &__title {
+    @include dashboard-sub-heading;
+  }
+
+  &__intro {
+    @include dashboard-intro;
+  }
+}

@@ -1,0 +1,72 @@
+<header class="header header--asset <%= asset_header_class(Globalize.with_locale(:en){ @asset.name }) %>">
+  <div class="header__contents flex flex-column">
+    <v-nav :pages="<%= navigation %>"></v-nav>
+
+    <div class="header__hero flex flex-v-center">
+      <%= image_tag asset_icon_path(Globalize.with_locale(:en){@asset.name}, true), alt: "Logo: #{@asset.name}", class: "header__icon" %>
+      <span>
+        <h1 class="header__title"><%= @asset.name %></h1>
+        <p class="header__intro"><%= @asset.description %></p>
+      </span>
+    </div>
+  </div>
+</header>
+
+<main class="asset-page page-padding">
+  <div class="asset-page__container">
+      
+    <%= render partial: 'layouts/production_processes_by_service', locals: {
+      title: t('asset_page.services_title'),
+      services: @asset.ecosystem_services,
+      joins: @asset_ecosystem_service_joins
+    } %>
+
+    <section aria-labelledby="asset-page-drivers-title" class="section-padding--top">
+      <h2 id="asset-page-drivers-title" class="narrow-title--medium h3"><%= t('asset_page.drivers_title') %>:</h2>
+      <list-box :is-expandable="true" title="<%= @asset.name %>" item-size="small">
+        <template slot="flex-contents">
+          <% @asset.drivers.uniq.sort{|a,b| compare_driver(a,b,@assets_drivers_joins) }.each do |driver| %>
+            <div class="asset-page__driver asset-page__driver-indicator list-box__item--small list-item--white indicator--circle <%= indicator_rating_class(@assets_drivers_joins.find_by(driver: driver).influence) %>">
+              <h3 class="list-item__title"><%= driver.name %></h3>
+              <p class="list-box__item-description"><%= limit_characters(driver.description, 100) %></p>
+              <%= link_to driver_path(driver.id), class: "flex-vs-end flex-hs-start" do %>
+                <div class="asset-page__driver-button button--arrow h3"><%= t('buttons.view') %></div>
+              <% end %>
+            </div>
+          <% end %>
+        </template>
+        <template slot="footer">
+          <div class="flex-center">
+            <span class="<%= indicator_trio_class %> indicator-trio--circle"></span>
+            <%= link_to t('buttons.method'), "/#{I18n.locale}/data-and-methodology/methodology", class: "h3 a--underline hover--pointer" %>
+          </div>
+        </template>
+      </list-box>
+    </section>
+
+  </div>
+</main>
+
+<section aria-labelledby="asset-page-data-title" class="container--small section-padding">
+  <h3 id="asset-page-data-title" class="driver-page__data-title"><%= t('footer.data_needs') %></h3>
+  <ul>
+    <li class="paragraph"><%= @asset.data_needs %></li>
+  </ul>
+</section>
+
+<section aria-labelledby="asset-page-map-title">
+  <h2 id="asset-page-map-title" class="embedded-map__header no-margin"><%= t('asset_page.map_title') %></h2>
+
+  <div class="map-container--embedded">
+    <map-explore 
+      mapbox-token="pk.eyJ1IjoidW5lcHdjbWMiLCJhIjoiRXg1RERWRSJ9.taTsSWwtAfFX_HMVGo2Cug"
+      :carto-username="'carbon-tool'"
+      :carto-api-key="'f7762e628586b3ff41a371b8e89ea0069e975299'"
+      :is-embedded="true"></map-explore>
+    <filter-pane id="filters-layers" api-type="assets" :pane-text="{title: '<%= @asset.name %>'}" :selected-driver-or-asset-id="<%= @asset.id %>" :embedded="true"></filter-pane>
+  </div>
+
+  <map-disclaimer class="map-disclaimer--embedded" />
+</section>
+
+<%= render 'application/data_footer' %>

@@ -1,0 +1,27 @@
+
+.portfolio-builder__button {
+  @include button--white;
+  font-size: rem-calc(18);
+  font-weight: $bold;
+
+  &::before {
+    color: $sg-lavender;
+    content: '+';
+    margin-right: rem-calc(2);
+  }
+
+  @include breakpoint($small) {
+    font-size: rem-calc(20);
+  }
+}
+
+.portfolio-builder__items {
+  @include ul--unstyled;
+  margin: $portfolio-form-close-size/2 0 rem-calc(25);
+}
+
+.portfolio-builder__item {
+  &:not(:last-child) {
+    margin-bottom: $item-padding-medium;
+  }
+}

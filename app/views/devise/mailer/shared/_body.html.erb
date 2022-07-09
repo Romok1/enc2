@@ -1,0 +1,115 @@
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="em_full_wrap" bgcolor="#e1e1e1" style="table-layout:fixed;">
+  <tr>
+    <td align="center" valign="top"><table align="center" width="796" border="0" cellspacing="0" cellpadding="0" class="em_main_table" style="width:796px;table-layout:fixed;background-color:#f4f4f4;" bgcolor="#f4f4f4">
+        <tr>
+          <td align="center" valign="top"><table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="50" style="width:50px;" class="em_side15">&nbsp;</td>
+                <td align="center" valign="top"><table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td height="60" style="height:60px;" class="em_h30"><img src="<%= spacer_src %>" width="1" height="1" alt="" border="0"  style="display:block;"/></td>
+                    </tr>
+                    <% if local_assigns[:icon] %>
+                      <tr>
+                        <td align="center" valign="top" class="em_full_img"><img src="<%= icon %>" width="41" height="52" mc:edit="lock_icon" alt="" border="0" style="display:block;max-width:41px;font-family:Arial,sans-serif;font-size:10px;line-height:0px;color:#000000;"/></td>
+                      </tr>
+                      <tr>
+                        <td height="20" style="height:20px;line-height:0px;font-size:0px;"><img src="<%= spacer_src %>" width="1" height="1" alt="" border="0"  style="display:block;"/></td>
+                      </tr>
+                    <% end %>
+                    <tr>
+                      <td align="center" valign="top" class="em_defaultlink em_txt" mc:edit="text_01" style="font-family:'Roboto',Arial,sans-serif;font-size:35px;line-height:38px;color:#000000; font-weight:500;"><%= subject %></td>
+                    </tr>
+                    <tr>
+                      <td height="67" style="height:67px;" class="em_h30"><img src="<%= spacer_src %>" width="1" height="1" alt="" border="0"  style="display:block;"/></td>
+                    </tr>
+                  </table></td>
+                <td width="50" style="width:50px;" class="em_side15">&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td align="center" valign="top"><table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="background-color:#ffffff;">
+              <tr>
+                <td width="100" style="width:100px;" class="em_side15">&nbsp;</td>
+                <td align="center" valign="top"><table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td height="100" style="height:100px;" class="em_h20"><img src="<%= spacer_src %>" width="1" height="1" alt="" border="0"  style="display:block;"/></td>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top" mc:edit="text_02" class="em_defaultlink" style="font-family:'Roboto',Arial,sans-serif;font-size:16px;line-height:20px;color:#000000;font-weight:bold;">
+                        <%= welcome %>  
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height="15" style="height:15px;" class="em_h20"><img src="<%= spacer_src %>" width="1" height="1" alt="" border="0"  style="display:block;"/></td>
+                    </tr>
+                    <% paragraphs_before_link.each do |paragraph| %>
+                      <tr>
+                        <td align="left" valign="top" mc:edit="text_03" class="em_defaultlink" style="font-family:'Roboto',Arial,sans-serif;font-size:15px;line-height:24px;color:#000000;">
+                          <%= paragraph %>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="12" style="height:12px;line-height:0px;font-size:0px;"><img src="<%= spacer_src %>" width="1" height="1" alt="" border="0"  style="display:block;"/></td>
+                      </tr>
+                    <% end %>
+
+                    <% if local_assigns[:link] %>
+                      <tr>
+                        <td height="33" style="height:33px;" class="em_h20"><img src="<%= spacer_src %>" width="1" height="1" alt="" border="0"  style="display:block;"/></td>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="top"><table width="253" align="left" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed;width:253px;">
+                            <tr>
+                              <td align="center" valign="middle" mc:edit="cta_01" height="45" style="font-family:'Roboto',Arial,sans-serif;font-size:18px;color:#000000;background-color:#c7d317;font-weight:bold;"><a href="<%= link[:url] %>" target="_blank" style="text-decoration:none;text-transform: uppercase;color:#000000;line-height:45px;display:block;"><%= link[:text] %></a></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr>
+                        <td height="20" style="height:20px;" class="em_h20"><img src="<%= spacer_src %>" width="1" height="1" alt="" border="0"  style="display:block;"/></td>
+                      </tr>
+                    <% end %>
+
+                    <% if local_assigns[:paragraph_after_link] %>
+                      <tr>
+                        <td align="left" valign="top" mc:edit="text_05" class="em_defaultlink" style="font-family:'Roboto',Arial,sans-serif;font-size:16px;line-height:20px;color:#919191;"><%= paragraph_after_link %></td>
+                      </tr>
+                    <% end %>
+                    <tr>
+                      <td height="93" style="height:93px;" class="em_h20"><img src="<%= spacer_src %>" width="1" height="1" alt="" border="0"  style="display:block;"/></td>
+                    </tr>
+                  </table></td>
+                <td width="100" style="width:100px;" class="em_side15">&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td align="center" valign="top"><table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f4f4f4" style="background-color:#f4f4f4;">
+              <tr>
+                <td width="100" style="width:100px;" class="em_side15">&nbsp;</td>
+                <td align="center" valign="top"><table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td height="75" style="height:75px;" class="em_h20"><img src="<%= spacer_src %>" width="1" height="1" alt="" border="0"  style="display:block;"/></td>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top" mc:edit="text_06" class="em_defaultlink" style="font-family:'Roboto',Arial,sans-serif;font-size:19px;line-height:24px;color:#000000;font-weight:500;"><%= t('email.coming_soon.title') %></td>
+                    </tr>
+                    <tr>
+                      <td height="5" style="height:5px;line-height:0px;font-size:0px;" class="em_h20"><img src="<%= spacer_src %>" width="1" height="1" alt="" border="0"  style="display:block;"/></td>
+                    </tr>
+                    <tr>
+                      <td align="left" valign="top" mc:edit="text_07" class="em_defaultlink" style="font-family:'Roboto',Arial,sans-serif;font-size:16px;line-height:24px;color:#000000;"><%= t('email.coming_soon.text') %></td>
+                    </tr>
+                    <tr>
+                      <td height="88" style="height:88px;" class="em_h20"><img src="<%= spacer_src %>" width="1" height="1" alt="" border="0"  style="display:block;"/></td>
+                    </tr>
+                  </table></td>
+                <td width="100" style="width:100px;" class="em_side15">&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>

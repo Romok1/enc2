@@ -1,0 +1,22 @@
+.expandable-item {
+  box-shadow: $shadow-light;
+  margin-bottom: $list-item-margin-large;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__header {
+    @extend .button--unstyled;
+    @extend .list-item; 
+    @extend .list-item--white;
+    box-shadow: none;
+    margin: 0;
+    width: 100%; 
+  }
+
+  &__container {
+    background: $white;
+    border-top: $border-thin $sg-grey;
+  }
+}

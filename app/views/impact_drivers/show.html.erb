@@ -1,0 +1,22 @@
+<div class="factsheet factsheet--impact-driver">
+  <%= render partial: 'impact_drivers/factsheet-header', locals: {title: @impact_driver.name, description: @impact_driver.description} 
+  %>
+  <main class='factsheet__container'>
+    <h2 class='factsheet__title h3'><%= t('common.drivers')%>:</h2>
+    <tabs modifier="factsheet">
+      <% @impact_driver.drivers.uniq.each_with_index do |driver, index| %>
+        <tab title="<%= driver.name %>" id="<%= driver.id %>" :active="<%= index === 0 %>">
+          <div class="flex flex-v-center"><h3><%= t('common.assets') %>:</h3>
+            <tooltip text="<%= t('tooltips.assets') %>"></tooltip>
+          </div>
+
+          <%= render partial: 'application/asset_drivers_table', locals: {
+            asset_driver: driver.assets_drivers_joins.group_by(&:asset),
+            asset_or_driver_path: method(:asset_path)
+          } %>
+        </tab>
+      <% end %>
+    </tabs>
+    
+  </main>
+</div>

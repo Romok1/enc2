@@ -1,0 +1,61 @@
+$dashboard-button-icon-height: rem-calc(20);
+
+.dashboard-button {
+  @include button--dashboard-panel;
+
+  &.disabled {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+
+  &__text {
+    margin-right: rem-calc(6);
+
+    display: none;
+
+    @include breakpoint($small) {
+      display: inline-block;
+    }
+  }
+
+  &--mobile {
+    @include breakpoint($small) {
+      display: none;
+    }
+  }
+
+  &--tablet-up {
+    display: none;
+
+    @include breakpoint($small) {
+      display: inline-block;
+    }
+  }
+
+  &--edit {
+    .icon-pencil {
+      width: $dashboard-button-icon-height;
+      height: $dashboard-button-icon-height;
+
+      &__background {
+        fill: $black;
+        stroke: $black;
+      }
+    }
+  }
+
+  &--save {
+    .icon-save {
+      padding: rem-calc(1);
+      width: $dashboard-button-icon-height;
+      height: $dashboard-button-icon-height;
+    }
+  }
+
+  &--download {
+    .icon-download {
+      width: $dashboard-button-icon-height;
+      height: $dashboard-button-icon-height;
+    }
+  }
+}

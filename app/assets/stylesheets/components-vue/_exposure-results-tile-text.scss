@@ -1,0 +1,38 @@
+.exposure-results-tile-text {
+  &__sub-header {
+    @include dashboard-sub-heading;
+    margin-top: 0;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__sub-header--small {
+    @include dashboard-sub-heading--small;
+    margin-top: 0;
+  }
+
+  &__intro {
+    @include dashboard-paragraph;
+    margin-bottom: rem-calc(20);
+  }
+
+  &__trigger-wrapper {
+    @include dashboard-sub-heading--small;
+    margin-block-end: 0;
+  }
+
+  &__trigger-header {
+    font-weight: $bold;
+    font-size: inherit;
+    margin:0;
+  }
+
+  &__trigger {
+    @include button--no-styles;
+    @include link-underlined;
+    font-size: inherit;
+    font-weight: $regular;
+    padding: 0;
+  }
+}

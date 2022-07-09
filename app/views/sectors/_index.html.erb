@@ -1,0 +1,22 @@
+<%= render partial: 'layouts/header', locals: {title: t('common.sectors') } %>
+<main class="list-page__container">
+  <p class="paragraph--no-margin"><%= cms_fragment_render('content') %></p>
+  <div class="list-page__item-container">
+    <% sectors.each do |sector| %>
+      <expandable-item>
+        <template slot="header">
+          <h2 class="list-item__title list-item__title--inline h3"><%= sector.name %></h2>
+        </template>
+        <template slot="content">
+        <ul>
+          <% sub_industries(sector).each do |s_i| %>
+            <li class="paragraph paragraph--no-margin"><%= s_i.name %></li>
+          <% end %>
+        </ul>
+        </template>
+      </expandable-item>
+    <% end %>
+  </div>
+</main>
+<%= render 'application/explore_footer'%>
+

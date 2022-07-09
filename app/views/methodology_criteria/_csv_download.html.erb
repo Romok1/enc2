@@ -1,0 +1,13 @@
+<aside class="csv-download">
+  <div class="csv-download__left">
+    <h3 class="csv-download__title"><%= t('methodology.csv_download.title') %></h3>
+    <p class="csv-download__text"><%= csv_download_text %></p>
+  </div>
+  <div class="csv-download__right">
+    <%= link_to t('buttons.download'), csv_download_button_link,
+      title: t('methodology.csv_download.title'), 
+      class: csv_download_button_class,
+      download: 'ENCORE_data' 
+    %>
+  </div>
+</aside>

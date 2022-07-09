@@ -1,0 +1,35 @@
+<div class="<%= class_with_modifier('open-cards', local_assigns) %>">
+  <div class="open-cards__header">
+    <h3 class="open-cards__title"><%= title %></h3>
+  </div>
+
+  <% if local_assigns[:intro] %>
+    <p class="open-cards__intro">
+      <%= intro.html_safe %>
+    </p>
+  <% end %>
+
+  <div class="open-cards__body">
+    <div class="open-cards__items">
+
+      <% open_cards.each do |card| %>
+
+        <div class="open-cards__item">
+          <div class="open-card">
+            <div class="open-card__header">
+              <div class="open-card__imagewrap">
+                <%= image_tag card[:img_url], alt: card[:title], class: "open-card__image" %>
+              </div>
+            </div>
+            <div class="open-card__body">
+              <h4 class="open-card__title"><%= card[:title] %></h4>
+              <p class="open-card__text"><%= card[:content]&.html_safe %></p>
+            </div>
+          </div>
+        </div>
+
+      <% end %>
+
+    </div>
+  </div>
+</div>

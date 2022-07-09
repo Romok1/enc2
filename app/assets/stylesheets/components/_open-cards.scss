@@ -1,0 +1,152 @@
+//--------------------------------------------------
+// variables
+//--------------------------------------------------
+
+$open-card-margin: rem-calc(24);
+$open-card-header-aspect-ratio: 40 / 53;
+
+//--------------------------------------------------
+// classes
+//--------------------------------------------------
+
+.open-cards__header {
+  padding-top: rem-calc(5);
+  padding-bottom: rem-calc(5);
+  text-align: center;
+
+  @include breakpoint($small) {
+    padding-top: rem-calc(10);
+    padding-bottom: rem-calc(10);
+  }
+}
+
+.open-cards__intro {
+  margin: 0 auto rem-calc(20);
+  max-width: rem-calc(600);
+
+  @include breakpoint($small) {
+    margin-bottom: rem-calc(30);
+  }
+}
+
+.open-cards__items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @include breakpoint($medium) {
+    margin: 0 -#{$open-card-margin} #{$open-card-margin} 0;
+
+    display: flex;
+  }
+}
+
+.open-cards__item {
+  margin-bottom: $open-card-margin;
+
+  display: flex;
+
+  @include breakpoint($small) {
+    margin-bottom: $open-card-margin * 1.5;
+  }
+
+  @include breakpoint($medium) {
+    margin-right: $open-card-margin;
+    margin-bottom: 0;
+    width: calc(((3 / 12) * 100%) - #{$open-card-margin});
+  }
+}
+
+.open-card {
+  width: 100%;
+
+  position: relative;
+
+  @include breakpoint($small) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include breakpoint($medium) {
+    display: block;
+  }
+}
+
+.open-card__header {
+  background: $card-gradient-bg;
+  margin-bottom: rem-calc(10);
+  padding-bottom: calc((#{$open-card-header-aspect-ratio}) * 100%);
+
+  position: relative;
+
+  @include breakpoint($small) {
+    margin-bottom: 0;
+    padding-bottom: calc((#{$open-card-header-aspect-ratio}) * 50%);
+    width: calc(50% - #{$open-card-margin / 2});
+  }
+
+  @include breakpoint($medium) {
+    margin-bottom: rem-calc(18);
+    padding-bottom: calc((#{$open-card-header-aspect-ratio}) * 100%);
+    width: 100%;
+  }
+
+  .open-cards--biodiversity-goals & {
+    background: $target-gradient-bg;
+  }
+}
+
+.open-card__body {
+  @include breakpoint($small) {
+    width: calc(50% - #{$open-card-margin / 2});
+  }
+
+  @include breakpoint($medium) {
+    width: 100%;
+  }
+}
+
+.open-card__imagewrap {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.open-card__image {
+  width: rem-calc(105);
+
+  display: block;
+
+  @include breakpoint($medium) {
+    width: rem-calc(75);
+  }
+}
+
+.open-card__title {
+  font-size: rem-calc(22);
+  font-weight: $bolder;
+  margin: 0 0 rem-calc(10);
+
+  @include breakpoint($small) {
+    font-size: rem-calc(20);
+    margin-bottom: rem-calc(20);
+  }
+
+  @include breakpoint($medium) {
+    margin-bottom: rem-calc(10);
+  }
+
+}
+
+.open-card__text {
+  font-size: rem-calc(16);
+}

@@ -1,0 +1,8 @@
+<%= render partial: "layouts/header", locals: { show_hero: false } %>
+
+<natural-capital-dashboard
+  :preload-data="<%= @data.to_json %>"
+  :flows-tabs="<%= @flows_tabs.to_json %>"
+  :tabs="<%= @dashboard_tabs.to_json %>"
+></natural-capital-dashboard>
+

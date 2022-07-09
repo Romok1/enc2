@@ -1,0 +1,12 @@
+en:
+  activerecord:
+    attributes:
+      biodiversity_goals/agriculture_dashboard/form:
+        country: Country
+        crops_value: Cropland
+        crops_area_type: Area or Turnover
+        livestock_value: Pasture land
+        livestock_area_type: Area or Turnover
+      biodiversity_goals/mining_dashboard/form:
+        locations: Locations
+        company: Company

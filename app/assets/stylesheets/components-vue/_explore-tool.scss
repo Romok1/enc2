@@ -1,0 +1,21 @@
+@import 'tabs.scss';
+
+.explore-tool {
+  background-color: $white;
+  
+  position: relative;
+
+  &__count-wrapper {
+    @extend .gutter-right--large;
+    @extend .section-padding--top;
+
+    position: absolute;
+    top: $border-width-xthick + $explore-filters-height + $tab-trigger-height / 2;
+    right: 0;
+
+    transform: translateY(-0.6em);
+  }
+    &__count {
+      @extend .gutter-right;
+    }
+}

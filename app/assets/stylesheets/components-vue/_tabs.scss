@@ -1,0 +1,249 @@
+.tabs {
+  &--explore {
+    @extend .section-padding--top;
+
+    position: relative;
+  }
+
+  &--factsheet {
+    padding-top: 0;
+  }
+}
+
+.tabs__triggers {
+  &--explore,
+  &--factsheet {
+    margin-left: $gutter-small;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    @include breakpoint($small) { margin-left: $gutter-medium; }
+    @include breakpoint($medium) { margin-left: $gutter-xlarge; }
+    @include breakpoint($large) { margin-left: $gutter-xxlarge; }
+  }
+
+  &--explore {
+    border-left: $border-thin $black;
+
+    @include breakpoint($small) {
+      overflow: visible;
+    }
+  }
+
+  &--factsheet {
+    border-left: $border-thin $sg-grey-xlight;
+  }
+
+  &--explore-inner {
+    @include breakpoint($small) { flex-direction: row; }
+  }
+
+  &--portfolio-generator {
+    margin-bottom: rem-calc(50);
+  }
+}
+
+.tab {
+  .tabs--explore & {
+    .expandable-item {
+      margin-bottom: $list-item-margin-small;
+    }
+  }
+}
+
+.tab__container {
+  &--home {
+    background: $sg-green;
+    padding: rem-calc(10);
+  }
+
+  &--explore,
+  &--factsheet {
+    @extend .gutters--large;
+    @extend .section-padding;
+
+    background: $sg-grey-xlight;
+    border-top: $border-thin-black;
+  }
+
+  &--factsheet {
+    border: none;
+  }
+
+  &--explore-inner {
+    padding-top: $section-padding-top-small;
+  }
+}
+
+.tab__trigger {
+  &--home {
+    margin-bottom: 0;
+    padding: rem-calc(10);
+
+    .tooltip {
+      display: none;
+    }
+  }
+
+  &--explore,
+  &--factsheet {
+    border-color: $black;
+    border-top: $border-thin;
+    border-right: $border-thin;
+    margin-bottom: 0;
+    padding: 0;
+    line-height: $tab-trigger-height;
+    height: $tab-trigger-height;
+  }
+
+  &--explore {
+    border-color: $black;
+
+    &:first-child { border-left: none }
+
+    .question-mark { margin: 0 }
+  }
+
+  &--factsheet {
+    border-color: $sg-grey-xlight;
+    color: $white;
+
+    &:first-child { border-color: $sg-grey-xlight; }
+  }
+
+  &--explore-inner {
+    margin-right: $list-item-margin-small;
+    height: $tab-trigger-height-xsmall;
+    padding: 0;
+
+    @include breakpoint($small) {
+      margin-right: $list-item-margin-large;
+    }
+  }
+
+  &--explore-inner,
+  &--portfolio-generator {
+    margin-bottom: 0;
+  }
+
+  &--portfolio-generator {
+    border: $border-thin;
+    border-color: $sg-green-dark;
+    line-height: $tab-trigger-height;
+    margin-bottom: 0;
+    padding: 0;
+
+    flex: 0 0 50%;
+  }
+}
+
+.tab__title {
+  &--home {
+    font-size: rem-calc(24);
+
+    @include breakpoint($small) {
+      font-size: rem-calc(18);
+    }
+  }
+
+  &--explore,
+  &--factsheet,
+  &--explore-inner {
+    @include h3;
+    @include breakpoint($small) { font-size: rem-calc(24) }
+
+    padding: 0 rem-calc(14) rem-calc(2);
+  }
+
+  &--explore {
+    margin-right: $list-item-margin-small;
+  }
+
+  &--portfolio-generator {
+    @include h4;
+    font-weight: $bold;
+    padding: rem-calc(15);
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+}
+
+.tab__trigger-contents {
+  &--home {
+    @extend .flex;
+    @extend .flex-h-between;
+    @extend .flex-v-center;
+
+    padding: rem-calc(5 15);
+
+    @include breakpoint($small) {
+      min-width: rem-calc(160);
+      padding: 0;
+    }
+  }
+
+  &--explore,
+  &--factsheet {
+    @extend .flex-center;
+
+    width: $tab-trigger-width-small; height: $tab-trigger-height;
+
+    @include breakpoint($small) { width: $tab-trigger-width-medium; }
+    @include breakpoint($medium) { width: $tab-trigger-width-large; }
+  }
+
+  &--explore-inner {
+    @extend .flex-center;
+
+    height: $tab-trigger-height-xsmall;
+  }
+}
+
+.active {
+  &.tab__trigger {
+    &--home {
+      background-color: $sg-green;
+
+      .tooltip {
+        @include breakpoint($small) {
+          display: block;
+        }
+      }
+    }
+
+    &--explore,
+    &--factsheet {
+      background-color: $sg-grey-xlight;
+      color: $black;
+
+      position: relative;
+
+      &::after {
+        background-color: $sg-grey-xlight;
+        content: '';
+        height: rem-calc(2);
+
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        transform: translateY(50%);
+      }
+    }
+
+    &--explore-inner {
+      background: $sg-grey-dark;
+      border: $border-thin;
+      border-color: $sg-grey-dark;
+      border-radius: rem-calc(4);
+      color: $white;
+    }
+
+    &--portfolio-generator {
+      background: $sg-green-dark;
+      color: $white;
+    }
+  }
+}

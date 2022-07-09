@@ -1,0 +1,49 @@
+//--------------------------------------------------
+// dial charts
+//--------------------------------------------------
+.dial {
+  padding-top: 100%; //ratio of height to width if svg has legend
+  width: 100%;
+
+  position: relative; //IE11
+
+  &__svg { //IE11
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__dial {
+    fill: $white;
+  }
+
+  &__circle {
+    fill: $white;
+  }
+
+  &__centre-text,
+  &__legend-text {
+    font-size: rem-calc(20);
+    font-weight: $light;
+  }
+
+  &__marker,
+  &__legend-line {
+    stroke: $black;
+    stroke-width: rem-calc(8);
+  }
+
+  &__arc {
+    fill: $sg-grey-light; 
+
+    &--1 { fill: $sg-violet-light; }
+    &--2 { fill: $sg-violet; }
+    &--3 { fill: $sg-violet-dark; }
+  }
+
+  &__title { 
+    font-weight: $bold;
+  }
+}

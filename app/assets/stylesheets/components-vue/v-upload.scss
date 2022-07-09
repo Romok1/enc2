@@ -1,0 +1,71 @@
+
+.v-upload {
+  background-color: $sg-grey-xlight;
+  border: rem-calc(1) solid $sg-grey-xdark;
+  padding: rem-calc(15);
+
+  &.v-upload--dragged-over {
+    background-color: white;
+  }
+}
+
+.v-upload__body {
+  background-color: $white;
+  border: rem-calc(1) dashed $sg-grey;
+  padding: rem-calc(20);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.v-upload__label {
+  border: rem-calc(1) solid currentColor;
+  color: $sg-green-dark;
+  cursor: pointer;
+  font-weight: $medium;
+  margin: 0;
+  padding: rem-calc(8) rem-calc(20);
+  text-transform: uppercase;
+
+  display: inline-block;
+  align-self: flex-end;
+
+  + input[type="file"] {
+    display: none;
+  }
+}
+
+.v-upload__delete {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  float: right;
+  font-size: rem-calc(20);
+  line-height: 1.25rem;
+  padding: 0 0 0 rem-calc(10);
+  text-decoration: underline;
+}
+
+.v-upload__progress {
+  background-color: $sg-grey;
+  border-radius: rem-calc(6);
+  margin-top: rem-calc(5);
+  margin-bottom: rem-calc(5);
+  overflow: hidden;
+}
+
+.v-upload__progress-bar {
+  background-color: $sg-green-bright;
+  height: rem-calc(12);
+}
+
+.v-upload__heading {
+  color: $sg-grey-dark;
+  font-size: rem-calc(20);
+  font-weight: $regular;
+
+  span {
+    display: inline-block;
+  }
+}

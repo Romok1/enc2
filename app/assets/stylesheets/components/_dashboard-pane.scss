@@ -1,0 +1,54 @@
+.dashboard-pane {
+  margin-bottom: $list-item-margin-large;
+  
+  &:not(.dashboard-pane--open) {
+    box-shadow: $shadow-dashboard;
+  }
+
+  .pdf & {
+    box-shadow: none;
+  }
+}
+
+.dashboard-pane__header {
+  @include gutters;
+  background-color: $sg-grey-xlight;
+  padding-right: rem-calc(16);
+  padding-left: rem-calc(16);
+
+  display: flex;
+  align-items: center;
+
+  @include breakpoint($small) {
+    padding-right: rem-calc(32);
+    padding-left: rem-calc(32);
+  }
+}
+
+.dashboard-pane__title {
+  font-weight: $bolder;
+}
+
+.dashboard-pane__body {
+  padding: $dashboard-body-padding-small;
+
+  @include breakpoint($small) {
+    padding: $dashboard-body-padding;
+  }
+
+  .dashboard-pane--customScrollbar & {
+    padding-right: $dashboard-body-padding-small;
+
+    @include breakpoint($small) {
+      padding-right: $dashboard-body-padding / 2;
+    }
+  }
+
+  .dashboard-pane--open & {
+    padding: 0;
+
+    @include breakpoint($small) {
+      padding: 0;
+    }
+  }
+}

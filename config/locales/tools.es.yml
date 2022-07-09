@@ -1,0 +1,42 @@
+es:
+  tools:
+    link_tiles_top:
+      tiles:
+        -
+          id: "links"
+          title: Visualise links between the economy and nature
+          body: Explore your potential impacts and dependencies on natural capital.
+          link:
+            text: Find out more
+            href: /tools/natural-capital
+        -
+          id: "target"
+          title: Explore potential portfolio alignment with biodiversity goals
+          body: This new functionality helps explore the potential alignment of financial activities in selected sectors with a nature-positive future.
+          link:
+            text: "Find out more"
+            href: "/tools/biodiversity-goals"
+    portfolios:
+      title: Portfolios
+      link:
+        href: /portfolios
+        text: View More
+    link_tiles_bottom:
+      header: Additional tools to complement analysis in ENCORE
+      tiles:
+        -
+          id: "ibat"
+          title: Screen portfolio for biodiversity risks in IBAT
+          body: Generate bespoke risk screening reports based on asset locations, and access data on Protected Areas, Key Biodiversity Areas and the IUCN Red List of Threatened Species.
+          link:
+            text: "Find out more"
+            href: "https://www.ibat-alliance.org"
+            external: true
+        -
+          id: "trase"
+          title: Transparent supply chains for sustainable economies
+          body: Trase brings unprecedented transparency to the companies & financial institutions tackling tropical deforestation. A joint project of Global Canopy and the Stockholm Environment Institute.
+          link:
+            text: "Find out more"
+            href: "https://trase.earth"
+            external: true

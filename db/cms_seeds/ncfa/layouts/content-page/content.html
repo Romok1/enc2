@@ -1,0 +1,22 @@
+[attributes]
+---
+label: Content Page
+app_layout: application
+position: 0
+
+[content]
+{{ cms:partial "layouts/header" }}
+{{ cms:text nav_label, render: false }}
+{{ cms:text title, render: false }}
+{{ cms:markdown description, render: false}}
+<main class="container--medium page-padding">
+  {{ cms:markdown content }}
+</main>
+
+
+[js]
+
+
+[css]
+
+

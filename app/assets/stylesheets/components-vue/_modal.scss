@@ -1,0 +1,116 @@
+$dashboard-modal-height-px: 550px;
+$dashboard-modal-height: rem-calc($dashboard-modal-height-px);
+$modal-padding-small: rem-calc(25);
+$modal-padding-medium: rem-calc(55);
+$modal-padding-large: rem-calc(100);
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+
+  display: flex;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  transition: opacity .3s ease, visibility .3s ease;
+
+  @include breakpoint($small) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.modal--active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.modal__close {
+  background-image: image-url('icons/Cross.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: rem-calc(20);
+  height: rem-calc(20);
+
+  position: absolute;
+  top: rem-calc(30);
+  right: rem-calc(30);
+}
+
+.modal__container {
+  background-color: $sg-grey-xlight;
+  padding: $modal-padding-small;
+  overflow: hidden;
+  width: 100%;
+
+  display: flex;
+
+  position: relative;
+  z-index: 3;
+
+  @include breakpoint($small) {
+    padding: $modal-padding-large;
+    max-width: rem-calc(650);
+
+    .modal--large & {
+      margin: 0 rem-calc(20);
+      padding: $modal-padding-medium;
+      max-width: rem-calc(1100);
+    }
+  }
+
+  .modal--dashboard & {
+    padding-right: $modal-padding-small / 1.5;
+    
+    @include breakpoint($small) {
+      padding-right: $modal-padding-large / 1.5;
+      max-height: 94vh;
+
+      @include breakpoint-vertical($dashboard-modal-height-px + 20) {
+        max-height: $dashboard-modal-height;
+      }
+    }
+
+  }
+  
+  .modal--dashboard.modal--large & {
+    @include breakpoint($small) {
+      @include breakpoint-vertical($dashboard-modal-height-px + 20) {
+        max-height: 94vh;
+      }
+    }
+  }
+}
+
+.modal__content {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  .dashboard-details-modal & {
+    flex-direction: column;
+  }
+}
+
+.modal__overlay {
+  background-color: $sg-grey-xdark;
+  opacity: 0.5;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .portfolio-generator__modal & {
+    background-color: $white;
+    opacity: 1;
+  }
+}

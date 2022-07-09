@@ -1,0 +1,44 @@
+@include exposure-scenarios-section('.exposure-scenarios__section');
+
+.exposure-scenarios__column {
+  @include dashboard-column-stack-mobile;
+}
+
+.exposure-scenarios__mineral-table-header {
+  display: flex;
+}
+
+.exposure-scenarios__header {
+  &--above {
+    margin-bottom: rem-calc(30);
+
+    display: block;
+    
+    @include breakpoint($medium) {
+      display: none;
+    }
+  }
+
+  &--section-two {
+    margin-bottom: rem-calc(30);
+  }
+
+  &--in-column {
+    margin-bottom: rem-calc(24);
+
+    display: none;
+
+    @include breakpoint($medium) {
+      display: block;
+    }
+  }
+}
+
+.exposure-scenarios__heading {
+  @include dashboard-sub-heading;
+  margin-top: 0;
+}
+
+.exposure-scenarios__text {
+  @include dashboard-intro;
+}

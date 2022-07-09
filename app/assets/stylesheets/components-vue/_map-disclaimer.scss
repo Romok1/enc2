@@ -1,0 +1,54 @@
+
+$mapDisclaimerPaddingTop: rem-calc(10);
+$mapDisclaimerPaddingRightMobile: $gutter-small + $filterPaneSideLineWidth;
+$mapDisclaimerPaddingRightTablet: $gutter-medium + $filterPaneSideLineWidth;
+$mapDisclaimerPaddingRightDesktop: $gutter-large + $filterPaneWidthTablet;
+
+.map-disclaimer {
+  @include gutters;
+  background-color: $sg-grey-light;
+  font-size: rem-calc(10);
+  padding-top: $mapDisclaimerPaddingTop;
+  padding-bottom: $mapDisclaimerPaddingTop;
+  padding-right: $mapDisclaimerPaddingRightMobile;
+
+  flex-shrink: 0;
+
+  @include breakpoint($small) {
+    font-size: rem-calc(11);
+    padding-right: $mapDisclaimerPaddingRightTablet; 
+  }
+  
+  @include breakpoint($medium) {
+    padding-right: $mapDisclaimerPaddingRightDesktop; 
+  }
+
+  &--embedded {
+    padding-right: $gutter-small;
+    
+    @include breakpoint($small) {
+      padding-right: $gutter-medium;
+    }
+    
+    @include breakpoint($medium) {
+      padding-right: $gutter-large;
+    }
+  }
+
+  &__text {
+    overflow-y: auto;
+    max-height: rem-calc(60);
+
+    @include breakpoint($small) {
+      overflow-y: hidden;
+      max-height: none;
+    }
+
+    .map-disclaimer--embedded & {
+      margin: 0 auto;
+      overflow-y: hidden;
+      max-width: rem-calc(1250);
+      max-height: none;
+    }
+  }
+}

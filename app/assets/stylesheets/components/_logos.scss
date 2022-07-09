@@ -1,0 +1,44 @@
+.banner {
+  &__logo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: rem-calc(10);
+    width: rem-calc(80); height: rem-calc(30);
+
+    display: block;
+
+    @include breakpoint($medium) {
+      width: rem-calc(120); height: rem-calc(45);
+    }
+
+    @include breakpoint($medium) {
+      margin: rem-calc(0 14);
+    }
+
+    &--faded {
+      opacity: 0.5;
+    }
+  }
+}
+
+.logo {
+  &--gcp {
+    background-image: image-url('logos/GCP-Logo.png')
+  }
+  &--mava {
+    background-image: image-url('logos/MAVA-Logo.svg')
+  }
+  &--ncfa {
+    background-image: image-url('logos/NCFA-Logo.svg')
+  }
+  &--sc {
+    background-image: image-url('logos/SC-Logo.svg')
+  }
+  &--unepwcmc {
+    background-image: url('https://s3.amazonaws.com/wcmc.logo/UNEP_WCMC_logo_white.svg')
+  }
+  &--unepfi {
+    background-image: image-url('logos/UNEPFI-Logo.png')
+  }
+}

@@ -1,0 +1,79 @@
+.errors-list {
+  background-color: rgba($sg-error-red, 0.05);
+  border: rem-calc(1) solid $sg-error-red;
+  color: $sg-error-red;
+  font-size: rem-calc(14);
+  margin: 1rem 0;
+  padding: 0;
+
+  .field & {
+    background: none;
+    border: none;
+    color: $sg-error-red;
+    margin-top: rem-calc(7);
+  }
+}
+
+.errors-list__items {
+  list-style-type: none;
+  margin: 0;
+  padding: rem-calc(12);
+
+  .field & {
+    padding: 0;
+  }
+}
+
+.errors-list__item {
+  @include list-margins(bottom, rem-calc(5));
+  margin: 0;
+}
+
+.errors-list__message {
+  font-size: rem-calc(14);
+  margin: 0;
+  padding-left: rem-calc(22);
+
+  position: relative;
+
+  // TODO: Change this programmatically on the backend
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.errors-list__icon {
+  background-color: $sg-error-red;
+  border-radius: 50%;
+  user-select: none;
+  width: rem-calc(16);
+  height: rem-calc(16);
+
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &::after {
+    color: $white;
+    content: '!';
+    font-size: rem-calc(12);
+    font-weight: bold;
+    text-align: center;
+    width: rem-calc(2.5);
+    height: rem-calc(15);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.errors-list__heading {
+  font-size: rem-calc(20);
+  font-weight: bold;
+  margin: rem-calc(10 0 20);
+  padding: .5rem;
+}

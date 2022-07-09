@@ -1,0 +1,10 @@
+<%= I18n.t('form.new_enquiry_msg', { type: @enquiry_type, name: @name }) %>
+
+<%= I18n.t('form.name') +': '+ @name %>
+<%= I18n.t('form.email') +': '+ @email %>
+<%= I18n.t('form.enquiry_type') +': '+ @enquiry_type %>
+<%= I18n.t('form.message') +': '+ @message %>
+
+---
+
+{type: <%= @enquiry_type %>}

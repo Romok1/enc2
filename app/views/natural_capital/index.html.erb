@@ -1,0 +1,27 @@
+<%= render partial: 'layouts/header', locals: { show_hero: false } %>
+
+<%= render partial: 'shared/dashboard/landing/hero', locals: { title: t('natural_capital.landing.hero_title'), link: t('natural_capital.landing.hero_link') } %>
+
+<div class="container--xlarge">
+  <div class="landing-page__body">
+    <%= render partial: 'shared/dashboard/landing/open_cards', locals: { 
+      title: t('natural_capital.landing.open_cards_title'), 
+      open_cards: @open_cards,
+      class_modifier: 'natural-capital'
+    } %>
+
+    <div class="landing-page__video-container">
+      <div class="video__wrapper">
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/_y-ByoWysK8"
+          frameborder="0"
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; autoplay;"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <%= render partial: 'shared/dashboard/landing/footer_simple', locals: { links: t('natural_capital.landing.links') } %>
+</div>

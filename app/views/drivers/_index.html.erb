@@ -1,0 +1,7 @@
+<%= render partial: 'layouts/list_page', locals: {
+    items:        Driver.all.order(:name), 
+    description:  cms_fragment_render('content'),
+    item_path:    method(:driver_path),
+    title:        t('common.drivers')
+  } 
+%>

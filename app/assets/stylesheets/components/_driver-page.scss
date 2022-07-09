@@ -1,0 +1,34 @@
+.driver-page {
+  background-color: $sg-grey-xlight;
+
+  &__container {
+    @include container(rem-calc(1250));
+    overflow: hidden;
+  }
+
+  .list-box__title {
+    @include breakpoint($small) {
+      width: rem-calc(320);
+    }
+  }
+
+  &__list-item {
+    width: 100%; height: 100%;
+  }
+
+  .processes {
+    background: $white;
+
+    &__content {
+      @include breakpoint($medium) {
+        overflow: hidden;
+        overflow-y: scroll;
+        max-height: rem-calc(450);
+      }
+    }
+  }
+
+  &__data-title {
+    text-align: center;
+  }
+}

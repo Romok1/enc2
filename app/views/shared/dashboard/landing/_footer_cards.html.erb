@@ -1,0 +1,20 @@
+<div class="landing-footer--cards flex-center section-padding">
+  <% links.each_with_index do |link, n| %>
+    <div class="landing-footer__card">
+      <div class="landing-footer__card-title">
+        <%= link[:text] %>
+      </div>
+
+      <localised-link
+        class="landing-footer__card-link--<%= link[:download] ? 'download' : 'explore' %>"
+        url="<%= link[:href] %>"
+        title="<%= link[:text] %>"
+        target="_blank"
+      >
+        <span class="landing-footer__link-text">
+          <%= link[:download] ? t('buttons.download') : t('buttons.explore') %>
+        </span>
+      </localised-link>
+    </div>
+  <% end %>
+</div>

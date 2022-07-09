@@ -1,0 +1,20 @@
+<% 
+message = @resource.try(:unconfirmed_email?) ?
+  t('devise.mailer.email_changed.your_email_is_changing_to', email: @resource.unconfirmed_email) :
+  t('devise.mailer.email_changed.your_email_has_changed_to', email: @resource.email)
+%>
+
+<%= render partial: 'devise/mailer/shared/header' %>
+
+<%= render partial: 'devise/mailer/shared/body', locals: {
+  subject: t('devise.mailer.email_changed.subject'),
+  welcome: t(
+    'devise.mailer.email_changed.hello_user', 
+    user: @resource.email
+  ),
+  paragraphs_before_link: [
+    message
+  ]
+} %>
+
+<%= render partial: 'devise/mailer/shared/footer' %>

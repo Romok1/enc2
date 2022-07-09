@@ -1,0 +1,56 @@
+<%= render partial: 'layouts/header', locals: {title: @driver.name, description: @driver.description} %>
+<main class="driver-page page-padding">
+  <div class="driver-page__container">
+    <section class="section-padding--bottom">
+      <h2 class="screen-reader"><%= t('driver_page.assets_title') %>:</h2>
+      <list-box title="<%= t('driver_page.assets_title') %>:">
+        <template slot="flex-contents">
+          <% @driver.assets_drivers_joins.group_by(&:asset).keys.each do |asset| %>
+            <div class="list-box__item--medium list-item--white">
+              <div class="driver-page__list-item flex">
+                <%= image_tag asset_icon_path(Globalize.with_locale(:en){asset.name}), alt: "Logo: #{asset.name}", class: 'list-item__icon flex-vs-start' %>
+                <div class="list-item__text flex flex-column">
+                  <h3 class="list-item__title"><%= asset.name %></h3>
+                  <p class="list-box__item-description"><%= limit_characters(asset.description, 100) %></p>
+                  <%= link_to asset_path(asset.id), class: "flex-vs-end flex-hs-start" do %>
+                    <div class="asset-page__driver-button button--arrow h3"><%= t('buttons.view') %></div>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </template>
+      </list-box>
+    </section>
+
+    <%= render partial: 'layouts/production_processes_by_service', locals: {
+      title: t('driver_page.services_title'),
+      services: @driver.ecosystem_services
+    } %>
+  </div>
+
+</main>
+
+<section aria-labelledby="driver-page-data-title" class="container--small section-padding">
+  <h2 id="driver-page-data-title" class="driver-page__data-title"><%= t('footer.data_needs') %>:</h3>
+  <ul>
+    <li class="paragraph"><%= @driver.data_needs %></li>
+  </ul>
+</section>
+
+<section aria-labelledby="driver-page-map-title">
+  <h2 id="driver-page-map-title" class="embedded-map__header no-margin"><%= t('driver_page.map_title') %></h2>
+
+  <div class="map-container--embedded">
+    <map-explore 
+      mapbox-token="pk.eyJ1IjoidW5lcHdjbWMiLCJhIjoiRXg1RERWRSJ9.taTsSWwtAfFX_HMVGo2Cug"
+      :carto-username="'carbon-tool'"
+      :carto-api-key="'f7762e628586b3ff41a371b8e89ea0069e975299'"
+      :is-embedded="true"></map-explore>
+    <filter-pane id="filters-layers" api-type="drivers" :pane-text="{title: '<%= @driver.name %>'}" :selected-driver-or-asset-id="<%= @driver.id %>" :embedded="true" ></filter-pane>
+  </div>
+
+  <map-disclaimer class="map-disclaimer--embedded" />
+</section>
+
+<%= render 'application/data_footer' %>

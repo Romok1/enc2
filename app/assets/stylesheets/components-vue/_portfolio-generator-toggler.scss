@@ -1,0 +1,52 @@
+.portfolio-generator-toggler {
+  border: rem-calc(1) solid $sg-grey;
+  padding: $item-padding-small;
+
+  display: flex;
+  align-items: center;
+
+  @include breakpoint($medium) {
+    padding: $item-padding-medium;
+  }
+
+  @include breakpoint($large) {
+    padding: $item-padding-large;
+  }
+}
+
+.portfolio-generator-toggler__title {
+  display: inline-block;
+  font-size: rem-calc(16);
+  font-weight: $bold;
+  margin-right: auto;
+}
+
+.portfolio-generator-toggler__button {
+  @include appearance-none;
+  @include button--no-styles;
+  font-size: 0;
+  padding: 0;
+  width: rem-calc(25);
+  height: rem-calc(25);
+
+  flex: 0 0 rem-calc(25);
+
+  &:not(:last-child) {
+    margin-right: rem-calc(8);
+  }
+}
+
+.portfolio-generator-toggler--invalid {
+  border-color: $sg-error-red;
+}
+
+.portfolio-generator-toggler__icon {
+  &-edit {
+    .icon-pencil {
+      &__background {
+        fill: $sg-green-xdark;
+        stroke: $sg-green-xdark;
+      }
+    }
+  }
+}

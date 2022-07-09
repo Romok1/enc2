@@ -1,0 +1,102 @@
+$popup-max-width-medium: rem-calc(600);
+
+.pop-up {
+  &__modal {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__open {
+    cursor: pointer;
+  }
+
+  &__scroll-wrapper {
+    height: 100%;
+  }
+
+  &__wrapper {
+    background-color: $sg-grey-xlight;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    position: relative;
+
+    @include breakpoint($small) {
+      max-width: 90vw;
+      height: auto;
+      max-height: 90vh;
+    }
+
+    @include breakpoint($medium) {
+      max-width: 90vw;
+      max-height: 75vh;
+    }
+
+    .feedback-popup & {
+      background-color: $sg-grey-xdark;
+      color: $white;
+      max-width: $popup-max-width-medium;
+    }
+
+    .authentication-popup & {
+      @include breakpoint($small) {
+        height: $authentication-popup-height-tablet;
+      }
+
+      @include breakpoint($medium) {
+        width: rem-calc(1000);
+        height: $authentication-popup-height-desktop;
+      }
+    }
+
+    .authentication-popup.authentication-popup--registered & {
+      @include breakpoint($small) {
+        width: rem-calc(540);
+        height: rem-calc(600);
+      }
+
+      @include breakpoint($medium) {
+        width: rem-calc(1000);
+        height: $authentication-popup-height-desktop;
+      }
+    }
+
+    .account-management-popup & {
+      @include breakpoint($small) {
+        width: rem-calc(660);
+        height: 100%;
+      }
+    }
+  }
+
+  &__scroll-wrapper {
+    overflow-y: auto;
+
+    .authentication-popup & {
+      @include breakpoint($medium) {
+        overflow-y: hidden;
+      }
+    }
+  }
+
+  &__close {
+    background-color: rgba($white, 0);
+
+    position: absolute;
+    top: rem-calc(32);
+    right: rem-calc(32);
+
+    &::before {
+      font-size: rem-calc(20);
+    }
+  }
+}

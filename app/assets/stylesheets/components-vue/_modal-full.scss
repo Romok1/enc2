@@ -1,0 +1,124 @@
+$modal-full-footer-height: rem-calc(85);
+$modal-full-header-height: rem-calc(110);
+$modal-full-header-height-small: rem-calc(70);
+
+.modal-full {
+  background-color: $white;
+  padding: $modal-full-header-height-small $gutter-small $modal-full-footer-height;
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  transition: opacity .3s ease, visibility .3s ease;
+  
+  @include breakpoint($small) {
+    padding: $modal-full-header-height rem-calc(80) $modal-full-header-height;
+  }
+
+  &.modal-full--active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.modal-full__button {
+  @include appearance-none;
+  @include button--no-styles;
+  cursor: pointer;
+  padding: 0;
+  width: rem-calc(25);
+  height: rem-calc(25);
+
+  display: block;
+
+  @include breakpoint($small) {
+    width: rem-calc(35);
+    height: rem-calc(35);
+  }
+
+  @include breakpoint($medium) {
+    width: rem-calc(50);
+    height: rem-calc(50);
+  }
+}
+
+.modal-full__top-left {
+  position: absolute;
+  top: rem-calc(23);
+  left: rem-calc(23);
+
+  @include breakpoint($small) {
+    top: rem-calc(30);
+    left: rem-calc(30);
+  }
+}
+
+.modal-full__top-right {
+  position: absolute;
+  top: rem-calc(23);
+  right: rem-calc(23);
+
+  @include breakpoint($small) {
+    top: rem-calc(30);
+    right: rem-calc(30);
+  }
+}
+
+.modal-full__body {
+  overflow-y: auto;
+  max-height: 100%;
+
+  .portfolio-generator-modal & {
+    @include breakpoint($small) {
+      position: absolute;
+      bottom: calc(50% - #{$sector-select-size} / 2);
+      left: 50%;
+  
+      transform: translateX(-50%);
+    }
+  }
+
+  .portfolio-generator-modal--sector-selected & {
+    overflow-y: auto;
+    height: 100%;
+
+    @include breakpoint($small) {
+      position: static;
+
+      transform: none;
+    }
+  }
+}
+
+.modal-full__content {
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: rem-calc(550);
+}
+
+.modal-full__footer {
+  background-color: $sg-green-dark;
+  padding: rem-calc(20) $gutter-medium;
+  height: $modal-full-footer-height;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal-full__submit {
+  @include button--green;
+  @include button--small;
+}

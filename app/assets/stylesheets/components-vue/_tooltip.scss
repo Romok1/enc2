@@ -1,0 +1,49 @@
+.tooltip {
+  position: relative;
+
+  display: none;
+
+  @include breakpoint($medium) {
+    display: block;
+  }
+
+  &__trigger {
+    cursor: pointer;
+
+    display: flex;
+  }
+
+  &__target {
+    @extend .paragraph;
+    
+    background-color: $sg-grey-xlight;
+    border-radius: $radius-global;
+    box-shadow: $shadow-light;
+    color: $black;
+    font-size: rem-calc(14);
+    padding: rem-calc(6 8);
+    text-align: left;
+
+    position: absolute;
+    top: 145%;
+    left: 50%;
+    z-index: $z-300;
+
+    transform: translateX(-50%);
+    min-width: rem-calc(180);
+
+    &:after {
+      border-bottom: solid rem-calc(10) $sg-grey-xlight;
+      border-right: solid rem-calc(10) transparent;
+      border-left: solid rem-calc(10) transparent;
+      content: '';
+      width: 0; height: 0;
+
+      position: absolute;
+      top: rem-calc(-10);
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+  }
+}

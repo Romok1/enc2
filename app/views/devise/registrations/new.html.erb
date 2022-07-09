@@ -1,0 +1,9 @@
+<%= render partial: 'layouts/nav' %>
+
+<div class="devise">
+  <div class="devise__container">
+    <h2><%= t('devise.ctas.sign_up') %></h2>
+    <user-form redirect-to="<%= new_user_session_path %>"></user-form>
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

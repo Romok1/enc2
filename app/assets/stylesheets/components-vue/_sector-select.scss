@@ -1,0 +1,72 @@
+.sector-select {
+  padding: rem-calc(10 5); //stops box-shadow cutting off
+  text-align: center;
+}
+
+.sector-select__title {
+  font-size: rem-calc(22);
+  margin-top: 0;
+  margin-bottom: rem-calc(30);
+  
+  @include breakpoint($small) {
+    font-size: rem-calc(26);
+    margin-bottom: rem-calc(50);
+  }
+}
+
+.sector-select__items {
+  margin: 0;
+  padding: 0;
+
+  @include columns('mobile'); //must come after margin and padding
+
+  align-items: center;
+}
+
+.sector-select__item {
+  @include column(rem-calc(20), rem-calc(30), rem-calc(30), 'mobile');
+  list-style: none;
+
+}
+
+.sector-select__radio-group {
+  display: inline-block;
+}
+
+.sector-select__radio {
+  display: none;
+}
+
+.sector-select__label {
+  border: rem-calc(0.5) solid $sg-grey-xlight;
+  box-shadow: rem-calc(0 5 10) $sg-grey-xlight;
+  cursor: pointer;
+  font-size: rem-calc(20);
+  font-weight: $bold;
+  margin: 0;
+  width: $sector-select-size-small;
+  height: $sector-select-size-small;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: border-color .3s ease;
+
+  @include breakpoint($small) {
+    width: $sector-select-size;
+    height: $sector-select-size;
+  }
+}
+
+.sector-select__icon {
+  width: rem-calc(50);
+  height: rem-calc(50);
+  margin-bottom: rem-calc(25);
+}
+
+.sector-select__radio:checked + .sector-select__label,
+.sector-select__label:hover {
+  border-color: $black;
+}

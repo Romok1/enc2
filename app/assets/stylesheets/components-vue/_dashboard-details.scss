@@ -1,0 +1,41 @@
+$dashboard-details-border-spacing: rem-calc(18);
+
+.dashboard-details {
+  .pdf & {
+    margin-bottom: rem-calc(40);
+  }
+}
+
+.dashboard-details__title {
+  @include h1;
+  margin: rem-calc(34) 0;
+}
+
+.dashboard-details__items {
+  @include ul--unstyled;
+}
+
+.dashboard-details__item {
+  @include list-margins(bottom, $dashboard-details-border-spacing);
+  padding-bottom: $dashboard-details-border-spacing;
+  border-bottom: $border-thin $sg-grey;
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.dashboard-details__text {
+  font-size: rem-calc(20);
+  font-weight: $regular;
+  margin-bottom: rem-calc(5);
+
+  strong {
+    font-weight: $bolder;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

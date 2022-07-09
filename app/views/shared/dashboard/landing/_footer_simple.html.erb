@@ -1,0 +1,20 @@
+<div class="landing-footer flex-center section-padding">
+  <span class="landing-footer__icon info-icon-alt"></span>
+
+  <% links.each_with_index do |link, n| %>
+    <div class="landing-footer__link">
+      <localised-link
+        class="flex-inline flex-v-center"
+        url="<%= link[:href] %>"
+        title="<%= link[:text] %>"
+        target="_blank"
+      >
+        <span class="landing-footer__link-text"><%= link[:text] %></span>
+      </localised-link>
+    </div>
+
+    <% if n < links.count - 1 %>
+      <span class="landing-footer__divider"></span>
+    <% end %>
+  <% end %>
+</div>

@@ -1,0 +1,21 @@
+<div class="factsheet">
+  <%= render partial: 'ecosystem_services/factsheet-header' %>
+  <main class='factsheet__container'>
+    <h2 class='factsheet__title h3'><%= t('common.assets')%>:</h2>
+    <tabs modifier="factsheet">
+      <% @service.assets.uniq.each_with_index do |asset, index| %>
+        <tab title="<%= asset.name %>" id="<%= asset.id %>" :active="<%= index === 0 %>">
+          <div class="flex flex-v-center"><h3><%= t('common.drivers') %>:</h3>
+            <tooltip text="<%= t('tooltips.drivers') %>"></tooltip>
+          </div>
+
+          <%= render partial: 'application/asset_drivers_table', locals: {
+            asset_driver: asset.assets_drivers_joins.group_by(&:driver),
+            asset_or_driver_path: method(:driver_path)
+          } %>
+        </tab>
+      <% end %>
+    </tabs>
+  </main>
+</div>
+

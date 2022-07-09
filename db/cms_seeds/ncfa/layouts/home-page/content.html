@@ -1,0 +1,20 @@
+[attributes]
+---
+label: Home Page
+app_layout: application
+position: 0
+
+[content]
+{{ cms:partial "layouts/home" }}
+{{ cms:text title, render: false }}
+{{ cms:text nav_label, render: false }}
+{{ cms:markdown description, render:false }}
+{{ cms:text services_content, render:false }}
+{{ cms:text assets_content, render:false }}
+{{ cms:text drivers_content, render:false }}
+{{ cms:text impact_drivers_content, render:false }}
+
+[js]
+
+
+[css]

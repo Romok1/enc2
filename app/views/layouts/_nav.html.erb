@@ -1,0 +1,5 @@
+<v-nav :pages="<%= navigation %>">
+  <template slot="nav-right">
+    <%= render partial: 'application/feedback_popup', locals: { popup_class: 'nav' } %>
+  </template>
+</v-nav>

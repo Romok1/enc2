@@ -1,0 +1,145 @@
+$modal-padding-large: rem-calc(100);
+$modal-padding-small: rem-calc(25);
+$dashboard-modal-spacing-small: rem-calc(14);
+
+.dashboard-modal {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-modal__header {
+  padding-right: rem-calc(6.25);
+  margin-bottom: $dashboard-modal-spacing-small;
+
+  @include breakpoint($small) {
+    padding-right: rem-calc(25);
+  }
+}
+
+.dashboard-modal__title {
+  @include h1;
+  margin-top: 0;
+  margin-bottom: rem-calc(10);
+  padding-right: rem-calc(40);
+
+  @include breakpoint($small) {
+    padding-right: 0;
+  }
+}
+
+.dashboard-modal__description {
+  font-size: rem-calc(16);
+  font-weight: $bold;
+  margin-bottom: 0;
+}
+
+.dashboard-modal__body {
+  overflow-y: auto;
+  padding-right: rem-calc(6.25);
+
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($small) {
+    padding-right: rem-calc(25);
+  }
+
+  &::-webkit-scrollbar {
+    width: rem-calc(6);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $sg-grey-xlight;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba($sg-grey-dark, 0.7);
+    border-radius: rem-calc(8);
+  }
+}
+
+.dashboard-modal__list-items {
+  @include ul--unstyled;
+  margin-bottom: $dashboard-modal-spacing-small;
+
+  .dashboard-modal--eco_servs_or_impact_drivers & {
+    margin-bottom: 0;
+  }
+}
+
+.dashboard-modal__list-item {
+  border-bottom: $border-thin rgba($sg-grey-dark, 0.1);
+  font-weight: $regular;
+  margin-bottom: 0;
+  padding: rem-calc(15 0);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
+  .dashboard-modal--eco_servs_or_impact_drivers & {
+    display: block;
+
+    @include breakpoint($small) {
+      display: flex;
+    }
+  }
+
+  .dashboard-modal--production_processes & {
+    padding-right: rem-calc(40);
+  }
+}
+
+.dashboard-modal__text {
+  font-size: rem-calc(18);
+  margin-bottom: 0;
+
+  @include breakpoint($small) {
+    font-size: rem-calc(16);
+  }
+}
+
+.dashboard-modal__process-rating {
+  width: rem-calc(30);
+  height: rem-calc(30);
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  &::before {
+    color: $white;
+    font-size: rem-calc(14);
+    line-height: rem-calc(30);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.dashboard-modal__button {
+  @include button--border--small;
+  background-color: $white;
+  margin-top: $dashboard-modal-spacing-small;
+  margin-left: auto;
+
+  flex-shrink: 0;
+
+  @include breakpoint($small) {
+    margin-top: 0;
+  }
+}
+
+.dashboard-modal__footer {
+  margin-top: $dashboard-modal-spacing-small;
+}
+
+.dashboard-modal__link-icon {
+  @include arrow--right(false);
+  margin-bottom: rem-calc(2);
+}

@@ -1,0 +1,85 @@
+es:
+  natural_capital:
+    landing:
+      hero_title: "Visualise the links between economic activities and natural capital impacts and dependencies"
+      hero_link:
+        text: "Get Started"
+        href: "/tools/natural-capital-dashboard"
+      open_cards_title: 'Dashboard features'
+      open_cards:
+        -
+          title: "Flow diagram to visualise impacts and dependencies"
+          content: "<strong>Helps you answer:</strong> How do my selected sub-industries and production processes potentially impact or depend on natural capital? How could disruption in one part of the system affect other parts?"
+          img_url: "icons/Sankey-White.svg"
+        -
+          title: "Most material dependencies from selected sub-industries and production processes"
+          content: "<strong>Helps you answer:</strong> What are the most pressing potential dependencies I should be aware of?"
+          img_url: "icons/Flow-White.svg"
+        -
+          title: "Most material impacts from selected sub-industries and production processes"
+          content: "<strong>Helps you answer:</strong> What are the most pressing potential impacts I should be aware of?"
+          img_url: "icons/Mat-Impacts-White.svg"
+        -
+          title: "Most material natural capital assets based on dependencies and impacts of selected sub-industries"
+          content: "<strong>Helps you answer:</strong> How could my potential impacts on natural capital assets affect my potential dependencies through feedback loops?"
+          img_url: "icons/Pyramid-White.svg"
+      links:
+        -
+          text: "Methods and data used within the tool"
+          href: "/data-and-methodology/methodology"
+
+    dashboard:
+      title: Visualise natural capital dependency and impact flows
+      tabs:
+        -
+          id: 'flows'
+          title: 'Flows'
+        -
+          id: 'dashboard'
+          title: 'Data'
+
+      flows:
+        influence_description: "<strong>%{count}</strong> out of <strong>%{driver_total}</strong> drivers of environmental change influence the <strong>%{name}</strong> asset."
+        impact_description: "<strong>%{name}</strong> contributes to <strong>%{count}</strong> out of <strong>%{driver_total}</strong> drivers of environmental change."
+        no_data:
+          title: To view the flows chart please select from the list of sub-industries and production processes above
+        screensize:
+          title: This page works best on large devices
+          description: Please use a device with a larger width to view the content on this page.
+        tabs:
+          - Dependencies
+          - Impacts
+
+      data:
+        no_data:
+          title: To view the data dashboard please select from the list of sub-industries and production processes above
+
+      components:
+        dashboard_stats:
+          out_of: Out of %{n}
+        main_dependencies_and_impacts:
+          title: My potential impacts and dependencies
+          services:
+            title: Dependencies on ecosystem services
+            text: Your chosen sub-industries are potentially dependent on %{n} ecosystem services
+          impact_drivers:
+            title: Contribution to impact drivers
+            text: Your chosen sub-industries potentially contribute to %{n} impact drivers with a very high or high materiality rating
+          out_of: Out of %{n}
+        ecosystem_services_list:
+          title: My most material potential dependencies
+          heading: Dependency materiality ratings for my selected sub-industries and production processes
+          intro: There may be duplicates for the ecosystem services listed below as their materiality ratings may differ across your selected sub-industries and production processes.
+          indicator_text: "%{count} Ecosystem Services of %{maxCount}"
+          record_text: "Link to <strong>%{count}</strong> Production processes at %{selectedRating}"
+          modal_text: Filters have been applied within my selected portfolio
+        impact_drivers_list:
+          title: My most material potential impacts
+          heading: Impact materiality ratings for my selected sub-industries and production processes
+          intro: There may be duplicates for the impact drivers listed below as their materiality ratings may differ across your selected sub-industries and production processes.
+          indicator_text: "%{count} Impact Drivers of %{maxCount}"
+          record_text: "Link to <strong>%{count}</strong> Production processes at %{selectedRating}"
+          modal_text: Filters have been applied within my selected portfolio
+        main_assets:
+          title: My potential impacts and dependencies on natural capital assets
+          text: Natural capital assets that underpin or are potentially impacted by my selected sub-industries and production processes.

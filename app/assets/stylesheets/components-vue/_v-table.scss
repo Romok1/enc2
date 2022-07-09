@@ -1,0 +1,206 @@
+$v-table-cell-padding-side-tablet: rem-calc(14);
+$v-table-cell-padding-side-desktop: rem-calc(20);
+
+@mixin v-table-column-width {
+  width: 100%;
+
+  @include breakpoint($small) {
+    flex: 1 1 auto;
+  }
+
+  .ecoregion-management__table & {
+    &:first-child {
+      @include breakpoint($small) {
+        max-width: rem-calc(290);
+  
+        flex: 0 0 30%;
+      }
+    }
+  }
+
+  .agri-global-overview__table & {
+    &:first-child {
+      @include breakpoint($small) {
+        max-width: rem-calc(140);
+  
+        flex: 0 0 20%;
+      }
+    }
+  }
+}
+
+@mixin v-table-columns {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($small) {
+    flex-direction: row;
+  }
+}
+
+@mixin v-table-column-border {
+  border-right: $border-regular $white;
+
+  &:last-child {
+   border-right: none;
+  }
+}
+
+.v-table {
+  &__headers {
+    @include ul--unstyled;
+    @include v-table-columns;
+  }
+
+  &__header {
+    @include li--unstyled;
+    @include v-table-column-width;
+    background-color: $sg-grey-xdark;
+    color: $white;
+    font-weight: $bold;
+    margin-bottom: rem-calc(12);
+    padding: rem-calc(20) $v-table-cell-padding-side-tablet;
+    
+    display: none;
+    align-items: center;
+    
+    @include breakpoint($small) {
+      @include v-table-column-border;
+      margin-bottom: 0;
+
+      display: flex;
+      align-items: flex-start;
+    }
+
+    @include breakpoint($medium) {
+      padding: rem-calc(20) $v-table-cell-padding-side-desktop;
+    }
+
+    &.v-table__header--filter {
+      display: flex;
+    }
+  }
+
+  &__header-text {
+    margin-right: rem-calc(8);
+    width: 100%;
+
+    @include breakpoint($medium) {
+      margin-right: rem-calc(14);
+    }
+  }
+
+  &__header-selected {
+    color: $sg-grey-light;
+    font-size: rem-calc(12);
+    font-weight: $regular;
+  }
+
+  &__header-dropdown-icon {
+    flex-shrink: 0;
+  }
+
+  &__rows {
+    @include ul--unstyled;
+  }
+
+  &__row {
+    @include li--unstyled;
+    background-color: $sg-grey-xlight;
+    border: $border-thin $sg-grey;
+    margin-bottom: rem-calc(10);
+    padding: rem-calc(20);
+
+    @include breakpoint($small) {
+      background-color: $white;
+      border: none;
+      margin-bottom: 0;
+      padding: 0;
+
+      &:nth-child(odd) {
+        background-color: $sg-grey-xlight;
+      }
+    }
+  }
+
+  &__cells {
+    @include ul--unstyled;
+    @include v-table-columns;
+  }
+
+  &__cell {
+    @include li--unstyled;
+    @include list-margins(bottom, rem-calc(18));
+    @include v-table-column-width;
+    font-weight: $regular;
+
+    @include breakpoint($small) {
+      @include v-table-column-border;
+      margin-bottom: 0;
+      padding: rem-calc(20) $v-table-cell-padding-side-tablet;
+
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include breakpoint($medium) {
+      padding: rem-calc(34) $v-table-cell-padding-side-desktop;
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    li {
+      font: inherit;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__cell-content {
+    width: 100%; //IE11
+  }
+
+  &__cell-header {
+    @include dashboard-sub-heading--small;
+    margin: 0 0 rem-calc(4);
+
+    @include breakpoint($small) {
+      display: none;
+    }
+
+    .exposure-scenarios__table & {
+      margin-bottom: rem-calc(10);
+    }
+  }
+
+  &__row-toggle {
+    @include button--no-styles;
+    @include link-underlined;
+    font-weight: $regular;
+    margin-top: rem-calc(18);
+    padding: 0;
+
+    @include breakpoint($small) {
+      display: none;
+    }
+  }
+
+  &__footer {
+    margin-top: rem-calc(30);
+  }
+
+  &__rows-toggle {
+    @include button--border--small;
+    margin: 0 auto;
+    
+    display: block;
+  }
+
+  &__no-rows {
+    margin-top: rem-calc(16);
+  }
+}

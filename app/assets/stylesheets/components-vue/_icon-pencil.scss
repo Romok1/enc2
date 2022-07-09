@@ -1,0 +1,11 @@
+.icon-pencil {
+  &__background {
+    fill: none;
+    stroke: none;
+  }
+
+  &__shape {
+    fill: $white;
+    stroke: none;
+  }
+}

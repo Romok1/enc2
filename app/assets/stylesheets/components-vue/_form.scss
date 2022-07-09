@@ -1,0 +1,128 @@
+//--------------------------------------------------
+// form
+//--------------------------------------------------
+.feedback-popup--fixed {
+  display: none;
+  @include breakpoint($medium) { display: block; }
+
+  .pop-up__open {
+    position: fixed;
+    z-index: $z-300;
+    left:0;
+    top:50%;
+
+    transform: translateY(-50%);
+  }
+}
+
+.feedback-popup {
+  .popup__inner,
+  .form,
+  .success-feedback {
+    height: 100%;
+  }
+  .success-feedback {
+    &__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .popup__inner {
+    padding: 3em;
+  }
+}
+
+.form {
+  color: inherit;
+
+  input,
+  label {
+    font-size: rem-calc(20);
+    text-align: left;
+  }
+
+  input {
+    font-weight: $light;
+    height: rem-calc(51);
+  }
+
+  label {
+    font-weight: $light;
+  }
+
+  &__pop-up-trigger {
+    background-size: 100%;
+
+    width: 0.6 * 10/9 * $topbarSecondaryHeightSmall; height: 0.6 * $topbarSecondaryHeightSmall;
+    @include breakpoint($small) {
+      width: 0.6 * 10/9 * $topbarSecondaryHeightMedium; height: 0.6 * $topbarSecondaryHeightMedium;
+    }
+
+    @include breakpoint($medium) {
+      background-color: $black;
+      background-position: center;
+      background-size: 60%;
+      box-shadow: rem-calc(0 2 7 0) rgba($black, 0.5);
+      margin: 0;
+      width: 6/5 * $feedback-icon-height; height: $feedback-icon-height;
+    }
+  }
+
+//--------------------------------------------------
+// contact form
+//--------------------------------------------------
+  &--contact {
+    color: $white;
+    margin: $page-padding-top-large 0;
+
+    .form {
+      &__wrapper {
+        @extend .gutters;
+        padding-top: rem-calc(30);
+        padding-bottom: rem-calc(30);
+
+        @include breakpoint($medium) {
+          width: 100%;
+
+          justify-content: space-between;
+          display: flex;
+
+          &::before {
+            background-color: rgba($black, .7);
+          }
+        }
+      }
+
+      &__content {
+        h1 { margin: rem-calc(0 0 20 0); }
+
+        li {
+          @include h3;
+        }
+
+        @include breakpoint($medium) {
+          justify-content: center;
+          flex-direction: column;
+          padding-left: rem-calc(30);
+          padding-right: rem-calc(30);
+          width: 45%;
+
+          display: flex;
+        }
+      }
+
+      &__form {
+        @include h3;
+
+        @include breakpoint($medium) { width: 48%; }
+      }
+
+        &__submit {
+          margin: rem-calc(20);
+          text-align: center;
+        }
+    }
+  }
+}

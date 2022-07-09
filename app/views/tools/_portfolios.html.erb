@@ -1,0 +1,22 @@
+<div class="tools__section">
+  <div class="tools__header">
+    <h2 class="tools__title"><%= t('tools.portfolios.title') %></h2>
+    <localised-link
+      class="tools__link"
+      title="<%= t('tools.portfolios.link.text') %>"
+      url="<%= t('tools.portfolios.link.href') %>"
+    >
+      <%= t('tools.portfolios.link.text') %>
+    </localised-link>
+  </div>
+  <div class="tools__portfolios">
+    <cards
+      carousel
+      :filters="{
+        direction: 'desc',
+        order_by: 'updated_at',
+        limit: 4
+      }"
+    ></cards>
+  </div>
+</div>

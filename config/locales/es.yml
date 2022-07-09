@@ -1,0 +1,264 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+es:
+  name: Español
+  common:
+    assets: 'Activos de capital natural'
+    assets_short: 'Activos'
+    e_service: 'Servicio ecosistémico'
+    e_services: 'Servicio ecosistémicos'
+    e_service_s: 'Servicio ecosistémico(s)'
+    delete: 'Delete' # ********** TO BE TRANSLATED **********
+    dependencies: 'Dependencias'
+    drivers: 'Generadores de cambio ambiental'
+    drivers_short: 'Generadores de cambio'
+    filters: 'Filters' # ********** TO BE TRANSLATED **********
+    hotspots: 'Hotspots' # ********** TO BE TRANSLATED **********
+    impact_drivers: 'Impulsores de impacto'
+    impact_driver: 'Impulsor de impacto'
+    impact_driver_s: 'Impulsor(es) de impacto'
+    impacts: 'Impactos'
+    materialities: 'Materialidades'
+    production_process: 'Proceso productivo'
+    production_processes: 'Procesos productivos'
+    none: 'Ninguno'
+    not_available: 'No disponible'
+    scale: 'Scale' # ********** TO BE TRANSLATED **********
+    scale_log: 'Scale (logarithmic)' # ********** TO BE TRANSLATED **********
+    sector: 'Sector'
+    sectors: 'Sectores'
+    security: 'Data Security Statement' # ********** TO BE TRANSLATED **********
+    selected: 'Selected' # ********** TO BE TRANSLATED **********
+    sub_industry: 'Subindustria'
+    sub_industries: 'Subindustrias'
+    terms_and_conditions: 'Terms and Conditions' # ********** TO BE TRANSLATED **********
+
+  asset_page:
+    drivers_title: 'Influenciado(s) por los siguientes generadores de cambio ambiental'
+    map_title: 'Capa de activos a escala mundial'
+    materiality_title: 'Calificación(es) de materialidad'
+    services_title: 'Importante para los siguientes servicios ecosistémicos'
+
+
+  driver_page:
+    processes_title: 'Es probable que influya en los siguientes procesos productivos'
+    assets_title: 'Influye en los siguientes activos de capital natural'
+    map_title: 'Capa de generadores a escala mundial'
+    services_title: 'Es probable que influya en los siguientes servicios ecosistémicos'
+
+  explore:
+    filters_title: 'Filtros'
+    tool:
+      provided_by: 'Proporcionado por'
+    widget:
+      description: 'Seleccione dentro de un sector o sub-industria (en base a la Clasificación Industrial Global Estándar (GICS, por sus siglas en inglés) para explorar dependencias e impactos en el capital natural'
+      radios:
+        dependencies:
+          name: 'Dependencias'
+        impacts:
+          name: 'Impactos'
+
+  factsheet:
+    table_headers:
+      -
+        'Respuesta probable'
+      -
+        'Efecto sobre la variabilidad'
+      -
+        'Acción humana o variación natural'
+      -
+        'Escala de tiempo'
+      -
+        'Características espaciales'
+    benefits: 'Beneficios'
+
+  home:
+    text_media_new_features: # ********** TO BE TRANSLATED **********
+      image_alt: 'Biodiversity goals agriculture dashboard'
+      heading: '<span class="text--highlighted">New</span> biodiversity module available!'
+      text: 'Sign up to access new features of ENCORE, including a module that helps financial institutions understand how they can move towards potential portfolio alignment with global biodiversity goals.'
+      link_title: 'Go to Biodiversity Goals Dashboard'
+      link_text: 'Dashboard'
+    text_media_map:
+      image_alt: 'Explore datos espaciales sobre el capital natural con el mapa'
+      heading: '<span class="text--highlighted">Nuevo:</span> Explore los puntos críticos de agotamiento del capital natural utilizando el mapa'
+      text: 'Entienda los riesgos surgiendo del agotamiento del capital natural, y las dependencias e impactos de las actividades de las empresas, explorando los datos espaciales.'
+      link_title: 'Ver mapa'
+      link_text: 'Mapa'
+    text_media_video:
+      video_id: '7z4NBIClxDc'
+      heading: 'ENCORE lo ayuda a entender de qué manera está expuesta la economía a riesgos relacionados con el capital natural'
+      text: 'Visualice la manera en que la economía depende y afecta a la naturaleza, y cómo el cambio ambiental puede crear riesgos para las empresas.'
+      link_title: 'Ver Sobre ENCORE'
+      link_text: 'Sobre ENCORE'
+
+  footer:
+    data_footer_title: 'Recursos de datos relacionados'
+    explore_footer_title: 'Herramienta de Exploración de ENCORE'
+    data_needs: 'Datos necesarios'
+
+  form:
+    error_msg: 'Parece que ha habido un error al enviar su formulario.'
+    name: 'Nombre completo'
+    email: 'Correo electrónico '
+    enquiry_type: 'Tipo de consulta'
+    message: 'Mensaje'
+    new_enquiry_msg: 'ENCORE: %{type} de %{name}'
+    feedback: 'Comentario'
+    feedback_title: 'Formulario de comentarios'
+    enquiry_title: 'Formulario de consulta'
+    question: 'Pregunta'
+    feedback: 'Comentarios'
+    contact_thankyou_message: 'Gracias por ponerse en contacto con nosotros, le responderemos lo antes posible.'
+    feedback_thankyou_message: '¡Se envió el comentario! Gracias por ponerse en contacto con nosotros, le responderemos lo antes posible.'
+    feedback_description: 'Póngase en contacto para enviarnos sus comentarios o solicitar más información. Por favor, rellene el siguiente formulario.'
+    choose_file: 'Choose file'  # ********** TO BE TRANSLATED **********
+    drag_and_drop: 'Drag and drop file or select "choose file"'  # ********** TO BE TRANSLATED **********
+
+  map:
+    disclaimer: Las denominaciones empleadas en este mapa y la forma en que aparecen presentados los datos que contiene no implican, de parte de la Secretaría de las Naciones Unidas, juicio alguno sobre la condición jurídica de países, territorios, ciudades o zonas, o de sus autoridades, ni respecto de la delimitación de sus fronteras o límites. * Territorios No Autónomos ** La línea de puntos representa aproximadamente la Línea de Control en Jammu y Cachemira convenida por la India y el Pakistán.  Las partes no han llegado todavia a un acuerdo sobre el estatuto definitivo de Jammu y Cachemira. *** Existe una disputa entre los Gobiernos de la Argentina y el Reino Unido de Gran Bretaña e Irlanda del Norte acerca de la soberanía sobre las Islas Malvinas (Falkland Islands).
+    filter_pane_text:
+      title: 'Capas de datos'
+      hotspots_title: 'Natural capital hotspot layers' # ********** TO BE TRANSLATED **********
+      description: 
+        dependencies: "Haga clic en cada capa para mostrar los datos espaciales y explorar los riesgos inherentes a la ubicación. Cada capa de datos va acompañada de una descripción y un enlace a la fuente externa."
+        hotspots: "Click each layer to display the spatial data and explore location-specific risks. Each data layer is accompanied by a description, and this 
+        <a href='https://s3.eu-west-2.amazonaws.com/ncfa.documents/resources/hotspots_methodology.pdf' title='Open natural capital hotspots briefing note pdf' target='_blank'>briefing note</a> 
+        summarises the methodology and data sources behind them." # ********** TO BE TRANSLATED **********
+        impacts: "Haga clic en cada capa para mostrar los datos espaciales y explorar los riesgos inherentes a la ubicación. Cada capa de datos va acompañada de una descripción y un enlace a la fuente externa.<br><br>Es posible que los conjuntos de datos no siempre capturen todas las facetas de un impulsor de impacto. Por ejemplo, las 'Perturbaciones' están representadas por un conjunto de datos sobre contaminación lumínica, pero puede haber otros tipos de perturbaciones, como la contaminación acústica, para las que actualmente no se dispone de datos globales."
+  methodology:
+    table_headers:
+      -
+        'Criterio'
+      -
+        'Definición'
+      -
+        'ROJO'
+      -
+        'ÁMBAR'
+      -
+        'VERDE'
+    csv_download:
+      title: Download the data that underpins ENCORE
+      text_logged_in: The files in the download include the data behind ENCORE's Explore tool and Natural Capital Dashboard. Please cite the source as indicated within the 'Read Me' when using the ENCORE data files in your work.
+      text_cta: Please sign up or login to download the data files.
+
+  resources:
+    not_in_map: 'No incluído en el mapa ENCORE'
+    no_datasets: 'No hay resultados para sus selecciones.'
+    resource_link: 'Sitio de recursos'
+
+  buttons:
+    cancel: 'Cancel' # ********** TO BE TRANSLATED **********
+    clear: 'Clear' # ********** TO BE TRANSLATED **********
+    close: 'Cerrar'
+    collapse: 'Collapse' # ********** TO BE TRANSLATED **********
+    confirm: 'Confirm' # ********** TO BE TRANSLATED **********
+    contact_us: 'Contáctenos'
+    create: 'Create' # ********** TO BE TRANSLATED **********
+    download: 'Descargar'
+    download_pdf: 'Descargar PDF'
+    edit: Edit # ********** TO BE TRANSLATED **********
+    enter: 'Enter' # ********** TO BE TRANSLATED **********
+    expand: 'Expand' # ********** TO BE TRANSLATED **********
+    explore: 'Explorar'
+    explore_map: 'Explorar mapa'
+    factsheet: 'Hoja de datos'
+    find: 'Buscar'
+    hide: 'Ocultar'
+    hide_all: 'Ocultar todos'
+    link: 'Enlace'
+    link_resource: 'Enlace al recurso'
+    method: 'Método'
+    more_details: 'Más detalles'
+    more_info: 'More info' # ********** TO BE TRANSLATED **********
+    ncfa_site: 'Página principal de NCFA'
+    read_more: 'Leer más'
+    resource_site: 'Sitio de recursos'
+    save: 'Save' # ********** TO BE TRANSLATED **********
+    search: 'Buscar'
+    sector_placeholder: 'Ingrese a un sector'
+    # select: 'Seleccionar una opción'
+    # select_multi: 'Seleccionar opciones'
+    send: 'Enviar'
+    sent: 'Enviado'
+    show_all: 'Mostrar todos'
+    show_less: 'Show less' # ********** TO BE TRANSLATED **********
+    show_more: 'Show more' # ********** TO BE TRANSLATED **********
+    showing: 'Mostrando'
+    sub_industry_placeholder: 'Ingrese a una sub-industria'
+    view: 'Ver' #imperative
+    view_full_list: 'Ver lista completa'
+    view_results: 'View results' # ********** TO BE TRANSLATED **********
+    view_more: 'Ver más'
+    visit: 'Visite' #imperative
+    watch_video: 'Ver vídeo'
+
+  ratings:
+    vl: 'Muy bajo'
+    l: 'Bajo'
+    m: 'Medio'
+    h: 'Alto'
+    vh: 'Muy alto'
+    u: 'Desconocido'
+    materiality_rating:
+      name: 'Clasificación de materialidad'
+      vl: 'Muy baja materialidad'
+      l: 'Baja materialidad'
+      m: 'Media materialidad'
+      h: 'Alta materialidad'
+      vh: 'Muy alta materialidad'
+      u: 'Materialidad desconocida'
+    importance: # ********** TO BE TRANSLATED **********
+      vl: 'Very low importance for ecosystem service provision'
+      l: 'Low importance for ecosystem service provision'
+      m: 'Medium importance for ecosystem service provision'
+      h: 'High importance for ecosystem service provision'
+      vh: 'Very high importance for ecosystem service provision'
+      u: 'Unknown importance for ecosystem service provision'
+    impact:
+      name: Impacto
+
+  tooltips:
+    hotspots: 'Explore where natural capital is being depleted, putting ecosystem services at risk.' # ********** TO BE TRANSLATED **********
+    sector: 'Los sectores representan amplias divisiones de la economía. Existen 11 sectores en la Clasificación Industrial Global Estándar.'
+    sub_industry: 'Las 157 subindustrias representan el nivel más detallado de la Clasificación Industrial Global Estándar.'
+    production_process: 'Los procesos productivos son el nivel en el que se evalúan los vínculos con el medio ambiente. Una subindustria puede vincularse con más de un proceso productivo, del mismo modo que un proceso productivo puede vincularse con más de una subindustria.'
+    services: 'Los servicios ecosistémicos son el vínculo entre la naturaleza y las empresas. Cada uno de estos servicios representa un beneficio que la naturaleza ofrece para permitir o facilitar los procesos productivos empresariales.'
+    assets: 'Los activos de capital natural son elementos específicos dentro de la naturaleza que proporcionan los bienes y servicios de los que depende la economía. '
+    map_filter: 'Seleccione aquí un servicio ecosistémico para explorar los datos espaciales de los activos de capital natural relacionados y los generadores de cambio ambiental.'
+    drivers: 'Presiones naturales o provocadas por el hombre que pueden afectar a los activos de capital natural y a su capacidad para seguir suministrando bienes y servicios.'
+    dependencies: "Explore las maneras en que las actividades económicas dependen de los servicios del ecosistema y el capital natural."
+    impacts: "Explore las maneras en que las actividades económicas afectan los servicios del ecosistema y el capital natural."
+
+  social:
+    site_description: 'Explore los riesgos de capital natural'

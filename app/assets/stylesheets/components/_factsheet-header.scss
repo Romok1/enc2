@@ -1,0 +1,121 @@
+$diagram-element-size: rem-calc(200);
+
+.factsheet-header {
+  color: $white;
+  padding-bottom: $header-padding-bottom-large;
+  
+  &__wrapper {
+    background-color: $sg-grey-dark;
+  }
+
+  &.bg-image-overlay {
+    &::before { background-color: rgba($black, 0.75); }
+  }
+
+  &__intro {
+    margin-bottom: $list-item-margin-large;
+  }
+
+  &__button-row {
+    @extend .gutters;
+
+    height: rem-calc(80);
+
+    @include breakpoint($medium) {
+      height: rem-calc(100);
+    }
+  }
+
+  &__diagram {
+    flex-direction: column-reverse;
+
+    @include breakpoint($small) { flex-direction: row-reverse; }
+  }
+
+    &__diagram-element-wrapper {
+      position: relative;
+      z-index: 1;
+
+      &::after {
+        border-top: rem-calc(60) solid $white;
+        border-right: rem-calc(60) solid transparent;
+        border-left: rem-calc(60) solid transparent;
+        content: '';
+        width: 0; height: 0; 
+
+        position: absolute;
+        top: 100%;
+        left: 50%;
+
+        z-index: 0;
+
+        transform: translate(-50%, -40%) scaleY(0.9);
+
+        @include breakpoint($small) {
+          border-top: rem-calc(60) solid transparent;
+          border-bottom: rem-calc(60) solid transparent;
+          border-left: rem-calc(60) solid $white;
+          border-right: none;
+
+          top: 50%;
+          left: 100%;
+
+          transform: translate(-55%, -50%) scaleX(0.9);
+        }
+      }
+
+      &:first-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+      &__diagram-element {
+        background-color: $sg-aqua-green;
+        border: $white $border-thick;
+        border-radius: 50%;
+        margin: rem-calc(0 10);
+        width: $diagram-element-size; height: $diagram-element-size;
+
+        position: relative;
+        z-index: 1;
+      }
+
+        &__diagram-text {
+          color: $black;
+          width: 3/4 * $diagram-element-size; height: 5/8 * $diagram-element-size;
+        }
+
+          &__diagram-title {
+            font-size: rem-calc(18);
+            margin-top: rem-calc(5);
+            height: 2em;
+          }
+
+          &__diagram-list {
+            font-size: rem-calc(14);
+            @include limit_lines(4);
+          }
+}
+
+.download-button {
+  border-color: $white;
+  color: $white;
+
+  display: flex;
+  align-items: center;
+
+  @include breakpoint_down($small) {
+    padding: rem-calc(8);
+    font-size: 0;
+  }
+
+  &::after {
+    @extend .download-icon;
+
+    @include breakpoint_down($small) { 
+      margin: 0 ;
+    }
+  }
+}

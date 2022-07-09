@@ -1,0 +1,21 @@
+.topbar {
+//--------------------------------------------------
+// primary topbar
+//--------------------------------------------------
+ &--primary {
+    @extend .gutters;
+    background-color: $sg-grey-xdark;
+    height: $topbarHeightSmall;
+
+    .topbar {
+      &__text-link {
+        color: $white;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

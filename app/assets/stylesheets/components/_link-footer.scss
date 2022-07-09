@@ -1,0 +1,11 @@
+.link-footer {
+  background-size: cover;
+  background-position-y: 45%;
+  color: $white;
+  height: rem-calc(210);
+
+  &__title {
+    margin: rem-calc(0 0 30 0);
+    padding: rem-calc(0 20);
+  }
+}

@@ -1,0 +1,54 @@
+.portfolios-delete-modal {
+  text-align: center;
+}
+
+.portfolios-delete-modal__container {
+  width: 100%;
+}
+
+.portfolios-delete-modal__actions {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 1em;
+}
+
+.portfolios-delete-modal__body {
+  font-size: rem-calc(16);
+}
+
+.portfolios-delete-modal__cancel,
+.portfolios-delete-modal__submit {
+  @include button;
+  @include button--small;
+  @include breakpoint($medium) {
+    @include button--medium;
+  }
+  @include breakpoint($large) {
+    @include button--large;
+  }
+  @include margin(x, .5em);
+}
+
+.portfolios-delete-modal__cancel {
+  @include button--white;
+}
+
+.portfolios-delete-modal__inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolios-delete-modal__icon {
+  width: rem-calc(47);
+
+  @include breakpoint($medium) {
+    width: rem-calc(53);
+  }
+}
+
+.portfolios-delete-modal__submit {
+  @include button--red;
+}

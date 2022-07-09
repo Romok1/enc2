@@ -1,0 +1,79 @@
+.processes {
+  @extend .item-padding;
+
+  padding-right: 0;
+  background: $sg-grey-xlight;
+  width: 100%;
+
+  @include breakpoint($medium) {
+    width: auto;
+  }
+
+  &__title {
+    font-weight: $bolder;
+    margin-top: 0;
+    text-decoration: underline;
+  }
+
+  &__container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    @include breakpoint($medium) {
+      flex-direction: column;
+      overflow-x: hidden; 
+    }
+  }
+
+  &__process {
+    padding: $list-item-margin-small $item-padding-medium $list-item-margin-small 0;
+    width: rem-calc(300);
+
+    flex-direction: column;
+    flex-shrink: 0;
+
+    @include breakpoint($medium) { 
+      width: auto;
+
+      flex-direction: row;
+    }
+  }
+
+    &__name {
+      padding-right: $list-item-margin-large;
+      
+      @include breakpoint($medium) { width: 40% }
+    }
+
+    &__justification {
+      flex-direction: column;
+
+      @include breakpoint($medium) {      
+        overflow: hidden;
+        width: 60%;
+        
+        flex-direction: row;
+      }
+
+        &::before {
+          margin: rem-calc(10 0);
+
+          @include breakpoint($medium) { margin: rem-calc(0 20 0 0) }
+        }
+    }
+
+      &__justification-text {
+        @include limit_lines(6);
+
+        @include breakpoint($medium) {
+          max-height: unset;
+        }
+      }
+
+      &__materiality-rating-phrase {
+        text-decoration: underline;
+      }
+}

@@ -1,0 +1,90 @@
+//--------------------------------------------------
+// classes
+//--------------------------------------------------
+
+.ratings-indicators__items {
+  @include ul--unstyled;
+}
+
+.ratings-indicators__item {
+  @include breakpoint($small) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.ratings-indicator {
+  cursor: pointer;
+  padding: rem-calc(14 14 14 74);
+
+  display: flex;
+  flex-wrap: wrap;
+
+  position: relative;
+  transition: box-shadow .5s ease, transform .5s ease;
+  will-change: box-shadow, transform;
+
+  &:not(.ratings-indicator--disabled):hover,
+  &.ratings-indicator--selected {
+    box-shadow: $shadow-dashboard;
+    transform: translateY(rem-calc(-2));
+  }
+
+  &.ratings-indicator--disabled {
+    cursor: default;
+  }
+}
+
+.ratings-indicator__rating {
+  position: absolute;
+  top: 50%;
+  left: rem-calc(14);
+
+  transform: translateY(-50%);
+
+  &::before {
+    color: $white;
+    font-size: rem-calc(16);
+    line-height: rem-calc(45);
+    width: rem-calc(45);
+    height: rem-calc(45);
+  }
+}
+
+.ratings-indicator__heading {
+  color: $sg-grey;
+  font-size: rem-calc(14);
+  font-weight: $regular;
+  line-height: 1.2;
+  margin: 0 0 rem-calc(5);
+  width: 100%;
+
+  @include breakpoint($medium) {
+    font-size: rem-calc(18);
+  }
+}
+
+.ratings-indicator__bar {
+  background-color: $sg-grey-xlight;
+  width: 100%;
+  height: rem-calc(18);
+
+  position: relative;
+}
+
+.ratings-indicator__bar-fill {
+  background-color: $sg-aqua-green;
+  width: 55%;
+
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  .ratings-indicators--purple & {
+    background-color: $sg-purple;
+  }
+}

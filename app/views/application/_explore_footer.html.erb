@@ -1,0 +1,4 @@
+<aside class="link-footer flex-column flex-center bg-image-overlay" <%= style_background_image(footer_image).html_safe %>>
+  <div class="link-footer__title h1"><%= t('footer.explore_footer_title') %></div>
+  <%= link_to t('buttons.explore'), "/#{I18n.locale}/explore", title: t('buttons.explore'), class: "link-footer__button button--green button--medium button--arrow" %> 
+</aside>

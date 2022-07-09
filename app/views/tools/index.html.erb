@@ -1,0 +1,17 @@
+<%= render partial: 'layouts/header', locals: { show_hero: false } %>
+
+<main class="tools page-padding bg--grey-xxlight">
+  <div class="container--xlarge">
+    <%= render partial: 'tools/link_tiles_top' %>
+
+    <%= render partial: 'tools/portfolios' %>
+
+    <%= render partial: 'tools/link_tiles_bottom' %>
+  </div>
+</main>
+
+<portfolio-generator-modal 
+  :sectors="<%= t('biodiversity_goals.sectors').to_json %>"
+  :has-toggle="false"
+>
+</portfolio-generator-modal>

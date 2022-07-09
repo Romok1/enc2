@@ -1,0 +1,29 @@
+//--------------------------------------------------
+// media queries 
+//--------------------------------------------------
+//--------------------------------------------------
+// mixins
+//--------------------------------------------------
+@mixin breakpoint($breakpoint) {
+  @media screen and (min-width: rem_calc($breakpoint + 1px)) {
+    @content;
+  } 
+}
+
+@mixin breakpoint-down($breakpoint) {
+  @media screen and (max-width: rem_calc($breakpoint)) {
+    @content;
+  } 
+}
+
+@mixin between($breakpoint_1, $breakpoint_2) {
+  @media screen and (max-width: rem_calc($breakpoint_2)) and (min-width: rem_calc($breakpoint_1 + 1px)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-vertical($breakpoint) {
+  @media screen and (min-height: rem-calc($breakpoint + 1px)) {
+    @content;
+  }
+}

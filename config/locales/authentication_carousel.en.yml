@@ -1,0 +1,15 @@
+en:
+  authentication_carousel:
+    content:
+      -
+        heading: 'Visualise the links between economic activities and natural capital impacts and dependencies'
+        background_image: auth-carousel/1.png
+      -
+        heading: 'View how flows of dependencies and impacts on natural capital might affect your portfolio'
+        background_image: auth-carousel/2.png
+      -
+        heading: 'Explore your most material potential dependencies and impacts for selected sub-industries and production processes'
+        background_image: auth-carousel/3.png
+      -
+        heading: 'Understand which natural capital assets are most important to your portfolio'
+        background_image: auth-carousel/2.png

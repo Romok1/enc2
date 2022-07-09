@@ -1,0 +1,47 @@
+.map-toggles {
+  @include gutters;
+  white-space: nowrap;
+  height: 70%;
+
+  @include breakpoint($small) {
+    white-space: normal;
+  }
+
+  &__toggle {
+    @include h3;
+
+    background-color: $sg-grey-xdark;
+    border: none;
+    border-radius: rem-calc(5);
+    color: $white;
+    margin-right: rem-calc(8);
+    padding: 0 rem-calc(10);
+    height: 100%;
+
+    display: inline-flex;
+    align-items: center;
+
+    @include breakpoint($medium) {
+      margin-right: rem-calc(10);
+      padding: 0 rem-calc(14);
+    }
+
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      background-color: $white;
+      color: $black;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .question-mark {
+      margin-right: 0;
+    }
+  }
+}

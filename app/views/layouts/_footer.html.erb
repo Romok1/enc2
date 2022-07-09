@@ -1,0 +1,34 @@
+<footer class="footer">
+  <div class="footer__secondary flex flex-v-center">
+
+    <%= link_to 'https://naturalcapital.finance', target: '_blank', title: "#{t('buttons.visit')} Natural Capital Finance Alliance", class: 'footer__logo--left' do %>
+      <span class="logo--ncfa banner__logo"></span>
+    <% end %>
+    <%= link_to 'http://mava-foundation.org', target: '_blank', title: "#{t('buttons.visit')} MAVA - Fondation Pour la Nature" do %>
+      <span class="logo--mava banner__logo banner__logo--faded"></span>
+    <% end %>
+    <span class="logo--sc banner__logo"></span>
+
+    <%= render 'application/partner_logos' %>
+    <% 4.times do %>
+      <span class="banner__logo footer__logo-filler"></span>
+    <% end %>
+  </div>
+  <div class="footer__primary">
+    <div class="footer__link-items">
+      <div class="footer__link-item">
+        <%= link_to t('common.security'), "/#{I18n.locale}/security",
+          title: "#{t('buttons.visit')} #{t('common.security')}",
+          class: 'footer__link'
+        %>
+      </div>
+      <div class="footer__link-item">
+        <%= link_to t('common.terms_and_conditions'), "/#{I18n.locale}/legal",
+          title: "#{t('buttons.visit')} #{t('common.terms_and_conditions')}",
+          class: 'footer__link'
+        %>
+      </div>
+    </div>
+    <span class="footer__copyright">&copy; <%= Date.today.year %> UN Environment Programme (UNEP)</span>
+  </div>
+</footer>

@@ -1,0 +1,32 @@
+CMS
+
+1. Explore description
+2. Materiality link from methodology page
+3. Legal page
+4. Text on Materiality page to include impacts
+5. About page 
+"By focusing on the goods and services that nature provides to enable economic production, its guides users in understanding how business across all sectors of the economy potentially depend and impact on nature, and how these dependencies and impacts might represent a business risk if environmental degradation continues."
+6. Security text
+7. Impact details on about page
+
+YML
+
+1. All new yml files + es.yml where indicated
+
+CSVs
+
+1. Impact Drivers
+2. Impacts
+3. Countries
+4. Organisation types
+5. Impact datasets
+6. MinesCompaniesJoin
+7. Minerals
+8. Engagement guidance
+9. Ecosystems
+
+Additional Considerations
+
+1. SQL queries that are using tables that currently do not have translated 
+columns will all need to be updated in the future. One such table might be the
+ecoregions table and the "name" column.

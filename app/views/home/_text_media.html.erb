@@ -1,0 +1,32 @@
+  <div class="text-media__block <%= modifier_class %>">
+    <ul class="text-media__columns">
+      <li class="text-media__column">
+        <% if media[:type] === 'image' %>
+          <%= image_tag media[:src], class: "text-media__image", alt: media[:alt] %>
+        <% elsif media[:type] === 'video' %>
+          <div id="encore-animation">
+            <div class="video__wrapper">
+              <iframe
+                class="video"
+                src="<%= media[:src] %>"
+                frameborder="0"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; autoplay;"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        <% end %>
+      </li>
+      <li class="text-media__column">
+        <h2 class="text-media__heading"><%= heading.html_safe %></h2>
+        <p class="text-media__text"><%= text %></p>
+        <localised-link
+          class="text-media__link"
+          url="<%= link[:url] %>"
+          title="<%= link[:title] %>"
+        >
+          <%= link[:text] %>
+        </localised-link>
+      </li>
+    </ul>
+  </div>

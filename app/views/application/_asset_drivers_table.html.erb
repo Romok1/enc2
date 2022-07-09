@@ -1,0 +1,41 @@
+<% asset_driver.keys.sort{|a,b| compare_assets_drivers(a,b,asset_driver)}.each do |asset_or_driver| %>
+  <expandable-item>
+    <template slot="header">
+    <div class="indicator--square flex flex-v-center <%= indicator_rating_class(asset_driver[asset_or_driver][0].influence) %>">
+      <%= link_to asset_or_driver_path.(asset_or_driver.id) do %>
+        <h4 class="a--underline h3 no-margin"><%= asset_or_driver.name %></h4>
+      <% end %>
+    </div>
+    </template>
+    
+    <template slot="content">
+      <div class="container--scroll-x">
+        <table border="1" class="table--min-width--large">
+          <colgroup>
+            <col span="5" class="factsheet__table-col">
+          </colgroup>
+          <tr class="factsheet__table-header">
+            <% t('factsheet.table_headers').each do |header| %>
+              <th><%= header %></th>
+            <% end %>
+          </tr>
+          <% asset_driver[asset_or_driver].each do |adj| %>
+            <tr>
+              <td><%= adj.likely_response %></td>
+              <td><%= adj.effect_on_variability %></td>
+              <td><%= adj.human_action_or_natural_variation %></td>
+              <td><%= adj.timescale %></td>
+              <td><%= adj.spatial_characteristics %></td>
+            </tr>
+          <% end %>
+        </table>
+      </div>
+      <div class="factsheet__button-bar flex flex-v-center flex-h-between">
+        <span class="flex-inline flex-v-center">
+          <span class="<%= indicator_trio_class %>"></span>
+          <%= link_to t('buttons.method'), "/#{I18n.locale}/data-and-methodology/methodology", class: "h3 a--underline hover--pointer" %>
+        </span>
+      </div>
+    </template>
+  </expandable-item>
+<% end %>

@@ -1,0 +1,65 @@
+.home-header {
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &.bg-image-overlay { z-index: $z-header; }
+
+  &__contents {
+    color: $white;
+
+    position: relative;
+  }
+
+  &__logo-banner {
+    @extend .gutters;
+    height: $topbarHeightLarge;
+
+    display: none;
+
+    @include breakpoint($medium) { display: flex; }
+  }
+
+  &__hero {
+    @extend .section-padding;
+    padding-right: 2%;
+    padding-left: 2%;
+
+    @include breakpoint($small) {
+      padding-right: 10%;
+      padding-left: 10%;
+    }
+
+    @include breakpoint($medium) {
+      padding-bottom: 0;
+      padding-right: 10%;
+      min-height: rem-calc(600);
+    }
+
+    @include breakpoint($large) {
+      padding-right: $gutter-xlarge;
+      padding-left: $gutter-xlarge;
+      padding-bottom: 0;
+      min-height: auto;
+    }
+  }
+
+  &__title {
+    font-size: rem-calc(32);
+    margin: 0 auto rem-calc(30);
+    padding-right: 5%;
+    padding-left: 5%;
+    max-width: 100%;
+
+    @include breakpoint($small) {
+      text-align: center;
+    }
+
+    @include breakpoint($medium) {
+      font-size: rem-calc(40);
+      padding-right: rem-calc(30);
+      padding-left: rem-calc(30);
+      max-width: 60%;
+    }
+  }
+}

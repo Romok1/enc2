@@ -1,0 +1,11 @@
+.page {
+  &--tools {
+    background-color: $sg-grey-xlight;
+  }
+
+  &--map {
+    .footer { 
+      display: none;
+    }
+  }
+}

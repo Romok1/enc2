@@ -1,0 +1,7 @@
+<%= render partial: 'layouts/list_page', locals: {
+    items:       EcosystemService.all.order(:name), 
+    description:  cms_fragment_render('content'),
+    item_path:    method(:ecosystem_service_path),
+    title:        t('common.e_services')
+  } 
+%>

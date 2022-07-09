@@ -1,0 +1,12 @@
+.landing-page {
+  &__body {
+    border-bottom: $border-thin rgba($black, 0.3);
+  }
+
+  &__video-container {
+    @extend .section-padding;
+    @include container--medium;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

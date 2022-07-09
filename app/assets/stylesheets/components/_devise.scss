@@ -1,0 +1,77 @@
+@mixin devise-icon {
+  margin: 0 auto;
+}
+
+.devise {
+  &__container {
+    @extend .container--small;
+    @extend .page-padding;
+    text-align: center;
+
+    @include breakpoint($small) {
+      padding-top: rem-calc(80);
+    }
+
+    @include breakpoint($small) {
+      padding-top: rem-calc(120);
+    }
+  }
+
+  &__icon {
+    &--lock {
+      @include devise-icon;
+      width: rem-calc(57); height: rem-calc(73);
+
+      @include breakpoint($small) {
+        width: rem-calc(66); height: rem-calc(84);
+      }
+    }
+
+    &--tick { //TODO: unify with SuccessFeedback later to avoid merge conflicts
+      @include devise-icon;
+      border: rem-calc(4) solid $black;
+      border-radius: 50%;
+      padding: rem-calc(12);
+      width: rem-calc(60); height: rem-calc(60);
+
+      @include breakpoint($small) {
+        width: rem-calc(80); height: rem-calc(80);
+      }
+    }
+  }
+
+  &__description {
+    font-size: rem-calc(14);
+
+    @include breakpoint($small) {
+      font-size: rem-calc(14);
+    }
+  }
+
+  &__form {
+    margin: rem-calc(20) auto rem-calc(40);
+    max-width: rem-calc(450);
+  }
+
+  &__links {
+    margin-top: rem-calc(30);
+
+    align-self: flex-start;
+
+    .button {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__text-link {
+    @include link-underlined;
+    color: $sg-grey-dark;
+    font-size: rem-calc(14);
+
+    @include breakpoint($small) {
+      font-size: rem-calc(16);
+    }
+  }
+}

@@ -1,0 +1,8 @@
+es:
+  navigation:
+    account_details: Account Details
+    dashboard: Dashboard
+    login_signup: Login/Register
+    my_account: My Account
+    portfolios: Portfolios
+    sign_out: Logout

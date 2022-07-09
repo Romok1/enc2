@@ -1,0 +1,28 @@
+$factsheet-title-height: rem-calc(50);
+
+.factsheet {
+  background: $sg-grey-xlight;
+
+  &__container {
+    position: relative;
+    z-index: $z-bg-overlay;
+    transform: translateY(- ($tab-trigger-height + $factsheet-title-height));
+  }
+
+    &__title {
+      @extend .gutter-left--large;
+
+      color: $white;
+      margin: 0;
+      line-height: $factsheet-title-height;
+      height: $factsheet-title-height;
+    }
+
+      &__table-col {
+        width: percentage(1/6);
+      }
+
+    &__button-bar {
+      margin-top: rem-calc(20);
+    }
+}

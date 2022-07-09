@@ -1,0 +1,131 @@
+en:
+  biodiversity_goals:
+    dashboard:
+      data:
+        no_data:
+          title: No data were found for your selections.
+      portfolio:
+        ctas:
+          save_to_portfolio: (Save to add to your portfolio)
+        data:
+          no_data:
+            title: No data were found for your selections.
+      shared:
+        ecoregion_categories:
+          a: (A) On track to meet target
+          b: (B) Protected and integrity stable or improving
+          c: (C) Stable or improving but insufficiently protected
+          d: (D) Integrity declining but protection increasing
+          e: (E) Integrity declining and insufficiently protected
+          u: (U) Unknown
+        tooltips:
+          ecoIntegrityRisk: Higher scores show areas with a higher ecological integrity risk value, meaning there is a greater opportunity to increase the overall intactness of ecological communities within those areas through implementation of appropriate biodiversity management and restoration.
+          star: Higher scores show areas with a higher STAR value, meaning there is a greater potential to reduce species extinction risk in those areas.
+        components:
+          details:
+            title: Portfolio details
+          exposure_results:
+            title: My current portfolio exposure results
+            tooltip: Use this section to understand your portfolio’s current exposure to species extinction and ecological integrity risk (two goal-relevant metrics).
+            breakdown_title: What do the ecoregion alignment categories mean?
+            breakdown_link: View details
+            legend_title: Ecoregion alignment
+            portfolio_score:
+              average:
+                below: Below average
+                above: Above average
+                average: Average
+            tiles:
+              star:
+                title: Potential to reduce species' extinction risk
+                tooltip: "The Potential to Reduce Species’ Extinction risk shows the STAR (Species Threat Abatement and Restoration) metric value for the portfolio. A higher score means the portfolio overlaps with a larger proportion of the ranges of more species that are more severely Threatened. This means the portfolio has greater opportunities to contribute towards reducing species extinctions through implementation of appropriate management practices (see ‘Actions towards potential portfolio alignment’ section below). STAR data are provided to the ENCORE platform from the Integrated Biodiversity Assessment Tool (IBAT), in which users can generate bespoke risk screening reports based on asset locations, and access data on Protected Areas, Key Biodiversity Areas and the IUCN Red List of Threatened Species, including STAR."
+                description: "'STAR units' reflect the potential contribution of your portfolio toward reducing global extinction risk. This highlights the extent of opportunities for reducing global extinctions within your portfolio, which can be achieved by reducing impacts on species."
+                title_2: How is the average calculated?
+                description_2: 
+                  agriculture: "The average is determined by calculating an average STAR/hectare of agricultural land across your input portfolio. This is then compared to a global average of country-level STAR/hectare of agricultural land (based on the administrative area with the highest amount of cropland in each country). This aims to give a broad overview of the relative potential for reducing species' extinction risk based on the countries associated with the portfolio."
+                  mining: The average is determined by calculating the average mine value at global level and relating this to the size of the input portfolio. For example, if the average mine’s STAR score is 20 and there are 10 mines in the portfolio, the average would be 200. Results are listed as roughly equal to average if they are within 5% of the average value.
+                legend:
+                  - High
+                  - Medium
+                  - Low
+                threats:
+                  agriculture: 'Agriculture threats: %{value} STAR'
+                  mining: 'Mining threats: %{value} STAR'
+                  other: 'Other threats: %{value} STAR'
+                  total: 'Total STAR: %{value}'
+                portfolio_score_html:
+                  agriculture: '<strong>Your portfolio score is %{average}</strong> for the area of land compared to the global average.'
+                  mining: '<strong>Your portfolio score is %{average}</strong> for the number of mines and represents %{value}% of the total sector score.'
+              ecoIntegrityRisk:
+                title: Ecological integrity risk
+                tooltip: "The ecological integrity risk metric relies on Mean Species Abundance (MSA). A higher score means there is a greater amount of at-risk biodiverse communities associated with the portfolio. This means the portfolio has greater opportunities to contribute towards reducing threats to ecological integrity through implementation of appropriate management practices (see ‘Portfolio breakdown by ecoregion status’ section below)."
+                description: "'Ecological integrity risk' reflects the potential impact of your portfolio on the integrity of selected habitats. This highlights extent of opportunities to increase the overall intactness of ecological communities within your portfolio, which can be achieved through appropriate biodiversity management and restoration."
+                threats:
+                  total: 'Total ecological integrity risk: %{value}'
+                portfolio_score_html:
+                  agriculture: '<strong>Your portfolio score is %{average}</strong> for the area of land compared to the global average.'
+                  mining: '<strong>Your portfolio score is %{average}</strong> for the number of mines and represents %{value}% of the total sector score.'
+            ecoregion_management:
+              title: Portfolio breakdown by ecoregion status
+              intro: This section displays the ecoregion categories associated with your input portfolio. Each ecoregion has been assessed for its trend in ecological integrity and its trend in protected area coverage, and has been assigned an alignment category based on these combined values. Please note that economic activities in each ecoregion category are not de facto aligned or non-aligned. Alignment can only be achieved through implementation of appropriate management actions as outlined in the table below.
+              table:
+                headers:
+                  ecoregionCategory: Ecoregion alignment category
+                  managementActions: Management actions to achieve alignment
+                ecoregion_management:
+                  a:                    
+                    - Commitment to avoid operating in protected areas
+                    - Structured treatment of the mitigation hierarchy throughout biodiversity management
+                  b:                    
+                    - Commitment to avoid operating in protected areas
+                    - Structured treatment of the mitigation hierarchy throughout biodiversity management
+                    - Encourage activities that aim to increase ecosystem integrity in line with national/local targets
+                    - <strong>Adoption of No Net Loss targets for biodiversity management</strong>
+                  c:                    
+                    - Commitment to avoid operating in protected areas
+                    - Structured treatment of the mitigation hierarchy throughout biodiversity management
+                    - <strong>Adoption of No Net Loss targets for biodiversity management</strong>
+                  d:                    
+                    - Commitment to avoid operating in protected areas
+                    - Structured treatment of the mitigation hierarchy throughout biodiversity management
+                    - <strong>Adoption of Net Gain targets for biodiversity management</strong>
+                  e:                    
+                    - Commitment to avoid operating in protected areas
+                    - Structured treatment of the mitigation hierarchy throughout biodiversity management
+                    - <strong>Adoption of Net Gain targets for biodiversity management</strong>
+            ecoregion_categories_modal:
+              title: What do the ecoregion alignment categories mean?
+              intro: "Each ecoregion has been assessed for its protected area coverage using analysis from Dinerstein et al. 2017 and its trend in ecological integrity from 1993-2009. Ecoregions with protected area coverage above 30% and with an increasing trend in ecological integrity are considered to have a higher likelihood of meeting global biodiversity goals."
+              data_source: Data sources
+              dinerstein: Dinerstein et al. (2017)
+              beyer: Beyer et al (2019)
+              link_title_dinerstein: Go to Dinerstein et al. (2017)
+              link_title_beyer: Go to Beyer et al (2019)
+
+          portfolio_options:
+            title: Actions towards potential portfolio alignment
+            intro: Use this section to understand what types of actions you can take towards potential portfolio alignment with global biodiversity goals. These questions can be used in engagement discussions with companies.
+            ribbon_text: High priority
+            no_results: No recommendations found for your organisation type.
+            filters_definitions:
+              link: View filter definitions
+              title: Filter definitions
+              definitions:
+                shared:
+                  - <strong>Engagement depth</strong> – whether the topics covered are more high level or in depth
+                  - <strong>Engagement scope</strong> – whether the topics are more suited to actions at the corporate or site level
+                  - <strong>SBTN step</strong> – which part of the Science Based Targets Network’s (SBTN) Action framework the topics relate to
+                  - <strong>Biodiversity metric</strong> – whether the topics relate more to reducing species extinctions or increasing ecological integrity
+                mining: 
+                  - <strong>Mitigation Hierarchy</strong> – which part of the Mitigation Hierarchy the topics relate to
+                agriculture:
+                  - <strong>Future scenario</strong> – whether the topics relate more to land sparing or land sharing type approaches
+            filters:
+              biodiversity_metric: Biodiversity metric
+              engagement_depth: Engagement depth
+              engagement_scope: Engagement scope
+              future_scenario: Future scenario
+              mitigation_hierarchy: Mitigation Hierarchy
+              sbtn_step: SBTN Action
+            options:
+              link_text: More Info

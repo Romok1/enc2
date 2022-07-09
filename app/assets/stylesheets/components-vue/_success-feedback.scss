@@ -1,0 +1,54 @@
+.success-feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .feedback-popup & {
+    height: rem-calc(400);
+  }
+
+  &__body {
+    font-size: rem-calc(15);
+    line-height: rem-calc(18);
+    margin: rem-calc(15) 0;
+  }
+
+  &__container {
+    width: 85%;
+    max-width: rem-calc(500);
+
+    @include breakpoint($small) {
+      width: 70%;
+    }
+  }
+
+  &__cta {
+    margin-top: 1em;
+
+    @extend .button;
+    @extend .button--green;
+    @extend .button--medium;
+  }
+
+  &__heading {
+    font-size: rem-calc(30);
+    font-weight: $bold;
+    line-height: rem-calc(33);
+    margin: rem-calc(15) 0;
+  }
+
+  &__icon {
+    background-color: $white;
+    border: rem-calc(4) solid $black;
+    border-radius: 50%;
+    padding: rem-calc(12);
+    width: rem-calc(78);
+    height: rem-calc(78);
+
+    svg {
+      .a {
+        fill: $black;
+      }
+    }
+  }
+}

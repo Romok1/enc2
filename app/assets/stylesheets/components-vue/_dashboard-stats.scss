@@ -1,0 +1,102 @@
+//--------------------------------------------------
+// classes
+//--------------------------------------------------
+
+.dashboard-stats {
+  &__columns {
+    @include columns;
+  }
+
+  &__column {
+    @include dashboard-column-stack-tablet;
+  }
+  
+  &__tile {
+    @include breakpoint($small) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__content {
+    display: inline-block;
+
+    @include breakpoint($small) {
+      margin-right: rem-calc(90);
+    }
+
+    @include breakpoint($medium) {
+      margin-right: rem-calc(40);
+    }
+  }
+
+  &__subtitle {
+    margin: rem-calc(16) 0 rem-calc(14);
+  }
+
+  &__text {
+    @include dashboard-paragraph;
+  }
+
+  &__link {
+    @include button--no-styles;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+  }
+
+  &__link-icon {
+    @include arrow--right(false);
+    margin-bottom: rem-calc(2);
+  }
+
+  &__circle {
+    background-color: $sg-blue;
+    border-radius: 100%;
+    box-shadow: $shadow-light;
+    color: $white;
+    line-height: 1;
+    text-align: center;
+    width: rem-calc(150); height: rem-calc(150);
+
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: center;
+
+    @include breakpoint($small) {
+      order: 1;
+      width: rem-calc(170); height: rem-calc(170);
+    }
+
+    @include breakpoint($medium) {
+      width: rem-calc(200); height: rem-calc(200);
+    }
+  }
+
+  &__count {
+    font-size: rem-calc(50);
+    font-weight: $bold;
+
+    @include breakpoint($small) {
+      font-size: rem-calc(74);
+    }
+
+    @include breakpoint($small) {
+      font-size: rem-calc(90);
+    }
+  }
+
+  &__count-text {
+    font-size: rem-calc(14);
+
+    @include breakpoint($small) {
+      font-size: rem-calc(15);
+    }
+
+    @include breakpoint($medium) {
+      font-size: rem-calc(16);
+    }
+  }
+}

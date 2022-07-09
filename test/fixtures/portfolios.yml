@@ -1,0 +1,22 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Portfolio One
+  portfolio_type: natural_capital
+  sub_industries:
+    - 3
+    - 5
+  production_processes:
+    - 1
+  created_at: "2020-10-28 20:31:00"
+  updated_at: "2020-10-28 20:31:00"
+
+two:
+  name: Portfolio Two
+  portfolio_type: natural_capital
+  sub_industries:
+    - 1
+  production_processes:
+  created_at: "2020-10-28 20:31:00"
+  updated_at: "2020-10-28 20:31:00"
+  

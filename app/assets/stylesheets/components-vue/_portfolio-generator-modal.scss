@@ -1,0 +1,30 @@
+$portfolio-generator-modal-footer-height: rem-calc(70);
+
+.portfolio-generator-modal--sector-selected {
+  padding-bottom: $portfolio-generator-modal-footer-height;
+}
+
+.portfolio-generator-modal__toggle {
+  @include button--green;
+  @include button--medium;
+}
+
+.portfolio-generator-modal__footer {
+  background-color: $sg-green-dark;
+  height: $portfolio-generator-modal-footer-height;
+  padding: rem-calc(20) $gutter-medium;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.portfolio-generator-modal__submit {
+  @include button--green;
+  @include button--small;
+}

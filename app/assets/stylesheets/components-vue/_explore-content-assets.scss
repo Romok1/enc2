@@ -1,0 +1,37 @@
+.asset-icon {
+  &--atmosphere { @include asset-icon('Atmosphere.svg'); }
+  
+  &--habitats { @include asset-icon('Habitats.svg'); }
+
+  &--land { @include asset-icon('Land.svg'); }
+
+  &--minerals { @include asset-icon('Minerals.svg'); }
+
+  &--ocean { @include asset-icon('Ocean.svg'); }
+
+  &--soil { @include asset-icon('Soil.svg'); }
+
+  &--species { @include asset-icon('Species.svg'); }
+
+  &--water { @include asset-icon('Water.svg'); }
+}
+
+.asset {
+  .explore-panel__header-assets {
+      display: none;
+  }
+
+  &__panel-content {
+    flex-wrap: wrap;
+
+    @include breakpoint($medium) { flex-wrap: nowrap; }
+  }
+
+  &__buttons {
+    @include breakpoint($small) { margin-left: auto; }
+  }
+
+    &__button {
+      margin: 0 0 $list-item-margin-small 0;
+    }
+}

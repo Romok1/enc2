@@ -1,0 +1,15 @@
+$drop-arrow-height: rem-calc(8);
+$drop-arrow-icon-width: rem-calc(18);
+
+.crop-type-input__toggle {
+  @include button--no-styles;
+  @include arrow-svg;
+  padding: rem-calc(15);
+
+  height: $drop-arrow-height;
+  width: $drop-arrow-icon-width;
+
+  &--active {
+    transform: rotate(180deg);
+  }
+}

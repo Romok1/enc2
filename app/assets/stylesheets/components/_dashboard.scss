@@ -1,0 +1,43 @@
+//--------------------------------------------------
+// variables
+//--------------------------------------------------
+$dashboard-tabs-height: rem-calc(45);
+
+//--------------------------------------------------
+// classes
+//--------------------------------------------------
+.dashboard__header-content {
+  background-color: $sg-green-xdark;
+  color: $white;
+  padding: rem-calc(32) rem-calc(32) (rem-calc(32) + $dashboard-tabs-height);
+  overflow: hidden;
+
+  position: relative;
+
+  @include breakpoint($small) {
+    padding-bottom: rem-calc(32);
+  }
+}
+
+.dashboard__title {
+  margin: 0;
+  max-width: rem-calc(600);
+}
+
+.dashboard__fake-tabs {
+  @extend .container--xlarge;
+
+  display: flex;
+  justify-content: flex-end;
+
+  position: absolute;
+  bottom: rem-calc(-2);
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.dashboard__body {
+  @extend .page-padding;
+  @extend .container--xlarge;
+}

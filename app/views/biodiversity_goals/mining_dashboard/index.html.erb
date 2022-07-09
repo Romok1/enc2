@@ -1,0 +1,6 @@
+<%= render partial: "layouts/header", locals: { show_hero: false } %>
+<mining-dashboard
+  :preload-data="<%= @data.to_json %>"
+  :for-pdf="<%= @for_pdf %>"
+  module="mining"
+></mining-dashboard>

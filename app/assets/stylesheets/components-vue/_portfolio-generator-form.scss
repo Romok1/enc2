@@ -1,0 +1,197 @@
+.portfolio-generator-form {
+  border: rem-calc(1) solid $sg-grey;
+  margin-top: rem-calc(24);
+  padding: $item-padding-small;
+
+  position: relative;
+
+  @include breakpoint($medium) {
+    padding: $item-padding-medium $item-padding-medium * 2;
+  }
+
+  .portfolio-generator-form--inactive & {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &.portfolio-generator-form--agriculture {
+    @include breakpoint($medium) {
+      padding: $item-padding-medium;
+    }
+  }
+}
+
+.portfolio-generator-form__close {
+  @include appearance-none;
+  @include button--no-styles;
+  background-color: $white;
+  padding: 0 rem-calc(5);
+  width: $portfolio-form-close-size;
+  height: $portfolio-form-close-size;
+
+  position: absolute;
+  top: - $portfolio-form-close-size / 2;
+  right: rem-calc(10);
+  z-index: 2;
+
+  @include breakpoint($small) {
+    right: rem-calc(20);
+  }
+
+  &-icon {
+    .icon-close {
+      &__background {
+        fill: $sg-green-xdark;
+        stroke: none;
+      }
+
+      &__shape {
+        fill: $white;
+      }
+    }
+  }
+}
+
+.portfolio-generator-form__checkbox {
+  align-items: start;
+
+  @include breakpoint($small) {
+    align-items: center;
+  }
+
+  .v-checkbox {
+    &__input {
+      margin-top: rem-calc(2);
+      margin-right: rem-calc(6);
+      width: rem-calc(20);
+      height: rem-calc(20);
+
+      @include breakpoint($medium) {
+        margin-right: rem-calc(14);
+        width: rem-calc(30);
+        height: rem-calc(30);
+      }
+    }
+
+    &__label {
+      font-weight: $regular;
+      font-size: rem-calc(14);
+
+      @include breakpoint($small) {
+        font-size: rem-calc(16);
+      }
+    }
+  }
+}
+
+.portfolio-generator-form__data {
+  .portfolio-generator-form--inactive & {
+    display: none;
+  }
+}
+
+.portfolio-generator-form__input {
+  width: 100%;
+}
+
+.portfolio-generator-form__label {
+  font-weight: $regular;
+  margin-bottom: rem-calc(10);
+  
+  .portfolio-generator-form--agriculture & {
+    margin-top: rem-calc(10);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.portfolio-generator-form__label-description {
+  font-weight: $light;
+  color: $sg-grey-dark;
+  font-style: italic;
+}
+
+.portfolio-generator-form__legend {
+  background-color: $white;
+  font-size: rem-calc(16);
+  font-weight: $bold;
+  padding: 0 rem-calc(5);
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 0;
+
+  transform: translate(#{rem-calc(-5)}, -50%);
+
+  @include breakpoint($small) {
+    font-size: rem-calc(20);
+  }
+
+  .portfolio-generator-form--inactive & {
+    display: none;
+  }
+}
+
+.portfolio-generator-form__section {
+  .field:first-child {
+    margin-top: 0;
+  }
+
+  &--country {
+    margin: $item-padding-small;
+
+    @include breakpoint($medium) {
+      margin: $item-padding-medium;
+    }
+  }
+
+  &--crops,
+  &--livestock {
+    background-color: $sg-grey-xlight;
+    padding: $item-padding-small;
+
+    @include breakpoint($medium) {
+      padding: $item-padding-medium;
+    }
+  }
+
+  &--livestock {
+    margin-top: $item-padding-small;
+    @include breakpoint($medium) {
+      margin-top: $item-padding-medium;
+    }
+  }
+}
+
+.portfolio-generator-form--invalid {
+  border-color: $sg-error-red;
+}
+
+.portfolio-generator-form__no-mines {
+  color: $sg-error-red;
+  font-style: italic;
+  font-weight: $bold;
+  margin-top: $item-padding-small;
+}
+
+.portfolio-generator-form__heading {
+  font-size: rem-calc(18);
+  font-weight: $bold;
+}
+
+.portfolio-generator-form__link {
+  font-size: rem-calc(18);
+  font-weight: $bold;
+  margin-top: $item-padding-small;
+  text-decoration: underline;
+
+  display: block;
+}
+.portfolio-generator-form__small-print {
+  color: $sg-grey-dark;
+  font-size: rem-calc(12);
+  margin-top: $item-padding-small;
+}

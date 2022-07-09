@@ -1,0 +1,26 @@
+.global-overview-averages {
+  margin-bottom: $dashboard-section-separation;
+}
+
+.global-overview-averages__header {
+  margin-bottom: rem-calc(30);
+}
+
+.global-overview-averages__intro {
+  @include dashboard-intro;
+}
+
+.global-overview-averages__columns {
+  @include columns('mobile');
+}
+
+.global-overview-averages__column {
+  @include dashboard-column-stack-mobile;
+}
+
+.global-overview-averages__heading {
+  font-size: rem-calc(20);
+  font-weight: $bold;
+  margin-top: 0;
+  margin-bottom: rem-calc(10);
+}

@@ -1,0 +1,12 @@
+<div id="map">
+  <map-page 
+    :nav="<%= navigation %>"
+    :select-options-by-id="<%= @filter_pane_select_options %>"
+    :selected-option-id="<%= @selected_service %>"
+    view="<%= @view %>"
+  >
+    <template slot="map-nav-right">
+      <%= render partial: 'application/feedback_popup', locals: { popup_class: 'nav' } %>
+    </template>
+  </map-page>
+</div>

@@ -1,0 +1,34 @@
+<% joins = local_assigns[:joins].present? ? joins : nil %>
+
+<section aria-labelledby="services-title">
+  <h2 id="services-title" class="narrow-title--medium h3"><%= title %>:</h2>
+  <% services.sort{|a,b| compare_service(a, b, joins)}.each do |service| %>
+    <div class="asset-page__service-item">
+      <%= link_to ecosystem_service_path(service.id) do %>
+        <div class="list-item list-item--arrow list-item--white">
+          <% if !joins.nil? %>
+            <span class="indicator--triangle <%= indicator_rating_class(joins.find_by(ecosystem_service: service).importance) %>">
+              <%= inline_svg 'icons/Triangle.svg' %>
+            </span>
+          <% end %>
+          <div class="flex-column">
+            <h3 class="list-item__title"><%= service.name %></h3>
+            <p class="list-item__description paragraph--no-margin"><%= service.description %></p>
+          </div>
+        </div>
+      <% end %>
+      <expandable-item :use-v-if="true">
+        <template slot="header">
+          <h3 class="narrow-title--medium no-margin"><%= t('asset_page.materiality_title') %>:</h3>
+        </template>
+        <template slot="content">
+          <production-processes
+            class="asset-page__production-processes"
+            :joins="<%= service.to_formatted_json['sorted_materialities'].to_json %>"
+          >
+          </production-processes>
+        </template>
+      </expandable-item>
+    </div>
+  <% end %>
+</section>

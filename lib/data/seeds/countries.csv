@@ -1,0 +1,249 @@
+Country,ISO 3,Region,Include for agriculture
+Aruba,ABW,Caribbean,0
+Afghanistan,AFG,South Asia,1
+Angola,AGO,Southern Africa,1
+Anguilla,AIA,Caribbean,0
+Åland Islands,ALA,Region Not Applicable,0
+Albania,ALB,Central and Western Europe,1
+Andorra,AND,Central and Western Europe,1
+United Arab Emirates,ARE,Western Asia,1
+Argentina,ARG,South America,1
+Armenia,ARM,Eastern Europe,1
+American Samoa,ASM,Oceania,0
+Terres australes et antarctiques françaises,ATF,East Africa and adjacent islands,0
+Antigua and Barbuda,ATG,Caribbean,1
+Australia,AUS,Oceania,1
+Austria,AUT,Central and Western Europe,1
+Azerbaijan,AZE,Eastern Europe,1
+Burundi,BDI,Central Africa,1
+Belgium,BEL,Central and Western Europe,1
+Benin,BEN,West Africa,1
+"Bonaire, Sint Eustatius, and Saba",BES,Caribbean,0
+Burkina Faso,BFA,West Africa,1
+Bangladesh,BGD,South Asia,1
+Bulgaria,BGR,Central and Western Europe,1
+Bahrain,BHR,Western Asia,1
+Bahamas,BHS,Caribbean,1
+Bosnia and Herzegovina,BIH,Central and Western Europe,1
+Saint Barthélemy,BLM,Caribbean,0
+Belarus,BLR,Eastern Europe,1
+Belize,BLZ,Mesoamerica,1
+Bermuda,BMU,Caribbean,0
+Bolivia (Plurinational State of),BOL,South America,1
+Brazil,BRA,South America,1
+Barbados,BRB,Caribbean,1
+Brunei Darussalam,BRN,South-East Asia,1
+Bhutan,BTN,South Asia,1
+Bouvet Island,BVT,Region Not Applicable,0
+Botswana,BWA,Southern Africa,1
+Central African Republic,CAF,Central Africa,1
+Canada,CAN,North America,1
+Cocos (Keeling) Islands,CCK,South-East Asia,0
+Switzerland,CHE,Central and Western Europe,1
+Chile,CHL,South America,1
+China,CHN,North-East Asia,1
+Côte D'Ivoire,CIV,West Africa,1
+Cameroon,CMR,Central Africa,1
+Democratic Republic of Congo,COD,Central Africa,1
+Congo,COG,Central Africa,1
+Cook Islands,COK,Oceania,1
+Colombia,COL,South America,1
+Comoros,COM,East Africa and adjacent islands,1
+Cabo Verde,CPV,West Africa,1
+Costa Rica,CRI,Mesoamerica,1
+Cuba,CUB,Caribbean,1
+Curaçao,CUW,Caribbean,0
+Christmas Island,CXR,South-East Asia,0
+Cayman Islands,CYM,Caribbean,0
+Cyprus,CYP,Central and Western Europe,1
+Czech Republic,CZE,Central and Western Europe,1
+Germany,DEU,Central and Western Europe,1
+Djibouti,DJI,East Africa and adjacent islands,1
+Dominica,DMA,Caribbean,1
+Denmark,DNK,Central and Western Europe,1
+Dominican Republic,DOM,Caribbean,1
+Algeria,DZA,North Africa,1
+Ecuador,ECU,South America,1
+Egypt,EGY,North Africa,1
+Eritrea,ERI,East Africa and adjacent islands,1
+Western Sahara,ESH,North Africa,0
+Spain,ESP,Central and Western Europe,1
+Estonia,EST,Central and Western Europe,1
+Ethiopia,ETH,East Africa and adjacent islands,1
+Finland,FIN,Central and Western Europe,1
+Fiji,FJI,Oceania,1
+Falkland Islands (Malvinas),FLK,South America,0
+France,FRA,Central and Western Europe,1
+Faroe Islands,FRO,Central and Western Europe,1
+Federated States of Micronesia,FSM,Oceania,1
+Gabon,GAB,Central Africa,1
+United Kingdom of Great Britain and Northern Ireland,GBR,Central and Western Europe,1
+Georgia,GEO,Eastern Europe,1
+Guernsey,GGY,Central and Western Europe,0
+Ghana,GHA,West Africa,1
+Gibraltar,GIB,Central and Western Europe,0
+Guinea,GIN,West Africa,1
+Guadeloupe,GLP,Caribbean,0
+Gambia,GMB,West Africa,1
+Guinea-Bissau,GNB,West Africa,1
+Equatorial Guinea,GNQ,Central Africa,1
+Greece,GRC,Central and Western Europe,1
+Grenada,GRD,Caribbean,1
+Greenland,GRL,Central and Western Europe,0
+Guatemala,GTM,Mesoamerica,1
+French Guyana,GUF,South America,0
+Guam,GUM,Oceania,0
+Guyana,GUY,South America,1
+Hong Kong,HKG,North-East Asia,0
+Heard Island and McDonald Islands,HMD,Region Not Applicable,0
+Honduras,HND,Mesoamerica,1
+Croatia,HRV,Central and Western Europe,1
+Haiti,HTI,Caribbean,1
+Hungary,HUN,Central and Western Europe,1
+Indonesia,IDN,South-East Asia,1
+Isle of Man,IMN,Central and Western Europe,0
+India,IND,South Asia,1
+British Indian Ocean Territory,IOT,South Asia,0
+Ireland,IRL,Central and Western Europe,1
+Iran (Islamic Republic Of),IRN,South Asia,1
+Iraq,IRQ,Western Asia,1
+Iceland,ISL,Central and Western Europe,1
+Israel,ISR,Central and Western Europe,1
+Italy,ITA,Central and Western Europe,1
+Jamaica,JAM,Caribbean,1
+Jersey,JEY,Central and Western Europe,0
+Jordan,JOR,Western Asia,1
+Japan,JPN,North-East Asia,1
+Kazakhstan,KAZ,Central Asia,1
+Kenya,KEN,East Africa and adjacent islands,1
+Kyrgyzstan,KGZ,Central Asia,1
+Cambodia,KHM,South-East Asia,1
+Kiribati,KIR,Oceania,1
+Saint Kitts and Nevis,KNA,Caribbean,1
+Republic Of Korea,KOR,North-East Asia,1
+Kuwait,KWT,Western Asia,1
+Lao People's Democratic Republic,LAO,South-East Asia,1
+Lebanon,LBN,Western Asia,1
+Liberia,LBR,West Africa,1
+Libya,LBY,North Africa,1
+Saint Lucia,LCA,Caribbean,1
+Liechtenstein,LIE,Central and Western Europe,0
+Sri Lanka,LKA,South Asia,1
+Lesotho,LSO,Southern Africa,1
+Lithuania,LTU,Central and Western Europe,1
+Luxembourg,LUX,Central and Western Europe,1
+Latvia,LVA,Central and Western Europe,1
+Macau,MAC,North-East Asia,0
+Saint Martin,MAF,Caribbean,0
+Morocco,MAR,North Africa,1
+Monaco,MCO,Central and Western Europe,1
+Republic of Moldova,MDA,Eastern Europe,1
+Madagascar,MDG,East Africa and adjacent islands,1
+Maldives,MDV,South Asia,1
+Mexico,MEX,Mesoamerica,1
+Marshall Islands,MHL,Oceania,1
+The Republic of North Macedonia,MKD,Central and Western Europe,1
+Mali,MLI,West Africa,1
+Malta,MLT,Central and Western Europe,1
+Myanmar,MMR,South-East Asia,1
+Montenegro,MNE,Central and Western Europe,1
+Mongolia,MNG,North-East Asia,1
+Northern Mariana Islands,MNP,Oceania,0
+Mozambique,MOZ,Southern Africa,1
+Mauritania,MRT,North Africa,1
+Montserrat,MSR,Caribbean,0
+Martinique,MTQ,Caribbean,0
+Mauritius,MUS,East Africa and adjacent islands,1
+Malawi,MWI,Southern Africa,1
+Malaysia,MYS,South-East Asia,1
+Mayotte,MYT,East Africa and adjacent islands,0
+Namibia,NAM,Southern Africa,1
+New Caledonia,NCL,Oceania,0
+Niger,NER,West Africa,1
+Norfolk Island,NFK,Oceania,0
+Nigeria,NGA,West Africa,1
+Nicaragua,NIC,Mesoamerica,1
+Niue,NIU,Oceania,1
+Netherlands,NLD,Central and Western Europe,1
+Norway,NOR,Central and Western Europe,1
+Nepal,NPL,South Asia,1
+Nauru,NRU,Oceania,1
+New Zealand,NZL,Oceania,1
+Oman,OMN,Western Asia,1
+Pakistan,PAK,South Asia,1
+Panama,PAN,Mesoamerica,1
+Pitcairn Islands,PCN,Oceania,0
+Peru,PER,South America,1
+Philippines,PHL,South-East Asia,1
+Palau,PLW,Oceania,1
+Papua New Guinea,PNG,Oceania,1
+Poland,POL,Central and Western Europe,1
+Puerto Rico,PRI,Caribbean,0
+Democratic People's Republic Of Korea,PRK,North-East Asia,1
+Portugal,PRT,Central and Western Europe,1
+Paraguay,PRY,South America,1
+"Palestine, State of",PSE,Western Asia,0
+French Polynesia,PYF,Oceania,0
+Qatar,QAT,Western Asia,1
+Réunion,REU,East Africa and adjacent islands,0
+Romania,ROU,Central and Western Europe,1
+Russian Federation,RUS,Eastern Europe,1
+Rwanda,RWA,East Africa and adjacent islands,1
+Saudi Arabia,SAU,Western Asia,1
+Sudan,SDN,North Africa,1
+Senegal,SEN,West Africa,1
+Singapore,SGP,South-East Asia,1
+South Georgia and the South Sandwich Islands,SGS,Region Not Applicable,0
+"Saint Helena, Ascension and Tristan da Cunha",SHN,Southern Africa,0
+Svalbard and Jan Mayen,SJM,Central and Western Europe,0
+Solomon Islands,SLB,Oceania,1
+Sierra Leone,SLE,West Africa,1
+El Salvador,SLV,Mesoamerica,1
+San Marino,SMR,Central and Western Europe,1
+Somalia,SOM,East Africa and adjacent islands,1
+Saint Pierre and Miquelon,SPM,North America,0
+Serbia,SRB,Central and Western Europe,1
+South Sudan,SSD,East Africa and adjacent islands,1
+São Tomé and Príncipe,STP,Central Africa,1
+Suriname,SUR,South America,1
+Slovakia,SVK,Central and Western Europe,1
+Slovenia,SVN,Central and Western Europe,1
+Sweden,SWE,Central and Western Europe,1
+"Eswatini, the Kingdom of",SWZ,Southern Africa,1
+Sint Maarten,SXM,Caribbean,0
+Seychelles,SYC,East Africa and adjacent islands,1
+Syrian Arab Republic,SYR,Western Asia,1
+Turks and Caicos Islands,TCA,Caribbean,0
+Chad,TCD,Central Africa,1
+Togo,TGO,West Africa,1
+Thailand,THA,South-East Asia,1
+Tajikistan,TJK,Central Asia,1
+Tokelau,TKL,Oceania,1
+Turkmenistan,TKM,Central Asia,1
+Timor-Leste,TLS,South-East Asia,1
+Tonga,TON,Oceania,1
+Trinidad and Tobago,TTO,Caribbean,1
+Tunisia,TUN,North Africa,1
+Turkey,TUR,Central and Western Europe,1
+Tuvalu,TUV,Oceania,1
+"Taiwan, Province of China",TWN,North-East Asia,0
+United Republic of Tanzania,TZA,East Africa and adjacent islands,1
+Uganda,UGA,East Africa and adjacent islands,1
+Ukraine,UKR,Eastern Europe,1
+United States Minor Outlying Islands,UMI,Oceania,0
+Uruguay,URY,South America,1
+United States of America,USA,North America,1
+Uzbekistan,UZB,Central Asia,1
+Vatican City,VAT,Central and Western Europe,0
+Saint Vincent and the Grenadines,VCT,Caribbean,1
+Venezuela (Bolivarian Republic of),VEN,South America,1
+British Virgin Islands,VGB,Caribbean,0
+United States Virgin Islands,VIR,Caribbean,0
+Viet Nam,VNM,South-East Asia,1
+Vanuatu,VUT,Oceania,1
+Wallis and Futuna,WLF,Oceania,0
+Samoa,WSM,Oceania,1
+Yemen,YEM,Western Asia,1
+South Africa,ZAF,Southern Africa,1
+Zambia,ZMB,Southern Africa,1
+Zimbabwe,ZWE,Southern Africa,1

@@ -1,0 +1,18 @@
+<%= render partial: 'layouts/header', locals: { show_hero: false } %>
+
+<%= render partial: 'biodiversity_goals/hero', locals: { title: t('biodiversity_goals.landing.hero_title'), sectors: t('biodiversity_goals.sectors') } %>
+
+<div class="container--xlarge">
+  <div class="landing-page__body">
+    <%= render partial: 'shared/dashboard/landing/open_cards', locals: { 
+      title: t('biodiversity_goals.landing.open_cards_title'), 
+      intro: t('biodiversity_goals.landing.open_cards_intro'), 
+      open_cards: @open_cards,
+      class_modifier: 'biodiversity-goals'
+    } %>
+  </div>
+
+  <%= render partial: 'shared/dashboard/landing/footer_cards', locals: { 
+    links: t('biodiversity_goals.landing.links')
+  } %>
+</div>

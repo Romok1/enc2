@@ -1,0 +1,18 @@
+<%
+  label = @cms_page ? cms_fragment_content("title") : title
+%>
+
+<header class="home-header bg-img bg-image-overlay" <%= style_background_image(hero_image).html_safe %>>
+  <div class="home-header__contents flex flex-column">
+    <%= render "layouts/nav" %>
+
+    <div class="home-header__hero">
+      <h1 class="home-header__title"><%= label %></h1>
+
+      <explore-widget class="flex-vs-center"></explore-widget>
+      <div class="home-header__logo-banner flex-center">
+        <%= render 'application/partner_logos' %>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,27 @@
+.pdf-break-inside-avoid { page-break-inside: avoid; }
+
+.pdf {
+  .dashboard-download-button,
+  .dashboard-panel__tools,
+  .feedback-popup,
+  .header,
+  .topbar--primary {
+    display: none;
+  }
+
+  .dashboard__body {
+    width: 100%;
+  }
+}
+
+.pdf .pdf-hide {
+  display: none !important;
+}
+
+.pdf-only {
+  display: none;
+
+  .pdf & {
+    display: block;
+  }
+}

@@ -1,0 +1,23 @@
+.list-page {
+  &__container {
+    @include container(rem-calc(840));
+    @extend .section-padding;
+
+    ul {
+      padding-left: rem-calc(40);
+    }
+  }
+
+  &__item-container {
+    @extend .section-padding;
+    padding-right: rem-calc(10);
+    padding-left: rem-calc(10);
+  }
+
+    &__item {
+      box-shadow: none;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+}

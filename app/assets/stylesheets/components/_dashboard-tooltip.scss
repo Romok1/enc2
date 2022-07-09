@@ -1,0 +1,64 @@
+.dashboard-tooltip {
+  cursor: pointer;
+  margin-left: rem-calc(15);
+
+  display: none;
+
+  position: relative;
+
+  @include breakpoint($medium) {
+    display: block;
+  }
+}
+
+.dashboard-tooltip__icon {
+  fill: $sg-grey;
+
+  display: block;
+}
+
+.dashboard-tooltip__text {
+  background-color: $white;
+  box-shadow: rem-calc(0 3 6) #00000029;
+  color: $black;
+  font-size: rem-calc(14);
+  font-weight: $regular;
+  opacity: 0;
+  padding: rem-calc(5);
+  visibility: hidden;
+  min-width: rem-calc(200);
+
+
+  position: absolute;
+  bottom: rem-calc(-10);
+  left: 50%;
+  z-index: 2;
+
+  transform: translate(-50%,100%);
+  transition: opacity .3s ease, visibility .3s ease;
+
+  &::after {
+    background-color: transparent;
+    border-right: rem-calc(10) solid transparent;
+    border-bottom: rem-calc(10) solid $white;
+    border-left: rem-calc(10) solid transparent;
+    content: '';
+
+    display: block;
+    position: absolute;
+    top: rem-calc(-10);
+    left: 50%;
+    z-index: 1;
+
+    transform: translateX(-50%);
+  }
+
+  .dashboard-tooltip--left & {
+    
+  }
+
+  .dashboard-tooltip:hover & {
+    opacity: 1;
+    visibility: visible;
+  }
+}

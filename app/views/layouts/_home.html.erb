@@ -1,0 +1,53 @@
+<%= render partial: "layouts/home-header" %>
+<main class="page-padding--bottom">
+  <div class="text-media__blocks">
+    <%= render partial: "home/text_media", locals: {
+      modifier_class: "text-media__block--grey",
+      media: {
+        type: 'image',
+        src: "promo.png",
+        alt: t('home.text_media_new_features.image_alt'),
+      },
+      heading: t('home.text_media_new_features.heading'),
+      text: t('home.text_media_new_features.text'),
+      link: {
+        title: user_signed_in? ? t('home.text_media_new_features.link_title') : t('navigation.login_signup'),
+        url: user_signed_in? ? authenticated_root_path : '#authentication-popup',
+        text: user_signed_in? ? t('home.text_media_new_features.link_text') : t('navigation.login_signup')
+      }
+    } %>
+
+    <%= render partial: "home/text_media", locals: {
+      modifier_class: "text-media__block--flipped",
+      media: {
+        type: 'image',
+        src: "map.png",
+        alt: t('home.text_media_map.image_alt'),
+      },
+      heading: t('home.text_media_map.heading'),
+      text: t('home.text_media_map.text'),
+      link: {
+        title: t('home.text_media_map.link_title'),
+        url: map_path(view: 'hotspots'),
+        text: t('home.text_media_map.link_text')
+      }
+    } %>
+
+    <%= render partial: "home/text_media", locals: {
+      modifier_class: "text-media__block--grey",
+      media: {
+        type: 'video',
+        src: "https://www.youtube.com/embed/#{t('home.text_media_video.video_id')}",
+      },
+      heading: t('home.text_media_video.heading'),
+      text: t('home.text_media_video.text'),
+      link: {
+        title: t('home.text_media_video.link_title'),
+        url: url_for('/about'),
+        text: t('home.text_media_video.link_text')
+      }
+    } %>
+  </div>
+
+  <card-holder :cards="<%= cards %>"></card-holder>
+</main>

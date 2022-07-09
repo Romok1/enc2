@@ -1,0 +1,55 @@
+<header class="factsheet-header__wrapper">
+  <%= render "layouts/nav" %>
+  <% Globalize.with_locale(:en) do %>
+    <div class="factsheet-header bg-img bg-image-overlay" <%= style_background_image(hero_image(@service.name)).html_safe %>>
+  <% end %>
+    <div class="factsheet-header__button-row flex flex-h-end flex-v-center">
+        <%= link_to t('buttons.download'),
+          @service.url,
+          target: "_blank",
+          title: t('buttons.download_pdf'),
+          class:"download-button button--medium button--border" %>
+    </div>
+    <div class="container--medium">
+        <h1 class="narrow-title--large header__title"><%= @service.name %></h1>
+        <p class="factsheet-header__intro header__intro"><%= @service.description %></p>
+        <figure class="factsheet-header__diagram flex-center ">
+
+            <span class="factsheet-header__diagram-element-wrapper">
+                <div class="factsheet-header__diagram-element">
+                    <div class="factsheet-header__diagram-text item-center text-center">
+                        <h2 class="factsheet-header__diagram-title h3"><%= t('factsheet.benefits') %>:</h2>
+                        <p class="factsheet-header__diagram-list">
+                          <% @service.benefits.each do |benefit| %>
+                            <%= benefit.name %><br>
+                          <% end %>
+                        </p>
+                    </div>
+                </div>
+            </span>
+
+            <span class="factsheet-header__diagram-element-wrapper">
+                <div class="factsheet-header__diagram-element">
+                    <div class="factsheet-header__diagram-text item-center text-center">
+                        <h2 class="factsheet-header__diagram-title h3"><%= t('common.e_service') %>:</h2>
+                        <p class="factsheet-header__diagram-list"><%= @service.name %></p>
+                    </div>
+                </div>
+            </span>
+
+            <span class="factsheet-header__diagram-element-wrapper">
+                <div class="factsheet-header__diagram-element">
+                    <div class="factsheet-header__diagram-text item-center text-center">
+                        <h2 class="factsheet-header__diagram-title h3"><%= t('common.assets') %>:</h2>
+                        <p class="factsheet-header__diagram-list">
+                          <% @service.assets.each do |asset| %>
+                            <%= asset.name %><br>
+                          <% end %>
+                        </p>
+                    </div>
+                </div>
+            </span>
+        </figure>
+    </div>
+  </div>
+</header>

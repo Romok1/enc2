@@ -1,0 +1,88 @@
+$legend-icon-size: rem-calc(10);
+
+@mixin chart-dial-or-donut($chart) {
+  .chart-#{$chart}__title {
+    @include h3;
+    margin-top: 0;
+  }
+
+  .chart-#{$chart}__chart-wrapper {
+    position: relative;
+  }
+
+  .chart-#{$chart}__chart {
+    width: 100%;
+    height: rem-calc(250);
+
+    position: relative;
+
+    .chart-#{$chart}--no-data & {
+      background-color: $sg-grey-xlight;
+    }
+  }
+
+  .chart-#{$chart}__no-data {
+    @include item-center;
+    font-size: rem-calc(20);
+    font-weight: $light;
+    text-align: center;
+    width: 80%;
+
+    @include breakpoint($small) {
+      font-size: rem-calc(24);
+    }
+  }
+
+  .chart-#{$chart}__center-text {
+    @include item-center;
+    text-align: center;
+    width: 45%;
+
+    @if $chart == 'donut' {
+      z-index: -1;
+    }
+  }
+
+  .chart-#{$chart}__caption-line {
+    margin-bottom: rem-calc(2);
+  }
+}
+
+@include chart-dial-or-donut('dial');
+@include chart-dial-or-donut('donut');
+
+.chart-dial {
+  &__legend {
+    @include ul--unstyled;
+
+    margin-top: rem-calc(16);
+  }
+
+  &__legend-item {
+    @include li--unstyled;
+    @include list-margins(bottom, rem-calc(5));
+
+    font-weight: $regular;
+
+    &::before {
+      background-color: $sg-violet-dark;
+      border-radius: 50%;
+      content: '';
+      margin-top: calc(1em - #{$legend-icon-size}) / 2;
+      margin-right: rem-calc(4);
+      width: $legend-icon-size;
+      height: $legend-icon-size;
+
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    &:nth-child(2) {
+      &::before { background-color: $sg-violet; }
+    }
+
+    &:nth-child(3) {
+      &::before { background-color: $sg-violet-light; }
+    }
+  }
+}

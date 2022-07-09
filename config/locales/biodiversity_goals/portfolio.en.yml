@@ -1,0 +1,31 @@
+en:
+  biodiversity_goals:
+    portfolio:
+      forms:
+        agriculture:
+          attributes:
+            crops: cropland
+            livestock: pasture land
+          legend: Agriculture Portfolio
+          labels:
+            location: Enter country location
+            toggle_turnover: Please select if you would like to enter details of turnover
+            area: Enter %{attribute} area
+            area_subtext: Please enter %{attribute} area in ha
+            turnover: Enter %{attribute} turnover
+            turnover_subtext: Please enter turnover in millions of USD
+          ctas:
+            add_button: Another country
+        mining:
+          notice: Add at least two companies or leave company field blank to set the whole sector.
+          legend: Mining Portfolio
+          labels:
+            company: Select company
+            company_subtext: Not entering a company will set default to whole sector
+            locations: Enter country location
+            locations_subtext: Not entering a country will set default location to global
+            no_mines_text: "No mines were found for your selected company and location(s)."
+            data_credit: "Mining asset level data courtesy of S&P Global. Version used: March 2021."
+          ctas:
+            add_button: Another company
+          unset_company_name: Whole sector

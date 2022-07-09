@@ -1,0 +1,15 @@
+.field {
+  margin: 1rem 0 0.25rem 0;
+
+  input {
+    border: rem-calc(1) solid $sg-grey;
+  }
+
+  &--invalid {
+    color: $sg-error-red;
+
+    input {
+      border-color: $sg-error-red;
+    }
+  }
+}

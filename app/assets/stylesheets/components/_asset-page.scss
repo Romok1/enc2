@@ -1,0 +1,76 @@
+.asset-page {
+  background-color: $sg-grey-xlight;
+
+  &__container {
+    @include container(rem-calc(1250));
+    overflow: hidden;
+  }
+
+  &__service-item {
+    box-shadow: $shadow-light;
+    margin-bottom: $list-item-margin-medium;
+
+    .list-item {
+      box-shadow: none;
+      margin-bottom: 0;
+    }
+
+    .expandable-item {
+      box-shadow: none;
+
+      &__header {
+        border-top: $border-thin $sg-grey;
+      }
+
+      &__container {
+        border-top: none;
+      }
+    }
+  }
+
+    .processes {
+      background: $white;
+
+      &__content {
+        @include breakpoint($medium) {
+          overflow: hidden;
+          overflow-y: scroll;
+          max-height: rem-calc(450);
+        }
+      }
+    }
+
+  &__driver {
+    @extend .flex-no-shrink;
+    @extend .shadow-protector--right;
+  }
+
+    &__driver-indicator {
+      &::before {
+        margin-bottom: rem-calc(10);   
+      }
+    }
+}
+
+.bg-asset-color {
+  &--atmosphere { background-color: $asset-color-atmosphere }
+  &--habitats {
+    background-color: $asset-color-habitats;
+    .header__contents {color: $black;}
+  }
+  &--species {
+    background-color: $asset-color-species;
+    .header__contents {color: $black;}
+  }
+  &--soil { background-color: $asset-color-soil }
+  &--water {
+    background-color: $asset-color-water;
+    .header__contents {color: $black;}
+  }
+  &--minerals { background-color: $asset-color-minerals }
+  &--land {
+    background-color: $asset-color-land;
+    .header__contents {color: $black;}
+  }
+  &--ocean { background-color: $asset-color-ocean }
+}

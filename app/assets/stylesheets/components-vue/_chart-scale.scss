@@ -1,0 +1,161 @@
+//--------------------------------------------------
+// variables
+//--------------------------------------------------
+
+$scale-chart-star-color: $sg-violet;
+$scale-chart-eco-integrity-risk-color: $sg-aqua-green;
+
+$scale-chart-marker-size: rem-calc(3);
+$scale-chart-marker-size-large: rem-calc(4);
+
+$marker-thin-dashed: rem-calc(2) dashed $black;
+$marker-thick-solid: rem-calc(4) solid $black;
+$marker-thin-dotted: rem-calc(2) dotted $black;
+
+//--------------------------------------------------
+// classes
+//--------------------------------------------------
+
+.chart-scale__header {
+  border-bottom: $border-thin-black;
+  font-style: italic;
+  margin-bottom: rem-calc(5);
+  padding-bottom: rem-calc(2);
+  text-align: center;
+
+  position: relative;
+
+  &::before,
+  &::after {
+    background-color: $black;
+    content: '';
+    width: rem-calc(1);
+    height: rem-calc(5);
+
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(45%);
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+}
+
+.chart-scale__header-marker {
+  font-size: rem-calc(12);
+
+  position: absolute;
+  bottom: rem-calc(2);
+
+  &.chart-scale__header-marker--min {
+    left: 0;
+  }
+
+  &.chart-scale__header-marker--max {
+    right: 0;
+  }
+}
+
+.chart-scale__heading {
+  font-size: rem-calc(16);
+  margin: 0;
+}
+
+.chart-scale__bar {
+  margin-bottom: rem-calc(14);
+  width: 100%;
+  height: rem-calc(60);
+
+  position: relative;
+
+  .chart-scale--star & {
+    background-color: $scale-chart-star-color;
+  }
+
+  .chart-scale--ecoIntegrityRisk & {
+    background-color: $scale-chart-eco-integrity-risk-color;
+  }
+}
+
+.chart-scale__marker {
+  width: $scale-chart-marker-size;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  &.chart-scale__marker--thin-dashed {
+    border: $marker-thin-dashed;
+  }
+
+  &.chart-scale__marker--thin-dotted {
+    border: $marker-thin-dotted;
+  }
+
+  &.chart-scale__marker--thin-dashed {
+    border: $marker-thin-dashed;
+  }
+
+  &.chart-scale__marker--thick-solid {
+    border: $marker-thick-solid;
+    width: $scale-chart-marker-size-large;
+  }
+}
+
+.chart-scale__legend-items {
+  @include ul--unstyled;
+  margin-right: rem-calc(-30);
+  margin-bottom: rem-calc(-5);
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @include breakpoint($medium) {
+    flex-direction: row;
+  }
+}
+
+.chart-scale__legend-item {
+  margin-right: rem-calc(30);
+  margin-bottom: rem-calc(5);
+}
+
+.chart-scale__legend-label {
+  margin: 0;
+  padding-left: rem-calc(35);
+
+  position: relative;
+}
+
+.chart-scale__legend-marker {
+  width: rem-calc(25);
+  height: $scale-chart-marker-size;
+
+  display: inline-block;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  .chart-scale__legend-label--thick-solid & {
+    border: $marker-thick-solid;
+    height: $scale-chart-marker-size-large;
+  }
+
+  .chart-scale__legend-label--thin-dotted & {
+    border: $marker-thin-dotted;
+  }
+
+  .chart-scale__legend-label--thin-dashed & {
+    border: $marker-thin-dashed;
+  }
+}

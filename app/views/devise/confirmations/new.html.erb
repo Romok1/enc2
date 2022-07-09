@@ -1,0 +1,9 @@
+<%= render partial: 'layouts/nav' %>
+
+<div class="devise">
+  <div class="devise__container">
+    <h2><%= t('devise.ctas.resend_confirmation_instructions') %></h2>
+    <resend-confirmation-form></resend-confirmation-form>
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

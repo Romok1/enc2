@@ -1,0 +1,6 @@
+es:
+  validation:
+    digit_character: "must contain a digit (e.g. 0-9)"
+    lowercase_character: "must contain a lowercase character (e.g. a-z)"
+    special_character: "must contain a special character (e.g. !@#$%^&*)"
+    uppercase_character: "must contain a uppercase character (e.g. A-Z)"

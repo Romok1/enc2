@@ -1,0 +1,23 @@
+.ecoregion-management {
+  &__title {
+    @include dashboard-sub-heading;
+  }
+
+  &__intro {
+    @include dashboard-paragraph;
+    margin-bottom: rem-calc(28);
+    
+    @include breakpoint($small) {
+      margin-bottom: rem-calc(50);
+      width: $dashboard-column-one-width-tablet;
+    }
+
+    @include breakpoint($medium) {
+      width: calc(50% - #{$dashboard-column-margin-desktop} / 2);
+    }
+  }
+
+  &__cell--category {
+    display: flex;
+  }
+}

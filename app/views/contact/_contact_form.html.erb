@@ -1,0 +1,27 @@
+<%
+title = @cms_page ? cms_fragment_content("title") : t('buttons.contact_us')
+content = @cms_page ? cms_fragment_content("content") : ''
+email = @cms_page ? cms_fragment_content("email") : ''
+%>
+
+<div class="form--contact bg-image-overlay page__content">
+  <div class="form">
+    <div class="form__wrapper">
+      <div class="form__content">
+        <h1><%= title %></h1>
+        <p><%= content %></p>
+        <% unless email.blank? %>
+          <ul>
+            <li><%= email %></li>
+          </ul>
+        <% end %>
+      </div>
+      <div class="form__form">
+        <feedback-form 
+          :show-description="false"
+          :enquiry-types="<%= enquiry_types.to_json %>">
+        </feedback-form>
+      </div>
+    </div>
+  </div>
+</div>

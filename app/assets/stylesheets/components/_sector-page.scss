@@ -1,0 +1,7 @@
+.sectors {
+  .list-item__title--inline {
+    @include breakpoint($small) {
+      flex: 0 0 $max-header-width-medium
+    }
+  }
+}

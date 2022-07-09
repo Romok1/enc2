@@ -1,0 +1,90 @@
+.v-radio__group {
+  @include breakpoint($small) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.v-radio__legend {
+  color: $white;
+  font-size: rem-calc(18);
+  font-weight: $bolder;
+  margin-bottom: rem-calc(14);
+
+  @include breakpoint($small) {
+    font-size: rem-calc(14);
+    margin-bottom: 0;
+  }
+}
+
+.v-radio__input {
+  @extend .screen-reader;
+}
+
+.v-radio__label {
+  cursor: pointer;
+  font-size: rem-calc(18);
+  margin: 0 0 rem-calc(14);
+  padding-left: rem-calc(30);
+
+  position: relative;
+
+  @include breakpoint($small) {
+    font-size: rem-calc(14);
+    margin-bottom: 0;
+    margin-left: rem-calc(10);
+    padding-left: rem-calc(20);
+  }
+
+  &::before,
+  &::after {
+    border-radius: 50%;
+    content: '';
+
+    display: block;
+    position: absolute;
+  }
+
+  &::before {
+    border: $border-thin $white;
+    width: rem-calc(16);
+    height: rem-calc(16);
+
+    top: rem-calc(2);
+    left: rem-calc(2);
+
+    @include breakpoint($small) {
+      width: rem-calc(12);
+      height: rem-calc(12);
+
+      top: rem-calc(1);
+      left: rem-calc(1);
+    }
+  }
+
+  &::after {
+    background-color: $sg-green-bright;
+    opacity: 0;
+    visibility: hidden;
+    width: rem-calc(12);
+    height: rem-calc(12);
+
+    top: rem-calc(5);
+    left: rem-calc(5);
+
+    @include breakpoint($small) {
+      width: rem-calc(10);
+      height: rem-calc(10);
+
+      top: rem-calc(3);
+      left: rem-calc(3);
+    }
+  }
+}
+
+.v-radio__input:checked + .v-radio__label {
+  &::after {
+    opacity: 1;
+    visibility: visible;
+  }
+}

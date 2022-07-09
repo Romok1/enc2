@@ -1,0 +1,47 @@
+.exposure-scenarios-commodity {
+  @include list-margins(bottom, rem-calc(50));
+}
+
+@include exposure-scenarios-section('.exposure-scenarios-commodity__section');
+
+.exposure-scenarios-commodity__selected-mineral {
+  @include dashboard-sub-heading;
+}
+
+.exposure-scenarios-commodity__header {
+  margin-bottom: rem-calc(22);
+}
+
+.exposure-scenarios-commodity__heading {
+  @include dashboard-sub-heading;
+  margin-top: 0;
+}
+
+.exposure-scenarios-commodity__modal-trigger {
+  @include button--no-styles;
+  @include link-underlined;
+  font-size: rem-calc(16);
+  font-weight: $regular;
+  padding: 0;
+
+  @include breakpoint($small) {
+    font-size: rem-calc(18);
+  }
+}
+
+.exposure-scenarios-commodity__columns {
+  @include columns('mobile')
+}
+
+.exposure-scenarios-commodity__column {
+  @include dashboard-column-stack-mobile;
+
+  &.exposure-scenarios-commodity__column--select {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.exposure-scenarios-commodity__select {
+  width: 100%;
+}

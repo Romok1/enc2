@@ -1,0 +1,111 @@
+.map-container {
+  overflow: hidden;
+  width: 100%; height: calc(100vh - #{$filterPaneTopSmall});
+
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: $filterPaneTopSmall;
+  left: 0;
+  z-index: 1;
+
+  @include breakpoint($small) {
+    height: calc(100vh - #{$filterPaneTopMedium});
+    top: $filterPaneTopMedium;
+  }
+
+  &--embedded {
+    border-bottom: $border-xthick $sg-grey-dark;
+    color: $white;
+    font-size: rem-calc(80);
+    overflow: hidden;
+    height: rem-calc(500); max-height: 65vh;    
+
+    position: relative;
+    z-index: 1;
+  }
+}
+
+  .map {
+    height: 100%;
+    z-index: -1;
+  }
+
+  #map--embedded {
+    .mapboxgl-ctrl-top-left {
+      display: none;
+    }
+  }
+
+.embedded-map {
+  &__header {
+    @extend .gutters--large;
+    background: $sg-grey-dark;
+    color: $white;
+    padding-top: rem-calc(10);
+    padding-bottom: rem-calc(10);
+  }
+}
+//--------------------------------------------------
+// Mapbox controls
+//--------------------------------------------------
+
+.mapbox-gl-layer-ctrl-btn {
+  background-image: linear-gradient(transparent,transparent),url(https://api.mapbox.com/mapbox.js/v3.1.1/images/icons.svg);
+  background-position: center -103px;
+  background-repeat: no-repeat;
+  background-size: 26px 260px;
+
+  display: inline-block !important;
+  float: left;
+}
+
+.mapbox-gl-layer-ctrl-layers {
+  padding: rem-calc(3 5 0 0);
+  vertical-align: middle;
+
+  display: none;
+  float: left;
+}
+
+.mapbox-gl-layer-ctrl-layers.active {
+  display: inline-block;
+}
+
+.mapbox-gl-layer-ctrl-layers label {
+  font-size: small;
+  margin: 0;
+  padding: rem-calc(0 5 0 0);
+  vertical-align: text-top;
+
+  display: inline-block;
+}
+
+.mapbox-gl-layer-ctrl-layers input {
+  vertical-align: middle;
+}
+
+.mapboxgl-ctrl.mapboxgl-ctrl-geocoder {
+  max-width: 95%;
+  width: 95%;
+
+  @include breakpoint($small) {
+    max-width: rem-calc(400);
+    width: rem-calc(400);
+  }
+}
+
+.mapboxgl-ctrl.mapboxgl-ctrl-geocoder input[type='text'] {
+  color: #000;
+  font-size: rem-calc(16);
+  padding: rem-calc(15 15 15 40);
+  height: auto;
+}
+
+.mapboxgl-ctrl.mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--icon-search {
+  top: rem-calc(15);
+}
+
+.mapboxgl-ctrl.mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--icon-close {
+  margin-top: rem-calc(10);
+}

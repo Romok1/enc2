@@ -1,0 +1,55 @@
+.dashboard-save-modal {
+  &__form {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: rem-calc(34);
+    margin-top: 0;
+  }
+
+  &__overwrite {
+    &-icon {
+      width: rem-calc(21);
+    }
+
+    &-body {
+      font-size: rem-calc(16);
+      margin-top: rem-calc(20);
+
+      @include breakpoint($large) {
+        font-size: rem-calc(20);
+      }
+    }
+  }
+
+  &__cancel,
+  &__confirm,
+  &__save {
+    @include button;
+    @include button--small;
+
+    margin-top: rem-calc(20);
+
+    @include breakpoint($medium) {
+      @include button--medium;
+    }
+    @include breakpoint($large) {
+      @include button--large;
+    }
+  }
+
+  &__cancel {
+    @include button--white;
+  }
+
+  &__confirm {
+    @include button--red;
+
+    margin-right: .5em;
+  }
+
+  &__save {
+    @include button--green;
+  }
+}

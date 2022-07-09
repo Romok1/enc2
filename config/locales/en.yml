@@ -1,0 +1,261 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  name: English
+  common:
+    assets: 'Natural capital assets'
+    assets_short: 'Assets'
+    e_service: 'Ecosystem service'
+    e_services: 'Ecosystem services'
+    e_service_s: 'Ecosystem service(s)'
+    delete: 'Delete'
+    dependencies: 'Dependencies'
+    drivers: 'Drivers of environmental change'
+    drivers_short: 'Drivers'
+    filters: 'Filters'
+    hotspots: 'Hotspots'
+    impact_drivers: 'Impact drivers'
+    impact_driver_s: 'Impact driver(s)'
+    impacts: 'Impacts'
+    materialities: 'Materialities'
+    production_process: 'Production process'
+    production_processes: 'Production processes'
+    none: 'None'
+    not_available: 'Not available'
+    scale: 'Scale'
+    scale_log: 'Scale (logarithmic)'
+    sector: 'Sector'
+    sectors: 'Sectors'
+    security: 'Data Security Statement'
+    selected: 'Selected'
+    sub_industry: 'Sub-industry'
+    sub_industries: 'Sub-industries'
+    terms_and_conditions: 'Terms and Conditions'
+
+  asset_page:
+    drivers_title: 'Influenced by the following drivers of environmental change'
+    map_title: 'Global asset layer'
+    materiality_title: 'Materiality rating(s)'
+    services_title: 'Important for the following ecosystem services'
+
+  driver_page:
+    assets_title: 'Influences the following natural capital assets'
+    map_title: 'Global driver layer'
+    processes_title: 'Likely to influence the following production processes'
+    services_title: 'Influences the following ecosystem services'
+
+  explore:
+    filters_title: 'Filters'
+    tool:
+      provided_by: 'Provided by'
+    widget:
+      description: 'Select from a Sector or Sub-industry (based on the Global Industry Classification Standard) to explore  dependencies and impacts on natural capital.'
+      radios:
+        dependencies:
+          name: 'Dependencies'
+        impacts:
+          name: 'Impacts'
+
+  factsheet:
+    table_headers:
+      -
+        'Likely response'
+      -
+        'Effect of variability on services provision'
+      -
+        'Human action or natural variation'
+      -
+        'Timescale'
+      -
+        'Spatial Characteristics'
+    benefits: 'Benefits'
+
+  home:
+    text_media_new_features:
+      image_alt: 'Biodiversity goals agriculture dashboard'
+      heading: '<span class="text--highlighted">New</span> biodiversity module available!'
+      text: 'Sign up to access new features of ENCORE, including a module that helps financial institutions understand how they can move towards potential portfolio alignment with global biodiversity goals.'
+      link_title: 'Go to Biodiversity Goals Dashboard'
+      link_text: 'Dashboard'
+    text_media_map:
+      image_alt: 'Explore hotspots of natural capital depletion using the map'
+      heading: '<span class="text--highlighted">New:</span> Explore hotspots of natural capital depletion using the map'
+      text: 'Understand risks arising from the depletion of natural capital, and the dependencies and impacts of business activities, by exploring spatial data.'
+      link_title: 'Go to map'
+      link_text: 'Map'
+    text_media_video:
+      video_id: '6GIobiq4ze4'
+      heading: 'ENCORE helps you understand how the economy is exposed to natural capital-related risks'
+      text: 'Visualise how the economy depends and impacts on nature, and how environmental change can create risks for businesses.'
+      link_title: 'Go to About'
+      link_text: 'About'
+
+  footer:
+    data_footer_title: 'Related data resources'
+    explore_footer_title: 'ENCORE Explore Tool'
+    data_needs: 'Data needs'
+
+  form:
+    error_msg: 'It looks like there has been an error submitting your form.'
+    name: 'Full name'
+    email: 'Email address'
+    enquiry_type: 'Enquiry type'
+    message: 'Message'
+    new_enquiry_msg: 'ENCORE: %{type} from %{name}'
+    feedback: 'Feedback'
+    feedback_title: 'Feedback form'
+    enquiry_title: 'Enquiry form'
+    question: 'Question'
+    feedback: 'Feedback'
+    contact_thankyou_message: 'Thank you for getting in touch, we will get back to you as soon as possible.'
+    feedback_thankyou_message: 'Feedback sent! Thank you for getting in touch, we will get back to you as soon as possible.'
+    feedback_description: 'Get in touch to provide feedback or request more information, please fill in the form below.'
+    choose_file: 'Choose file'
+    drag_and_drop: 'Drag and drop file or select "choose file"'
+
+  map:
+    disclaimer: The designations employed and the presentation of material on this map do not imply the expression of any opinion whatsoever on the part of the Secretariat of the United Nations concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries. * Non-Self-Governing Territory ** Dotted line represents approximately the Line of Control in Jammu and Kashmir agreed upon by India and Pakistan. The final status of Jammu and Kashmir has not yet been agreed upon by the parties. *** A dispute exists between the Governments of Argentina and the United Kingdom of Great Britain and Northern Ireland concerning sovereignty over the Falkland Islands (Malvinas).
+    filter_pane_text:
+      title: 'Data layers'
+      hotspots_title: 'Natural capital hotspot layers'
+      description: 
+        dependencies: "Click each layer to display the spatial data and explore location-specific risks. Each data layer is accompanied by a description and a link to the external source."
+        hotspots: "Click each layer to display the spatial data and explore location-specific risks. Each data layer is accompanied by a description, and this 
+        <a href='https://s3.eu-west-2.amazonaws.com/ncfa.documents/resources/hotspots_methodology.pdf' title='Open natural capital hotspots briefing note pdf' target='_blank'>briefing note</a> 
+        summarises the methodology and data sources behind them."
+        impacts: "Click each layer to display the spatial data and explore location-specific risks. Each data layer is accompanied by a description and a link to the external source.<br><br>Datasets may not always capture all facets of an impact driver. For example, 'Disturbances' are represented by a dataset on light pollution, but there may be other forms of disturbances such as noise pollution for which global data are not currently available."
+
+  methodology:
+    table_headers:
+      -
+        'Criterion'
+      -
+        'Definition'
+      -
+        'RED'
+      -
+        'AMBER'
+      -
+        'GREEN'
+    csv_download:
+      title: Download the data that underpins ENCORE
+      text_logged_in: The files in the download include the data behind ENCORE's Explore tool and Natural Capital Dashboard. Please cite the source as indicated within the 'Read Me' when using the ENCORE data files in your work.
+      text_cta: Please sign up or login to download the data files.
+
+  resources:
+    not_in_map: 'Not included in the ENCORE map'
+    no_datasets: 'There are no results for your selections.'
+    resource_link: 'Resource site'
+
+  buttons:
+    cancel: Cancel
+    clear: 'Clear'
+    close: 'Close'
+    collapse: 'Collapse'
+    confirm: Confirm
+    contact_us: 'Contact us'
+    create: 'Create'
+    download_pdf: 'Download PDF'
+    download: 'Download'
+    edit: Edit
+    enter: 'Enter'
+    expand: 'Expand'
+    explore_map: 'Explore map'
+    explore: 'Explore'
+    factsheet: 'Factsheet'
+    find: 'Find'
+    hide: 'Hide'
+    hide_all: 'Hide all'
+    link: 'Link'
+    link_resource: 'Link to resource'
+    method: 'Method'
+    more_details: 'More details'
+    more_info: 'More info'
+    ncfa_site: 'Main NCFA website'
+    read_more: 'Read more'
+    resource_site: 'Resource site'
+    save: 'Save'
+    search: 'Search'
+    sector_placeholder: 'Enter a Sector'
+    send: 'Send'
+    sent: 'Sent'
+    show_all: 'Show all'
+    show_less: 'Show less'
+    show_more: 'Show more'
+    showing: 'Showing'
+    sub_industry_placeholder: 'Enter a Sub-industry'
+    view: 'View' #imperative
+    view_full_list: 'View full list'
+    view_more: 'View more'
+    view_results: 'View results'
+    visit: 'Visit' #imperative
+    watch_video: 'Watch video'
+
+  ratings:
+    vl: 'Very low'
+    l: 'Low'
+    m: 'Medium'
+    h: 'High'
+    vh: 'Very high'
+    u: 'Unknown'
+    materiality_rating:
+      name: 'Materiality rating'
+      vl: 'Very low materiality rating'
+      l: 'Low materiality rating'
+      m: 'Medium materiality rating'
+      h: 'High materiality rating'
+      vh: 'Very high materiality rating'
+      u: 'Unknown materiality rating'
+    importance:
+      vl: 'Very low importance for ecosystem service provision'
+      l: 'Low importance for ecosystem service provision'
+      m: 'Medium importance for ecosystem service provision'
+      h: 'High importance for ecosystem service provision'
+      vh: 'Very high importance for ecosystem service provision'
+      u: 'Unknown importance for ecosystem service provision'
+    impact:
+      name: Impact
+
+  tooltips:
+    hotspots: 'Explore where natural capital is being depleted, putting ecosystem services at risk.'
+    sector: 'Sectors represent broad divisions of the economy. There are 11 sectors in the Global Industry Classification Standard.'
+    sub_industry: 'The 157 sub-industries represent the most detailed level in the Global Industry Classification Standard.'
+    production_process: 'The production processes are the level at which links with the environment are assessed. One sub-industry can link to more than one production process just as one production process can be linked to more than one sub-industry.'
+    services: 'Ecosystem services are the links between nature and business. Each of these services represent a benefit that nature provides to enable or facilitate business production processes.'
+    assets: 'Natural capital assets are specific elements within nature that provide the goods and services that the economy depends on.'
+    map_filter: 'Select an ecosystem service here to explore spatial data for the related natural capital assets and environmental drivers of change.'
+    drivers: 'Natural or man-made pressures that can affect natural capital assets and their ability to continue providing goods and services.'
+    dependencies: Explore the ways in which economic activities rely on ecosystem services and natural capital.
+    impacts: Explore the ways in which economic activities impact on ecosystem services and natural capital.
+
+  social:
+    site_description: 'Exploring Natural Capital Opportunities, Risks and Exposure'

@@ -1,0 +1,18 @@
+<%= render partial: 'devise/mailer/shared/header' %>
+
+<%= render partial: 'devise/mailer/shared/body', locals: {
+  subject: t('devise.mailer.confirmation_instructions.subject'),
+  welcome: t(
+    'devise.mailer.confirmation_instructions.welcome_user', 
+    user: @resource.email
+  ),
+  paragraphs_before_link: [
+    t('devise.mailer.confirmation_instructions.confirm_your_account_email')
+  ],
+  link: {
+    text: t('devise.mailer.confirmation_instructions.confirm_my_account'),
+    url: confirmation_url(@resource, confirmation_token: @token)
+  }
+} %>
+
+<%= render partial: 'devise/mailer/shared/footer' %>

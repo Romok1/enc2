@@ -1,0 +1,17 @@
+.portfolio-generator {
+  padding-top: $item-padding-small;
+  text-align: left;
+
+  @include breakpoint($medium) {
+    padding-top: $item-padding-medium;
+  }
+
+  @include breakpoint($large) {
+    padding-top: $item-padding-large;
+  }
+}
+
+.portfolio-generator__title {
+  margin: 0 auto rem-calc(30);
+  text-align: center;
+}

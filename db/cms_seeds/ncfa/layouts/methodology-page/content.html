@@ -1,0 +1,26 @@
+[attributes]
+---
+label: Methodology Page
+app_layout: application
+position: 0
+
+[content]
+{{ cms:partial "layouts/header" }}
+{{ cms:text title, render: false }}
+{{ cms:text nav_label, render: false }}
+{{ cms:markdown description, render: false}}
+{{ cms:markdown description, render: false}}
+<main class="container--medium page-padding">
+  {{ cms:partial "methodology_criteria/csv_download"}}
+  <section aria-label="Methodology" class="section-padding--bottom">{{ cms:markdown content }}</section>
+  {{ cms:partial "methodology_criteria/methodology_tables"}}
+  <section aria-label="Methodology" class="section-padding--bottom">{{ cms:markdown content_after_criteria_tables }}</section>
+  <section aria-label="References" class="methodology-page__references">{{ cms:markdown references }}</section>
+</main>
+
+[js]
+
+
+[css]
+
+

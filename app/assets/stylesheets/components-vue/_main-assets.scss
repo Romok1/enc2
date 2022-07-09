@@ -1,0 +1,154 @@
+$main-assets-column-margin: rem-calc(30);
+
+@mixin main-assets-column-1 {
+  @include dashboard-column-stack-mobile;
+  flex-shrink: 0;
+}
+
+@mixin main-assets-column-2 {
+  @include breakpoint($small) {
+    width: 100%;
+  }
+}
+
+.main-assets {
+  &__header {
+    @include breakpoint($small) {
+      margin-bottom: rem-calc(24);
+
+      display: flex;
+    }
+  }
+
+  &__text {
+    @include main-assets-column-1;
+    @include dashboard-paragraph;
+
+    @include breakpoint($medium) {
+      margin-bottom: rem-calc(40);
+    }
+  }
+
+  &__legend {
+    margin-bottom: rem-calc(14);
+
+    @include breakpoint($small) {
+      margin-bottom: 0;
+
+      display: flex;
+      align-self: flex-end;
+    }
+  }
+
+  &__legend-item {
+    @include list-margins(right, 1em);
+    color: $sg-grey-dark;
+    font-size: rem-calc(14);
+
+    display: inline-flex;
+    align-items: center;
+
+    &::before {
+      border-radius: 100%;
+      content: '';
+      margin-right: 0.35em;
+      width: 1.2em;
+      height: 1.2em;
+
+      display: block;
+      flex-shrink: 0;
+    }
+
+    &--ecosystem_services {
+      &::before {
+        background-color: $sg-aqua-green;
+      }
+    }
+
+    &--impact_drivers {
+      &::before {
+        background-color: $sg-purple;
+      }
+    }
+  }
+
+  &__rows {
+    @include ul--unstyled;
+  }
+
+  &__row {
+    @include list-margins(bottom, $list-item-margin-small);
+    border: $border-thin $sg-grey;
+
+    @include breakpoint($medium) {
+      @include list-margins(bottom, $list-item-margin-medium);
+      border-radius: rem-calc(6);
+    }
+  }
+
+  &__asset {
+    @include item-padding((top, right, bottom, left));
+    @include columns('mobile');
+
+    @include breakpoint($small) {
+      align-items: center;
+    }
+  }
+
+  &__asset-name {
+    @include main-assets-column-1;
+    font-size: rem-calc(18);
+    font-weight: $light;
+    margin-bottom: rem-calc(16);
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__asset-name-link {
+    @include arrow--right(false);
+    margin-left: auto;
+
+    @include breakpoint($small) {
+      display: none;
+    }
+  }
+
+  &__bars {
+    @include main-assets-column-2;
+
+    @include breakpoint($small) {
+      margin-right: rem-calc(60);
+    }
+
+    @include breakpoint($medium) {
+      margin-right: rem-calc(80);
+    }
+  }
+
+  &__link {
+    display: none;
+
+    @include breakpoint($small) {
+      white-space: nowrap;
+
+      display: inline-block;
+    }
+  }
+
+  &__link-text {
+    margin-right: rem-calc(2);
+    white-space: nowrap;
+
+    display: none;
+
+    @include breakpoint($medium) {
+      display: inline-block;
+    }
+  }
+
+  &__link-icon {
+    @include arrow--right(false);
+    margin-bottom: rem-calc(2);
+  }
+}

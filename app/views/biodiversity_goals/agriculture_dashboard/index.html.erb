@@ -1,0 +1,7 @@
+<%= render partial: "layouts/header", locals: { show_hero: false } %>
+<agriculture-dashboard 
+  :preload-data="<%= @data.to_json %>"
+  :for-pdf="<%= @for_pdf %>"
+  module="agriculture"
+>
+</agriculture-dashboard>

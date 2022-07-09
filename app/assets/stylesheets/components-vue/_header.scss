@@ -1,0 +1,62 @@
+.header {
+  &.bg-image-overlay { z-index: $z-header; }
+
+  &__contents {
+    color: $white;
+
+    position: relative;
+  }
+
+  &__hero {
+    padding: rem-calc(20) $gutter-small;
+
+    @include breakpoint($small) { 
+      padding: rem-calc(30) 25% rem-calc(30) 10%
+    }
+
+    @include breakpoint($medium) {
+      padding: rem-calc(40) 50% rem-calc(40) 10%;
+    }
+
+    @include breakpoint($large) { padding-right: 55%; }
+
+    &--min-height {
+      @include breakpoint($medium) {
+        min-height: rem-calc(256);
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: rem-calc(20);
+    width: rem-calc(60); height: rem-calc(60);
+
+    align-self: flex-start;
+    flex-shrink: 0;
+
+    @include breakpoint($small) {
+      width: rem-calc(90); height: rem-calc(90);
+    }
+
+    @include breakpoint($medium) {
+      width: rem-calc(140); height: rem-calc(140);
+
+      align-self: auto;
+    }
+  }
+
+  &__title {
+    @extend .narrow-title--large;
+    margin: auto 0;
+    padding-right: rem-calc(60);
+    text-transform: none;
+
+    &+ .header__intro {
+      margin: rem-calc(12) 0 0 0;
+
+      p { 
+        margin: 0;
+      }
+    }
+  }
+}

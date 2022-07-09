@@ -1,0 +1,10 @@
+.page {
+  &.contact {
+    background-image: image_url('hero/contact.jpg');
+    background-size: cover;
+
+    .feedback-svg {
+      display: none;
+    }
+  }
+}

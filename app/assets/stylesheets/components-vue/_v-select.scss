@@ -1,0 +1,603 @@
+//--------------------------------------------------
+// Variables 
+//--------------------------------------------------
+$radio-width: rem-calc(21);
+$select-padding-side: $inputPaddingSide;
+$search-icon-width: rem-calc(20);
+$search-icon-margin-external: $select-padding-side;
+$search-icon-margin-internal: rem-calc(6);
+$drop-arrow-height: rem-calc(8);
+$drop-arrow-icon-width: rem-calc(18);
+
+$drop-arrow-width: $drop-arrow-icon-width + $search-icon-margin-internal + $search-icon-margin-external;
+$selected-count-width: rem-calc(20);
+$v-multiselect-input-padding-right: $drop-arrow-width + $selected-count-width + rem-calc(6);
+
+//--------------------------------------------------
+// Mixins
+//--------------------------------------------------
+@mixin v-select {
+  cursor: pointer;
+
+  &.active {
+    .v-select__drop-arrow {
+      transform: rotate(180deg)
+    }
+  }
+
+  &.disabled {
+    cursor: default;
+
+    .v-select__selection {
+      opacity: 0.5;
+    }
+
+  }
+}
+
+@mixin v-select-label {
+  cursor: inherit;
+  margin-top: 0;
+  margin-bottom: rem-calc(5);
+
+  display: flex;
+  align-items: center;
+
+  .filter-pane & {
+    margin: rem-calc(14) 0;
+  }
+}
+
+@mixin v-select-input {
+  background-color: $white;
+  font-size: $inputFontSize;
+  font-weight: $light;
+  padding: $inputPadding;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+
+
+  &::placeholder {
+    font-weight: $light;
+  }
+
+  &::-ms-clear {
+    display: none;
+  }
+
+  .explore-widget & {
+    background-color: $sg-green-dark;
+    color: $white;
+    font-weight: $regular;
+
+    @include breakpoint($small) {
+      font-size: rem-calc(16);
+    }
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  .dashboard-filters--portfolio-options & {
+    font-size: rem-calc(16);
+  }
+}
+
+@mixin v-select-dropdown-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+
+  .explore-filters & {
+    @include breakpoint($medium) {
+      padding-right: rem-calc(20);
+    }
+  }
+}
+
+@mixin v-select-selected-count {
+  background-color: $sg-green-bright;
+  border-radius: 50%;
+  font-size: rem-calc(12);
+  font-weight: $regular;
+  line-height: $selected-count-width;
+  text-align: center;
+  width: $selected-count-width; height: $selected-count-width;
+
+  display: inline-block;
+  flex-shrink: 0;
+  
+  position: absolute;
+  right: $drop-arrow-width;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  .explore-filters & {
+    @include breakpoint($medium) {
+      display: none;
+    }
+  }
+}
+
+@mixin v-select-drop-arrow {
+  @include button--no-styles;
+  @include arrow-svg;
+  padding: 0;
+
+  .explore-filters & {
+    @include breakpoint($medium) {
+      margin-top: - $drop-arrow-height;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .explore-widget & {
+    display: none;
+  }
+}
+
+@mixin v-select-search {
+  background-color: $white;
+  //IE11 FIX - using px as 0.0625rem comes out as 0.96px on IE and lhs border doesn't always show
+  border: 1px solid $sg-grey;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .explore-widget & {
+    background-color: $sg-green-xdark;
+    border: none;
+  }
+
+  .filter-pane & {
+    border: none;
+  }
+
+  .explore-filters & {
+    @include breakpoint($medium) {
+      border: none
+    }
+  }
+}
+
+@mixin v-select-search-input {
+  @include v-select-input;
+  border: none;
+
+  .v-select & { //overwrite input styling in base
+    padding-right: $drop-arrow-width;
+
+    .explore-filters & {
+      @include breakpoint($medium) {
+        padding: 0;
+      }
+    }
+  }
+
+  .v-select.v-select--multi & {
+    padding-right: $v-multiselect-input-padding-right;
+
+    .explore-filters & {
+      @include breakpoint($medium) {
+        padding: 0;
+      }
+    }
+  }
+
+  .field & {
+    border: none;
+  }
+
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+@mixin v-select-search-icons {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@mixin v-select-search-icon {
+  border: none;
+  background-color: transparent;
+  background-image: image-url('icons/Search-white.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  font: inherit;
+  margin: 0 $search-icon-margin-external 0 $search-icon-margin-internal;
+  padding: 0;
+  width: $search-icon-width; height: $search-icon-width;
+
+  display: inline-block;
+
+  position: relative;
+}
+
+@mixin v-select-search-icon--black {
+  @include v-select-search-icon;
+  background-image: image-url('icons/Search.svg');
+}
+
+@mixin v-select-reset {
+  @include v-select-search-icon;
+  background-image: image-url('icons/Close-white.svg');
+  background-size: 100%;
+  
+  display: block;
+}
+
+@mixin v-select-reset--black {
+  @include v-select-reset;
+  background-image: image-url('icons/Close.svg');
+}
+
+@mixin v-select-dropdown-wrapper {
+  background-color: $white;
+  box-shadow: $shadow-light;
+  border: $border-thin rgba($sg-grey, 0.5);
+  color: $black;
+  width: 100%;
+
+  position: absolute;
+  top: calc(100% + #{rem-calc(13)});
+  left: 0;
+  z-index: $z-200;
+
+  &::before {
+    background-color: $white;
+    border-top: $border-thin rgba($sg-grey, 0.5);
+    border-left: $border-thin rgba($sg-grey, 0.5);
+    content: "";
+    width: rem-calc(16); height: rem-calc(16);
+
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translate(0, -1px) translate(-50%, -50%)
+      scale(1.2, 1) rotate(45deg);
+  }
+}
+
+@mixin v-select-dropdown {
+  list-style-type: none;
+  margin: 0;
+  padding: rem-calc(20);
+  overflow-y: auto;
+  max-height: rem-calc(300);
+
+  .explore-widget & {
+    width: 100%;
+
+    top: calc(100% + #{rem-calc(12)});
+    left: 0;
+  }
+}
+
+@mixin v-select-option {
+  @include h4;
+  cursor: pointer;
+  margin-bottom: 0;
+  padding: $list-item-margin-small/2 0;
+
+  display: flex;
+  position: relative;
+
+  &[disabled] {
+    cursor: default;
+    opacity: .5;
+  }
+
+  &.selected {
+    .v-select__radio {
+      background-color: $sg-green-bright;
+    }
+
+    .v-select__checkbox {
+      background: $sg-green-bright image-url('icons/Tick.svg') center no-repeat;
+      background-size: 70%;
+    }
+  }
+
+  &.highlighted {
+    .v-select__radio {
+      box-shadow: 0 0 0 rem-calc(2) $sg-green-bright;
+    }
+
+    .v-select__checkbox {
+      @include fake-focus;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    .v-select__radio { 
+      box-shadow: 0 0 0 rem-calc(2) $sg-green-bright;
+    }
+
+    .v-select__checkbox {
+      border-width: $border-width-regular;
+      padding: 0;
+    }
+  }
+
+  .dashboard-filters--portfolio-options & {
+    font-size: rem-calc(16);
+  }
+}
+
+@mixin v-select--fullscreen($breakpoint) {
+  @include breakpoint-down($breakpoint) {
+    .v-select {
+      &__search {
+        border: none;
+        border-bottom: $border-thin $sg-grey-light;
+        height: rem-calc(42);
+      }
+
+      &__search-input,
+      &__toggle {
+        font-weight: $bold;
+      }
+
+      &__dropdown-wrapper {
+        border: none;
+        box-shadow: none;
+        position: relative;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      &__dropdown {
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        overflow: visible;
+        max-height: none;
+      }
+    }
+  }
+}
+
+@mixin v-select-checkbox {
+  border: $border-thin $sg-grey;
+  box-sizing: content-box;
+  margin-right: $list-item-margin-small;
+  margin-bottom: rem-calc(1);
+  padding: rem-calc(1);
+  width: 1em; height: 1em;
+
+  display: inline-block;
+}
+
+@mixin v-select-radio {
+  border: $white rem-calc(3) solid;
+  border-radius: 100%;
+  box-shadow: 0 0 0 rem-calc(1) $sg-grey;
+  margin: rem-calc(2 14 2 2);
+  width: $radio-width; height: $radio-width;
+
+  display: inline-block; //ie11 fix
+  flex-shrink: 0;
+}
+
+//--------------------------------------------------
+// Classes
+//--------------------------------------------------
+.v-select {
+  @include v-select;
+
+  &__label {
+    @include v-select-label;
+  }
+
+  &__selection {
+    @include h3;
+    margin: 0;
+  }
+
+  &__search {
+    @include v-select-search;
+  }
+
+  &__search-input,
+  &__toggle {
+    @include v-select-search-input;
+  }
+
+  &__search-icons {
+    @include v-select-search-icons;
+  }
+
+  &__search-icon {
+    @include v-select-search-icon;
+
+    &--reset {
+      @include v-select-reset;
+    }
+  }
+
+    &__selected-count {
+      @include v-select-selected-count;
+    }
+
+    &__drop-arrow {
+      @include v-select-drop-arrow;
+    }
+
+    &__dropdown-wrapper {
+      @include v-select-dropdown-wrapper;
+    }
+
+      &__dropdown {
+        @include v-select-dropdown;
+      }
+
+        &__option {
+          @include v-select-option;
+        }
+
+        &__radio {
+          @include v-select-radio;
+        }
+
+        &__checkbox {
+          @include v-select-checkbox;
+        }
+
+//--------------------------------------------------
+// Fullscreen mobile styling
+//--------------------------------------------------
+  &--fullscreen-mobile {
+    @include v-select--fullscreen($small)
+  }
+
+  &--fullscreen-tablet {
+    @include v-select--fullscreen($medium)
+  }
+
+//--------------------------------------------------
+// Search styling
+//--------------------------------------------------
+  &--search {
+    .v-select__drop-arrow {
+      margin-left: $search-icon-margin-internal;
+      margin-right: $search-icon-margin-external;
+      width: $drop-arrow-icon-width;
+    }
+  }
+  
+//--------------------------------------------------
+// Icon only
+//--------------------------------------------------
+  &--icon {
+    .v-select {
+
+      &__search {
+        background-color: transparent;
+        border: none;
+      }
+
+      &__search-icons {
+        position: static;
+      }
+
+      &__drop-arrow {
+        @include button--no-styles;
+        @include arrow-svg-white-circle-bg-img;
+        margin: 0;
+        padding: 0;
+        width: rem-calc(23);
+        height: rem-calc(23);
+      }
+
+      &__dropdown-wrapper {
+        width: auto;
+        min-width: rem-calc(200);
+
+        top: calc(100% + #{rem-calc(16)});
+        right: rem-calc(-14);
+        left: auto;
+
+        &::before {
+          right: rem-calc(8);
+          left: auto;
+        }
+
+        @include breakpoint($small) {
+          right: 50%;
+
+          transform: translateX(50%);
+
+          &::before {
+            left: 50%;
+            right: auto;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+//--------------------------------------------------
+// Autocomplete styling
+//--------------------------------------------------
+.autocomplete {
+  width: 100%; height: 100%;
+
+  &__container {
+    width: 100%; height: 100%;
+  }
+
+  &__input {
+    @include v-select-search-input;
+
+    &:focus::placeholder {
+      color: $sg-grey;
+    }
+
+    &::placeholder {
+      opacity: 1;
+      color: $black;
+    }
+  }
+
+  &__search-icons {
+    @include v-select-search-icons;
+  }
+
+  &__magnifying-glass {
+    @include v-select-search-icon--black;
+  }
+
+  &__delete {
+    @include v-select-reset--black;
+  }
+
+  &__results-container {
+    @include v-select-dropdown-wrapper;
+  }
+
+  &__results {
+    @include v-select-dropdown;
+  }
+
+  &__error-message {
+    @include h4;
+  }
+
+  &__result {
+    @include v-select-option;
+  }
+}
+
+.field.field--invalid {
+  .v-select--search .v-select__search-input {
+    border: rem-calc(1) solid $sg-error-red;
+  }
+}

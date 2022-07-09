@@ -1,0 +1,24 @@
+<%
+  title ||= ''
+  description ||= ''
+  label = @cms_page ? cms_fragment_content("title") : title
+  description_html = @cms_page ? cms_fragment_render("description") : "<p>#{description}</p>".html_safe
+%>
+
+<header class="header bg-img bg-image-overlay" <%= style_background_image(hero_image).html_safe %>>
+  <div class="header__contents flex flex-column">
+    <%= render "layouts/nav" %>
+
+    <% unless defined?(show_hero) && show_hero === false %>
+      <div class="header__hero <%= 'header__hero--min-height' unless style_background_image(hero_image).empty? %>">
+        <h1 class="header__title"><%= label %></h1>
+
+        <% unless description_html.empty? %>
+          <div class="header__intro">
+            <%= description_html %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</header>

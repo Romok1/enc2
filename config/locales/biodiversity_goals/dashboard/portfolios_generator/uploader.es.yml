@@ -1,0 +1,11 @@
+es:
+  biodiversity_goals:
+    dashboard:
+      portfolios_generator:
+        uploader:
+          legend:
+            agriculture: Agriculture Portfolio
+            mining: Mining Portfolio
+          heading: Upload CSV file
+          button: Upload
+          download_csv_template: Download CSV template

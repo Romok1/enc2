@@ -1,0 +1,78 @@
+$dashboard-column-margin-tablet: rem-calc(24);
+$dashboard-column-margin-desktop: rem-calc(60);
+
+$dashboard-column-two-width-tablet: rem-calc(250);
+$dashboard-column-one-width-tablet: calc(100% - #{$dashboard-column-two-width-tablet} - #{$dashboard-column-margin-tablet});
+
+$dashboard-body-padding-small: rem-calc(16);
+$dashboard-body-padding: rem-calc(32);
+$dashboard-section-separation: rem-calc(60);
+
+
+@mixin dashboard-column-stack-mobile {
+  @include column(rem-calc(20), $dashboard-column-margin-tablet, $dashboard-column-margin-desktop, 'mobile');
+}
+
+@mixin dashboard-column-stack-tablet {
+  @include column(rem-calc(20), rem-calc(40), $dashboard-column-margin-desktop);
+}
+
+@mixin dashboard-paragraph {
+  font-weight: $regular;
+}
+
+@mixin dashboard-sub-heading {
+  @include h3;
+  margin-block-end: 0.6em;
+}
+
+@mixin dashboard-sub-heading--small {
+  @include h3;
+  font-size: rem-calc(16);
+  margin-block-end: 0.6em;
+
+  @include breakpoint($small) {
+    font-size: rem-calc(18);
+  }
+}
+
+@mixin dashboard-intro {
+  @include dashboard-paragraph;
+
+  @include breakpoint($small) {
+    width: $dashboard-column-one-width-tablet;
+  }
+
+  @include breakpoint($medium) {
+    max-width: calc(50% - #{$dashboard-column-margin-desktop}/2)
+  }
+}
+
+@mixin exposure-scenarios-section($selector) {
+  #{$selector} {
+    border-top: $border-thin $sg-grey-light;
+    
+    &:not(:first-child) {
+      padding-top: rem-calc(30);
+    }
+  
+    &:not(:last-child) {
+      padding-bottom: rem-calc(30);
+    }
+  
+    &:first-child,
+    &#{$selector}--grey {
+      border-top: 0;
+    }
+  
+    &#{$selector}--grey {
+      background-color: $sg-grey-xlight;
+      margin: 0 rem-calc(-8) rem-calc(-8);
+      padding: rem-calc(30) rem-calc(15);
+  
+      @include breakpoint($medium) {
+        margin: 0 rem-calc(-15) rem-calc(-15);
+      }
+    }
+  }
+}

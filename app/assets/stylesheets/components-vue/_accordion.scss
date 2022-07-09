@@ -1,0 +1,128 @@
+//--------------------------------------------------
+// accordion
+//--------------------------------------------------
+.accordion {
+
+  //--------------------------------------------------
+  // standard accordion
+  //--------------------------------------------------
+    &--standard {
+      &:first-child { border-top: solid 1px $sg-grey; }
+
+      &> .accordion__item {
+        border-bottom: solid 1px $sg-grey;
+
+        &> .accordion {
+          &__trigger {
+            @extend .flex;
+            @extend .flex-h-between;
+            @extend .flex-v-center;
+            @extend .gutters;
+            font-size: rem-calc(18);
+            font-weight: $bold;
+            height: rem-calc(70);
+
+            &:after {
+              font-family: 'fontello';
+              content: '\e80e'; //plus
+            }
+
+            &.is-active {
+              background-color: $sg-grey-dark;
+
+              &:after { content: '\e820'; } //minus
+            }
+          }
+
+          &__target {
+            @extend .gutters;
+            background-color: $sg-grey-dark;
+
+            .accordion__content {
+              padding: rem-calc(10 0);
+            }
+          }
+        }
+      }
+    }
+
+  //--------------------------------------------------
+  // radio button accordion
+  //--------------------------------------------------
+    &--radio {
+      .accordion {
+        &__trigger {
+          @extend .flex;
+          @extend .flex-v-center;
+          font-size: rem-calc(16);
+          font-weight: $light;
+          padding: rem-calc(12 0);
+
+          &:before {
+            background-color: $sg-grey-dark;
+            content: '';
+            border: $sg-grey-dark 3px solid;
+            border-radius: 100%;
+            box-shadow: 0 0 0 1px $sg-grey;
+            margin-left: rem-calc(1);
+            margin-right: rem-calc(14);
+            width: rem-calc(16); height: rem-calc(16);
+
+            display: inline-block; //ie11 fix
+          }
+
+          &.is-active {
+            &:before {
+              background-color: $white;
+              box-shadow: 0 0 0 1px $white;
+            }
+          }
+        }
+
+          &__info-icon { margin-left: auto; }
+
+        &__content {
+          padding: rem-calc(20 0);
+        }
+      }
+    }
+
+  //--------------------------------------------------
+  // box accordion
+  //--------------------------------------------------
+    &--box {
+      .accordion {        
+        &__item {
+          border: $border-thin $sg-grey;
+          box-shadow: $shadow-dark;
+          margin-bottom: rem-calc(14); 
+
+          &--disabled {
+            box-shadow: none;
+            pointer-events: none;
+            
+            .accordion__trigger {
+              cursor: default;
+            }
+          }
+        }
+
+        &__item-label {
+          pointer-events: none;
+        }
+
+          &__trigger {
+            @include h4;
+            cursor: pointer;
+            font-weight: $regular;
+            padding: rem-calc(14 12);
+            width: 100%; height: 100%;
+          }
+
+          &__target {
+            padding: rem-calc(0 12);
+          }
+
+      }
+    }
+  }

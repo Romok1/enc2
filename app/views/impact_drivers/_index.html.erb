@@ -1,0 +1,7 @@
+<%= render partial: 'layouts/list_page', locals: {
+    items:        ImpactDriver.with_translations(I18n.locale).all.order(:name), 
+    description:  cms_fragment_render('content'),
+    item_path:    method(:impact_driver_path),
+    title:        t('common.impact_drivers')
+  }
+%>

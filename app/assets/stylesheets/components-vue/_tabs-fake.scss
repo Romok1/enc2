@@ -1,0 +1,68 @@
+//--------------------------------------------------
+// variables
+//--------------------------------------------------
+
+//--------------------------------------------------
+// mixins
+//--------------------------------------------------
+@mixin tabs-fake-trigger {
+  cursor: pointer;
+  font-weight: $bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+//--------------------------------------------------
+// classes
+//--------------------------------------------------
+.tabs-fake--basic {
+  @include ul--unstyled;
+  border: $border-regular $white;
+  border-bottom-color: transparent;
+  width: 100%;
+
+  display: inline-flex;
+
+  @include breakpoint($small) {
+    width: auto;
+  }
+
+  .tab__trigger {
+    @include tabs-fake-trigger;
+    margin: 0;
+    padding: rem-calc(12 30);
+    min-width: rem-calc(80);
+    width: 50%;
+
+    @include breakpoint($small) {
+      width: auto;
+    }
+
+    &.active {
+      background-color: $white;
+      color: $sg-green-dark;
+    }
+  }
+}
+
+.tabs-fake--rounded {
+  @include ul--unstyled;
+  margin-top: rem-calc(14);
+  margin-bottom: rem-calc(50);
+  text-align: center;
+
+  .tab__trigger {
+    @include tabs-fake-trigger;
+    border-radius: $radius-global;
+    color: $sg-grey-dark;
+    padding: rem-calc(9 20);
+    margin: rem-calc(0 5);
+
+    display: inline-block;
+
+    &.active {
+      background-color: $sg-grey-dark;
+      color: $white;
+    }
+  }
+}

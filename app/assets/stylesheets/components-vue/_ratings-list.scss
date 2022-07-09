@@ -1,0 +1,96 @@
+//--------------------------------------------------
+// classes
+//--------------------------------------------------
+
+.ratings-list__header {
+  @include breakpoint($small) {
+    margin-bottom: rem-calc(30);
+  }
+}
+
+.ratings-list_heading {
+  font-size: rem-calc(18);
+  font-weight: $regular;
+  margin-top: 0;
+
+  @include breakpoint($small) {
+    font-size: rem-calc(20);
+    max-width: calc(50% - #{$dashboard-column-margin-tablet / 2});
+  }
+
+  @include breakpoint($medium) {
+    max-width: calc(50% - #{$dashboard-column-margin-desktop / 2});
+  }
+}
+
+.ratings-list__text {
+  @include dashboard-paragraph;
+
+  .ratings-list__header & {
+    @include breakpoint($small) {
+      max-width: calc(50% - #{$dashboard-column-margin-tablet / 2});
+    }
+
+    @include breakpoint($medium) {
+      max-width: calc(50% - #{$dashboard-column-margin-desktop / 2});
+    }
+  }
+}
+
+.ratings-list__body {
+  position: relative;
+}
+
+.ratings-list__selected {
+  margin-bottom: rem-calc(10);
+  text-transform: capitalize;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  @include breakpoint($small) {
+    position: absolute;
+    top: rem-calc(-50);
+  }
+}
+
+.ratings-list__selected-rating {
+  margin: rem-calc(0 8);
+  width: rem-calc(36);
+  height: rem-calc(36);
+
+  display: inline-block;
+
+  @include breakpoint($small) {
+    width: rem-calc(25);
+    height: rem-calc(25);
+  }
+
+  &::before {
+    color: $white;
+    font-size: rem-calc(14);
+    line-height: rem-calc(36);
+    margin-right: 0;
+    margin-bottom: rem-calc(10);
+    width: 100%;
+    height: 100%;
+
+    @include breakpoint($small) {
+      font-size: rem-calc(10);
+      line-height: rem-calc(25);
+      margin-bottom: 0;
+    }
+  }
+}
+
+.ratings-list__columns {
+  @include ul--unstyled;
+  @include columns('mobile');
+}
+
+.ratings-list__column {
+  @include dashboard-column-stack-mobile;
+  position: relative;
+}

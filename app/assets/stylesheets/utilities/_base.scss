@@ -1,0 +1,508 @@
+
+
+//--------------------------------------------------
+// text
+//--------------------------------------------------
+
+@mixin h1 {
+  font-size: rem-calc(24);
+  font-weight: $bold;
+  line-height: 1.25;
+  margin-bottom: rem-calc(2);
+
+  @include breakpoint($small) {
+    font-size: rem-calc(34);
+  }
+}
+
+.h1 {
+  @include h1;
+
+  &+ p {
+    margin-top: 0;
+  }
+}
+
+
+@mixin h2 {
+  font-size: rem-calc(20);
+  font-weight: $bold;
+  line-height: $line-height-title;
+
+  @include breakpoint($small) { font-size: rem-calc(24); }
+}
+
+.h2 {
+  @include h2;
+
+  &--margin {
+    margin-block-start: 0.8em;
+    margin-block-end: 0.8em;
+  }
+}
+
+
+@mixin h3 {
+  font-size: rem-calc(18);
+  font-weight: $bold;
+  line-height: $line-height-title;
+
+  @include breakpoint($small) { font-size: rem-calc(20); }
+}
+
+.h3 {
+  @include h3;
+
+  &--margin {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+}
+
+@mixin h4 {
+  font-size: rem-calc(18);
+  font-weight: $light;
+  line-height: $line-height-title;
+
+  @include breakpoint($small) { font-size: rem-calc(20); }
+}
+
+.h4 {
+  @include h4;
+}
+
+.narrow-title {
+  &--small {
+    max-width: $max-header-width-small;
+  }
+
+  &--medium {
+    max-width: $max-header-width-medium;
+  }
+
+  &--large {
+    max-width: $max-header-width-large;
+  }
+}
+
+.paragraph {
+  font-size: rem-calc(14);
+  font-weight: $light;
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: rem-calc(14);
+
+  @include breakpoint($small) { font-size: rem-calc(16); }
+
+  &--no-margin {
+    margin-bottom: 0;
+  }
+}
+
+//--------------------------------------------------
+// html elements
+//--------------------------------------------------
+@mixin link-underlined {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  font-family: $body-font;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $body-font;
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+h3 {
+  @include h3;
+}
+
+h4 {
+  @include h4;
+}
+
+p {
+  @extend .paragraph;
+
+  a {
+    @include link-underlined;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.a--underline {
+  @include link-underlined;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  line-height: 1.5;
+  margin: rem-calc(8 0 10 0);
+  padding-left: rem-calc(16);
+}
+
+li {
+  @extend .paragraph;
+  margin-bottom: rem-calc(6);
+}
+
+blockquote {
+  font-size: rem-calc(22);
+  font-weight: $light;
+  line-height: 1.3;
+  margin: rem-calc(0 0 20 0);
+
+  @include breakpoint($small) { font-size: rem-calc(26); }
+  @include breakpoint($medium) { font-size: rem-calc(30); }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+label {
+  color: inherit;
+  cursor: inherit;
+  margin: rem-calc(16 0 4 0);
+  display: block;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+textarea {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  font-size: $inputFontSize;
+  padding: $inputPadding;
+  width: 100%;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+//--------------------------------------------------
+// tables
+//--------------------------------------------------
+table {
+  border: $border-thin $sg-grey;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th {
+  @include h3;
+  padding: rem-calc(5 12);
+  text-align: left;
+  vertical-align: top;
+
+  @include breakpoint($small) {
+    padding: rem-calc(14);
+  }
+}
+
+tr {
+  @extend .paragraph;
+}
+
+td {
+  padding: rem-calc(12);
+  @include breakpoint($small) { padding: rem-calc(14); }
+  text-align: left;
+  vertical-align: top;
+}
+
+.table-col {
+  &--red {
+    background-color: $rag-red
+  }
+  &--amber {
+    background-color: $rag-amber
+  }
+  &--green {
+    background-color: $rag-green
+  }
+}
+
+.bg--white {
+  background-color: $white;
+}
+
+.rich-text {
+  a { @include link-underlined }
+  ul, ol { padding-left: rem-calc(40) }
+}
+
+//--------------------------------------------------
+// site structure
+//--------------------------------------------------
+.site-width {
+  @include breakpoint($large){ width: $site-width; }
+}
+
+@mixin gutters($sides:'both', $type:'padding') {
+  $sides: if($sides == 'both', ('left', 'right'), ($sides));
+
+  @each $s in $sides {
+    #{$type}-#{$s}: $gutter-small;
+
+    @include breakpoint($small) { #{$type}-#{$s}: $gutter-medium; }
+    @include breakpoint($medium) { #{$type}-#{$s}: $gutter-large; }
+  }
+}
+
+@mixin container($max-width: rem-calc(800)) {
+  @extend %container;
+  max-width: $max-width;
+}
+
+@mixin container--small {
+  @extend %container;
+  max-width: rem-calc(600);
+
+  @include breakpoint($medium){ width: rem-calc(600); }
+}
+
+@mixin container--medium {
+  @extend %container;
+  @include breakpoint($small){ width: rem-calc(700); }
+  @include breakpoint($medium){ width: rem-calc(800); }
+}
+
+@mixin container--large {
+  @extend %container;
+  @include breakpoint($medium){ width: rem-calc(950); }
+  @include breakpoint($large){ width: rem-calc(1000); }
+}
+
+@mixin container--xlarge {
+  @extend %container;
+  @include breakpoint($medium){ width: rem-calc(950); }
+  @include breakpoint($large){ width: rem-calc(1140); }
+  @include breakpoint($xlarge){ width: rem-calc(1300); }
+}
+
+.gutter {
+  &-left {
+    @include gutters('left');
+  }
+
+  &-right {
+    @include gutters('right');
+  }
+}
+
+.gutters {
+  @include gutters;
+}
+
+.gutter-left--large {
+  padding-left: $gutter-small;
+  @include breakpoint($small) { padding-left: $gutter-medium; }
+  @include breakpoint($medium) { padding-left: $gutter-xlarge; }
+  @include breakpoint($large) { padding-left: $gutter-xxlarge; }
+}
+
+.gutter-right--large {
+  padding-right: $gutter-small;
+  @include breakpoint($small) { padding-right: $gutter-medium; }
+  @include breakpoint($medium) { padding-right: $gutter-xlarge; }
+  @include breakpoint($large) { padding-right: $gutter-xxlarge; }
+}
+
+.gutters--large {
+  @extend .gutter-left--large;
+  @extend .gutter-right--large;
+}
+
+%container {
+  @include gutters;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container {
+  @extend .site-width;
+  @extend %container;
+
+  &--small {
+    @include container--small;
+  }
+
+  &--medium {
+    @include container--medium;
+  }
+
+  &--large {
+    @include container--large;
+  }
+
+  &--xlarge {
+    @include container--xlarge;
+  }
+}
+
+.container--scroll-x {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.table--min-width {
+  min-width: rem-calc(683);
+}
+
+.table--min-width--large {
+  min-width: rem-calc(800);
+
+  @include breakpoint($small) {min-width: rem-calc(1000);}
+}
+
+//--------------------------------------------------
+// page padding
+//--------------------------------------------------
+
+.page {
+  min-height: 100vh;
+
+  position: relative;
+
+  @include breakpoint($small) {
+    padding-bottom: $secondaryFooterHeightLarge + $primaryFooterHeight;
+  }
+}
+
+.page-padding--top {
+  padding-top: $page-padding-top-small;
+  @include breakpoint($small) { padding-top: $page-padding-top-medium; }
+  @include breakpoint($medium) { padding-top: $page-padding-top-large; }
+}
+
+.page-padding--bottom {
+  padding-bottom: $page-padding-bottom-small;
+  @include breakpoint($small) { padding-bottom: $page-padding-bottom-medium; }
+  @include breakpoint($medium) { padding-bottom: $page-padding-bottom-large; }
+}
+
+.page-padding {
+  @extend .page-padding--top;
+  @extend .page-padding--bottom;
+}
+
+//--------------------------------------------------
+// section padding
+//--------------------------------------------------
+.section-padding--top {
+  padding-top: $section-padding-top-small;
+  @include breakpoint($small) { padding-top: $section-padding-top-medium; }
+  @include breakpoint($medium) { padding-top: $section-padding-top-large; }
+}
+
+.section-padding--bottom {
+  padding-bottom: $section-padding-bottom-small;
+  @include breakpoint($small) { padding-bottom: $section-padding-bottom-medium; }
+  @include breakpoint($medium) { padding-bottom: $section-padding-bottom-large; }
+}
+
+.section-padding {
+  @extend .section-padding--top;
+  @extend .section-padding--bottom;
+}
+
+//--------------------------------------------------
+// item padding
+//--------------------------------------------------
+@mixin item-padding($sides) {
+  @each $s in $sides  {
+    padding-#{$s}: $item-padding-small;
+
+    @include breakpoint($small) {
+      padding-#{$s}: $item-padding-medium;
+    }
+
+    @include breakpoint($medium) {
+      padding-#{$s}: $item-padding-large;
+    }
+  }
+}
+
+.item-padding--sides {
+  @include item-padding((left, right))
+}
+
+.item-padding--top-bottom {
+  @include item-padding((top, bottom))
+}
+
+.item-padding {
+  @include item-padding((top, right, bottom, left))
+}
+
+//--------------------------------------------------
+// select
+//--------------------------------------------------
+.select__drop-arrow {
+  @extend .flex-hs-end;
+  @extend .flex-no-shrink;
+
+  transform: rotate(0deg);
+}
+
+@mixin flip-child-drop-arrow($class:"select__drop-arrow") {
+  .#{$class} { transform:  rotate(180deg); }
+}
+
+//--------------------------------------------------
+// screen overlay
+//--------------------------------------------------
+.screen-overlay {
+  background: rgba($black, 0.5);
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-400;
+}

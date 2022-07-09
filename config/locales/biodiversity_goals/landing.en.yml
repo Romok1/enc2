@@ -1,0 +1,41 @@
+en:
+  biodiversity_goals:
+    landing:
+      hero_title: Towards potential portfolio alignment with biodiversity goals
+      modal:
+        toggle_text: Get Started
+        sector_select:
+          title: Select a sector
+        footer:
+          button_text: Generate
+      open_cards_title: Module features
+      open_cards_intro: '<strong>Important notice</strong>: this module uses goal-relevant metrics, but does not currently provide an explicit link to global biodiversity goals in the developing post-2020 global biodiversity framework as this is yet to be formally agreed at the 15th Conference of the Parties to the Convention on Biological Diversity (CBD COP-15). This module will be updated in accordance with the final negotiated text of the post-2020 global biodiversity framework once this text is available.'
+      open_cards:
+        -
+          title: Current portfolio potential to reduce species extinction and ecological integrity risk
+          content: "<strong>Helps you answer:</strong> To what extent can my portfolio potentially reduce global extinction risk? To what extent does my portfolio potentially impact ecological integrity?"
+          img_url: icons/Dial.svg
+        -
+          title: Global overview of current portfolio exposure
+          content: "<strong>Helps you answer:</strong> Where are the regional hotspots of my agriculture impacts? Are my portfolio-level mining impacts driven by a small subset of my mining portfolio?"
+          img_url: icons/ScaleChart.svg
+        -
+          title: Potential future exposure
+          content: "<strong>Helps you answer:</strong> What are potential pathways for positive impacts within my agriculture or mining portfolio?"
+          img_url: icons/GrowthLine.svg
+        -
+          title: Options for increasing alignment
+          content: "<strong>Helps you answer:</strong> What types of actions can I take to increase the alignment of my portfolio with global biodiversity goals?"
+          img_url: icons/Target-White.svg
+      links:
+        -
+          text: "Explore our 'How-to' guide"
+          href: https://s3.eu-west-2.amazonaws.com/ncfa.documents/resources/ENCORE+Guide+to+Biodiversity+Module.pdf
+          download: 'ENCORE_Guide_to_Biodiversity_Module'
+        -
+          text: Explore the methods and data used within the tool
+          href: https://s3.eu-west-2.amazonaws.com/ncfa.documents/resources/ENCORE_Biodiversity_Module_Method_and_Scoping.pdf
+          download: 'ENCORE_Biodiversity_Module_Method_and_Scoping'
+        -
+          text: View our data security statement
+          href: /security

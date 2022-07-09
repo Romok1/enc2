@@ -1,0 +1,35 @@
+$explore-filters-width: rem-calc(320);
+$explore-filter-padding-side: rem-calc(20);
+
+.explore-filters {
+  background: $white;
+
+  flex-direction: column;
+
+  @include breakpoint($medium) {
+    flex-direction: row;
+    z-index: 1;
+  }
+  
+  &__selection {
+    color: $black;
+    margin-bottom: rem-calc(20);
+    width: 100%;
+
+    @include breakpoint($medium) {
+      border-right: $sg-green $border-regular;
+      margin-bottom: 0;
+      width: $explore-filters-width; height: $explore-filters-height;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  &__dropdown {
+    @include breakpoint($medium) {
+      padding: rem-calc(15) $explore-filter-padding-side;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+//--------------------------------------------------
+// variables
+//--------------------------------------------------
+
+$resources-map-label-padding-top: rem-calc(4);
+
+//--------------------------------------------------
+// classes
+//--------------------------------------------------
+
+.resources {
+  &__filters {    
+    @include breakpoint($small) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__no-datasets {
+    @include h3;
+  }
+
+  &__name {
+    margin-right: rem-calc(24);
+  }
+
+  &__non-map-label {
+    background-color: $sg-grey-xlight;
+    border-radius: calc(1em + #{$resources-map-label-padding-top});
+    margin-top: rem-calc(8);
+    padding: $resources-map-label-padding-top $resources-map-label-padding-top * 2;
+
+    transform: translateX(rem-calc(-4));
+
+    .info-icon {
+      margin-right: rem-calc(10);
+
+      flex-shrink: 0;
+    }
+  }
+
+  &__link {
+    font-weight: $bold;
+    font-size: 0;
+
+    @include breakpoint($small) { font-size: inherit; }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__filter {
+    margin-bottom: rem-calc(14);
+    width: 100%;
+
+    @include breakpoint($small) {
+      margin-bottom: rem-calc(20);
+      width: rem-calc(200);
+
+      &:first-child {
+        width: rem-calc(260);
+      }
+    }
+  }
+}

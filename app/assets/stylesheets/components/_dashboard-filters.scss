@@ -1,0 +1,44 @@
+@mixin dashboard-filters($breakpoint) {
+  .dashboard-filters__items {
+    margin: 0;
+    padding: 0;
+  
+    display: flex;
+    flex-direction: column;
+  
+    @include breakpoint($breakpoint) {
+      flex-direction: row;
+    }
+  }
+  
+  .dashboard-filters__item {
+    @include list-margins(bottom, rem-calc(20));
+    list-style: none;
+    width: 100%;
+  
+    @include breakpoint($breakpoint) {
+      @include list-margins(right, rem-calc(20));
+      margin-bottom: 0;
+      width: rem-calc(260);
+    }
+  }
+}
+
+.dashboard-filters--header {
+  @include dashboard-filters($small)
+}
+
+.dashboard-filters--portfolio-options {
+  @include dashboard-filters($medium);
+
+  .dashboard-filters__items {
+    flex-wrap: wrap;
+  }
+
+  .dashboard-filters__item {
+    @include breakpoint($medium) {
+      margin: rem-calc(0 10 10 0);
+      width: rem-calc(220);
+    }
+  }
+}

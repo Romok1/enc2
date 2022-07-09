@@ -1,0 +1,65 @@
+Dataset,Asset,Driver,Impact Driver,Ecosystem
+Extent of Built Environment,,Industrial or domestic construction
+Carbon Stocks,Species,
+Change in Precipitation Seasonality,Atmosphere,
+Change in Temperature Seasonality,Atmosphere,
+Earthquakes,,Earthquakes
+Fire Density,,Fire
+Gain in Agricultural Area,,Habitat modification
+Gain in Forested Area,,Habitat modification
+Gain in Urban Area,,Habitat modification
+Inorganic Pollution,,Pollution
+Landslide Frequency Caused by Earthquakes,,Landslides
+Landslide Frequency Caused by Precipitation,,Landslides
+Loss of Agricultural Area,,Habitat modification
+Loss of Forested Area,,Habitat modification
+Loss of Urban Area,,Habitat modification
+Ocean Acidification,,Ocean acidification
+Ocean Pollution,,Pollution
+Population Density,,Industrial or domestic activities
+Precipitation Seasonality,,Weather conditions
+Range Rarity,Species,
+Shipping Activity,,Industrial or domestic activities
+Sea Level Rise,,Sea level rise
+Sea Surface Temperature,,Sea surface temperature
+Storm Surge Events,,Storms
+Temperature Seasonality,,Weather conditions
+Change in Wind Speed,Atmosphere,
+Livestock Density,Species,
+Landforms,Land geomorphology,
+Habitat Intactness,Habitats,
+Baseline Water Stress,,Water abstraction
+Drought Severity,,Droughts
+Fisheries Production,,Overfishing
+Flood Occurrence,,Flooding
+Soil Degradation,Soils and sediments,
+Aquaculture Production,,Intensive agriculture and aquaculture
+Ground Water Stress,,Water abstraction
+Invasive Species,,Invasive species
+Lake Quality,Water,
+Lithology,Minerals,
+Human Migration,,Human movement
+Seafloor Geomorphology,Ocean geomorphology,
+River Quality,Water,
+Variability in Water Supply,Water,
+Volcanic events,,Volcanoes
+Loss of Agricultural Area,,Intensive agriculture and aquaculture
+Gain in Agricultural Area,,Intensive agriculture and aquaculture
+Change in Wind Speed,,Weather conditions
+Light pollution,,,Disturbances
+Global Reservoirs and Dams - dams,,,Freshwater ecosystem use
+Global Reservoirs and Dams - reservoirs,,,Freshwater ecosystem use
+Monthly CO2 in the free troposphere,,,GHG emissions
+Fish catch in national waters per country,,,Marine ecosystem use
+Global ambient air pollution PM2.5,,,Non-GHG air pollutants
+Global ambient air pollution PM10,,,Non-GHG air pollutants
+Solid waste per country,,,Solid waste
+Global land cover data,,,Terrestrial ecosystem use
+Water pollution data,,,Water pollutants
+Global water depletion (Aqueduct 3.0),,,Water use
+Combined hotspots of natural capital depletion,,,,Terrestrial
+Atmosphere depletion,,,,Terrestrial
+Biodiversity depletion,,,,Terrestrial
+Soil and sediments depletion,,,,Terrestrial
+Water depletion,,,,Terrestrial
+Potential natural capital depletion,,,,Marine

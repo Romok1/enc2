@@ -1,0 +1,274 @@
+$close-tab-height: rem-calc(65);
+$close-tab-width: $close-tab-height - $filterPaneSideLineWidth;
+
+@mixin filter-pane-divider {
+  background-color: $sg-grey;
+  margin: rem-calc(16) 0 rem-calc(10);
+  width: 100%; height: rem-calc(1);
+
+  display: block;
+}
+
+.filter-pane {
+  color: $white;
+  width: calc(100% - #{$close-tab-width}); height: 100%;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  transform: translateX(100%) translateX(-#{$filterPaneSideLineWidth});
+  transition: transform 0.4s ease-in-out;
+
+  @include breakpoint($small) { 
+    width: $filterPaneWidthTablet;
+  }
+
+  &--active {
+    transform: translateX(0);
+  }
+
+  &__content {
+    background-color: $sg-grey-dark;
+    box-shadow: $shadow-dark;
+    padding-bottom: rem-calc(24);
+    width: 100%; height: 100%;
+
+    position: absolute;
+  }
+
+    &__divider {
+      @include filter-pane-divider;
+
+      &--tablet-up {
+        @include filter-pane-divider;
+        
+        display: none;
+
+        @include breakpoint($small) {
+          display: block;
+        }
+      }
+    }
+
+    &__gradient-indicator {
+      background-image: linear-gradient(to bottom, rgba($sg-grey-dark,0), rgba($sg-grey-dark,1));
+      pointer-events: none;
+      height: rem-calc(80);
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    &__title { 
+      $half-line-height: $line-height-title * 0.5em;
+      
+      margin: calc(#{$close-tab-height} / 2 - #{$half-line-height}) 0; 
+    }
+
+    &__description {
+      flex-shrink: 0;
+
+      display: none;
+
+      @include breakpoint($small) { display: block; }
+    }
+
+  &__close-tab {
+    background-color: $sg-grey-dark;
+    width: $close-tab-width; height: $close-tab-height;
+
+    position: absolute;
+    top: 0;
+    right: 100%;
+  }
+
+    &__close-button {
+      @extend .map-layers-icon;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      cursor: pointer;
+
+      width: $close-tab-height * 0.6 ; height: $close-tab-height * 0.6;
+
+      @extend .item-center;
+      left: calc(50% + #{$filterPaneSideLineWidth} / 2);
+    }
+
+  &--embedded {
+    @include breakpoint($medium) {
+      border: $border-regular $sg-grey;
+      box-shadow: $shadow-light;
+      padding: 0;
+      width: rem-calc(360); height: 80%;
+      right: rem-calc(50);
+      top: 10%;
+    }
+  
+    .filter-pane {
+      &__close-tab, &__description { 
+        @include breakpoint($medium) {
+          display: none;
+        }
+      }
+      
+      &__title {
+        margin-top: #{$close-tab-height};
+        margin-bottom: rem-calc(10);
+
+        @include breakpoint($medium) {
+          margin-top: rem-calc(24);
+          height: auto; 
+        }
+      }
+    }
+      
+    .filters {
+      @include breakpoint($medium) { padding: 0; }
+    }
+  }
+}
+
+//--------------------------------------------------
+// VSelect
+//--------------------------------------------------
+
+.filter-pane__select {
+  margin-bottom: rem-calc(20);
+}
+
+
+//--------------------------------------------------
+// filters
+//--------------------------------------------------
+.filters {
+  @extend .gutters;
+
+  &__container {
+    overflow-y: scroll;
+  }
+
+  .accordion__content & {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__search input { margin-top: 0; }
+
+  &__button { margin-bottom: rem-calc(14); }
+
+//--------------------------------------------------
+// filter
+//--------------------------------------------------
+  &__radio-button {
+    content: '';
+    cursor: pointer;
+
+    border: $sg-grey-dark rem-calc(3) solid;
+    border-radius: 100%;
+    box-shadow: 0 0 0 rem-calc(1) $sg-grey;
+    margin-left: rem-calc(1);
+    margin-right: rem-calc(14);
+    width: rem-calc(21); height: rem-calc(21);
+
+    display: inline-block; //ie11 fix
+    flex-shrink: 0;
+  }
+  
+  &__filter {
+    font-size: rem-calc(14);
+    margin-bottom: rem-calc(14);
+    padding: rem-calc(15 0);
+
+    &.filter--active {
+      .filters__radio-button {
+        background-color: $sg-green-bright;
+        box-shadow: 0 0 0 rem-calc(1) $white;
+      }
+    }
+
+    &.filter--unavailable {      
+      .filters__radio-button {
+        border: none;
+        box-shadow: none;
+        cursor: default;
+      }
+    }
+
+    &-legend {
+      &__image, &__gradient {
+        border-radius: rem-calc(15);
+        height: rem-calc(15);
+        overflow: hidden;
+        text-align: center;
+        width: 100%;
+
+        img {
+          transform: rotateZ(90deg);
+          width: 100%;
+        }
+      }
+
+      &__items {
+        @include ul--unstyled;
+      }
+
+      &__category {
+        @include list-margins(bottom, 6);
+        line-height: rem-calc(20);
+        padding-left: rem-calc(25);
+        word-break: break-word;
+
+        position: relative;
+      }
+
+      &__colour {
+        border: $border-thin $white;
+        border-radius: 50%;
+        width: rem-calc(15);
+        height: rem-calc(15);
+
+        position: absolute;
+        top: rem-calc(2);
+        left: 0;
+      }
+
+      &__link {
+        margin-top: rem-calc(14);
+
+        display: inline-block;
+
+        .filter-pane--hotspots & {
+          display: none;
+        }
+      }
+
+      &__labels {
+        font-size: smaller;
+        margin-top: rem-calc(6);
+        padding: 0 rem-calc(6);
+      }
+    }
+  }
+
+  &__filter-title {
+    font-size: rem-calc(16);
+    margin-top: 0;
+    margin-bottom: rem-calc(10);
+  }
+
+  &__filter-description {
+    font-size: rem-calc(14);
+    margin-top: 0;
+  }
+}
+
+.not-available-text {
+  font-size: inherit;
+  font-weight: $light;
+  font-style: italic;
+  opacity: 0.6;
+}

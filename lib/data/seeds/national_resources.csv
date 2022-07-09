@@ -1,0 +1,270 @@
+Region,Asset,Driver,Name,Url
+Colombia,Habitats,,BioModelos,http://biomodelos.humboldt.org.co
+Colombia,Species,,BioModelos,http://biomodelos.humboldt.org.co
+Colombia,Water,,"Cambio de la Precipitación para Colombia (%). Ensamble Multiescenario 2011-2040 vs 1976-2005. Escala 1:100,000. Año 2015",http://geoservicios.ideam.gov.co:8080/geonetwork/srv/eng/catalog.search#/metadata/30ca93d1-2f15-4ae4-99c2-1a079575dfa8
+Colombia,Atmosphere,,Catálogo del Sistema Ambiental Nacional  - SINA,http://geoservicios.ideam.gov.co:8080/geonetwork/srv/eng/catalog.search#/home
+Colombia,Species,,Census Pecuario Nacional - 2017,https://www.ica.gov.co/Areas/Pecuaria/Servicios/Epidemiologia-Veterinaria/Censos-2016/Censo-2017.aspx
+Colombia,Habitats,,Ecosistemas acuáticos 2015,http://www.siac.gov.co/catalogo-de-mapas 
+Colombia,Habitats,,FAO Land Cover of Colombia,http://ref.data.fao.org/map?entryId=1ccaab46-435a-407d-85e9-2848036336b9&tab=about
+Colombia,Species,,FAO Land Cover of Colombia,http://ref.data.fao.org/map?entryId=1ccaab46-435a-407d-85e9-2848036336b9&tab=about
+Colombia,Atmosphere,,Informe del Estado de la Calidad del Aire en Colombia 2011 - 2015,http://documentacion.ideam.gov.co/openbiblio/bvirtual/023637/Informe_del_Estado_de_la_Calidad_del_Aire_en_Colombia_2011-2015_vfinal.pdf
+Colombia,Water,,Localización de Sistemas Acu­feros de Colombia. Estudio Nacional del Agua 2014. República de Colombia,http://geoservicios.ideam.gov.co:8080/geonetwork/srv/eng/catalog.search#/metadata/5d6d5983-9123-4017-9c35-95b8f10ed8cf
+Colombia,Minerals,,Mapa Geológico de Colombia 2015,https://www2.sgc.gov.co/ProgramasDeInvestigacion/Geociencias/Paginas/MapaGeologico.aspx#
+Colombia,Habitats,,Mapa Nacional de Amenaza por Movimientos en Masa (National Map of Threat due to Mass flows),http://geoportal.sgc.gov.co/Flexviewer/Amenaza_Movimiento_Remocion_Masa/
+Colombia,Land geomorphology,,Mapa Nacional de Amenaza por Movimientos en Masa (National Map of Threat due to Mass flows),http://geoportal.sgc.gov.co/Flexviewer/Amenaza_Movimiento_Remocion_Masa/
+Colombia,Species,,Polinizadores en Territorio Colombiano,http://ipt.biodiversidad.co/iavh/resource?r=polinizadores_colombia_2013
+Colombia,,Population changes,BioModelos,http://biomodelos.humboldt.org.co
+Colombia,,Invasive species,BioModelos - Invasoras de Colombia,http://biomodelos.humboldt.org.co
+Colombia,,Weather conditions,"Cambio de la Precipitación para Colombia (%). Ensamble Multiescenario 2011-2040 vs 1976-2005. Escala 1:100,000. Año 2015",http://geoservicios.ideam.gov.co:8080/geonetwork/srv/eng/catalog.search#/metadata/30ca93d1-2f15-4ae4-99c2-1a079575dfa8
+Colombia,,Droughts,Catálogo del Sistema Ambiental Nacional  - SINA,http://geoservicios.ideam.gov.co:8080/geonetwork/srv/eng/catalog.search#/home
+Colombia,,Weather conditions,Catálogo del Sistema Ambiental Nacional  - SINA,http://geoservicios.ideam.gov.co:8080/geonetwork/srv/eng/catalog.search#/home
+Colombia,,Habitat modification,Census General 2005,http://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/censo-general-2005-1
+Colombia,,Weather conditions,"Diferencia de la temperatura media (°C). Ensamble Multiescenario 2011-2040 vs 1976-2005 (promedio) . Escala 1:100,000. Año 2015",http://geoservicios.ideam.gov.co:8080/geonetwork/srv/eng/catalog.search;jsessionid=2E6086B0D71252748060E930CCCF92FF?uuid=3db636a1-c7b4-4191-a716-c380d1699c21#/metadata/2ad14f9f-60fc-472b-9b56-2aa72bc5dc3f
+Colombia,,Pests,Diversidad de Macroalgas Marinas del Caribe colombiano,http://ipt.biodiversidad.co/sibm/resource?r=macroalgas_caribe_colombia
+Colombia,,Population changes,Diversidad de Macroalgas Marinas del Caribe colombiano,http://ipt.biodiversidad.co/sibm/resource?r=macroalgas_caribe_colombia
+Colombia,,Invasive species,Especies de flora exótica de alto riesgo de invasión en Colombia (Exotic flora species with high risk of invasion in Colombia) I2D-BIO_2014_IN040.,http://i2d.humboldt.org.co/ceiba/resource.do?r=rrbb_colombia_flora_invasora
+Colombia,,Habitat modification,FAO Land Cover of Colombia,http://ref.data.fao.org/map?entryId=1ccaab46-435a-407d-85e9-2848036336b9&tab=about
+Colombia,,Intensive agriculture and aquaculture,FAO Land Cover of Colombia,http://ref.data.fao.org/map?entryId=1ccaab46-435a-407d-85e9-2848036336b9&tab=about
+Colombia,,Weather conditions,Informe del Estado de la Calidad del Aire en Colombia 2011 - 2015,http://documentacion.ideam.gov.co/openbiblio/bvirtual/023637/Informe_del_Estado_de_la_Calidad_del_Aire_en_Colombia_2011-2015_vfinal.pdf
+Colombia,,Landslides,Mapa Amenaza S­smica Visor geografico - Nueva evaluación de Amenaza S­smica de Colombia Versión para discusión 2017 - Geoportal SGC,http://srvags.sgc.gov.co/JSViewer/Amenaza_Sismica/
+Colombia,,Earthquakes,Mapa Amenaza S­smica Visor geografico - Nueva evaluación de Amenaza S­smica de Colombia Versión para discusión 2017 - Geoportal SGC,http://srvags.sgc.gov.co/JSViewer/Amenaza_Sismica/
+Colombia,,Volcanoes,Mapa Amenaza Volcánica - Visor geografico Geoportal SGC,http://srvags.sgc.gov.co/JSViewer/Amenaza_volcanica_JS/
+Colombia,,Droughts,"Mapa de Impactos Potenciales del Territorio. República de Colombia. Periodo 2011-2040, IDEAM 2010.",http://geoservicios.ideam.gov.co:8080/geonetwork/srv/eng/catalog.search;jsessionid=2E6086B0D71252748060E930CCCF92FF?uuid=3db636a1-c7b4-4191-a716-c380d1699c21#/metadata/8c0215be-187b-4bca-8cb9-0949550b16f3
+Colombia,,Storms,"Mapa de Impactos Potenciales del Territorio. República de Colombia. Periodo 2011-2040, IDEAM 2010.",http://geoservicios.ideam.gov.co:8080/geonetwork/srv/eng/catalog.search;jsessionid=2E6086B0D71252748060E930CCCF92FF?uuid=3db636a1-c7b4-4191-a716-c380d1699c21#/metadata/8c0215be-187b-4bca-8cb9-0949550b16f3
+Colombia,,Habitat modification,Mapa Nacional de Amenaza por Movimientos en Masa (National Map of Threat due to Mass flows),http://geoportal.sgc.gov.co/Flexviewer/Amenaza_Movimiento_Remocion_Masa/
+Colombia,,Landslides,Mapa Nacional de Amenaza por Movimientos en Masa (National Map of Threat due to Mass flows),http://geoportal.sgc.gov.co/Flexviewer/Amenaza_Movimiento_Remocion_Masa/
+Colombia,,Droughts,ÍNDICE DE VULNERABILIDAD AL DESABASTECIMIENTO HÍDRICO (IVH) PARA UNIDADES HÍDRICAS. FUENTE DE ACUEDUCTOS DE CABECERAS MUNICIPALES DE COLOMBIA. ESCENARIO DE AÑO SECO,http://geoservicios.ideam.gov.co:8080/geonetwork/srv/eng/catalog.search;jsessionid=2E6086B0D71252748060E930CCCF92FF?uuid=3db636a1-c7b4-4191-a716-c380d1699c21#/metadata/f26ec5d0-127d-4f55-b639-652eaa333fc4
+Colombia,,Population changes,Polinizadores en Territorio Colombiano,http://ipt.biodiversidad.co/iavh/resource?r=polinizadores_colombia_2013
+Indonesia,Atmosphere,,Environmental Quality Index,https://data.cifor.org/file.xhtml?fileId=392&version=1.2
+Indonesia,Atmosphere,,Rainfall Central Sulawesi,http://data.go.id/dataset/data-indeks-kualitas-lingkungan-hidup
+Indonesia,Atmosphere,,Topography Central Sulawesi,http://geoportal.sultengprov.go.id/layers/geonode%3Acadangan_karbon_sulteng_2014_pl_pthi_dd#more
+Indonesia,,Droughts,Satellite-based drought monitoring and early warning system - Indonesia,http://data.go.id/dataset/data-bencana-gempa-bumi-2
+Indonesia,,Earthquakes,Earthquake disaster data,http://geoportal.sultengprov.go.id/layers/geonode%3Asungai_sulteng_2013_l_pu_dd#more
+Indonesia,,Flooding,Flooding Central Sulawesi,http://data.globalforestwatch.org/datasets/30e234e880c94a2ca54be9a132808eae_3?geometry=88.178%2C-8.78%2C147.46%2C4.364
+Indonesia,,Landslides,Earthquake disaster data,http://geoportal.sultengprov.go.id/layers/geonode%3Asungai_sulteng_2013_l_pu_dd#more
+Indonesia,,Habitat modification,Deforestation,http://data.globalforestwatch.org/datasets/de1fe5832831464cbd64aaa8f2d54781_0?orderByFields=ACQ_DATE+DESC&uiTab=metadata
+Indonesia,,Habitat modification,Indonesia logging concessions,"http://ctatlas.reefbase.org/atlas/default.aspx?layers=8,68"
+Indonesia,,Habitat modification,Land Cover 2017,http://geoportal.menlhk.go.id/arcgis/apps/Viewer/index.html?appid=38bd05e62ac24eae9b5a057e78389193
+Indonesia,Habitats,,Carbon Stocks Central Sulawesi,http://geoportal.sultengprov.go.id/layers/geonode%3Acadangan_karbon_sulteng_2014_pl_pthi_dd#more
+Indonesia,Habitats,,Land Cover 2017,http://geoportal.menlhk.go.id/arcgis/apps/Viewer/index.html?appid=38bd05e62ac24eae9b5a057e78389193
+Indonesia,Habitats,,Watershed Boundaries,http://geoportal.sultengprov.go.id/layers/geonode%3Arawan_banjir_sulteng_2013_pl_cktr_dd#more
+Indonesia,,Intensive agriculture and aquaculture,Land Cover 2017,http://geoportal.menlhk.go.id/arcgis/apps/Viewer/index.html?appid=38bd05e62ac24eae9b5a057e78389193
+Indonesia,Minerals,,Geological Map,http://data.go.id/dataset/kondisi-lokasi-terumbu-karang
+Indonesia,,Pollution,Indonesia Climate Data Explorer - PINDAI,http://geoportal.sultengprov.go.id/layers/geonode%3Atopografi_sulteng_2013_pl_cktr_dd
+Indonesia,Species,,"Map of the Number of Cattle and Buffalo Distribution, Year 2013 (tail)",http://st2013.bps.go.id/dev2/index.php
+Indonesia,Species,,Regional Biomass Mapping Indonesia/Kalimantan,
+Indonesia,,Storms,Flooding Central Sulawesi,http://cait.wri.org/indonesia
+Indonesia,Water,,Rainfall Central Sulawesi,http://data.go.id/dataset/data-indeks-kualitas-lingkungan-hidup
+Indonesia,Water,,Rivers Central Sulawesi,http://geoportal.sultengprov.go.id/layers/geonode%3Acurah_hujan_sulteng_2013_pl_cktr_dd#more
+Indonesia,Water,,Topography Central Sulawesi,http://geoportal.sultengprov.go.id/layers/geonode%3Acadangan_karbon_sulteng_2014_pl_pthi_dd#more
+Indonesia,,Weather conditions,Environmental Quality Index,https://data.cifor.org/file.xhtml?fileId=392&version=1.2
+Indonesia,,Weather conditions,Rainfall Central Sulawesi,http://data.go.id/dataset/data-indeks-kualitas-lingkungan-hidup
+Peru,Atmosphere,,Decadal precipitation monitoring,http://www.senamhi.gob.pe/?p=observacion-de-inundaciones
+Peru,Atmosphere,,Info Aire Peru,http://infoaire.minam.gob.pe:1013/INFOAIRE/
+Peru,Atmosphere,,Mapa de Intensidades de Erosión de Suelos del Perú,http://sial.segat.gob.pe/mapas/mapa-intensidades-erosion-suelos-peru
+Peru,Atmosphere,,Numerical model of air quality,http://www.senamhi.gob.pe/?p=calidad-de-aire-numerico
+Peru,,Droughts,Climate change scenarios to 2030,http://www.senamhi.gob.pe/?p=cambio-climatico
+Peru,,Droughts,Peruvian drought observatory,http://ons.snirh.gob.pe/Peru/maproom/?Set-Language=en
+Peru,,Earthquakes,Reported earthquakes,http://intranet.igp.gob.pe/bdsismos/ultimosSismosSentidos.php
+Peru,,Fire,MAAP: Wildfire hotspots in the Peruvian Amazon in 2016,http://maaproject.org/2017/perufire-hotspots2016/
+Peru,,Fire,MAAP: Wildfire hotspots in the Peruvian Amazon in 2016,http://maaproject.org/2017/perufire-hotspots2016/
+Peru,,Flooding,GeoCoastas: Coastal erosion indicator,http://geoservidor.minam.gob.pe/indicadores-erosion-marina/
+Peru,,Flooding,Map of Physical Susceptibility of Areas Prone to Floods and Landslides in the Coast and Mountain Range in the Face of Occurrence of Extreme Hydrometeorological Events,http://geoservidorperu.minam.gob.pe/susceptibilidad/
+Peru,,Landslides,GeoCoastas: Coastal erosion indicator,http://geoservidor.minam.gob.pe/indicadores-erosion-marina/
+Peru,,Landslides,Reported earthquakes,http://intranet.igp.gob.pe/bdsismos/ultimosSismosSentidos.php
+Peru,,Habitat modification,Census 2017,http://www.censos2017.pe/
+Peru,,Habitat modification,CIA World Factbook,https://www.cia.gov/library/publications/the-world-factbook/geos/pe.html
+Peru,,Habitat modification,GeoBosques,http://geobosques.minam.gob.pe/geobosque/view/index.php
+Peru,,Habitat modification,GeoCoastas: Coastal erosion indicator,http://geoservidor.minam.gob.pe/indicadores-erosion-marina/
+Peru,,Habitat modification,Maps of disaster risk,http://www.minam.gob.pe/wp-content/uploads/2017/01/MAPA-DE-SUSCEPTIBILIDAD-FISICA.pdf
+Peru,Habitats,,GeoCoastas: Coastal erosion indicator,http://geoservidor.minam.gob.pe/indicadores-erosion-marina/
+Peru,Habitats,,High resolution carbon geography of Peru,https://cao.carnegiescience.edu/publication/achi-c-b-anderson-j-mascaro-f-sinca-k-d-chadwick-s-sousan-m-higgins-w-farfan-m-r-silman-w-a-llactayo-and-a-f-neyra-2014-the-high-resolution-carbon-geography-of-peru-spanish
+Peru,Habitats,,Map of Physical Susceptibility of Areas Prone to Floods and Landslides in the Coast and Mountain Range in the Face of Occurrence of Extreme Hydrometeorological Events,http://geoservidorperu.minam.gob.pe/susceptibilidad/
+Peru,Habitats,,Map of vegetation coverage,http://geoservidor.minam.gob.pe/wp-content/uploads/2017/06/MAPA_COBERTURA_VEGETAL.pdf
+Peru,,Human modification of genetic material,Aquaculture map,http://catastroacuicola.produce.gob.pe/web/#
+Peru,,Human modification of genetic material,Germplasm bank of aquatic organisms,http://www.imarpe.gob.pe/imarpe/index.php?id_seccion=I0170050400000000000000
+Peru,,Human movement,"Vehicles per thousand inhabitants, Peru 2008.",http://sinia.minam.gob.pe/mapas/vehiculos-cada-mil-habitantes-peru-2008
+Peru,,Industrial or domestic activities,Dams in Amazonia,http://dams-info.org/en
+Peru,,Industrial or domestic activities,Mapa de Intensidades de Erosión de Suelos del Perú,http://sial.segat.gob.pe/mapas/mapa-intensidades-erosion-suelos-peru
+Peru,,Industrial or domestic construction,Dams in Amazonia,http://dams-info.org/en
+Peru,,Industrial or domestic construction,Surface temperature of the sea,http://satelite.imarpe.gob.pe/uprsig/sst_prov.html
+Peru,,Intensive agriculture and aquaculture,Development of energy projects,http://carbonbiomasa.pucp.edu.pe/centro-de-investigacion/biomap/
+Peru,,Intensive agriculture and aquaculture,Map of vegetation coverage,http://geoservidor.minam.gob.pe/wp-content/uploads/2017/06/MAPA_COBERTURA_VEGETAL.pdf
+Peru,,Intensive agriculture and aquaculture,Mapa de Intensidades de Erosión de Suelos del Perú,http://sial.segat.gob.pe/mapas/mapa-intensidades-erosion-suelos-peru
+Peru,,Intensive agriculture and aquaculture,Potentially toxic phytoplankton monitoring,http://www.imarpe.gob.pe/imarpe/reportes_fito.php?id_seccion=fitoplancton
+Peru,Land geomorphology,,GeoCoastas: Coastal erosion indicator,http://geoservidor.minam.gob.pe/indicadores-erosion-marina/
+Peru,,Ocean acidification,Maps of disaster risk,http://www.minam.gob.pe/wp-content/uploads/2017/01/MAPA-DE-SUSCEPTIBILIDAD-FISICA.pdf
+Peru,,Ocean current and circulation,Ocean currents,http://www.imarpe.pe/imarpe/index.php?id_seccion=I0178030105000000000000
+Peru,,Overfishing,Aquaculture map,http://catastroacuicola.produce.gob.pe/web/#
+Peru,,Pollution,Climate change scenarios to 2030,http://www.senamhi.gob.pe/?p=cambio-climatico
+Peru,,Pollution,Potentially toxic phytoplankton monitoring,http://www.imarpe.gob.pe/imarpe/reportes_fito.php?id_seccion=fitoplancton
+Peru,,Sea surface temperature,Surface temperature of the sea,http://satelite.imarpe.gob.pe/uprsig/sst_prov.html
+Peru,Soils and sediments,,Mapa de Intensidades de Erosión de Suelos del Perú,http://sial.segat.gob.pe/mapas/mapa-intensidades-erosion-suelos-peru
+Peru,Soils and sediments,,SIAMAZONIA,http://siamazonia.iiap.org.pe/wfr_Inicio.aspx?id=8eQrBfb2oWTKnvbl5t/A9Q==
+Peru,Species,,Concentration of Chlorophyll-a,http://satelite.imarpe.gob.pe/uprsig/clorofila1/clorofila1.htm
+Peru,Species,,Map of vegetation coverage,http://geoservidor.minam.gob.pe/wp-content/uploads/2017/06/MAPA_COBERTURA_VEGETAL.pdf
+Peru,Species,,SIAMAZONIA,http://siamazonia.iiap.org.pe/wfr_Inicio.aspx?id=8eQrBfb2oWTKnvbl5t/A9Q==
+Peru,,Storms,Climate change scenarios to 2030,http://www.senamhi.gob.pe/?p=cambio-climatico
+Peru,,Storms,Map of Physical Susceptibility of Areas Prone to Floods and Landslides in the Coast and Mountain Range in the Face of Occurrence of Extreme Hydrometeorological Events,http://geoservidorperu.minam.gob.pe/susceptibilidad/
+Peru,,Volcanoes,Meteorological Vigilance of Volcanoes,http://www.senamhi.gob.pe/site/volcan/
+Peru,Water,,Decadal precipitation monitoring,http://www.senamhi.gob.pe/?p=observacion-de-inundaciones
+Peru,Water,,Mapa de Intensidades de Erosión de Suelos del Perú,http://sial.segat.gob.pe/mapas/mapa-intensidades-erosion-suelos-peru
+Peru,Water,,Ocean currents,http://www.imarpe.pe/imarpe/index.php?id_seccion=I0178030105000000000000
+Peru,Water,,Surface salinity of the sea,http://satelite.imarpe.gob.pe/uprsig/salinidad/salinidad.htm
+Peru,Water,,Surface temperature of the sea,http://satelite.imarpe.gob.pe/uprsig/sst_prov.html
+Peru,,Weather conditions,Climate change scenarios to 2030,http://www.senamhi.gob.pe/?p=cambio-climatico
+Peru,,Weather conditions,Decadal precipitation monitoring,http://www.senamhi.gob.pe/?p=observacion-de-inundaciones
+Peru,,Weather conditions,Info Aire Peru,http://infoaire.minam.gob.pe:1013/INFOAIRE/
+Peru,,Weather conditions,Ocean currents,http://www.imarpe.pe/imarpe/index.php?id_seccion=I0178030105000000000000
+Peru,,Weather conditions,Water temperature of the sea,http://www.senamhi.gob.pe/?p=satelites-TSM
+South Africa,Atmosphere,,GISCOE - 20m DEM,http://www.esri-southafrica.com/data
+South Africa,Atmosphere,,Predicted soil loss,"http://www.agis.agric.za/agismap_atlas/AtlasViewer.jsp?MapService=agis_atlas2006&ProjectId=5&LId=0&OId=0&LayerIdVisList=1411,2"
+South Africa,Atmosphere,,Seasonal Explorer,http://dataviz.vam.wfp.org/seasonal_explorer/rainfall_vegetation/visualizations
+South Africa,,Diseases,Plants and pests - Wheat Stemrust,http://apps.harvestchoice.org/mappr/
+South Africa,,Droughts,Seasonal Explorer,http://dataviz.vam.wfp.org/seasonal_explorer/rainfall_vegetation/visualizations
+South Africa,,Fire,VeldFire Risk 2010,http://bgis.sanbi.org/Document/TermsOfUse
+South Africa,,Fire,VeldFire Risk 2010,http://bgis.sanbi.org/Document/TermsOfUse
+South Africa,,Landslides,Predicted soil loss,"http://www.agis.agric.za/agismap_atlas/AtlasViewer.jsp?MapService=agis_atlas2006&ProjectId=5&LId=0&OId=0&LayerIdVisList=1411,2"
+South Africa,,Habitat modification,CCAB - Areas of Biome Stability,http://bgis.sanbi.org/SpatialDataset/Detail/476
+South Africa,,Habitat modification,FAO GeoNetwork,http://www.fao.org/geonetwork/srv/en/main.home#agriculture
+South Africa,,Habitat modification,Predicted soil loss,"http://www.agis.agric.za/agismap_atlas/AtlasViewer.jsp?MapService=agis_atlas2006&ProjectId=5&LId=0&OId=0&LayerIdVisList=1411,2"
+South Africa,,Habitat modification,South African Forestry and Forest Industry Facts,http://www.forestry.co.za/forestry-research/
+South Africa,Habitats,,Carbon Stocks - Global Forest Watch,http://www.globalforestwatch.org/country/ZAF
+South Africa,Habitats,,Eastern South Africa Biomass Map 2015,http://globbiomass.org/wp-content/uploads/DOC/Deliverables/D13/pdf_maps/South_Africa2015.pdf
+South Africa,Habitats,,FAO GeoNetwork,http://www.fao.org/geonetwork/srv/en/main.home#agriculture
+South Africa,Habitats,,"Harvest Choice 'Mappr', Soil Resources, Other Soil Properties",http://apps.harvestchoice.org/mappr/
+South Africa,Habitats,,Predicted soil loss,"http://www.agis.agric.za/agismap_atlas/AtlasViewer.jsp?MapService=agis_atlas2006&ProjectId=5&LId=0&OId=0&LayerIdVisList=1411,2"
+South Africa,,Industrial or domestic activities,Geo referenced database on dams South Africa,http://www.fao.org/nr/water/aquastat/dams/index.stm
+South Africa,,Industrial or domestic activities,Predicted soil loss,"http://www.agis.agric.za/agismap_atlas/AtlasViewer.jsp?MapService=agis_atlas2006&ProjectId=5&LId=0&OId=0&LayerIdVisList=1411,2"
+South Africa,,Industrial or domestic construction,Geo referenced database on dams South Africa,http://www.fao.org/nr/water/aquastat/dams/index.stm
+South Africa,,Intensive agriculture and aquaculture,FAO GeoNetwork,http://www.fao.org/geonetwork/srv/en/main.home#agriculture
+South Africa,,Intensive agriculture and aquaculture,Harvested area Irrigated area,http://apps.harvestchoice.org/mappr/
+South Africa,,Intensive agriculture and aquaculture,Potential HAB Outlines From Chlorophyll-A extrapolated from NFLH,https://www.ocims.gov.za/dataset/potential-hab-outlines-from-chlorophyll-a-extrapolated-from-nflh
+South Africa,,Intensive agriculture and aquaculture,Predicted soil loss,"http://www.agis.agric.za/agismap_atlas/AtlasViewer.jsp?MapService=agis_atlas2006&ProjectId=5&LId=0&OId=0&LayerIdVisList=1411,2"
+South Africa,,Invasive species,National Invasive Alien Plants,http://bgis.sanbi.org/SpatialDataset/Detail/416
+South Africa,Land geomorphology,,Predicted soil loss,"http://www.agis.agric.za/agismap_atlas/AtlasViewer.jsp?MapService=agis_atlas2006&ProjectId=5&LId=0&OId=0&LayerIdVisList=1411,2"
+South Africa,Minerals,,Soil and Terrain Database (SOTER) for South Africa,http://data.isric.org/geonetwork/srv/en/catalog.search#/metadata/c3f7cfd5-1f25-4da1-bce9-cdcdd8c1a9a9
+South Africa,,Ocean acidification,Predicted soil loss,"http://www.agis.agric.za/agismap_atlas/AtlasViewer.jsp?MapService=agis_atlas2006&ProjectId=5&LId=0&OId=0&LayerIdVisList=1411,2"
+South Africa,,Ocean current and circulation,National Estuaries 12 2012,http://bgis.sanbi.org/SpatialDataset/Detail/394
+South Africa,,Overfishing,Catches by Taxon in the waters of South Africa (Atlantic and Cape),http://www.seaaroundus.org/data/#/eez/953?chart=catch-chart&dimension=taxon&measure=tonnage&limit=10
+South Africa,,Overharvesting,South African Forestry and Forest Industry Facts,http://www.forestry.co.za/forestry-research/
+South Africa,,Pests,Catches by Taxon in the waters of South Africa (Atlantic and Cape),http://www.seaaroundus.org/data/#/eez/953?chart=catch-chart&dimension=taxon&measure=tonnage&limit=10
+South Africa,,Pollution,Coastal features viewer,http://mapservice.environment.gov.za/Coastal%20Viewer/
+South Africa,,Pollution,Potential HAB Outlines From Chlorophyll-A extrapolated from NFLH,https://www.ocims.gov.za/dataset/potential-hab-outlines-from-chlorophyll-a-extrapolated-from-nflh
+South Africa,,Population changes,Catches by Taxon in the waters of South Africa (Atlantic and Cape),http://www.seaaroundus.org/data/#/eez/953?chart=catch-chart&dimension=taxon&measure=tonnage&limit=10
+South Africa,Soils and sediments,,"Harvest Choice 'Mappr', Soil Resources, Other Soil Properties",http://apps.harvestchoice.org/mappr/
+South Africa,Soils and sediments,,Predicted soil loss,"http://www.agis.agric.za/agismap_atlas/AtlasViewer.jsp?MapService=agis_atlas2006&ProjectId=5&LId=0&OId=0&LayerIdVisList=1411,2"
+South Africa,Soils and sediments,,River Freshwater Ecosystem Priority Areas,http://bgis.sanbi.org/Document/TermsOfUse
+South Africa,Soils and sediments,,Soil Organic Carbon Content (depth 5-15cm),https://harvestchoice.org/data/soc_d15
+South Africa,Species,,Carbon Stocks - Global Forest Watch,http://www.globalforestwatch.org/country/ZAF
+South Africa,Species,,Eastern South Africa Biomass Map 2015,http://globbiomass.org/wp-content/uploads/DOC/Deliverables/D13/pdf_maps/South_Africa2015.pdf
+South Africa,Species,,FAO GeoNetwork,http://www.fao.org/geonetwork/srv/en/main.home#agriculture
+South Africa,Species,,National Estuaries 12 2012,http://bgis.sanbi.org/SpatialDataset/Detail/394
+South Africa,Species,,TABLR - Livestock - South Africa,http://harvestchoice.org/page/tablr?indicatorIds=16
+South Africa,,Storms,Seasonal Explorer,http://dataviz.vam.wfp.org/seasonal_explorer/rainfall_vegetation/visualizations
+South Africa,Water,,Coastal features viewer,http://mapservice.environment.gov.za/Coastal%20Viewer/
+South Africa,Water,,GISCOE - 20m DEM,http://www.esri-southafrica.com/data
+South Africa,Water,,Mean Annual Runoff 2013,http://bgis.sanbi.org/SpatialDataset/Detail/507
+South Africa,Water,,NFEPA Rivers,http://bgis.sanbi.org/SpatialDataset/Detail/397
+South Africa,Water,,Predicted soil loss,"http://www.agis.agric.za/agismap_atlas/AtlasViewer.jsp?MapService=agis_atlas2006&ProjectId=5&LId=0&OId=0&LayerIdVisList=1411,2"
+South Africa,,Water abstraction,Water Strike,http://www3.dwa.gov.za/NGANet/GeositeSearch/ExportForm.aspx
+South Africa,,Weather conditions,CCAB - Areas of Biome Stability,http://bgis.sanbi.org/SpatialDataset/Detail/476
+South Africa,,Weather conditions,Predicted soil loss,"http://www.agis.agric.za/agismap_atlas/AtlasViewer.jsp?MapService=agis_atlas2006&ProjectId=5&LId=0&OId=0&LayerIdVisList=1411,2"
+South Africa,,Weather conditions,Seasonal Explorer,http://dataviz.vam.wfp.org/seasonal_explorer/rainfall_vegetation/visualizations
+Global,,Diseases,WFCC-MIRCEN World Data Centre for Microorganisms,http://www.wdcm.org/databases.html
+Global,,Droughts,SPEI Global Drought Monitor,http://spei.csic.es/map/maps.html#months=7#month=7#year=2014
+Global,,Flooding,Flood Hazards 100 years (CM),https://app.mapx.org/
+Global,,Flooding,Global Active Archive of Large Flood Events,http://www.dartmouth.edu/~floods/Archives/
+Global,,Flooding,Global estimated risk index for flood hazard,http://preview.grid.unep.ch/index.php?preview=data&events=floods&evcat=5&lang=eng
+Global,,Flooding,Multiple Hazards,http://preview.grid.unep.ch/index.php?preview=home&lang=eng
+Global,,Landslides,Multiple Hazards,http://preview.grid.unep.ch/index.php?preview=home&lang=eng
+Global,,Habitat modification,CIA World Factbook,https://www.cia.gov/library/publications/the-world-factbook/fields/2119.html#184
+Global,,Habitat modification,Dyna-CLUE,http://www.ivm.vu.nl/en/Organisation/departments/spatial-analysis-decision-support/Clue/index.aspx
+Global,,Habitat modification,Global Forest Change 2000–2016,https://earthenginepartners.appspot.com/science-2013-global-forest/download_v1.4.html
+Global,,Habitat modification,GRCTellus Land,https://grace.jpl.nasa.gov/data/get-data/monthly-mass-grids-land/
+Global,,Habitat modification,Land use,http://www.oecd-ilibrary.org/environment/data/oecd-environment-statistics/land-use_8ecc9c9c-en
+Global,,Human modification of genetic material,A global database for the distributions of crop wild relatives.,http://ciat.cgiar.org/publications/publication-details/?handle1=10568&handle2=79402
+Global,,Human modification of genetic material,Crop Wild Relative Global Occurrence Database,http://www.cwrdiversity.org/
+Global,,Human modification of genetic material,DNA Bank Database,http://apps.kew.org/dnabank/homepage.html
+Global,,Human modification of genetic material,Five global seedbanks,http://blogs.worldwatch.org/five-global-seed-banks-that-are-protecting-biodiversity/
+Global,,Human modification of genetic material,GISFish,http://www.fao.org/fishery/gisfish/index.jsp
+Global,,Human modification of genetic material,GM crop database,http://www.isaaa.org/gmapprovaldatabase/
+Global,,Human movement,CO2 emissions from liquid fuel consumption,https://data.worldbank.org/indicator/EN.ATM.CO2E.PC?view=map
+Global,,Industrial or domestic activities,AIS Density Map,www.shipmap.org
+Global,,Industrial or domestic construction,Aquastat Dams,http://www.fao.org/nr/water/aquastat/dams/index.stm
+Global,,Intensive agriculture and aquaculture,BioEnergy atlas,https://maps.nrel.gov/bioenergyatlas/
+Global,,Intensive agriculture and aquaculture,Fertiliser trade map,https://www.fertilizer.org/En/Statistics/Trade_Map/En/Statistics/Fertilizer_Trade_Maps.aspx?hkey=3b2c0c78-c72d-4571-ba1b-c6f9b00f5441
+Global,,Intensive agriculture and aquaculture,GBEP's bioenergy database.,http://www.globalbioenergy.org/bioenergyinfo/en/
+Global,,Intensive agriculture and aquaculture,Harmful Algal Blooms Observing system,https://habsos.noaa.gov/
+Global,,Intensive agriculture and aquaculture,"Nitrogen Fertilizer Application, v1 (1994 – 2001)",http://sedac.ciesin.columbia.edu/data/set/ferman-v1-nitrogen-fertilizer-application
+Global,,Intensive agriculture and aquaculture,"Phosphorus in Manure Production, v1 (1994 – 2001)",http://sedac.ciesin.columbia.edu/data/set/ferman-v1-phosphorus-in-manure-production
+Global,,Invasive species,Marine Invasive Species,https://knb.ecoinformatics.org/#view/doi:10.5063/F1S180FS
+Global,,Landslides,Global estimated risk index for landslide hazard triggered by precipitations,http://preview.grid.unep.ch/index.php?preview=data&events=landslides&evcat=7&lang=eng
+Global,,Ocean acidification,Global Ocean Acidification Observing Network,http://portal.goa-on.org/Explorer
+Global,,Ocean acidification,Multiple Hazards,http://preview.grid.unep.ch/index.php?preview=home&lang=eng
+Global,,Ocean current and circulation,"Aqua maps environmental dataset: (HCAF ver. 6, 08/2016)",http://www.aquamaps.org/main/envt_data.php
+Global,,Ocean current and circulation,Climate Change 2013: The Physical Science Basis,http://www.ipcc.ch/report/ar5/wg1/
+Global,,Ocean current and circulation,Global Ocean Currents Database,https://www.nodc.noaa.gov/gocd/
+Global,,Overfishing,Global fishing in 2014,http://www.seaaroundus.org/data/#/spatial-catch?chart=catch-chart&dimension=taxon&measure=tonnage&limit=10
+Global,,Overharvesting,Carnegie-Ames-Stanford Approach (CASA) Biosphere model,http://ecobas.org/www-server/rem/mdb/casa.html
+Global,,Overharvesting,CITES - Trade database. Comparative tabulation report.,https://trade.cites.org/en/cites_trade
+Global,,Overharvesting,Illegal logging and related trade Indicators of the global response,https://indicators.chathamhouse.org/explore-the-data
+Global,,Pests,Global plant protection database,https://gd.eppo.int/
+Global,,Pests,WFCC-MIRCEN World Data Centre for Microorganisms,http://www.wdcm.org/databases.html
+Global,,Pollution,Eutrophication and hypoxia map,http://www.wri.org/our-work/project/eutrophication-and-hypoxia/interactive-map-eutrophication-hypoxia
+Global,,Pollution,Global ambient air pollution,http://maps.who.int/airpollution/
+Global,,Pollution,Global Insecticide runoff map,http://www.ufz.de/index.php?en=37214
+Global,,Pollution,Global Map of Human Impacts on Marine Ecosystems,https://www.nceas.ucsb.edu/globalmarine2008
+Global,,Pollution,Light Pollution Map,https://www.lightpollutionmap.info/
+Global,,Pollution,"Nitrogen Fertilizer Application, v1 (1994 – 2001)",http://sedac.ciesin.columbia.edu/data/set/ferman-v1-nitrogen-fertilizer-application
+Global,,Pollution,"Phosphorus in Manure Production, v1 (1994 – 2001)",http://sedac.ciesin.columbia.edu/data/set/ferman-v1-phosphorus-in-manure-production
+Global,,Pollution,Public Health and Environment: ambient air pollution,http://maps.who.int/airpollution/
+Global,,Pollution,Raw Incident Data,https://incidentnews.noaa.gov/raw/index
+Global,,Pollution,USGS Acid Rain Data and Reports,https://serc.carleton.edu/resources/22353.html
+Global,,Sea surface temperature,Sea Surface Temperature,https://neo.sci.gsfc.nasa.gov/view.php?datasetId=MYD28M
+Global,,Storms,Multiple Hazards,http://preview.grid.unep.ch/index.php?preview=home&lang=eng
+Global,,Storms,Storm Events Database,https://www.ncdc.noaa.gov/stormevents/
+Global,,Water abstraction,Country based groundwater data,https://apps.geodan.nl/igrac/ggis-viewer/viewer/go/public/default
+Global,,Water abstraction,Global Hydrological Model H08,http://h08.nies.go.jp/h08/introduction.html
+Global,,Water abstraction,PCR-GLOBWB 2.0,https://github.com/UU-Hydro/PCR-GLOBWB_model
+Global,,Water abstraction,Water Global Assessment and Prognosis (WaterGAP),http://www.watergap.de/
+Global,,Weather conditions,"Aqua maps environmental dataset: (HCAF ver. 6, 08/2016)",http://www.aquamaps.org/main/envt_data.php
+Global,,Weather conditions,Climate change vulnerability index,http://www.natureserve.org/conservation-tools/climate-change-vulnerability-index
+Global,,Weather conditions,Climate Forecast System (CFS),http://cfs.ncep.noaa.gov/cfsv2/downloads.html
+Global,,Weather conditions,GES DISC,https://disc.gsfc.nasa.gov/datasets?page=1&measurement=Carbon%20Dioxide&source=Aqua%20AIRS
+Global,,Weather conditions,Land Surface Temperature,http://land.copernicus.eu/global/products/lst
+Global,,Weather conditions,MeteoEarth,"http://www.meteoearth.com/#/,2.62,55.90,6.16,20,1,1,0,0,0,time=1510046700"
+Global,,Weather conditions,MIT General Circulation Model,http://mitgcm.org/public/r2_manual/latest/online_documents/node88.html
+Global,,Weather conditions,Monthly climate and climatic water balance for global terrestrial surfaces from 1958-2015,https://www.northwestknowledge.net/data/5956e20ceb1bc6513f464d11/
+Global,,Weather conditions,Multiple Hazards,http://preview.grid.unep.ch/index.php?preview=home&lang=eng
+Global,,Weather conditions,"Temperature anomaly A2, and Precipitation A2",http://climate4development.worldbank.org/open/
+Global,Atmosphere,,Climate Forecast System (CFS),http://cfs.ncep.noaa.gov/cfsv2/downloads.html
+Global,Atmosphere,,Global map of monthly reference evapotranspiration - 30 arc minutes,http://ref.data.fao.org/map?entryId=c2810630-88fd-11da-a88f-000d939bc5d8
+Global,Atmosphere,,MeteoEarth,"http://www.meteoearth.com/#/,2.62,55.90,6.16,20,1,1,0,0,0,time=1510046700"
+Global,Atmosphere,,Monthly climate and climatic water balance for global terrestrial surfaces from 1958-2015,https://www.northwestknowledge.net/data/5956e20ceb1bc6513f464d11/
+Global,Habitats,,Land Cover Map,http://maps.elie.ucl.ac.be/CCI/viewer/index.php
+Global,Habitats,,Multiple Hazards,http://preview.grid.unep.ch/index.php?preview=home&lang=eng
+Global,Habitats,,Ocean Data Viewer,http://data.unep-wcmc.org/
+Global,,Landslides,Global Landslide Model,https://pmm.nasa.gov/applications/global-landslide-model
+Global,Soils and sediments,,European Soil Database v2 Raster Library 1kmx1km,https://esdac.jrc.ec.europa.eu/content/european-soil-database-v2-raster-library-1kmx1km
+Global,Soils and sediments,,"Global 1-km Gridded Thickness of Soil, Regolith, and Sedimentary Deposit Layers",https://daac.ornl.gov/SOILS/guides/Global_Soil_Regolith_Sediment.html
+Global,Soils and sediments,,Global Data Set of Derived Soil Properties,https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=546
+Global,Soils and sediments,,Global Soil Organic Carbon Density Map,ftp://ftp.isric.org/
+Global,Soils and sediments,,World Resource Base Map of World Soil Resources,http://www.fao.org/soils-portal/soil-survey/soil-maps-and-databases/other-global-soil-maps-and-databases/en/
+Global,Soils and sediments,,WoSIS Soil Profile Database,http://www.isric.org/explore/wosis
+Global,Species,,Chlorophyll Concentration,https://neo.sci.gsfc.nasa.gov/view.php?datasetId=MY1DMM_CHLORA
+Global,Species,,GBIF,http://www.gbif.org/
+Global,Species,,Global Livestock Production and Health Atlas,http://kids.fao.org/glipha/
+Global,Species,,Pollinator Library,https://www.npwrc.usgs.gov/pollinator/
+Global,Water,,"Aqua maps environmental dataset: (HCAF ver. 6, 08/2016)",http://www.aquamaps.org/main/envt_data.php
+Global,Water,,Chlorophyll Concentration,https://neo.sci.gsfc.nasa.gov/view.php?datasetId=MY1DMM_CHLORA
+Global,Water,,Country based groundwater data,https://apps.geodan.nl/igrac/ggis-viewer/viewer/go/public/default
+Global,Water,,FAO Aquastat,http://www.fao.org/nr/water/aquastat/data/query/index.html
+Global,Water,,Gemstat,http://gemstat.org/about/
+Global,Water,,Global high resolution soil-water balance,http://www.cgiar-csi.org/data/global-high-resolution-soil-water-balance
+Global,Water,,Global Lakes and Wetlands Database,https://www.worldwildlife.org/pages/global-lakes-and-wetlands-database
+Global,Water,,Global Surface Water,https://landcover.usgs.gov/glc/WaterDescriptionAndDownloads.php
+Global,Water,,Global Surface Water Explorer,https://global-surface-water.appspot.com/
+Global,Water,,Sea Surface Salinity,https://aquarius.umaine.edu/cgi/gal_smap.htm
+Global,Water,,Transboundary aquifers of the world Map,https://apps.geodan.nl/igrac/ggis-viewer/viewer/tbamap/public/default
+Global,Water,,World Ocean Atlas and Database,https://www.nodc.noaa.gov/OC5/woa13/woa13data.html

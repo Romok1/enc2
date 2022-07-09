@@ -1,0 +1,86 @@
+.explore-widget {
+  @include h3;
+  background-color: $sg-grey-xdark;
+  box-shadow: rem-calc(0 2 4 0) rgba($black,0.5);
+  color: $white;
+  padding: rem-calc(20);
+
+  @include breakpoint($small) {
+    padding: rem-calc(40);
+  }
+
+  @include breakpoint($medium) {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  @include breakpoint($large) {
+    max-width: rem-calc(720);
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__text {
+    font-size: rem-calc(20);
+
+    @include breakpoint($small) {
+      font-size: rem-calc(16);
+    }
+  }
+
+  &__dropdown {
+    margin-bottom: rem-calc(10);
+
+    flex: 1;
+
+    @include breakpoint($small) {
+      margin-right: rem-calc(5);
+      margin-bottom: 0;
+    }
+  }
+
+  &__inputgroup {
+    margin-top: rem-calc(20);
+
+    @include breakpoint($small) {
+      margin-top: rem-calc(10);
+
+      display: flex;
+    }
+  }
+
+  &__button {
+      @extend .button--green;
+      @extend .button--medium;
+      font-size: rem-calc(20);
+      padding: rem-calc(18 28);
+      width: 100%;
+
+      @include breakpoint($small) {
+        font-size: rem-calc(14);
+        line-height: 1;
+        padding: rem-calc(12 28);
+        width: auto;
+      }
+  }
+
+  &__filters {
+    .explore-filters {
+      &__selections {
+        @extend .flex-column;
+      }
+
+      &__clear-button {
+        display: none;
+      }
+    }
+
+    .tooltip { display: none; }
+  }
+
+  .v-select--search .v-select__search-input {
+    border: none;
+  }
+}

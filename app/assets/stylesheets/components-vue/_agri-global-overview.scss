@@ -1,0 +1,7 @@
+.agri-global-overview__header {
+  margin-bottom: rem-calc(30);
+}
+
+.agri-global-overview__text {
+  @include dashboard-intro;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+  <head>
+    <% if Rails.env.production? %>
+      <%= javascript_tag do %>
+        window.ENABLE_ANALYTICS = true
+      <% end %>
+      <%= render 'google_analytics/google_analytics' %>
+    <% end %>
+    
+    <title>ENCORE</title>
+    <%= csrf_meta_tags %>
+    <meta content='width=device-width,initial-scale=1.0' name='viewport'>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application' %>
+
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.13.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
+
+    <script src="<%= polyfill_url() %>"></script>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application' %>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.13.1/mapbox-gl.js'></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+
+    <!-- Promise polyfill script is required -->
+    <!-- to use Mapbox GL Geocoder in IE 11. -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+    <script src="https://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.core.js"></script>
+
+    <%= render 'layouts/social_metadata' %>
+    <%= render 'layouts/favicon' %>
+  </head>
+
+  <body>
+    <div 
+      id="v-app" 
+      class="page <%= page_label %> <%= 'pdf' if @for_pdf %>" 
+    v-cloak>
+      <store 
+        :state="<%= {
+          user: current_user
+        }.to_json %>"
+      >
+        <i18n v-bind="<%= {
+            fallbackLocale: @default_locale,
+            locale: @locale,
+            messages: @translations
+          }.to_json %>">
+          <%= render 'application/topbar'%>
+          <%= yield %>
+          <%= render partial: 'application/feedback_popup', locals: { popup_class:'fixed' } %>
+          <%= render 'layouts/footer'%>
+          <% if user_signed_in? %>
+            <user-account-management-popup></user-account-management-popup>
+          <% else %>
+            <authentication-popup :carousel-content="<%= @authentication_carousel_content.to_json %>"></authentication-popup>
+          <% end %>
+        </i18n>
+      </store>
+    </div>
+  </body>
+</html>

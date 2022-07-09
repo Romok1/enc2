@@ -1,0 +1,32 @@
+en:
+  portfolios:
+    title: Portfolios
+    cta_save: (Save to add to your portfolios)
+    notifications:
+      created: Portfolio was successfully created.
+      updated: Portfolio was successfully updated.
+      destroyed: Portfolio was successfully destroyed.
+      unsaved_changes: (Unsaved changes)
+    search:
+      placeholder: -search-
+      no_results: No results found, please search again
+    form:
+      title: Save Portfolio
+      labels:
+        name: Portfolio Name
+    delete_modal:
+      cta: "Delete %{portfolio_name} Portfolio"
+      description: Please confirm to permanently delete this portfolio.
+      overwrite_description: "You already have a portfolio named %{portfolio_name}. Are you sure you want to overwrite your existing portfolio?"
+    card:
+      empty_name: No portfolios saved
+      create_name: Create sector portfolio
+      link_title: Go to the portfolio
+      create_link_title: Create sector portfolio
+      list:
+        agriculture: Locations
+        mining: Companies
+    details:
+      title: Applied Filters
+      applied_filters: "Applied filters:"
+      trigger_text: view list

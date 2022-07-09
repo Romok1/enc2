@@ -1,0 +1,9 @@
+en:
+  biodiversity_goals:
+    sectors:
+      -
+        id: agriculture # Do not translate
+        title: Agriculture
+      -
+        id: mining # Do not translate
+        title: Mining

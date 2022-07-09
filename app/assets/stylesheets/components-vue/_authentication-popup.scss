@@ -1,0 +1,227 @@
+$auth-popup-vertical-padding: 4em;
+$background-color: $sg-grey-xlight;
+$bordered-color: $sg-grey;
+$close-font-size: 20;
+$form-max-width: rem-calc(448);
+$tabs-triggers-height: rem-calc(42);
+$transparent: rgba(white, 0);
+
+.authentication-popup {
+  .tab {
+    @include breakpoint($small) {
+      padding-right: rem-calc(20);
+      padding-left: rem-calc(20);
+    }
+
+    &#REGISTER {
+      @include breakpoint($small) {
+        overflow-y: auto;
+        height: calc(#{$authentication-popup-height-tablet} - (#{$auth-popup-vertical-padding * 2} + #{$tabs-triggers-height}));
+        max-height: calc(90vh - (#{$auth-popup-vertical-padding * 2} + #{$tabs-triggers-height}));
+      }
+
+      @include breakpoint($medium) {
+        height: calc(#{$authentication-popup-height-desktop} - (#{$auth-popup-vertical-padding * 2} + #{$tabs-triggers-height}));
+        max-height: calc(75vh - (#{$auth-popup-vertical-padding * 2} + #{$tabs-triggers-height}));
+      }
+    }
+  }
+
+  &.authentication-popup--registered {
+    .tabs__triggers {
+      display: none;
+    }
+
+    .tab#REGISTER {
+      @include breakpoint($small) {
+        padding-right: 0; //IE11
+        padding-left: 0; //IE11
+        height: auto; max-height: none;
+      }
+
+      @include breakpoint($medium) {
+        height: auto; max-height: none;
+      }
+    }
+  }
+
+  .tabs__triggers {
+    line-height: 1;
+    height: $tabs-triggers-height;
+
+    position: relative;
+
+    @include breakpoint($medium) {
+      margin-right: rem-calc(20);
+      margin-left: rem-calc(20);
+    }
+
+    &::after {
+      background-color: $bordered-color;
+      content: '';
+      width: 100%;
+      height: rem-calc(1);
+
+      display: block;
+
+      position: absolute;
+      right: rem-calc(1);
+      bottom: rem-calc(-1);
+      left: rem-calc(1);
+    }
+  }
+
+  .tab__trigger {
+    border: rem-calc(1) solid $transparent;
+    font-size: rem-calc(20);
+    font-weight: $light;
+    margin: 0;
+    padding: rem-calc(10 16);
+    text-align: center;
+    user-select: none;
+    min-width: 5rem;
+
+    position: relative;
+
+    &[aria-selected="true"] {
+      border-top-color: $bordered-color;
+      border-right-color: $bordered-color;
+      border-left-color: $bordered-color;
+      font-weight: $bold;
+    }
+
+    &:first-child {
+      border-left: rem-calc(1) solid $transparent;
+    }
+
+    &::after {
+      background-color: $background-color;
+      content: '';
+      width: 100%;
+      height: rem-calc(3);
+
+      display: none;
+
+      position: absolute;
+      right: 0;
+      bottom: rem-calc(-3);
+      left: 0;
+      z-index: 1;
+    }
+
+    &[aria-selected="true"]::after {
+      display: block;
+    }
+  }
+
+  &__popup-container {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    @include breakpoint($medium) {
+      flex-direction: row;
+    }
+  }
+
+  &__popup-aside {
+    background-color: $sg-grey-xlight;
+    color: $white;
+
+    display: none;
+    flex: 0 0 100%;
+
+    @include breakpoint($medium) {
+      flex: 0 0 percentage(2/5);
+    }
+
+    .carousel {
+      .flickity-page-dots {
+        bottom: $auth-popup-vertical-padding;
+      }
+
+      &::after {
+        content: "";
+      }
+
+      &__cell {
+        background-size: cover;
+        width: 100%;
+
+        &-content {
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding: $auth-popup-vertical-padding 1rem;
+        }
+
+        &-heading {
+          font-size: rem-calc(30);
+          line-height: rem-calc(32);
+          margin: rem-calc(24 0);
+        }
+
+        &-body {
+          font-size: rem-calc(14);
+          line-height: rem-calc(22);
+        }
+      }
+    }
+
+    @include breakpoint($medium) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .carousel {
+        &::after {
+          content: "flickity";
+
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__popup-body {
+    padding: 2em 1.5em;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+
+    @include breakpoint($medium) {
+      padding: $auth-popup-vertical-padding;
+    }
+
+    .authentication-popup--registered & {
+      padding: 0; //IE11
+    }
+  }
+
+  &__popup-tabs {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: $form-max-width;
+
+    .authentication-popup--registered & {
+      max-width: none;
+    }
+  }
+
+  .form {
+    color: $black;
+
+    .field {
+      margin: 1rem 0 0.25rem 0;
+
+      &--h-between {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+Name,Description
+Extensión del ambiente construido,Diferencia en la extensión del ambiente construido de 1993 a 2009.
+Reservas de carbono,Datos sobre biomasa forestal a 1 grado de resolución para el periodo entre 1950 y 2010.
+Cambio en la estacionalidad de las precipitaciones,Cambio en la estacionalidad de las precipitaciones máximas desde los años ochenta hasta los años dos mil.
+Cambio en la estacionalidad de las temperaturas,Cambio en la estacionalidad de la temperatura máxima desde los años ochenta hasta los años dos mil.
+Terremotos,Mapa Global de Riesgo Sísmico
+Densidad de incendios,Promedio de la densidad de incendios durante el periodo entre 1997 y 2010.
+Aumento de la superficie agrícola,Basado en datos sobre transiciones en el uso del suelo (escenario alto) de 850 a 2015.
+Aumento de la superficie forestal,Basado en datos sobre transiciones en el uso del suelo (escenario alto) de 850 a 2015.
+Aumento del área urbana,Basado en datos sobre transiciones en el uso del suelo (escenario alto) de 850 a 2015.
+Contaminación inorgánica,Diferencia en el nivel de contaminación inorgánica de 2008 a 2013.
+Frecuencia de los desprendimientos  de tierra causados por terremotos,Probabilidad anual prevista y porcentaje de píxel de ocurrencia de un evento de desprendimiento de tierra potencialmente destructivo causado por un terremoto x 1.000.000.
+Frecuencia de los desprendimientos de tierra causados por precipitaciones,Probabilidad anual prevista y porcentaje de píxel de ocurrencia de un evento de desprendimiento de tierras potencialmente destructivo causado por precipitación x 1.000.000.
+Pérdida de superficie agrícola,Basado en datos sobre transiciones en el uso del suelo (escenario alto) de 850 a 2015.
+Pérdida de superficie forestal,Basado en datos sobre transiciones en el uso del suelo (escenario alto) de 850 a 2015.
+Pérdida de área urbana,Basado en datos sobre transiciones en el uso del suelo (escenario alto) de 850 a 2015.
+Acidificación del océano,Niveles de acidificación del océano en 2013.
+Contaminación del océano,Diferencia en los niveles de contaminación del océano de 2008 a 2013.
+Densidad poblacional,Cambio en la densidad poblacional de 2000 a 2015.
+Estacionalidad de las precipitaciones,Máxima estacionalidad de las precipitaciones en los años dos mil.
+Rango de rareza,"El mapa de rango de rareza está basado en los polígonos de la Lista roja de los UICN (UICN 2017) de especies de mamíferos, anfibios y aves, donde valores altos muestran que un área alberga un gran número de especies y/o que los rangos promedio de las especies presentes en el área son bajos, de modo que la celda representa una proporción relativamente alta de su rango."
+Tráfico marítimo,"El 5% superior de las rutas marítimas comerciales de los buques que participan en el programa Sistema de Buques de Observación Voluntaria (VOS, por sus siglas en inglés) de la OMM."
+Aumento del nivel del mar,Incremento del nivel del mar en 2013.
+Temperatura de la superficie del mar,Diferencia en la temperatura de la superficie del mar entre 2008 y 2013.
+Eventos de marejadas ciclónicas,Ubicación de marejadas ciclónicas en cada cuenca oceánica desde 1880 hasta febrero de 2015.
+Estacionalidad de la temperatura,Máxima estacionalidad de la temperatura en los años dos mil.
+Cambio en la velocidad del viento,Cambio en la velocidad del viento de 1958 a 2017.
+Densidad ganadera,"Suma de la densidad de vacas, patos, cerdos, ovejas, pollos y cabras, usando unidades ganaderas."
+Topografía,Clasificación topográfica
+Integridad del hábitat,Abundancia media de especies presentes originalmente en relación con su abundancia estimada en un ecosistema intacto.
+Estrés hídrico de base,"Relación entre extracciones de agua anuales totales y el suministro renovable anual total disponible, teniendo en cuenta el uso consuntivo río arriba."
+Severidad de las sequías,Promedio de los meses de sequía de 1901 a 2008.
+Producción pesquera,"Diferencia en el volumen de especies acuáticas pescadas por país para todo propósito comercial, industrial, recreacional y de subsistencia."
+Ocurrencia de inundaciones,Conteo del número de inundaciones registradas desde 1985 hasta 2011.
+Degradación del suelo,"Estado de degradación del suelo en 1990, basado en unidades fisiográficas y opinión experta."
+Producción acuícola,Diferencia en el volumen y el valor de la producción acuícola para cada país.
+Estrés de las aguas subterráneas ,Proporción relativa entre la extracción de agua subterránea y la tasa de recarga. Los valores por encima de uno indican dónde el consumo insostenible de agua subterránea podría afectar la disponibilidad de la misma y a ecosistemas que de ella dependen.
+Especies invasoras,Número de especies invasoras por país.
+Calidad de los lagos ,Total de sólidos disueltos en los lagos más importantes del mundo.
+Litología,Clasificaciones litológicas.
+Migración humana,Datos globales por país sobre la diferencia en la población migrante a escala internacional entre 2017 y 1990.
+Geomorfología del fondo marino,Clasificación de la geomorfología oceánica.
+Calidad de los ríos,"Total de sólidos disueltos (TDS) para 82 cuencas que representan a los principales ríos del mundo, o a ríos más pequeños con importancia regional."
+Variabilidad en el suministro de agua,Variación en el suministro de agua de año a año.
+Eventos volcánicos,Eventos volcánicos en el Holoceno.
+Light pollution,
+Global Reservoirs and Dams - dams,
+Global Reservoirs and Dams - reservoirs,
+Monthly CO2 in the free troposphere,
+Fish catch in national waters per country,
+Global ambient air pollution PM2.5,
+Global ambient air pollution PM10,
+Solid waste per country,
+Global land cover data,
+Water pollution data,
+Global water depletion (Aqueduct 3.0),

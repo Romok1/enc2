@@ -1,0 +1,12 @@
+es:
+  serializers:
+    mining_dashboard:
+      labels:
+        commodity_average: Commodity Average
+        commodity_range: Commodity Range
+        porfolio_min: Porfolio Min
+        portfolio_average: Portfolio Average
+        portfolio_max: Portfolio Max
+        sector_average: Sector Average
+        your_portfolio_average: Your Portfolio Average
+        your_portfolio_range: Your Portfolio Range

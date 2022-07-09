@@ -1,0 +1,11 @@
+.submit-button {
+  margin-top: 1em;
+
+  @extend .button;
+  @extend .button--green;
+  @extend .button--medium;
+}
+.submit-button__container {
+  display: flex;
+  justify-content: center; 
+}

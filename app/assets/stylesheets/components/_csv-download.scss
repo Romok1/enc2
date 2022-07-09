@@ -1,0 +1,40 @@
+.csv-download {
+  background: $sg-grey-xlight;
+  padding: rem-calc(16 18);
+
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($small) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    margin-bottom: rem-calc(12);
+
+    @include breakpoint($small) {
+      margin-right: rem-calc(40);
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin: 0 0 rem-calc(4);
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__button {
+    @include button--green;
+    @include button--large;
+
+    &.disabled {
+      opacity: 0.7;
+      pointer-events: none;
+    }
+  }
+}

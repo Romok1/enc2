@@ -1,0 +1,12 @@
+<p><%= t('form.new_enquiry_msg', { type: @enquiry_type, name: @name }) %>:</p>
+
+<p>
+  <strong><%= t('form.name') %>:</strong> <%= @name %><br>
+  <strong><%= t('form.email') %>:</strong> <%= @email %><br>
+  <strong><%= t('form.enquiry_type') %>:</strong> <%= @enquiry_type %><br>
+  <strong><%= t('form.message') %>:</strong> <%= @message %>
+</p>
+
+<hr>
+
+<p>{type: <%= @enquiry_type %>}</p>

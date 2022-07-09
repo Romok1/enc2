@@ -1,0 +1,29 @@
+require_relative 'boot'
+
+require 'rails/all'
+
+# Require the gems listed in Gemfile, including any gems
+# you've limited to :test, :development, or :production.
+Bundler.require(*Rails.groups)
+
+module Ncfa
+  class Application < Rails::Application
+    # Ensuring that ActiveStorage routes are loaded before Comfy's globbing
+    # route. Without this file serving routes are inaccessible.
+    config.railties_order = [ActiveStorage::Engine, :main_app, :all]
+    # Initialize configuration defaults for originally generated Rails version.
+    config.load_defaults 5.2
+
+    config.eager_load_paths << Rails.root.join('lib')
+    # Settings in config/environments/* take precedence over those specified here.
+    # Application configuration can go into files in config/initializers
+    # -- all .rb files in that directory are automatically loaded after loading
+    # the framework and any gems in your application.
+    config.autoload_paths << Rails.root.join('lib/modules')
+
+    config.i18n.default_locale = :en
+    config.i18n.fallbacks = true
+
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
+  end
+end

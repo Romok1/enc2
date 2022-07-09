@@ -1,0 +1,56 @@
+es:
+  biodiversity_goals:
+    dashboard:
+      agriculture:
+        components:
+          global_overview:
+            title: Global overview of my current portfolio exposure
+            description: This breakdown provides an indication of the regional hotspots of the agriculture-related impacts within your portfolio. This can advise where your institution can have the most influence on meeting biodiversity targets.
+            administrativeBoundaries:
+              title: Potential to reduce species’ extinction risk
+              description: Use this table to see a breakdown of STAR values across the different sub-national administrative units for the countries associated with your input portfolio. <strong>Filter by type of agriculture</strong> (cropland or pastureland) and by <strong>administrative boundary</strong> (Representative – the area with the most cropland/pastureland in the country; Min or Max – the area with the lowest/highest value on the goal-relevant metric).
+            ecoregions:
+              title: Ecological integrity risk
+              description: Use this table to see a breakdown of the values for the ecological integrity risk metric across the different ecoregions within countries associated with your input portfolio. <strong>Filter by type of agriculture</strong> (cropland or pastureland) and by <strong>ecoregion</strong> (Representative – the area with the most cropland/pastureland in the country; Min or Max – the area with the lowest/highest value on the goal-relevant metric).
+            table:
+              no_data: 
+                ecoregions: No ecoregions were found for your selected filters.
+                administrativeBoundaries: No administrative boundaries were found for your selected filters.
+              filters:
+                selectedLabel:
+                  agricultureType: Type
+                  ecoregion: Type
+                  administrativeBoundary: Type
+                agricultureType:
+                  crops: Cropland
+                  livestock: Pasture land
+                  all: All
+                regionType:
+                  min: Min risk
+                  max: Max risk
+                  representative: Representative
+              headers:
+                country: Country
+                agricultureType: Pasture land & Cropland
+                ecoregion: Ecoregion
+                star: Potential to reduce species’ extinction risk (STAR units; highest to lowest)
+                ecoIntegrityRisk: Ecological integrity risk (weighted MSAha; highest to lowest)
+                administrativeBoundary: Administrative boundary
+
+          future_scenarios:
+            title: My future exposure scenarios
+
+        details:
+          country_label: "Country name: "
+          area:
+            labels:
+              area:
+                crops: "Cropland (area): "
+                livestock: "Pasture land (area): "
+              turnover:
+                crops: "Cropland (turnover): "
+                livestock: "Pasture land (turnover): "
+            values:
+              area: '%{value} ha'
+              turnover: '%{value} million USD'
+            

@@ -1,0 +1,67 @@
+en:
+  biodiversity_goals:
+    dashboard:
+      mining:
+        data:
+          no_data:
+            title: No data were found for your selections.
+        components:
+          global_overview:
+            title: Global overview of my current portfolio exposure
+            averages:
+              intro: Use this section to understand the distribution of the values in species extinction and ecological integrity risk metrics associated with your portfolio. The table provides additional granularity by displaying the information by ecoregion and country by sub-national administrative boundaries for STAR and by ecoregions for ecological integrity risk.
+              charts:
+                star:
+                  title: Potential to reduce species’ extinction risk
+                ecoIntegrityRisk:
+                  title: Ecological integrity risk
+                chart_legend:
+                  sector_average: "%{value} Sector Average"
+                  portfolio_average: Your Portfolio Average
+                  portfolio_range: Your Portfolio Range
+            ecoregions:
+              title: Ecological integrity risk
+              intro: Use this table to see a breakdown of the values for the ecological integrity risk metric across the different ecoregions within countries associated with your input portfolio. 
+              table:
+                headers:
+                  ecoregion: Ecoregion
+                  countries: 'Present in countries'
+                  ecoIntegrityRisk: Ecological integrity risk (weighted MSAha; highest to lowest)
+            administrative_boundaries:
+              title: Potential to reduce species’ extinction risk
+              intro: Use this table to see a breakdown of STAR values across the different sub-national administrative units for the countries associated with your input portfolio. 
+              table:
+                headers:
+                  administrativeBoundary: Administrative boundary
+                  country: 'Country'
+                  star: Potential to reduce species’ extinction risk (STAR units; highest to lowest).
+
+          exposure_scenarios:
+            title: Sector-level future exposure scenarios
+            tooltip: Use this section to understand which commodities in your portfolio are likely to see demand increases due to their links to the energy transition. Alongside this you can view the species extinction and ecological integrity risk metric values associated with these commodities at the sector level. This helps gain an understanding of potential biodiversity risks associated with current and future extraction.
+            section_one:
+              heading: Portfolio commodity overview
+              text: This breakdown shows the different commodities associated with your portfolio. It highlights whether these commodities have been assessed as required to support the energy transition, meaning demand for them is likely to increase in future.
+              details_link: View details
+              table:
+                headers:
+                  supporting: Supporting Energy Transition
+                  not_supporting: Not Supporting Energy Transition
+                  not_assessed: Not Assessed
+            section_two:
+              heading: Explore each commodity
+              text: Here, the average and range of potential direct impacts on biodiversity of each commodity can be explored. These are estimated at the sector-level and cover both existing and potential future exploitation locations.
+              charts:
+                star:
+                  title: Potential to reduce species’ extinction risk
+                ecoIntegrityRisk:
+                  title: Ecological integrity risk
+                chart_legend:
+                  commodity_average: Commodity Average
+                  commodity_range: Commodity Range
+        details:
+          labels:
+            company: "Company: "
+            location: "Country location: "
+          values:
+            global: 'Global'

@@ -1,0 +1,58 @@
+.dashboard-message {
+  margin: rem-calc(20) auto 0;
+  padding: 0 $gutter-small;
+  text-align: center;
+
+  @include breakpoint($small) {
+    padding: 0;
+    width: 55%;  
+  }
+
+  .dashboard--biodiversity-goals & {
+    margin-top: rem-calc(100);
+
+    @include breakpoint($small) {
+      margin-top: rem-calc(200);
+    }
+  }
+}
+
+.dashboard-message__description {
+  padding: 0 14%;
+}
+
+.dashboard-message__icon { margin: 0 auto; }
+
+.dashboard-message__title {
+  font-size: rem-calc(24);
+  font-weight: $bold;
+  margin-top: 1.4em;
+  margin-bottom: .8em;
+}
+
+.dashboard-message--no-flows-data {
+  display: none;
+
+  @include breakpoint($small) { 
+    margin-top: 0;
+    display: block; 
+  }
+
+  .dashboard-message__icon {
+    width: rem-calc(82); height: rem-calc(82);
+  }
+}
+
+.dashboard-message--no-dashboard-data {
+  .dashboard-message__icon {
+    width: rem-calc(82); height: rem-calc(82);
+  }
+}
+
+.dashboard-message--screensize {
+  @include breakpoint($small) { display: none; }
+
+  .dashboard-message__icon {
+    width: rem-calc(98); height: rem-calc(62);
+  }
+}

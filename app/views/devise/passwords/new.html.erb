@@ -1,0 +1,18 @@
+<%= render partial: 'layouts/nav' %>
+
+<div class="devise">
+  <div class="devise__container">
+    <icon-lock class="devise__icon--lock"></icon-lock>
+
+    <h2><%= t('devise.ctas.forgot_your_password') %></h2>
+
+    <p class="devise__description">
+      <%= t('devise.ctas.forgot_your_password_description') %>
+    </p>
+
+    <forgotten-password-form class="devise__form">
+    </forgotten-password-form>
+
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

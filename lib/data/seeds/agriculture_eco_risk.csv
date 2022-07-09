@@ -1,0 +1,364 @@
+iso_3,agriculture_type,representative_ecoregion_id,representative_ecoregion_eco_risk,representative_ecoregion_category,representative_ecoregion_name,max_ecoregion_id,max_ecoregion_eco_risk,max_ecoregion_category,max_ecoregion_name,min_ecoregion_id,min_ecoregion_eco_risk,min_ecoregion_category,min_ecoregion_name
+AFG,Crops,834,2.012390171,E,Paropamisus xeric woodlands,807,2.143594752,E,Afghan Mountains semi-desert,762,1.393885922,E,Pamir alpine desert and tundra
+AGO,Crops,36,1.659809306,E,Angolan wet miombo woodlands,77,2.146771403,C,Angolan montane forest-grassland,98,1.37625653,D,Kaokoveld desert
+ALB,Crops,794,2.076022346,C,Illyrian deciduous forests,794,2.076022346,C,Illyrian deciduous forests,646,1.964848998,C,Balkan mixed forests
+ARE,Crops,810,1.135272154,E,Arabian sand desert,320,2.227227323,B,Indus River Delta-Arabian Sea mangroves,810,1.135272154,E,Arabian sand desert
+ARG,Crops,576,1.811194291,C,Humid Pampas,586,2.001473605,E,Southern Cone Mesopotamian savanna,561,1.19836058,D,Magellanic subpolar forests
+ARM,Crops,727,1.983186325,C,Eastern Anatolian montane steppe,812,2.053913783,C,Azerbaijan shrub desert and steppe,650,1.973422757,E,Caucasus mixed forests
+AUS,Crops,192,1.717169308,E,Southeast Australia temperate savanna,204,1.971545039,C,Naracoorte woodlands,210,1.026727332,A,Great Sandy-Tanami desert
+AUT,Crops,674,1.953654725,C,Pannonian mixed forests,689,1.963627793,E,Alps conifer and mixed forests,654,1.898178817,C,Central European mixed forests
+AZE,Crops,812,2.053913783,C,Azerbaijan shrub desert and steppe,649,2.072543153,C,Caspian Hyrcanian mixed forests,650,1.973422757,E,Caucasus mixed forests
+BDI,Crops,1,1.945361429,C,Albertine Rift montane forests,61,1.984126062,C,Victoria Basin forest-savanna,76,1.548573597,D,Zambezian flooded grasslands
+BEL,Crops,664,1.940130847,C,European Atlantic mixed forests,664,1.940130847,C,European Atlantic mixed forests,686,1.905426399,B,Western European broadleaf forests
+BEN,Crops,62,1.793007042,E,West Sudanian savanna,23,2.060272,C,Nigerian lowland forests,62,1.793007042,E,West Sudanian savanna
+BFA,Crops,62,1.793007042,E,West Sudanian savanna,62,1.793007042,E,West Sudanian savanna,53,1.363278794,E,Sahelian Acacia savanna
+BGD,Crops,238,1.975113394,C,Lower Gangetic Plains moist deciduous forests,282,2.157795923,C,Sundarbans freshwater swamp forests,249,1.925189852,E,Mizoram-Manipur-Kachin rain forests
+BGR,Crops,646,1.964848998,C,Balkan mixed forests,678,2.062922544,B,Rodope montane mixed forests,735,1.833659488,E,Pontic steppe
+BHS,Crops,552,1.815780677,A,Bahamian pineyards,612,1.83284331,A,Bahamian-Antillean mangroves,552,1.815780677,A,Bahamian pineyards
+BIH,Crops,674,1.953654725,C,Pannonian mixed forests,794,2.076022346,C,Illyrian deciduous forests,674,1.953654725,C,Pannonian mixed forests
+BLR,Crops,654,1.898178817,C,Central European mixed forests,654,1.898178817,C,Central European mixed forests,679,1.709193105,C,Sarmatic mixed forests
+BLZ,Crops,494,1.748309807,C,Petén-Veracruz moist forests,613,1.873623913,B,Mesoamerican Gulf-Caribbean mangroves,519,1.535898063,C,Yucatán moist forests
+BOL,Crops,529,1.405322919,E,Chiquitano dry forests,589,1.907519762,D,Central Andean wet puna,505,1.12300942,D,Southwest Amazon moist forests
+BRA,Crops,567,1.503986042,E,Cerrado,445,2.201852255,E,Caatinga Enclaves moist forests,511,1.080708719,D,Uatumã-Trombetas moist forests
+BRB,Crops,599,2.267564441,C,Caribbean shrublands,599,2.267564441,C,Caribbean shrublands,599,2.267564441,C,Caribbean shrublands
+BRN,Crops,219,1.519001562,E,Borneo lowland rain forests,322,1.937677624,E,Sunda Shelf mangroves,220,1.278509396,E,Borneo montane rain forests
+BTN,Crops,306,1.812456744,E,Eastern Himalayan broadleaf forests,311,2.102459883,C,Terai-Duar savanna and grasslands,702,1.46280244,E,Northeast Himalayan subalpine conifer forests
+BWA,Crops,65,1.632907396,B,Zambezian mopane woodlands,66,1.879063835,C,Zambezian-Limpopo mixed woodlands,47,1.184513154,A,Kalahari Acacia woodlands
+CAF,Crops,53,1.363278794,E,Sahelian Acacia savanna,43,1.559897444,E,East Sudanian savanna,26,1.256948142,E,Northwest Congolian lowland forests
+CAN,Crops,386,1.445641656,A,Canadian Aspen forests and parklands,342,1.972831685,C,Southern Great Lakes forests,413,0.977602755,A,Canadian Low Arctic tundra
+CHE,Crops,686,1.905426399,B,Western European broadleaf forests,675,2.08969449,C,Po Basin mixed forests,686,1.905426399,B,Western European broadleaf forests
+CHL,Crops,596,1.766566747,C,Chilean Matorral,596,1.766566747,C,Chilean Matorral,561,1.19836058,D,Magellanic subpolar forests
+CHN,Crops,667,1.940758865,C,Huang He Plain mixed forests,748,2.223024837,B,Yellow Sea saline meadow,710,0.954,A,East Siberian taiga
+CIV,Crops,11,1.99418614,C,Eastern Guinean forests,113,2.130765346,E,Guinean mangroves,62,1.793007042,E,West Sudanian savanna
+CMR,Crops,43,1.559897444,E,East Sudanian savanna,21,2.311343457,D,Mount Cameroon and Bioko montane forests,26,1.256948142,E,Northwest Congolian lowland forests
+COD,Crops,24,1.480081088,E,Northeast Congolian lowland forests,86,2.37105468,D,Rwenzori-Virunga montane moorlands,26,1.256948142,E,Northwest Congolian lowland forests
+COG,Crops,63,1.644203105,E,Western Congolian forest-savanna,63,1.644203105,E,Western Congolian forest-savanna,26,1.256948142,E,Northwest Congolian lowland forests
+COL,Crops,478,2.04266949,C,Magdalena-Urabá moist forests,594,2.3060778,D,Santa Marta páramo,473,1.09838068,D,Japurá-Solimões-Negro moist forests
+COM,Crops,4,2.285964817,C,Comoros forests,4,2.285964817,C,Comoros forests,4,2.285964817,C,Comoros forests
+CPV,Crops,31,2.219122112,E,Cape Verde Islands dry forests,31,2.219122112,E,Cape Verde Islands dry forests,31,2.219122112,E,Cape Verde Islands dry forests
+CRI,Crops,470,1.871686634,D,Isthmian-Atlantic moist forests,617,2.18454091,B,Southern Mesoamerican Pacific mangroves,470,1.871686634,D,Isthmian-Atlantic moist forests
+CUB,Crops,530,2.052749867,C,Cuban dry forests,600,2.257218084,C,Cuban cactus scrub,612,1.83284331,A,Bahamian-Antillean mangroves
+CYP,Crops,790,2.134553346,C,Cyprus Mediterranean forests,790,2.134553346,C,Cyprus Mediterranean forests,790,2.134553346,C,Cyprus Mediterranean forests
+CZE,Crops,686,1.905426399,B,Western European broadleaf forests,692,1.984052256,C,Carpathian montane forests,654,1.898178817,C,Central European mixed forests
+DEU,Crops,686,1.905426399,B,Western European broadleaf forests,647,2.02796664,C,Baltic mixed forests,654,1.898178817,C,Central European mixed forests
+DNK,Crops,647,2.02796664,C,Baltic mixed forests,647,2.02796664,C,Baltic mixed forests,778,1.107873291,A,Russian Arctic desert
+DOM,Crops,468,2.08501677,C,Hispaniolan moist forests,580,2.358501806,B,Enriquillo wetlands,612,1.83284331,A,Bahamian-Antillean mangroves
+DZA,Crops,798,1.935275666,E,Mediterranean woodlands and forests,701,2.128446664,C,Mediterranean conifer and mixed forests,842,0.945966653,E,South Sahara desert
+ECU,Crops,516,2.013922418,E,Western Ecuador moist forests,582,2.261042723,C,Guayaquil flooded grasslands,483,1.228778309,D,Napo moist forests
+EGY,Crops,744,1.943323001,C,Nile Delta flooded savanna,744,1.943323001,C,Nile Delta flooded savanna,842,0.945966653,E,South Sahara desert
+ERI,Crops,53,1.363278794,E,Sahelian Acacia savanna,79,1.974766208,E,Ethiopian montane grasslands and woodlands,53,1.363278794,E,Sahelian Acacia savanna
+ESH,Crops,839,1.3384325,E,Saharan Atlantic coastal desert,796,1.917728007,E,Mediterranean Acacia-Argania dry woodlands and succulent thickets,842,0.945966653,E,South Sahara desert
+ESP,Crops,793,1.811747882,E,Iberian sclerophyllous and semi-deciduous forests,803,2.265679802,D,Southeast Iberian shrubs and woodlands,792,1.78756179,B,Iberian conifer forests
+EST,Crops,679,1.709193105,C,Sarmatic mixed forests,679,1.709193105,C,Sarmatic mixed forests,679,1.709193105,C,Sarmatic mixed forests
+ETH,Crops,79,1.974766208,E,Ethiopian montane grasslands and woodlands,80,2.153084341,D,Ethiopian montane moorlands,50,1.36031442,E,Masai xeric grasslands and shrublands
+FIN,Crops,717,1.226023162,A,Scandinavian and Russian taiga,679,1.709193105,C,Sarmatic mixed forests,717,1.226023162,A,Scandinavian and Russian taiga
+FJI,Crops,635,2.206679135,E,Fiji tropical dry forests,635,2.206679135,E,Fiji tropical dry forests,622,2.163068496,E,Fiji tropical moist forests
+FRA,Crops,664,1.940130847,C,European Atlantic mixed forests,795,2.03381531,C,Italian sclerophyllous and semi-deciduous forests,676,1.832737235,D,Pyrenees conifer and mixed forests
+GAB,Crops,5,1.526491295,E,Congolian coastal forests,111,2.017820622,C,Central African mangroves,26,1.256948142,E,Northwest Congolian lowland forests
+GBR,Crops,651,1.979454962,C,Celtic broadleaf forests,663,2.085813648,C,English Lowlands beech forests,691,1.745140869,A,Caledon conifer forests
+GEO,Crops,650,1.973422757,E,Caucasus mixed forests,812,2.053913783,C,Azerbaijan shrub desert and steppe,650,1.973422757,E,Caucasus mixed forests
+GHA,Crops,11,1.99418614,C,Eastern Guinean forests,113,2.130765346,E,Guinean mangroves,62,1.793007042,E,West Sudanian savanna
+GIN,Crops,44,1.859036376,E,Guinean forest-savanna,113,2.130765346,E,Guinean mangroves,62,1.793007042,E,West Sudanian savanna
+GLP,Crops,599,2.267564441,C,Caribbean shrublands,475,2.334240203,B,Leeward Islands moist forests,612,1.83284331,A,Bahamian-Antillean mangroves
+GMB,Crops,62,1.793007042,E,West Sudanian savanna,113,2.130765346,E,Guinean mangroves,62,1.793007042,E,West Sudanian savanna
+GNB,Crops,44,1.859036376,E,Guinean forest-savanna,113,2.130765346,E,Guinean mangroves,44,1.859036376,E,Guinean forest-savanna
+GNQ,Crops,5,1.526491295,E,Congolian coastal forests,27,2.330194298,D,São Tomé and Príncipe and Annobón forests,5,1.526491295,E,Congolian coastal forests
+GRC,Crops,785,2.001524193,C,Aegean and Western Turkey sclerophyllous and mixed forests,789,2.170892285,B,Crete Mediterranean forests,646,1.964848998,C,Balkan mixed forests
+GTM,Crops,494,1.748309807,C,Petén-Veracruz moist forests,605,2.274773252,C,Motagua Valley thornscrub,519,1.535898063,C,Yucatán moist forests
+GUF,Crops,465,1.097873038,D,Guianan lowland moist forests,611,1.824469411,D,Amazon-Orinoco-Southern Caribbean mangroves,465,1.097873038,D,Guianan lowland moist forests
+GUY,Crops,465,1.097873038,D,Guianan lowland moist forests,611,1.824469411,D,Amazon-Orinoco-Southern Caribbean mangroves,511,1.080708719,D,Uatumã-Trombetas moist forests
+HKG,Crops,268,1.983717968,C,South China-Vietnam subtropical evergreen forests,268,1.983717968,C,South China-Vietnam subtropical evergreen forests,268,1.983717968,C,South China-Vietnam subtropical evergreen forests
+HND,Crops,553,1.964849025,C,Central American pine-oak forests,617,2.18454091,B,Southern Mesoamerican Pacific mangroves,573,1.667109108,E,Miskito pine forests
+HRV,Crops,674,1.953654725,C,Pannonian mixed forests,794,2.076022346,C,Illyrian deciduous forests,674,1.953654725,C,Pannonian mixed forests
+HTI,Crops,468,2.08501677,C,Hispaniolan moist forests,580,2.358501806,B,Enriquillo wetlands,612,1.83284331,A,Bahamian-Antillean mangroves
+HUN,Crops,674,1.953654725,C,Pannonian mixed forests,674,1.953654725,C,Pannonian mixed forests,674,1.953654725,C,Pannonian mixed forests
+IDN,Crops,278,1.893068331,E,Sumatran lowland rain forests,165,2.168382423,E,Sumba deciduous forests,220,1.278509396,E,Borneo montane rain forests
+IMN,Crops,651,1.979454962,C,Celtic broadleaf forests,651,1.979454962,C,Celtic broadleaf forests,651,1.979454962,C,Celtic broadleaf forests
+IND,Crops,315,1.956619743,C,Deccan thorn scrub forests,243,2.410808651,E,Maldives-Lakshadweep-Chagos Archipelago tropical moist forests,702,1.46280244,E,Northeast Himalayan subalpine conifer forests
+IRL,Crops,651,1.979454962,C,Celtic broadleaf forests,651,1.979454962,C,Celtic broadleaf forests,672,1.955225468,B,North Atlantic moist mixed forests
+IRN,Crops,688,1.93728617,E,Zagros Mountains forest steppe,747,2.091535936,E,Tigris-Euphrates alluvial salt marsh,838,1.438376144,E,Registan-North Pakistan sandy desert
+IRQ,Crops,688,1.93728617,E,Zagros Mountains forest steppe,747,2.091535936,E,Tigris-Euphrates alluvial salt marsh,831,1.332916794,E,North Arabian desert
+ISR,Crops,791,1.993947574,E,Eastern Mediterranean conifer-broadleaf forests,804,2.051678689,C,Southern Anatolian montane conifer and deciduous forests,833,1.173375941,E,North Saharan Xeric Steppe and Woodland
+ITA,Crops,795,2.03381531,C,Italian sclerophyllous and semi-deciduous forests,802,2.164396982,B,South Apennine mixed montane forests,689,1.963627793,E,Alps conifer and mixed forests
+JAM,Crops,472,2.19437257,C,Jamaican moist forests,535,2.276809205,C,Jamaican dry forests,612,1.83284331,A,Bahamian-Antillean mangroves
+JOR,Crops,791,1.993947574,E,Eastern Mediterranean conifer-broadleaf forests,791,1.993947574,E,Eastern Mediterranean conifer-broadleaf forests,831,1.332916794,E,North Arabian desert
+JPN,Crops,682,2.005919681,C,Taiheiyo evergreen forests,251,2.228756399,C,Nansei Islands subtropical evergreen forests,698,1.877595423,C,Hokkaido montane conifer forests
+KAZ,Crops,732,1.77499813,E,Kazakh steppe,721,1.991867188,C,Alai-Western Tian Shan steppe,827,1.450232782,E,Junggar Basin semi-desert
+KEN,Crops,51,1.627778614,E,Northern Acacia-Commiphora bushlands and thickets,112,2.243431943,D,East African mangroves,50,1.36031442,E,Masai xeric grasslands and shrublands
+KGZ,Crops,740,1.910097584,C,Tian Shan foothill arid steppe,721,1.991867188,C,Alai-Western Tian Shan steppe,762,1.393885922,E,Pamir alpine desert and tundra
+KHM,Crops,291,1.897369556,E,Central Indochina dry forests,319,2.124846554,C,Indochina mangroves,223,1.799522791,B,Cardamom Mountains rain forests
+KOR,Crops,655,2.032149374,C,Central Korean deciduous forests,681,2.159744202,C,Southern Korea evergreen forests,669,1.715020503,C,Manchurian mixed forests
+KWT,Crops,811,1.591450514,E,Arabian-Persian Gulf coastal plain desert,811,1.591450514,E,Arabian-Persian Gulf coastal plain desert,809,1.440980568,E,Arabian desert
+LAO,Crops,291,1.897369556,E,Central Indochina dry forests,257,2.148498237,E,Northern Khorat Plateau moist deciduous forests,255,1.758660986,D,Northern Annamites rain forests
+LBN,Crops,791,1.993947574,E,Eastern Mediterranean conifer-broadleaf forests,804,2.051678689,C,Southern Anatolian montane conifer and deciduous forests,791,1.993947574,E,Eastern Mediterranean conifer-broadleaf forests
+LBR,Crops,30,1.80897326,E,Western Guinean lowland forests,113,2.130765346,E,Guinean mangroves,30,1.80897326,E,Western Guinean lowland forests
+LBY,Crops,797,1.822095634,E,Mediterranean dry woodlands and steppe,798,1.935275666,E,Mediterranean woodlands and forests,842,0.945966653,E,South Sahara desert
+LKA,Crops,301,2.08170927,B,Sri Lanka dry-zone dry evergreen forests,275,2.257176385,C,Sri Lanka montane rain forests,315,1.956619743,C,Deccan thorn scrub forests
+LSO,Crops,81,1.93310348,C,Highveld grasslands,41,1.98067398,C,Drakensberg grasslands,81,1.93310348,C,Highveld grasslands
+LTU,Crops,679,1.709193105,C,Sarmatic mixed forests,654,1.898178817,C,Central European mixed forests,679,1.709193105,C,Sarmatic mixed forests
+LUX,Crops,686,1.905426399,B,Western European broadleaf forests,686,1.905426399,B,Western European broadleaf forests,686,1.905426399,B,Western European broadleaf forests
+LVA,Crops,679,1.709193105,C,Sarmatic mixed forests,679,1.709193105,C,Sarmatic mixed forests,679,1.709193105,C,Sarmatic mixed forests
+MAR,Crops,798,1.935275666,E,Mediterranean woodlands and forests,758,2.210870902,C,Mediterranean High Atlas juniper steppe,833,1.173375941,E,North Saharan Xeric Steppe and Woodland
+MDA,Crops,654,1.898178817,C,Central European mixed forests,654,1.898178817,C,Central European mixed forests,735,1.833659488,E,Pontic steppe
+MDG,Crops,17,1.95550721,E,Madagascar humid forests,99,2.034533129,C,Madagascar spiny thickets,32,1.837368223,E,Madagascar dry deciduous forests
+MEX,Crops,514,1.977304033,C,Veracruz moist forests,556,2.270988842,D,Sierra de la Laguna pine-oak forests,426,1.385773266,D,Baja California desert
+MKD,Crops,646,1.964848998,C,Balkan mixed forests,678,2.062922544,B,Rodope montane mixed forests,646,1.964848998,C,Balkan mixed forests
+MLI,Crops,62,1.793007042,E,West Sudanian savanna,71,1.976290979,D,Inner Niger Delta flooded savanna,842,0.945966653,E,South Sahara desert
+MLT,Crops,806,2.030520553,C,Tyrrhenian-Adriatic sclerophyllous and mixed forests,806,2.030520553,C,Tyrrhenian-Adriatic sclerophyllous and mixed forests,806,2.030520553,C,Tyrrhenian-Adriatic sclerophyllous and mixed forests
+MMR,Crops,235,1.968943808,E,Irrawaddy moist deciduous forests,218,2.228319275,A,Andaman Islands rain forests,307,1.484251007,D,Northern Triangle temperate forests
+MNE,Crops,660,2.014978861,C,Dinaric Mountains mixed forests,794,2.076022346,C,Illyrian deciduous forests,646,1.964848998,C,Balkan mixed forests
+MNG,Crops,737,1.684712367,E,Selenge-Orkhon forest steppe,700,1.891689418,D,Khangai Mountains conifer forests,707,1.18783623,A,Sayan montane conifer forests
+MNP,Crops,637,2.317230401,E,Marianas tropical dry forests,637,2.317230401,E,Marianas tropical dry forests,637,2.317230401,E,Marianas tropical dry forests
+MOZ,Crops,42,1.633458381,C,Dry miombo woodlands,116,2.332252681,C,Southern Africa mangroves,76,1.548573597,D,Zambezian flooded grasslands
+MRT,Crops,53,1.363278794,E,Sahelian Acacia savanna,62,1.793007042,E,West Sudanian savanna,842,0.945966653,E,South Sahara desert
+MTQ,Crops,517,2.28447786,B,Windward Islands moist forests,537,2.367913209,B,Lesser Antillean dry forests,612,1.83284331,A,Bahamian-Antillean mangroves
+MUS,Crops,20,2.235531712,B,Mascarene forests,20,2.235531712,B,Mascarene forests,20,2.235531712,B,Mascarene forests
+MWI,Crops,42,1.633458381,C,Dry miombo woodlands,84,2.296726799,B,Mulanje Montane forest-grassland,76,1.548573597,D,Zambezian flooded grasslands
+MYS,Crops,265,1.885447597,C,Peninsular Malaysian rain forests,313,2.226264889,B,Kinabalu montane alpine meadows,220,1.278509396,E,Borneo montane rain forests
+NAM,Crops,64,1.376885937,E,Zambezian Baikiaea woodlands,65,1.632907396,B,Zambezian mopane woodlands,47,1.184513154,A,Kalahari Acacia woodlands
+NCL,Crops,146,1.764121916,B,New Caledonia rain forests,164,2.148154636,D,New Caledonia dry forests,146,1.764121916,B,New Caledonia rain forests
+NER,Crops,62,1.793007042,E,West Sudanian savanna,72,2.098322408,D,Lake Chad flooded savanna,842,0.945966653,E,South Sahara desert
+NGA,Crops,62,1.793007042,E,West Sudanian savanna,49,2.200191599,E,Mandara Plateau woodlands,53,1.363278794,E,Sahelian Acacia savanna
+NIC,Crops,450,1.744812677,D,Central American Atlantic moist forests,449,2.230675808,B,Cayos Miskitos-San Andrés and Providencia moist forests,573,1.667109108,E,Miskito pine forests
+NLD,Crops,664,1.940130847,C,European Atlantic mixed forests,664,1.940130847,C,European Atlantic mixed forests,686,1.905426399,B,Western European broadleaf forests
+NOR,Crops,717,1.226023162,A,Scandinavian and Russian taiga,708,1.976136438,C,Scandinavian coastal conifer forests,717,1.226023162,A,Scandinavian and Russian taiga
+NPL,Crops,311,2.102459883,C,Terai-Duar savanna and grasslands,311,2.102459883,C,Terai-Duar savanna and grasslands,769,1.517194903,E,Western Himalayan alpine shrub and meadows
+NZL,Crops,190,1.903608342,E,Canterbury-Otago tussock grasslands,173,1.997062466,E,Northland temperate kauri forests,169,1.393810944,D,Fiordland temperate forests
+OMN,Crops,811,1.591450514,E,Arabian-Persian Gulf coastal plain desert,320,2.227227323,B,Indus River Delta-Arabian Sea mangroves,810,1.135272154,E,Arabian sand desert
+PAK,Crops,314,1.93333042,C,Aravalli west thorn scrub forests,320,2.227227323,B,Indus River Delta-Arabian Sea mangroves,838,1.438376144,E,Registan-North Pakistan sandy desert
+PAN,Crops,471,2.050955996,C,Isthmian-Pacific moist forests,541,2.207300036,C,Panamanian dry forests,454,1.569006338,E,Chocó-Darién moist forests
+PER,Crops,493,1.643839482,E,Peruvian Yungas,479,2.020693906,E,Marañón dry forests,503,1.11973863,E,Solimões-Japurá moist forests
+PHL,Crops,247,2.023559168,E,Mindanao-Eastern Visayas rain forests,243,2.410808651,E,Maldives-Lakshadweep-Chagos Archipelago tropical moist forests,219,1.519001562,E,Borneo lowland rain forests
+PLW,Crops,627,2.373793329,B,Palau tropical moist forests,627,2.373793329,B,Palau tropical moist forests,627,2.373793329,B,Palau tropical moist forests
+PNG,Crops,148,1.457522888,E,Northern New Guinea lowland rain and freshwater swamp forests,135,2.243427224,E,Admiralty Islands lowland rain forests,154,1.378112125,E,Southern New Guinea freshwater swamp forests
+POL,Crops,654,1.898178817,C,Central European mixed forests,647,2.02796664,C,Baltic mixed forests,654,1.898178817,C,Central European mixed forests
+PRI,Crops,495,2.200783903,C,Puerto Rican moist forests,543,2.319343201,C,Puerto Rican dry forests,612,1.83284331,A,Bahamian-Antillean mangroves
+PRK,Crops,669,1.715020503,C,Manchurian mixed forests,655,2.032149374,C,Central Korean deciduous forests,669,1.715020503,C,Manchurian mixed forests
+PRT,Crops,805,1.975906532,E,Southwest Iberian Mediterranean sclerophyllous and mixed forests,668,2.348621899,B,Madeira evergreen forests,793,1.811747882,E,Iberian sclerophyllous and semi-deciduous forests
+PRY,Crops,439,1.915864715,E,Alto Paraná Atlantic forests,586,2.001473605,E,Southern Cone Mesopotamian savanna,569,1.344663446,E,Dry Chaco
+PSE,Crops,791,1.993947574,E,Eastern Mediterranean conifer-broadleaf forests,791,1.993947574,E,Eastern Mediterranean conifer-broadleaf forests,809,1.440980568,E,Arabian desert
+PYF,Crops,630,2.30785593,C,Society Islands tropical moist forests,633,2.453508672,C,Tubuai tropical moist forests,625,1.477149454,E,Marquesas tropical moist forests
+QAT,Crops,811,1.591450514,E,Arabian-Persian Gulf coastal plain desert,320,2.227227323,B,Indus River Delta-Arabian Sea mangroves,811,1.591450514,E,Arabian-Persian Gulf coastal plain desert
+REU,Crops,20,2.235531712,B,Mascarene forests,20,2.235531712,B,Mascarene forests,20,2.235531712,B,Mascarene forests
+ROU,Crops,674,1.953654725,C,Pannonian mixed forests,692,1.984052256,C,Carpathian montane forests,735,1.833659488,E,Pontic steppe
+RUS,Crops,735,1.833659488,E,Pontic steppe,658,2.111403539,C,Crimean Submediterranean forest complex,710,0.954,A,East Siberian taiga
+RWA,Crops,1,1.945361429,C,Albertine Rift montane forests,86,2.37105468,D,Rwenzori-Virunga montane moorlands,1,1.945361429,C,Albertine Rift montane forests
+SAU,Crops,809,1.440980568,E,Arabian desert,320,2.227227323,B,Indus River Delta-Arabian Sea mangroves,810,1.135272154,E,Arabian sand desert
+SDN,Crops,53,1.363278794,E,Sahelian Acacia savanna,79,1.974766208,E,Ethiopian montane grasslands and woodlands,842,0.945966653,E,South Sahara desert
+SEN,Crops,62,1.793007042,E,West Sudanian savanna,113,2.130765346,E,Guinean mangroves,53,1.363278794,E,Sahelian Acacia savanna
+SGP,Crops,265,1.885447597,C,Peninsular Malaysian rain forests,265,1.885447597,C,Peninsular Malaysian rain forests,265,1.885447597,C,Peninsular Malaysian rain forests
+SLB,Crops,152,1.899452781,E,Solomon Islands rain forests,159,1.979498155,E,Vanuatu rain forests,152,1.899452781,E,Solomon Islands rain forests
+SLE,Crops,30,1.80897326,E,Western Guinean lowland forests,113,2.130765346,E,Guinean mangroves,30,1.80897326,E,Western Guinean lowland forests
+SLV,Crops,527,2.032822967,C,Central American dry forests,617,2.18454091,B,Southern Mesoamerican Pacific mangroves,553,1.964849025,C,Central American pine-oak forests
+SOM,Crops,25,1.921764592,E,Northern Swahili coastal forests,112,2.243431943,D,East African mangroves,106,1.613779113,C,Somali montane xeric woodlands
+SRB,Crops,646,1.964848998,C,Balkan mixed forests,678,2.062922544,B,Rodope montane mixed forests,674,1.953654725,C,Pannonian mixed forests
+SSD,Crops,43,1.559897444,E,East Sudanian savanna,8,1.993391113,E,East African montane forests,50,1.36031442,E,Masai xeric grasslands and shrublands
+STP,Crops,27,2.330194298,D,São Tomé and Príncipe and Annobón forests,27,2.330194298,D,São Tomé and Príncipe and Annobón forests,27,2.330194298,D,São Tomé and Príncipe and Annobón forests
+SUR,Crops,463,1.533317525,A,Guianan freshwater swamp forests,611,1.824469411,D,Amazon-Orinoco-Southern Caribbean mangroves,511,1.080708719,D,Uatumã-Trombetas moist forests
+SVK,Crops,674,1.953654725,C,Pannonian mixed forests,692,1.984052256,C,Carpathian montane forests,674,1.953654725,C,Pannonian mixed forests
+SVN,Crops,674,1.953654725,C,Pannonian mixed forests,675,2.08969449,C,Po Basin mixed forests,674,1.953654725,C,Pannonian mixed forests
+SWE,Crops,679,1.709193105,C,Sarmatic mixed forests,647,2.02796664,C,Baltic mixed forests,717,1.226023162,A,Scandinavian and Russian taiga
+SWZ,Crops,48,1.912140158,B,Limpopo lowveld,19,2.084505836,C,Maputaland coastal forests and woodlands,48,1.912140158,B,Limpopo lowveld
+SYR,Crops,791,1.993947574,E,Eastern Mediterranean conifer-broadleaf forests,804,2.051678689,C,Southern Anatolian montane conifer and deciduous forests,830,1.745780437,E,Mesopotamian shrub desert
+TCD,Crops,53,1.363278794,E,Sahelian Acacia savanna,72,2.098322408,D,Lake Chad flooded savanna,842,0.945966653,E,South Sahara desert
+TGO,Crops,62,1.793007042,E,West Sudanian savanna,11,1.99418614,C,Eastern Guinean forests,62,1.793007042,E,West Sudanian savanna
+THA,Crops,291,1.897369556,E,Central Indochina dry forests,257,2.148498237,E,Northern Khorat Plateau moist deciduous forests,263,1.688355548,A,Peninsular Malaysian montane rain forests
+TJK,Crops,730,1.965254296,C,Gissaro-Alai open woodlands,834,2.012390171,E,Paropamisus xeric woodlands,762,1.393885922,E,Pamir alpine desert and tundra
+TKM,Crops,819,1.608556348,E,Central Asian southern desert,813,2.006951319,E,Badghyz and Karabil semi-desert,817,1.481520947,C,Central Asian northern desert
+TLS,Crops,166,2.069156031,E,Timor and Wetar deciduous forests,166,2.069156031,E,Timor and Wetar deciduous forests,166,2.069156031,E,Timor and Wetar deciduous forests
+TON,Crops,631,2.214093165,C,Tongan tropical moist forests,631,2.214093165,C,Tongan tropical moist forests,631,2.214093165,C,Tongan tropical moist forests
+TTO,Crops,510,2.205585236,D,Trinidad and Tobago moist forest,548,2.419971112,C,Trinidad and Tobago dry forest,611,1.824469411,D,Amazon-Orinoco-Southern Caribbean mangroves
+TUN,Crops,798,1.935275666,E,Mediterranean woodlands and forests,701,2.128446664,C,Mediterranean conifer and mixed forests,845,1.096271596,E,West Sahara desert
+TUR,Crops,652,2.033537034,E,Central Anatolian steppe and woodlands,665,2.053874585,C,Euxine-Colchic broadleaf forests,688,1.93728617,E,Zagros Mountains forest steppe
+TWN,Crops,283,2.104961281,C,Taiwan subtropical evergreen forests,269,2.269430564,C,South Taiwan monsoon rain forests,283,2.104961281,C,Taiwan subtropical evergreen forests
+TZA,Crops,57,1.908189376,C,Southern Acacia-Commiphora bushlands and thickets,54,2.46165728,D,Serengeti volcanic grasslands,76,1.548573597,D,Zambezian flooded grasslands
+UGA,Crops,61,1.984126062,C,Victoria Basin forest-savanna,86,2.37105468,D,Rwenzori-Virunga montane moorlands,52,1.459858491,E,Northern Congolian Forest-Savanna
+UKR,Crops,735,1.833659488,E,Pontic steppe,658,2.111403539,C,Crimean Submediterranean forest complex,735,1.833659488,E,Pontic steppe
+URY,Crops,574,1.87318535,E,Uruguayan savanna,441,2.091528583,E,Atlantic Coast restingas,575,1.640660391,C,Espinal
+USA,Crops,388,1.658817957,A,Central Tallgrass prairie,400,2.562000388,C,Southeast US mixed woodlands and savannas,419,1.063646948,A,Ogilvie-MacKenzie alpine tundra
+UZB,Crops,721,1.991867188,C,Alai-Western Tian Shan steppe,813,2.006951319,E,Badghyz and Karabil semi-desert,762,1.393885922,E,Pamir alpine desert and tundra
+VEN,Crops,572,1.535884823,E,Llanos,591,2.26302161,B,Cordillera de Merida páramo,465,1.097873038,D,Guianan lowland moist forests
+VIR,Crops,599,2.267564441,C,Caribbean shrublands,475,2.334240203,B,Leeward Islands moist forests,612,1.83284331,A,Bahamian-Antillean mangroves
+VNM,Crops,299,1.822852109,E,Southeast Indochina dry evergreen forests,266,2.177251007,C,Red River freshwater swamp forests,255,1.758660986,D,Northern Annamites rain forests
+VUT,Crops,159,1.979498155,E,Vanuatu rain forests,159,1.979498155,E,Vanuatu rain forests,159,1.979498155,E,Vanuatu rain forests
+WLF,Crops,622,2.163068496,E,Fiji tropical moist forests,622,2.163068496,E,Fiji tropical moist forests,622,2.163068496,E,Fiji tropical moist forests
+YEM,Crops,107,1.996568592,E,Southwest Arabian coastal xeric shrublands,320,2.227227323,B,Indus River Delta-Arabian Sea mangroves,810,1.135272154,E,Arabian sand desert
+ZAF,Crops,81,1.93310348,C,Highveld grasslands,116,2.332252681,C,Southern Africa mangroves,97,1.326465562,C,Kalahari xeric savanna
+ZMB,Crops,39,1.652208869,E,Central Zambezian wet miombo woodlands,87,2.076463336,C,Southern Rift Montane forest-grassland,64,1.376885937,E,Zambezian Baikiaea woodlands
+ZWE,Crops,42,1.633458381,C,Dry miombo woodlands,85,2.198289154,C,Nyanga-Chimanimani Montane forest-grassland,97,1.326465562,C,Kalahari xeric savanna
+AFG,Livestock,816,1.523889441,E,Central Afghan Mountains xeric woodlands,807,1.667240363,E,Afghan Mountains semi-desert,762,1.084133495,E,Pamir alpine desert and tundra
+AGO,Livestock,36,1.290962793,E,Angolan wet miombo woodlands,77,1.669711091,C,Angolan montane forest-grassland,98,1.070421745,D,Kaokoveld desert
+ALB,Livestock,801,1.544438593,B,Pindus Mountains mixed forests,794,1.614684047,C,Illyrian deciduous forests,646,1.528215887,C,Balkan mixed forests
+AND,Livestock,676,1.425462294,D,Pyrenees conifer and mixed forests,676,1.425462294,D,Pyrenees conifer and mixed forests,676,1.425462294,D,Pyrenees conifer and mixed forests
+ARE,Livestock,810,0.882989453,E,Arabian sand desert,320,1.732287918,B,Indus River Delta-Arabian Sea mangroves,810,0.882989453,E,Arabian sand desert
+ARG,Livestock,569,1.045849347,E,Dry Chaco,586,1.556701693,E,Southern Cone Mesopotamian savanna,561,0.932058229,D,Magellanic subpolar forests
+ARM,Livestock,650,1.534884366,E,Caucasus mixed forests,812,1.597488498,C,Azerbaijan shrub desert and steppe,650,1.534884366,E,Caucasus mixed forests
+AUS,Livestock,182,1.141459666,E,Brigalow tropical savanna,204,1.533423919,C,Naracoorte woodlands,210,0.798565703,A,Great Sandy-Tanami desert
+AUT,Livestock,689,1.527266061,E,Alps conifer and mixed forests,689,1.527266061,E,Alps conifer and mixed forests,654,1.476361302,C,Central European mixed forests
+AZE,Livestock,812,1.597488498,C,Azerbaijan shrub desert and steppe,649,1.611978008,C,Caspian Hyrcanian mixed forests,650,1.534884366,E,Caucasus mixed forests
+BDI,Livestock,1,1.513058889,C,Albertine Rift montane forests,61,1.543209159,C,Victoria Basin forest-savanna,76,1.204446131,D,Zambezian flooded grasslands
+BEL,Livestock,686,1.48199831,B,Western European broadleaf forests,664,1.508990659,C,European Atlantic mixed forests,686,1.48199831,B,Western European broadleaf forests
+BEN,Livestock,62,1.394561033,E,West Sudanian savanna,23,1.602433778,C,Nigerian lowland forests,62,1.394561033,E,West Sudanian savanna
+BFA,Livestock,62,1.394561033,E,West Sudanian savanna,62,1.394561033,E,West Sudanian savanna,53,1.060327951,E,Sahelian Acacia savanna
+BGD,Livestock,238,1.536199307,C,Lower Gangetic Plains moist deciduous forests,282,1.678285718,C,Sundarbans freshwater swamp forests,249,1.497369885,E,Mizoram-Manipur-Kachin rain forests
+BGR,Livestock,646,1.528215887,C,Balkan mixed forests,678,1.604495312,B,Rodope montane mixed forests,735,1.426179602,E,Pontic steppe
+BIH,Livestock,660,1.567205781,C,Dinaric Mountains mixed forests,794,1.614684047,C,Illyrian deciduous forests,674,1.51950923,C,Pannonian mixed forests
+BLR,Livestock,654,1.476361302,C,Central European mixed forests,654,1.476361302,C,Central European mixed forests,679,1.329372415,C,Sarmatic mixed forests
+BLZ,Livestock,494,1.359796516,C,Petén-Veracruz moist forests,613,1.457263044,B,Mesoamerican Gulf-Caribbean mangroves,519,1.194587382,C,Yucatán moist forests
+BOL,Livestock,565,1.116051528,B,Beni savanna,589,1.483626481,D,Central Andean wet puna,505,0.873451771,D,Southwest Amazon moist forests
+BRA,Livestock,567,1.169766921,E,Cerrado,445,1.712551754,E,Caatinga Enclaves moist forests,511,0.840551226,D,Uatumã-Trombetas moist forests
+BTN,Livestock,306,1.409688579,E,Eastern Himalayan broadleaf forests,311,1.635246576,C,Terai-Duar savanna and grasslands,702,1.137735231,E,Northeast Himalayan subalpine conifer forests
+BWA,Livestock,97,1.031695437,C,Kalahari xeric savanna,66,1.461494094,C,Zambezian-Limpopo mixed woodlands,47,0.921288009,A,Kalahari Acacia woodlands
+CAF,Livestock,52,1.135445493,E,Northern Congolian Forest-Savanna,43,1.213253567,E,East Sudanian savanna,26,0.977626333,E,Northwest Congolian lowland forests
+CAN,Livestock,396,0.973303608,C,Northern Shortgrass prairie,342,1.534424644,C,Southern Great Lakes forests,413,0.760357698,A,Canadian Low Arctic tundra
+CHE,Livestock,686,1.48199831,B,Western European broadleaf forests,675,1.625317937,C,Po Basin mixed forests,686,1.48199831,B,Western European broadleaf forests
+CHL,Livestock,563,1.153551058,E,Valdivian temperate forests,596,1.373996359,C,Chilean Matorral,561,0.932058229,D,Magellanic subpolar forests
+CHN,Livestock,843,0.957718691,E,Taklimakan desert,748,1.729019318,B,Yellow Sea saline meadow,710,0.742,A,East Siberian taiga
+CIV,Livestock,62,1.394561033,E,West Sudanian savanna,113,1.657261936,E,Guinean mangroves,62,1.394561033,E,West Sudanian savanna
+CMR,Livestock,2,1.525625615,C,Cameroon Highlands forests,21,1.797711578,D,Mount Cameroon and Bioko montane forests,26,0.977626333,E,Northwest Congolian lowland forests
+COD,Livestock,58,1.342236493,E,Southern Congolian forest-savanna,86,1.84415364,D,Rwenzori-Virunga montane moorlands,26,0.977626333,E,Northwest Congolian lowland forests
+COG,Livestock,63,1.278824637,E,Western Congolian forest-savanna,63,1.278824637,E,Western Congolian forest-savanna,26,0.977626333,E,Northwest Congolian lowland forests
+COL,Livestock,572,1.194577084,E,Llanos,594,1.793616067,D,Santa Marta páramo,473,0.854296085,D,Japurá-Solimões-Negro moist forests
+COM,Livestock,4,1.777972636,C,Comoros forests,4,1.777972636,C,Comoros forests,4,1.777972636,C,Comoros forests
+CPV,Livestock,31,1.725983865,E,Cape Verde Islands dry forests,31,1.725983865,E,Cape Verde Islands dry forests,31,1.725983865,E,Cape Verde Islands dry forests
+CRI,Livestock,470,1.455756271,D,Isthmian-Atlantic moist forests,617,1.699087375,B,Southern Mesoamerican Pacific mangroves,470,1.455756271,D,Isthmian-Atlantic moist forests
+CUB,Livestock,530,1.59658323,C,Cuban dry forests,600,1.755614065,C,Cuban cactus scrub,612,1.425544797,A,Bahamian-Antillean mangroves
+CZE,Livestock,686,1.48199831,B,Western European broadleaf forests,692,1.543151755,C,Carpathian montane forests,654,1.476361302,C,Central European mixed forests
+DEU,Livestock,686,1.48199831,B,Western European broadleaf forests,647,1.577307387,C,Baltic mixed forests,654,1.476361302,C,Central European mixed forests
+DJI,Livestock,92,1.39976475,E,Djibouti xeric shrublands,115,1.537527657,C,Red Sea mangroves,55,1.279133269,E,Somali Acacia-Commiphora bushlands and thickets
+DNK,Livestock,647,1.577307387,C,Baltic mixed forests,647,1.577307387,C,Baltic mixed forests,778,0.861679226,A,Russian Arctic desert
+DOM,Livestock,468,1.62167971,C,Hispaniolan moist forests,580,1.834390293,B,Enriquillo wetlands,612,1.425544797,A,Bahamian-Antillean mangroves
+DZA,Livestock,797,1.417185493,E,Mediterranean dry woodlands and steppe,701,1.655458517,C,Mediterranean conifer and mixed forests,842,0.735751841,E,South Sahara desert
+ECU,Livestock,460,1.287361556,E,Eastern Cordillera Real montane forests,582,1.758588784,C,Guayaquil flooded grasslands,483,0.955716462,D,Napo moist forests
+ERI,Livestock,53,1.060327951,E,Sahelian Acacia savanna,79,1.535929273,E,Ethiopian montane grasslands and woodlands,53,1.060327951,E,Sahelian Acacia savanna
+ESH,Livestock,833,0.912625732,E,North Saharan Xeric Steppe and Woodland,796,1.491566228,E,Mediterranean Acacia-Argania dry woodlands and succulent thickets,842,0.735751841,E,South Sahara desert
+ESP,Livestock,793,1.409137241,E,Iberian sclerophyllous and semi-deciduous forests,803,1.762195401,D,Southeast Iberian shrubs and woodlands,792,1.390325837,B,Iberian conifer forests
+EST,Livestock,679,1.329372415,C,Sarmatic mixed forests,679,1.329372415,C,Sarmatic mixed forests,679,1.329372415,C,Sarmatic mixed forests
+ETH,Livestock,43,1.213253567,E,East Sudanian savanna,80,1.674621154,D,Ethiopian montane moorlands,50,1.058022327,E,Masai xeric grasslands and shrublands
+FIN,Livestock,717,0.953573571,A,Scandinavian and Russian taiga,679,1.329372415,C,Sarmatic mixed forests,717,0.953573571,A,Scandinavian and Russian taiga
+FJI,Livestock,635,1.716305994,E,Fiji tropical dry forests,635,1.716305994,E,Fiji tropical dry forests,622,1.682386608,E,Fiji tropical moist forests
+FRA,Livestock,806,1.579293764,C,Tyrrhenian-Adriatic sclerophyllous and mixed forests,795,1.581856352,C,Italian sclerophyllous and semi-deciduous forests,676,1.425462294,D,Pyrenees conifer and mixed forests
+GAB,Livestock,26,0.977626333,E,Northwest Congolian lowland forests,111,1.569416039,C,Central African mangroves,26,0.977626333,E,Northwest Congolian lowland forests
+GBR,Livestock,651,1.539576081,C,Celtic broadleaf forests,663,1.622299504,C,English Lowlands beech forests,691,1.357331787,A,Caledon conifer forests
+GEO,Livestock,650,1.534884366,E,Caucasus mixed forests,812,1.597488498,C,Azerbaijan shrub desert and steppe,650,1.534884366,E,Caucasus mixed forests
+GHA,Livestock,62,1.394561033,E,West Sudanian savanna,113,1.657261936,E,Guinean mangroves,62,1.394561033,E,West Sudanian savanna
+GIN,Livestock,44,1.445917181,E,Guinean forest-savanna,113,1.657261936,E,Guinean mangroves,62,1.394561033,E,West Sudanian savanna
+GLP,Livestock,599,1.763661232,C,Caribbean shrublands,475,1.815520158,B,Leeward Islands moist forests,612,1.425544797,A,Bahamian-Antillean mangroves
+GMB,Livestock,62,1.394561033,E,West Sudanian savanna,113,1.657261936,E,Guinean mangroves,62,1.394561033,E,West Sudanian savanna
+GNB,Livestock,44,1.445917181,E,Guinean forest-savanna,113,1.657261936,E,Guinean mangroves,44,1.445917181,E,Guinean forest-savanna
+GNQ,Livestock,7,1.587203748,C,Cross-Sanaga-Bioko coastal forests,27,1.812373343,D,São Tomé and Príncipe and Annobón forests,5,1.187271007,E,Congolian coastal forests
+GRC,Livestock,785,1.556741039,C,Aegean and Western Turkey sclerophyllous and mixed forests,789,1.688471777,B,Crete Mediterranean forests,646,1.528215887,C,Balkan mixed forests
+GRL,Livestock,417,0.823181631,E,Kalaallit Nunaat Arctic steppe,418,0.862729523,A,Kalaallit Nunaat High Arctic tundra,417,0.823181631,E,Kalaallit Nunaat Arctic steppe
+GTM,Livestock,553,1.528215908,C,Central American pine-oak forests,605,1.769268085,C,Motagua Valley thornscrub,519,1.194587382,C,Yucatán moist forests
+GUF,Livestock,611,1.419031764,D,Amazon-Orinoco-Southern Caribbean mangroves,611,1.419031764,D,Amazon-Orinoco-Southern Caribbean mangroves,465,0.853901252,D,Guianan lowland moist forests
+GUM,Livestock,637,1.802290312,E,Marianas tropical dry forests,637,1.802290312,E,Marianas tropical dry forests,637,1.802290312,E,Marianas tropical dry forests
+GUY,Livestock,465,0.853901252,D,Guianan lowland moist forests,611,1.419031764,D,Amazon-Orinoco-Southern Caribbean mangroves,511,0.840551226,D,Uatumã-Trombetas moist forests
+HND,Livestock,553,1.528215908,C,Central American pine-oak forests,617,1.699087375,B,Southern Mesoamerican Pacific mangroves,573,1.296640417,E,Miskito pine forests
+HRV,Livestock,674,1.51950923,C,Pannonian mixed forests,794,1.614684047,C,Illyrian deciduous forests,674,1.51950923,C,Pannonian mixed forests
+HTI,Livestock,468,1.62167971,C,Hispaniolan moist forests,580,1.834390293,B,Enriquillo wetlands,612,1.425544797,A,Bahamian-Antillean mangroves
+HUN,Livestock,674,1.51950923,C,Pannonian mixed forests,674,1.51950923,C,Pannonian mixed forests,674,1.51950923,C,Pannonian mixed forests
+IDN,Livestock,278,1.47238648,E,Sumatran lowland rain forests,165,1.686519662,E,Sumba deciduous forests,220,0.994396197,E,Borneo montane rain forests
+IMN,Livestock,651,1.539576081,C,Celtic broadleaf forests,651,1.539576081,C,Celtic broadleaf forests,651,1.539576081,C,Celtic broadleaf forests
+IND,Livestock,296,1.556161941,C,Narmada Valley dry deciduous forests,243,1.875073395,E,Maldives-Lakshadweep-Chagos Archipelago tropical moist forests,702,1.137735231,E,Northeast Himalayan subalpine conifer forests
+IRL,Livestock,651,1.539576081,C,Celtic broadleaf forests,651,1.539576081,C,Celtic broadleaf forests,672,1.520730919,B,North Atlantic moist mixed forests
+IRN,Livestock,688,1.506778132,E,Zagros Mountains forest steppe,747,1.626750173,E,Tigris-Euphrates alluvial salt marsh,838,1.118737001,E,Registan-North Pakistan sandy desert
+IRQ,Livestock,739,1.538391009,E,Syrian xeric grasslands and shrublands,747,1.626750173,E,Tigris-Euphrates alluvial salt marsh,831,1.036713062,E,North Arabian desert
+ISL,Livestock,711,1.097120865,C,Iceland boreal birch forests and alpine tundra,711,1.097120865,C,Iceland boreal birch forests and alpine tundra,711,1.097120865,C,Iceland boreal birch forests and alpine tundra
+ISR,Livestock,791,1.550848113,E,Eastern Mediterranean conifer-broadleaf forests,804,1.595750092,C,Southern Anatolian montane conifer and deciduous forests,833,0.912625732,E,North Saharan Xeric Steppe and Woodland
+ITA,Livestock,689,1.527266061,E,Alps conifer and mixed forests,802,1.683419875,B,South Apennine mixed montane forests,689,1.527266061,E,Alps conifer and mixed forests
+JAM,Livestock,472,1.706734221,C,Jamaican moist forests,535,1.770851604,C,Jamaican dry forests,612,1.425544797,A,Bahamian-Antillean mangroves
+JOR,Livestock,739,1.538391009,E,Syrian xeric grasslands and shrublands,791,1.550848113,E,Eastern Mediterranean conifer-broadleaf forests,831,1.036713062,E,North Arabian desert
+KAZ,Livestock,828,1.151067305,C,Kazakh semi-desert,721,1.549230035,C,Alai-Western Tian Shan steppe,827,1.127958831,E,Junggar Basin semi-desert
+KEN,Livestock,51,1.266050033,E,Northern Acacia-Commiphora bushlands and thickets,112,1.744891511,D,East African mangroves,50,1.058022327,E,Masai xeric grasslands and shrublands
+KGZ,Livestock,740,1.485631454,C,Tian Shan foothill arid steppe,721,1.549230035,C,Alai-Western Tian Shan steppe,762,1.084133495,E,Pamir alpine desert and tundra
+KHM,Livestock,291,1.475731877,E,Central Indochina dry forests,319,1.652658431,C,Indochina mangroves,223,1.399628838,B,Cardamom Mountains rain forests
+KOR,Livestock,655,1.580560624,C,Central Korean deciduous forests,681,1.679801046,C,Southern Korea evergreen forests,669,1.333904836,C,Manchurian mixed forests
+KWT,Livestock,811,1.237794844,E,Arabian-Persian Gulf coastal plain desert,811,1.237794844,E,Arabian-Persian Gulf coastal plain desert,809,1.120762664,E,Arabian desert
+LAO,Livestock,239,1.500991475,E,Luang Prabang montane rain forests,257,1.671054184,E,Northern Khorat Plateau moist deciduous forests,255,1.367847433,D,Northern Annamites rain forests
+LBN,Livestock,791,1.550848113,E,Eastern Mediterranean conifer-broadleaf forests,804,1.595750092,C,Southern Anatolian montane conifer and deciduous forests,791,1.550848113,E,Eastern Mediterranean conifer-broadleaf forests
+LBR,Livestock,30,1.406979202,E,Western Guinean lowland forests,113,1.657261936,E,Guinean mangroves,30,1.406979202,E,Western Guinean lowland forests
+LBY,Livestock,833,0.912625732,E,North Saharan Xeric Steppe and Woodland,798,1.505214407,E,Mediterranean woodlands and forests,842,0.735751841,E,South Sahara desert
+LKA,Livestock,301,1.61910721,B,Sri Lanka dry-zone dry evergreen forests,275,1.755581633,C,Sri Lanka montane rain forests,315,1.521815356,C,Deccan thorn scrub forests
+LSO,Livestock,41,1.540524207,C,Drakensberg grasslands,41,1.540524207,C,Drakensberg grasslands,81,1.503524929,C,Highveld grasslands
+LTU,Livestock,679,1.329372415,C,Sarmatic mixed forests,654,1.476361302,C,Central European mixed forests,679,1.329372415,C,Sarmatic mixed forests
+LUX,Livestock,686,1.48199831,B,Western European broadleaf forests,686,1.48199831,B,Western European broadleaf forests,686,1.48199831,B,Western European broadleaf forests
+LVA,Livestock,679,1.329372415,C,Sarmatic mixed forests,679,1.329372415,C,Sarmatic mixed forests,679,1.329372415,C,Sarmatic mixed forests
+MAR,Livestock,796,1.491566228,E,Mediterranean Acacia-Argania dry woodlands and succulent thickets,758,1.719566257,C,Mediterranean High Atlas juniper steppe,833,0.912625732,E,North Saharan Xeric Steppe and Woodland
+MDA,Livestock,654,1.476361302,C,Central European mixed forests,654,1.476361302,C,Central European mixed forests,735,1.426179602,E,Pontic steppe
+MDG,Livestock,18,1.478233312,E,Madagascar subhumid forests,99,1.582414656,C,Madagascar spiny thickets,32,1.429064174,E,Madagascar dry deciduous forests
+MEX,Livestock,326,1.15199745,C,Sierra Madre Occidental pine-oak forests,556,1.766324655,D,Sierra de la Laguna pine-oak forests,426,1.077823651,D,Baja California desert
+MKD,Livestock,646,1.528215887,C,Balkan mixed forests,678,1.604495312,B,Rodope montane mixed forests,646,1.528215887,C,Balkan mixed forests
+MLI,Livestock,53,1.060327951,E,Sahelian Acacia savanna,71,1.537115206,D,Inner Niger Delta flooded savanna,842,0.735751841,E,South Sahara desert
+MMR,Livestock,250,1.597386235,C,Myanmar coastal rain forests,218,1.733137214,A,Andaman Islands rain forests,307,1.15441745,D,Northern Triangle temperate forests
+MNE,Livestock,660,1.567205781,C,Dinaric Mountains mixed forests,794,1.614684047,C,Illyrian deciduous forests,646,1.528215887,C,Balkan mixed forests
+MNG,Livestock,734,1.326753169,E,Mongolian-Manchurian grassland,700,1.471313992,D,Khangai Mountains conifer forests,707,0.923872623,A,Sayan montane conifer forests
+MOZ,Livestock,42,1.27046763,C,Dry miombo woodlands,116,1.813974308,C,Southern Africa mangroves,76,1.204446131,D,Zambezian flooded grasslands
+MRT,Livestock,53,1.060327951,E,Sahelian Acacia savanna,62,1.394561033,E,West Sudanian savanna,842,0.735751841,E,South Sahara desert
+MTQ,Livestock,517,1.776816113,B,Windward Islands moist forests,537,1.841710274,B,Lesser Antillean dry forests,612,1.425544797,A,Bahamian-Antillean mangroves
+MWI,Livestock,39,1.285051342,E,Central Zambezian wet miombo woodlands,84,1.786343066,B,Mulanje Montane forest-grassland,76,1.204446131,D,Zambezian flooded grasslands
+MYS,Livestock,265,1.466459242,C,Peninsular Malaysian rain forests,313,1.731539358,B,Kinabalu montane alpine meadows,220,0.994396197,E,Borneo montane rain forests
+NAM,Livestock,97,1.031695437,C,Kalahari xeric savanna,65,1.270039086,B,Zambezian mopane woodlands,47,0.921288009,A,Kalahari Acacia woodlands
+NCL,Livestock,146,1.372094823,B,New Caledonia rain forests,164,1.670786939,D,New Caledonia dry forests,146,1.372094823,B,New Caledonia rain forests
+NER,Livestock,53,1.060327951,E,Sahelian Acacia savanna,72,1.632028539,D,Lake Chad flooded savanna,842,0.735751841,E,South Sahara desert
+NGA,Livestock,44,1.445917181,E,Guinean forest-savanna,49,1.711260132,E,Mandara Plateau woodlands,53,1.060327951,E,Sahelian Acacia savanna
+NIC,Livestock,450,1.357076526,D,Central American Atlantic moist forests,449,1.734970073,B,Cayos Miskitos-San Andrés and Providencia moist forests,573,1.296640417,E,Miskito pine forests
+NLD,Livestock,664,1.508990659,C,European Atlantic mixed forests,664,1.508990659,C,European Atlantic mixed forests,686,1.48199831,B,Western European broadleaf forests
+NOR,Livestock,780,1.014532684,A,Scandinavian Montane Birch forest and grasslands,708,1.536995007,C,Scandinavian coastal conifer forests,717,0.953573571,A,Scandinavian and Russian taiga
+NPL,Livestock,302,1.595934521,E,Himalayan subtropical pine forests,311,1.635246576,C,Terai-Duar savanna and grasslands,769,1.18004048,E,Western Himalayan alpine shrub and meadows
+NZL,Livestock,171,1.360018145,E,New Zealand North Island temperate forests,173,1.553270807,E,Northland temperate kauri forests,169,1.084075179,D,Fiordland temperate forests
+OMN,Livestock,722,1.473799794,E,Al-Hajar foothill xeric woodlands and shrublands,320,1.732287918,B,Indus River Delta-Arabian Sea mangroves,810,0.882989453,E,Arabian sand desert
+PAK,Livestock,318,1.497225911,E,Thar desert,320,1.732287918,B,Indus River Delta-Arabian Sea mangroves,838,1.118737001,E,Registan-North Pakistan sandy desert
+PAN,Livestock,471,1.595187997,C,Isthmian-Pacific moist forests,541,1.716788917,C,Panamanian dry forests,454,1.220338263,E,Chocó-Darién moist forests
+PER,Livestock,493,1.278541819,E,Peruvian Yungas,479,1.571650816,E,Marañón dry forests,503,0.870907823,E,Solimões-Japurá moist forests
+PHL,Livestock,247,1.573879353,E,Mindanao-Eastern Visayas rain forests,243,1.875073395,E,Maldives-Lakshadweep-Chagos Archipelago tropical moist forests,219,1.181445659,E,Borneo lowland rain forests
+PNG,Livestock,153,1.175491223,E,Southeast Papuan rain forests,135,1.744887841,E,Admiralty Islands lowland rain forests,154,1.071864986,E,Southern New Guinea freshwater swamp forests
+POL,Livestock,654,1.476361302,C,Central European mixed forests,647,1.577307387,C,Baltic mixed forests,654,1.476361302,C,Central European mixed forests
+PRI,Livestock,495,1.711720814,C,Puerto Rican moist forests,543,1.803933601,C,Puerto Rican dry forests,612,1.425544797,A,Bahamian-Antillean mangroves
+PRK,Livestock,669,1.333904836,C,Manchurian mixed forests,655,1.580560624,C,Central Korean deciduous forests,669,1.333904836,C,Manchurian mixed forests
+PRT,Livestock,805,1.536816191,E,Southwest Iberian Mediterranean sclerophyllous and mixed forests,668,1.826705922,B,Madeira evergreen forests,793,1.409137241,E,Iberian sclerophyllous and semi-deciduous forests
+PRY,Livestock,571,1.319184299,E,Humid Chaco,586,1.556701693,E,Southern Cone Mesopotamian savanna,569,1.045849347,E,Dry Chaco
+PSE,Livestock,791,1.550848113,E,Eastern Mediterranean conifer-broadleaf forests,791,1.550848113,E,Eastern Mediterranean conifer-broadleaf forests,809,1.120762664,E,Arabian desert
+PYF,Livestock,625,1.14889402,E,Marquesas tropical moist forests,633,1.908284523,C,Tubuai tropical moist forests,625,1.14889402,E,Marquesas tropical moist forests
+QAT,Livestock,811,1.237794844,E,Arabian-Persian Gulf coastal plain desert,320,1.732287918,B,Indus River Delta-Arabian Sea mangroves,811,1.237794844,E,Arabian-Persian Gulf coastal plain desert
+REU,Livestock,20,1.738746887,B,Mascarene forests,20,1.738746887,B,Mascarene forests,20,1.738746887,B,Mascarene forests
+ROU,Livestock,692,1.543151755,C,Carpathian montane forests,692,1.543151755,C,Carpathian montane forests,735,1.426179602,E,Pontic steppe
+RUS,Livestock,679,1.329372415,C,Sarmatic mixed forests,658,1.642202752,C,Crimean Submediterranean forest complex,710,0.742,A,East Siberian taiga
+RWA,Livestock,61,1.543209159,C,Victoria Basin forest-savanna,86,1.84415364,D,Rwenzori-Virunga montane moorlands,1,1.513058889,C,Albertine Rift montane forests
+SAU,Livestock,809,1.120762664,E,Arabian desert,320,1.732287918,B,Indus River Delta-Arabian Sea mangroves,810,0.882989453,E,Arabian sand desert
+SDN,Livestock,53,1.060327951,E,Sahelian Acacia savanna,79,1.535929273,E,Ethiopian montane grasslands and woodlands,842,0.735751841,E,South Sahara desert
+SEN,Livestock,62,1.394561033,E,West Sudanian savanna,113,1.657261936,E,Guinean mangroves,53,1.060327951,E,Sahelian Acacia savanna
+SLB,Livestock,152,1.477352163,E,Solomon Islands rain forests,159,1.539609676,E,Vanuatu rain forests,152,1.477352163,E,Solomon Islands rain forests
+SLE,Livestock,44,1.445917181,E,Guinean forest-savanna,113,1.657261936,E,Guinean mangroves,30,1.406979202,E,Western Guinean lowland forests
+SLV,Livestock,527,1.58108453,C,Central American dry forests,617,1.699087375,B,Southern Mesoamerican Pacific mangroves,553,1.528215908,C,Central American pine-oak forests
+SOM,Livestock,45,1.295898666,E,Horn of Africa xeric bushlands,112,1.744891511,D,East African mangroves,106,1.255161532,C,Somali montane xeric woodlands
+SRB,Livestock,646,1.528215887,C,Balkan mixed forests,678,1.604495312,B,Rodope montane mixed forests,674,1.51950923,C,Pannonian mixed forests
+SSD,Livestock,43,1.213253567,E,East Sudanian savanna,8,1.55041531,E,East African montane forests,50,1.058022327,E,Masai xeric grasslands and shrublands
+SUR,Livestock,465,0.853901252,D,Guianan lowland moist forests,611,1.419031764,D,Amazon-Orinoco-Southern Caribbean mangroves,511,0.840551226,D,Uatumã-Trombetas moist forests
+SVK,Livestock,692,1.543151755,C,Carpathian montane forests,692,1.543151755,C,Carpathian montane forests,674,1.51950923,C,Pannonian mixed forests
+SVN,Livestock,674,1.51950923,C,Pannonian mixed forests,675,1.625317937,C,Po Basin mixed forests,674,1.51950923,C,Pannonian mixed forests
+SWE,Livestock,679,1.329372415,C,Sarmatic mixed forests,647,1.577307387,C,Baltic mixed forests,717,0.953573571,A,Scandinavian and Russian taiga
+SWZ,Livestock,48,1.487220123,B,Limpopo lowveld,19,1.621282317,C,Maputaland coastal forests and woodlands,48,1.487220123,B,Limpopo lowveld
+SYR,Livestock,739,1.538391009,E,Syrian xeric grasslands and shrublands,804,1.595750092,C,Southern Anatolian montane conifer and deciduous forests,830,1.357829229,E,Mesopotamian shrub desert
+TCD,Livestock,53,1.060327951,E,Sahelian Acacia savanna,72,1.632028539,D,Lake Chad flooded savanna,842,0.735751841,E,South Sahara desert
+TGO,Livestock,62,1.394561033,E,West Sudanian savanna,11,1.551033665,C,Eastern Guinean forests,62,1.394561033,E,West Sudanian savanna
+THA,Livestock,291,1.475731877,E,Central Indochina dry forests,257,1.671054184,E,Northern Khorat Plateau moist deciduous forests,263,1.313165426,A,Peninsular Malaysian montane rain forests
+TJK,Livestock,730,1.528531119,C,Gissaro-Alai open woodlands,834,1.565192355,E,Paropamisus xeric woodlands,762,1.084133495,E,Pamir alpine desert and tundra
+TKM,Livestock,819,1.251099382,E,Central Asian southern desert,813,1.560962137,E,Badghyz and Karabil semi-desert,817,1.15229407,C,Central Asian northern desert
+TLS,Livestock,166,1.60934358,E,Timor and Wetar deciduous forests,166,1.60934358,E,Timor and Wetar deciduous forests,166,1.60934358,E,Timor and Wetar deciduous forests
+TUN,Livestock,833,0.912625732,E,North Saharan Xeric Steppe and Woodland,701,1.655458517,C,Mediterranean conifer and mixed forests,845,0.852655686,E,West Sahara desert
+TUR,Livestock,703,1.581680579,C,Northern Anatolian conifer and deciduous forests,665,1.59745801,C,Euxine-Colchic broadleaf forests,688,1.506778132,E,Zagros Mountains forest steppe
+TWN,Livestock,283,1.637192108,C,Taiwan subtropical evergreen forests,269,1.765112661,C,South Taiwan monsoon rain forests,283,1.637192108,C,Taiwan subtropical evergreen forests
+TZA,Livestock,42,1.27046763,C,Dry miombo woodlands,54,1.914622329,D,Serengeti volcanic grasslands,76,1.204446131,D,Zambezian flooded grasslands
+UGA,Livestock,43,1.213253567,E,East Sudanian savanna,86,1.84415364,D,Rwenzori-Virunga montane moorlands,52,1.135445493,E,Northern Congolian Forest-Savanna
+UKR,Livestock,654,1.476361302,C,Central European mixed forests,658,1.642202752,C,Crimean Submediterranean forest complex,735,1.426179602,E,Pontic steppe
+URY,Livestock,574,1.456921939,E,Uruguayan savanna,441,1.626744454,E,Atlantic Coast restingas,575,1.276069193,C,Espinal
+USA,Livestock,396,0.973303608,C,Northern Shortgrass prairie,400,1.992666969,C,Southeast US mixed woodlands and savannas,419,0.827280959,A,Ogilvie-MacKenzie alpine tundra
+UZB,Livestock,819,1.251099382,E,Central Asian southern desert,813,1.560962137,E,Badghyz and Karabil semi-desert,762,1.084133495,E,Pamir alpine desert and tundra
+VEN,Livestock,572,1.194577084,E,Llanos,591,1.760127919,B,Cordillera de Merida páramo,465,0.853901252,D,Guianan lowland moist forests
+VGB,Livestock,599,1.763661232,C,Caribbean shrublands,475,1.815520158,B,Leeward Islands moist forests,599,1.763661232,C,Caribbean shrublands
+VNM,Livestock,300,1.594081527,E,Southern Vietnam lowland dry forests,266,1.69341745,C,Red River freshwater swamp forests,255,1.367847433,D,Northern Annamites rain forests
+VUT,Livestock,159,1.539609676,E,Vanuatu rain forests,159,1.539609676,E,Vanuatu rain forests,159,1.539609676,E,Vanuatu rain forests
+YEM,Livestock,837,1.21073928,E,Red Sea-Arabian Desert shrublands,320,1.732287918,B,Indus River Delta-Arabian Sea mangroves,810,0.882989453,E,Arabian sand desert
+ZAF,Livestock,101,1.383478263,C,Nama Karoo shrublands,116,1.813974308,C,Southern Africa mangroves,97,1.031695437,C,Kalahari xeric savanna
+ZMB,Livestock,39,1.285051342,E,Central Zambezian wet miombo woodlands,87,1.615027039,C,Southern Rift Montane forest-grassland,64,1.070911284,E,Zambezian Baikiaea woodlands
+ZWE,Livestock,42,1.27046763,C,Dry miombo woodlands,85,1.709780453,C,Nyanga-Chimanimani Montane forest-grassland,97,1.031695437,C,Kalahari xeric savanna

@@ -1,0 +1,84 @@
+$exposure-results-dial-width: $dashboard-column-two-width-tablet;
+
+.exposure-results {
+  margin-bottom: $dashboard-section-separation;
+
+  &__columns {
+    @include columns;
+  }
+
+  &__column {
+    @include dashboard-column-stack-tablet;
+  }
+
+  &__tile {
+    margin-bottom: rem-calc(45);
+    min-height: rem-calc(310); //hack for mobile because of absolutely positioned chart
+
+    position: relative;
+
+    @include breakpoint($small) {
+      height: 100%;
+
+      align-content: flex-start;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @include breakpoint($medium) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text-container {
+    margin-bottom: rem-calc(20);
+
+    @include breakpoint($small) {
+      margin-right: $dashboard-column-margin-tablet;
+      width: $dashboard-column-one-width-tablet;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include breakpoint($medium) {
+      margin-bottom: rem-calc(20);
+    }
+  }
+
+  &__chart-container {
+    margin: auto auto rem-calc(20);
+    width: 100%; 
+    max-width: $exposure-results-dial-width;
+
+    @include breakpoint($small) {
+      margin-bottom: 0;
+      width: $exposure-results-dial-width;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    @include breakpoint($medium) {
+      margin: 0;
+      
+      order: 1;
+    }
+  }
+
+  &__legend {
+    width: 100%;
+    max-width: rem-calc(410);
+
+    @include breakpoint($small) {
+      order: 2;
+    }
+  }
+
+  &__legend-title {
+    @include dashboard-sub-heading--small;
+    margin-top: 0;
+  }
+}

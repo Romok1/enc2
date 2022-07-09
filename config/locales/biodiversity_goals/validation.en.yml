@@ -1,0 +1,57 @@
+en:
+  biodiversity_goals:
+    validation:
+      csv:
+        malformed: "The CSV is malformed."
+        not_found: "Please select a CSV file for upload."
+      agriculture:
+        attributes:
+          crops: Cropland
+          livestock: Pasture land
+        manual_input:
+          country:
+            empty: "Country is missing."
+            not_found: "Country not found."
+          area:
+            empty: "Missing area or turnover value."
+            not_a_number: "%{attribute} is not a valid number."
+            range: "%{attribute} value must be less than or equal to %{value}."
+          params: "Please fill in all inputs."
+          something_went_wrong: "Something went wrong. Please try again."
+          whole_sector_cannot_be_mixed: 'Cannot submit other forms with "Whole sector" selected'
+          invalid_area_type: 'Invalid area type: "%{value}".'
+        csv:
+          country:
+            empty: "Line %{line_number} is missing a country code."
+            not_found: "Line %{line_number} contains an invalid country code '%{value}'."
+          area:
+            empty: "Line %{line_number} is missing an area or turnover value."
+            not_a_number: "%{attribute} on line %{line_number} is an invalid number."
+            range: "%{attribute} on line %{line_number} must be less than or equal to %{value}."
+          params: "Please check the format of the CSV."
+          something_went_wrong: "Something went wrong. Please try again."
+          invalid_area_type: 'Invalid area type: "%{value}" on line %{line_number}. Should be either area or turnover.'
+      mining:
+        manual_input:
+          company:
+            empty: "Company is missing."
+            not_found: "Selected company not found."
+          countries:
+            empty: "Country is missing."
+            not_found: "The following countries could not be found: '%{value}'"
+          params: "Please fill in all inputs."
+          something_went_wrong: "Something went wrong. Please try again."
+          whole_sector_cannot_be_mixed: 'Cannot submit other forms with "Whole sector" selected'
+          minimum_forms: "Please provide at least two companies."
+          no_duplicate_companies: "Please remove duplicate companies."
+        csv:
+          company:
+            empty: "Line %{line_number} has an incorrect or missing company name."
+            not_found: "Line %{line_number} contains an invalid company name."
+          countries:
+            not_found: "Line %{line_number} contains invalid country codes '%{value}'."
+          params: "Please check the format of the CSV."
+          something_went_wrong: "Something went wrong. Please try again."
+          whole_sector_cannot_be_mixed: 'The first line should not be empty.'
+          minimum_forms: "Please specify at least two companies."
+          no_duplicate_companies: "Please remove duplicate companies."
