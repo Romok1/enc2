@@ -68,4 +68,51 @@ pipeline {
          } 
 	  
     }
+    post {
+        always {
+	        script {
+		      CONSOLE_LOG = "${env.BUILD_URL}/console"
+	              BUILD_STATUS = currentBuild.currentResult
+		      if (currentBuild.currentResult == 'SUCCESS') { CI_ERROR = "NA" }
+	               }
+		        sendSlackNotifcation()
+	    
+            cleanWs(cleanWhenNotBuilt: false,
+                    deleteDirs: true,
+                    disableDeferredWipeout: true,
+                    notFailBuild: true,
+                    patterns: [[pattern: '**/*',  type: 'INCLUDE'], [pattern: '~/workspace/scmfolder', type: 'INCLUDE'],
+ 		    [pattern: '.propsfile', type: 'EXCLUDE']]) 
+	           
+		
+	        deleteDir()
+                   dir("${env.WORKSPACE}@tmp") {
+                       deleteDir()
+                                }
+		           dir("/home/dockuser/workspace/scmfolder") {
+                    deleteDir()
+                    }
+		           dir("/home/dockuser/workspace/scmfolder@tmp") {
+                    deleteDir()
+                   }
+	          }
+	   
+    }
+  
+}
+
+
+
+
+def sendSlackNotifcation() 
+{ 
+	if ( currentBuild.currentResult == "SUCCESS" ) {
+		buildSummary = "Job:  ${env.JOB_NAME}\n Status: *SUCCESS*\n Description: *${CI_OK}* \n"
+
+		slackSend color : "good", message: "${buildSummary}", channel: '#cicd'
+		}
+	else {
+		buildSummary = "Job:  ${env.JOB_NAME}\n Status: *FAILURE*\n Error description: *${CI_ERROR}* \n"
+		slackSend color : "danger", message: "${buildSummary}", channel: '#cicd'
+		}
 }
