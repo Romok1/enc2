@@ -35,7 +35,7 @@ pipeline {
         }
         stage('Manual Checkout SCM in NEW workspace') {
 		  when {
-                   branch 'feature/*' 
+                   branch 'master' 
                  }
            steps {
 		    dir('/home/dockuser/workspace/scmfolder') {
@@ -44,12 +44,28 @@ pipeline {
 		     sh "echo Branch Name: $BRANCH_NAME"
 		     sh 'echo "$BRANCH_NAME branch checked out into scmfolder"'
 		    }
-           }
-        }
-	    stage ('Start') {
+                }
+            }
+	stage ('Start') {
                steps {
                 slackSend (color: '#FFFF00', message: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
 	           }
-        }
+         }
+	stage('Dependencies') {
+                 when {
+                     anyOf { branch 'feature/*'; branch 'master' }
+                 }
+                steps {
+                    script {
+	    		CI_ERROR = "Failed: Dependencies"
+	    		CI_OK = "Success: Dependencies"
+                sh '''#!/bin/bash -l
+                nvm list
+                nvm use $(cat .nvmrc) --install
+	    	     '''
+                   }
+                }
+         } 
+	  
     }
 }
