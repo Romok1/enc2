@@ -40,8 +40,7 @@ pipeline {
            steps {
 		    dir('/home/dockuser/workspace/scmfolder') {
 	        checkout scm
-	         @echo off
-                 echo GIT_COMMIT %GIT_COMMIT% 
+	         sh "echo Git Commit: $GIT_COMMIT"
 	         getGitCommit()
 		     sh "echo Branch Name: $BRANCH_NAME"
 		     sh 'echo "$BRANCH_NAME branch checked out into scmfolder"'
