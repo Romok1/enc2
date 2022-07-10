@@ -51,7 +51,7 @@ pipeline {
                steps {
                 slackSend (color: '#FFFF00', message: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
 	           }
-         }
+        }
 	stage('Dependencies') {
                  when {
                      anyOf { branch 'feature/*'; branch 'master' }
@@ -63,10 +63,66 @@ pipeline {
                 sh '''#!/bin/bash -l
                 nvm list
                 nvm use $(cat .nvmrc) --install
+		rvm use $(cat .ruby-version) --install
 	    	     '''
                    }
                 }
-         } 
+        }	 
+	stage('Prepare') {
+                 when {
+                     anyOf { branch 'feature/*'; branch 'master' }
+                 }
+                steps {
+                    script {
+	    		CI_ERROR = "Failed: Prepare"
+	    		CI_OK = "Success: Prepare"
+                sh '''#!/bin/bash -l
+                npm install -g yarn
+		yarn install
+	    	     '''
+                   }
+                }
+         }
+	 stage('Build') {
+                 when {
+                     anyOf { branch 'feature/*'; branch 'master' }
+                 }
+                steps {
+                    script {
+	    		CI_ERROR = "Failed: Build"
+	    		CI_OK = "Success: Build"
+                BUNDLER_VERSION = sh (
+                     script: "awk "/BUNDLED WITH/{getline; print}" Gemfile.lock",
+                     returnStatus: true) == 0
+	        echo "Bundle version is: ${BUNDLER_VERSION}"
+	    	sh "gem install bundler -v ${BUNDLER_VERSION}"
+	        sh "bundle _${BUNDLER_VERSION}_ install"
+                   }
+                }
+         }
+	 stage('DB test') {
+              when {
+                   branch 'master' 
+                 }
+            steps {
+                script {
+			    CI_ERROR = "Failed: DB Test"
+			    CI_OK = "Success: DB Test"
+                           sh '''
+		        RAILS_ENV=test bundle exec rails db:create db:migrate
+			    echo "go here"
+                         '''
+               }
+            }
+            post {
+                  success {
+	    	      slackSend color : "good", message: "Success - DB Test", channel: '#cicd'
+                      }
+	          failure{
+                      slackSend color : "danger", message: "Failed - DB Test", channel: '#cicd'
+                      }
+                 }
+        }
 	  
     }
     post {
@@ -126,5 +182,4 @@ def getGitCommit() {
     ).trim()
     return git_commit
 }
-Footer
 
