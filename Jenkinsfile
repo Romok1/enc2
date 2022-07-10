@@ -95,8 +95,10 @@ pipeline {
 	    		CI_ERROR = "Failed: Build"
 	    		CI_OK = "Success: Build"
 	        echo "Bundle version is: ${BUNDLER_VERSION}"
-	    	sh "gem install bundler -v ${BUNDLER_VERSION}"
-	        sh "bundle _${BUNDLER_VERSION}_ install"
+	        sh '''#!/bin/bash -l
+	    	gem install bundler -v ${BUNDLER_VERSION}
+	        bundle _${BUNDLER_VERSION}_ install
+		 '''
                    }
                 }
          }
