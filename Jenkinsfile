@@ -99,7 +99,7 @@ pipeline {
 	        sh '''#!/bin/bash -l
 	    	gem install bundler -v ${BUNDLER_VERSION}
 		echo "Build full flag: ${BUILD_INSTALL}"
-	        bundle _${BUNDLER_VERSION}_" install
+	        bundle _+${BUNDLER_VERSION}+_ install
 		 '''
                    }
                 }
