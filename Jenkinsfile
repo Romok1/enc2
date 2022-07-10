@@ -97,7 +97,8 @@ pipeline {
 	        echo "Bundle version is: ${BUNDLER_VERSION}"
 	        sh '''#!/bin/bash -l
 	    	gem install bundler -v ${BUNDLER_VERSION}
-	        bundle "_${BUNDLER_VERSION}_" install
+		BUNDLER_INSTALL = sh(script: 'bundle _${BUNDLER_VERSION}_ install', returnStdout: true)
+	        bundle _\${BUNDLER_VERSION}\_" install
 		 '''
                    }
                 }
