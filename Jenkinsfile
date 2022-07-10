@@ -103,7 +103,7 @@ pipeline {
 		echo "yes 3"
 	    	gem install bundler -v ${BUNDLER_VERSION}
 		echo "yes 4"
-		echo "Build full flag: ${VERS}"
+		echo "Build full flag: "_$(sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'<<<"${VERS}")_""
 		echo "yes 5"
 	        bundle _+${BUNDLER_VERSION}+_ install
 		"BUNDLER_INSTALL = sh(script: "bundle '_${BUNDLER_VERSION}_' install", returnStdout: true)"
