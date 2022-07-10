@@ -120,9 +120,8 @@ pipeline {
                 script {
 			    CI_ERROR = "Failed: DB Test"
 			    CI_OK = "Success: DB Test"
-                           sh '''
+                           sh ''' #!/bin/bash -l
 		        RAILS_ENV=test bundle exec rails db:create db:migrate
-			    echo "go here"
                          '''
                }
             }
