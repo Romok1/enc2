@@ -89,16 +89,21 @@ pipeline {
                  }
 		 environment {
                    BUNDLER_VERSION = sh(script: 'awk "/BUNDLED WITH/{getline; print}" Gemfile.lock', returnStdout: true)
-	           BUNDLER_INSTALL = sh(script: "bundle _${BUNDLER_VERSION}_install", returnStdout: true)
+	           BUNDLER_INSTALL = sh(script: "bundle '_+${BUNDLER_VERSION}+_' install", returnStdout: true)
                 }
                 steps {
                     script {
 	    		CI_ERROR = "Failed: Build"
 	    		CI_OK = "Success: Build"
+			    echo "yes 1"
 	        echo "Bundle version is: ${BUNDLER_VERSION}"
+			    echo "yes 2"
 	        sh '''#!/bin/bash -l
+		echo "yes 3"
 	    	gem install bundler -v ${BUNDLER_VERSION}
+		echo "yes 4"
 		echo "Build full flag: ${BUNDLER_INSTALL}"
+		echo "yes 5"
 	        bundle _+${BUNDLER_VERSION}+_ install
 		 '''
                    }
