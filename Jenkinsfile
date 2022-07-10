@@ -101,7 +101,7 @@ pipeline {
 			    echo "yes 1"
 	        echo "Bundle version is: ${BUNDLER_VERSION}"
 			    echo "yes 2"
-			    TRYI = "$(sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'<<<"${VERS}")"
+	
 	        sh '''#!/bin/bash -l
 		echo "yes 3"
 	    	gem install bundler -v ${BUNDLER_VERSION}
@@ -109,7 +109,7 @@ pipeline {
 		echo "Build full flag: "_$(sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'<<<"${PERS}")_""
 		echo "yes 5"
 		
-	        bundle ${TRYI} install
+	        bundle ${VERS} install
 		"BUNDLER_INSTALL = sh(script: "bundle '_${BUNDLER_VERSION}_' install", returnStdout: true)"
 		 '''
                    }
