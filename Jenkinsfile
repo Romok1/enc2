@@ -91,6 +91,7 @@ pipeline {
                    BUNDLER_VERSION = sh(script: 'awk "/BUNDLED WITH/{getline; print}" Gemfile.lock', returnStdout: true)
 	           BUNDLER_VERSIONN = sh(script: 'awk "/BUNDLED WITH/{getline; print}" Gemfile.lock', returnStdout: true)
 			 VERS = "_${BUNDLER_VERSIONN}_" 
+			 PERS = "${BUNDLER_VERSIONN}" 
 			 
                 }
                 steps {
@@ -100,13 +101,14 @@ pipeline {
 			    echo "yes 1"
 	        echo "Bundle version is: ${BUNDLER_VERSION}"
 			    echo "yes 2"
+			    TRYI = "$(sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'<<<"${VERS}")"
 	        sh '''#!/bin/bash -l
 		echo "yes 3"
 	    	gem install bundler -v ${BUNDLER_VERSION}
 		echo "yes 4"
-		echo "Build full flag: "$(sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'<<<"${VERS}")""
+		echo "Build full flag: "_$(sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'<<<"${PERS}")_""
 		echo "yes 5"
-		TRYI = "$(sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'<<<"${VERS}")"
+		
 	        bundle ${TRYI} install
 		"BUNDLER_INSTALL = sh(script: "bundle '_${BUNDLER_VERSION}_' install", returnStdout: true)"
 		 '''
