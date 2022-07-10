@@ -100,10 +100,6 @@ pipeline {
                    }
                 }
          }
-	    
-	    environment {
-          MY_FILES = sh(script: 'cd mydir && ls -l', returnStdout: true)
-        }
 	 stage('DB test') {
               when {
                    branch 'master' 
