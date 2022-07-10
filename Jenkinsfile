@@ -109,7 +109,7 @@ pipeline {
 		echo "Build full flag: "_$(sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'<<<"${PERS}")_""
 		echo "yes 5"
 		
-	        bundle "_$(sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'<<<"${PERS}")_"" install
+	        bundle _$(sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//'<<<"${PERS}")_ install
 		"BUNDLER_INSTALL = sh(script: "bundle '_${BUNDLER_VERSION}_' install", returnStdout: true)"
 		 '''
                    }
