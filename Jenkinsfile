@@ -88,15 +88,12 @@ pipeline {
                      anyOf { branch 'feature/*'; branch 'master' }
                  }
 		 environment {
-                   MY_FILES = sh(script: 'awk "/BUNDLED WITH/{getline; print}" Gemfile.lock', returnStdout: true)
+                   BUNDLER_VERSION = sh(script: 'awk "/BUNDLED WITH/{getline; print}" Gemfile.lock', returnStdout: true)
                 }
                 steps {
                     script {
 	    		CI_ERROR = "Failed: Build"
 	    		CI_OK = "Success: Build"
-                BUNDLER_VERSION = sh (
-                     script: 'awk "/BUNDLED WITH/{getline; print}" Gemfile.lock',
-                     returnStatus: true) == 0
 	        echo "Bundle version is: ${BUNDLER_VERSION}"
 	    	sh "gem install bundler -v ${BUNDLER_VERSION}"
 	        sh "bundle _${BUNDLER_VERSION}_ install"
