@@ -123,7 +123,7 @@ pipeline {
                     script {
 	    		CI_ERROR = "Failed: Prepare ENV"
 	    		CI_OK = "Success: Prepare ENV"
-			    echo $EXAMPLE_KEY > 'config/master.key'
+			    echo ${EXAMPLE_KEY} > 'config/master.key'
                 
                    }
                 }
