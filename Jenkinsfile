@@ -116,14 +116,16 @@ pipeline {
                  when {
                      anyOf { branch 'feature/*'; branch 'master' }
                  }
+		 environment {
+                  EXAMPLE_KEY = credentials('ENC-CONFIG-MASTER')
+                }
                 steps {
                     script {
 	    		CI_ERROR = "Failed: Prepare ENV"
 	    		CI_OK = "Success: Prepare ENV"
-			    sh "echo '${ENC-CONFIG-MASTER}'"
-			    withCredentials([string(credentialsId: 'ENC-CONFIG-MASTER', variable: 'enc-config-master')]) {
-              echo "Bundle key is: ${ENC-CONFIG-MASTER}"
-                          }
+			    sh "echo '${EXAMPLE_KEY}'"
+			  
+              echo "Bundle key is: ${EXAMPLE_KEY}"
                 
                    }
                 }
