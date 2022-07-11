@@ -112,6 +112,22 @@ pipeline {
                    }
                 }
          }
+	 stage('Prepare ENV') {
+                 when {
+                     anyOf { branch 'feature/*'; branch 'master' }
+                 }
+                steps {
+                    script {
+	    		CI_ERROR = "Failed: Prepare ENV"
+	    		CI_OK = "Success: Prepare ENV"
+			    sh "echo '${ENC-CONFIG-MASTER}'"
+			    withCredentials([string(credentialsId: 'ENC-CONFIG-MASTER', variable: 'enc-config-master')]) {
+              echo "Bundle key is: ${ENC-CONFIG-MASTER}"
+                          }
+                
+                   }
+                }
+         }
 	 stage('DB test') {
               when {
                    branch 'master' 
