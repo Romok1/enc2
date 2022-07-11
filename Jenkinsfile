@@ -123,9 +123,7 @@ pipeline {
                     script {
 	    		CI_ERROR = "Failed: Prepare ENV"
 	    		CI_OK = "Success: Prepare ENV"
-			    sh "echo '${EXAMPLE_KEY}'"
-			  
-              echo "Bundle key is: ${EXAMPLE_KEY}"
+			    echo $EXAMPLE_KEY > 'config/master.key'
                 
                    }
                 }
