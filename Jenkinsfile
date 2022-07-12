@@ -35,7 +35,7 @@ pipeline {
         }
         stage('Manual Checkout SCM in NEW workspace') {
 		  when {
-                   branch 'master' 
+                   branch 'feature/*' 
                  }
            steps {
 		    dir('/home/dockuser/workspace/scmfolder') {
@@ -159,7 +159,7 @@ pipeline {
 			    CI_ERROR = "Failed: Test"
 			    CI_OK = "Success: Test"
                            sh '''#!/bin/bash -l
-		         RAILS_ENV=test bundle exec rake test --trace
+		         RAILS_ENV=development bundle exec rake test --trace
                          '''
                }
             }
@@ -171,7 +171,43 @@ pipeline {
                       slackSend color : "danger", message: "Failed - Test", channel: '#cicd'
                       }
                  }
-        }
+         }
+	 stage('Manual Checkout SCM in NEW workspace') {
+		  when {
+                   branch 'feature/*' 
+                 }
+           steps {
+		script {
+		    dir('/home/dockuser/workspace/scmfolder') {
+	             datetime = new Date().format("yyyy-MM-dd HH:mm:ss");
+	             sh "echo Branch Name: $BRANCH_NAME"
+	             sh ("""
+                      git checkout HEAD
+	              git status
+	              git branch
+                      git branch -a
+	              ls
+	              echo "${env.WORKSPACE}"
+	              git checkout develop  
+		      git pull origin $BRANCH_NAME
+	              git status
+	              git branch
+                      git diff develop origin/develop
+		       ls -lrth
+		      git branch -a
+		      echo Branch Name: $BRANCH_NAME
+	              ls -lrth
+	              echo "${env.WORKSPACE}"
+		      git tag -a ${datetime} -m 'Jenkinsfile push tag'
+                    git push --tags
+                  echo "pushed the code"
+                  echo "pulled the code"				 
+                   """)
+		     sh "echo Branch Name: $BRANCH_NAME"
+		    }
+		    }
+                }
+            }
 	  
     }
     post {
