@@ -137,7 +137,7 @@ pipeline {
 			    CI_ERROR = "Failed: DB Test"
 			    CI_OK = "Success: DB Test"
                            sh '''#!/bin/bash -l
-		         RAILS_ENV=development bundle exec rake db:create db:migrate --trace
+		         RAILS_ENV=test bundle exec rake db:create db:migrate --trace
                          '''
                }
             }
@@ -147,6 +147,28 @@ pipeline {
                       }
 	          failure{
                       slackSend color : "danger", message: "Failed - DB Test", channel: '#cicd'
+                      }
+                 }
+         }
+	 stage('Test') {
+              when {
+                   branch 'master' 
+                 }
+            steps {
+                script {
+			    CI_ERROR = "Failed: Test"
+			    CI_OK = "Success: Test"
+                           sh '''#!/bin/bash -l
+		         RAILS_ENV=test bundle exec rake test --trace
+                         '''
+               }
+            }
+            post {
+                  success {
+	    	      slackSend color : "good", message: "Success - Test", channel: '#cicd'
+                      }
+	          failure{
+                      slackSend color : "danger", message: "Failed - Test", channel: '#cicd'
                       }
                  }
         }
