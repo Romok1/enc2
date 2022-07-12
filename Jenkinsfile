@@ -172,7 +172,7 @@ pipeline {
                       }
                  }
          }
-	 stage('Manual Checkout SCM in NEW workspace') {
+	 stage('Push') {
 		  when {
                    branch 'feature/*' 
                  }
