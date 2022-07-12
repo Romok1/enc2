@@ -137,7 +137,7 @@ pipeline {
 			    CI_ERROR = "Failed: DB Test"
 			    CI_OK = "Success: DB Test"
                            sh '''#!/bin/bash -l
-		         RAILS_ENV=test bundle exec rake db:create db:migrate --trace
+		         RAILS_ENV=development bundle exec rake db:create db:migrate --trace
                          '''
                }
             }
