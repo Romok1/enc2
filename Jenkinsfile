@@ -208,6 +208,38 @@ pipeline {
 		    }
                 }
             }
+	 stage('Deploy to Staging') {
+              when {
+                  branch 'develop'
+                }
+              steps {
+		 script {
+		   CI_ERROR = "Failed: Deploy to Staging"
+		   CI_OK = "Success: Deploy to Staging"
+	          dir('/home/dockuser/workspace/scmfolder') {
+                  sh '''#!/bin/bash -l
+		  git branch 
+		  echo "11"
+		  ls
+		  git branch -a
+		  echo "22"
+		  git checkout develop
+		  git diff develop origin/develop
+		  echo "33"
+		  ls -lrth
+                   bundle exec cap staging deploy         
+          	     ''' }
+                  }
+	      }
+	      post {
+                  success{
+                      slackSend color : "good", message: "Deploy to staging environment successful", channel: '#cicd'
+                  }
+                  failure{
+                      slackSend color : "danger", message: "Failed to deploy to staging environment, check the logs and confirm error", channel: '#cicd'
+                  }
+              }
+         }  
 	  
     }
     post {
