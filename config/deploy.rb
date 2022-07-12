@@ -3,9 +3,9 @@
 # config valid only for current version of Capistrano
 lock '3.11.0'
 
-set :application, 'ncfa'
+set :application, 'enc2'
 
-set :repo_url, 'git@github.com:unepwcmc/encore.git'
+set :repo_url, 'git@github.com:Romok1/enc2.git'
 
 set :nvm_type, :user # or :system, depends on your nvm setup
 set :nvm_node, 'v12.18.3'
@@ -69,5 +69,5 @@ set :keep_releases, 5
 set :passenger_restart_with_touch, false
 
 namespace :deploy do
-  after :publishing, 'service:sidekiq_encore:restart'
+  after :publishing, 'service:sidekiq_enc2:restart'
 end
