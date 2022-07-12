@@ -6,10 +6,10 @@ set :branch, :develop
 # the use the normal staging url. This will need to be reset to the alternative url manually
 # and the server restarted using cap staging deploy:restart
 
-server 'web-supported-staging.linode.unep-wcmc.org', user: 'wcmc', roles: %w[app web db]
+server 'romoke-test.unep-wcmc.org', user: 'wcmc', roles: %w[app web db]
 
-set :application, 'ncfa'
-set :server_name, 'ncfa.web-supoorted-staging.linode.unep-wcmc.org'
+set :application, 'enc2'
+set :server_name, 'enc2.romoke-test.unep-wcmc.org'
 set :sudo_user, 'wcmc'
 set :app_port, '80'
 
