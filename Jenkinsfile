@@ -179,7 +179,7 @@ pipeline {
            steps {
 		script {
 		    dir('/home/dockuser/workspace/scmfolder') {
-	             datetime = new Date().format("yyyy-MM-dd HH:mm:ss");
+	             datetime = new Date().format("yyyy-MM-dd");
 	             sh "echo Branch Name: $BRANCH_NAME"
 	             sh ("""
                       git checkout HEAD
