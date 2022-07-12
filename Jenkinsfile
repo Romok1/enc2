@@ -25,7 +25,7 @@ pipeline {
     stages {
         stage('Create NEW SCM workspace') {
 		when {
-                   branch 'master' 
+                   branch 'feature/*' 
                  }
            steps {
 		  dir('/home/dockuser/workspace') {
@@ -54,7 +54,7 @@ pipeline {
         }
 	stage('Dependencies') {
                  when {
-                     anyOf { branch 'feature/*'; branch 'master' }
+                     anyOf { branch 'feature/*'; branch 'fix*' }
                  }
                 steps {
                     script {
@@ -70,7 +70,7 @@ pipeline {
         }	 
 	stage('Prepare') {
                  when {
-                     anyOf { branch 'feature/*'; branch 'master' }
+                     anyOf { branch 'feature/*'; branch 'fix*' }
                  }
                 steps {
                     script {
@@ -85,7 +85,7 @@ pipeline {
          }
 	 stage('Build') {
                  when {
-                     anyOf { branch 'feature/*'; branch 'master' }
+                     anyOf { branch 'feature/*'; branch 'fix*' }
                  }
 		 environment {
                    BUNDLER_VERSION = sh(script: 'awk "/BUNDLED WITH/{getline; print}" Gemfile.lock', returnStdout: true)
@@ -114,7 +114,7 @@ pipeline {
          }
 	 stage('Prepare ENV') {
                  when {
-                     anyOf { branch 'feature/*'; branch 'master' }
+                     anyOf { branch 'feature/*'; branch 'fix*' }
                  }
 		 environment {
                   EXAMPLE_KEY = credentials('ENC-CONFIG-MASTER')
@@ -130,7 +130,7 @@ pipeline {
          }
 	 stage('DB test') {
               when {
-                   branch 'master' 
+                   branch 'feature/*' 
                  }
             steps {
                 script {
@@ -172,7 +172,7 @@ pipeline {
                       }
                  }
          }
-	 stage('Manual Checkout SCM in NEW workspace') {
+	 stage('Push') {
 		  when {
                    branch 'feature/*' 
                  }
@@ -198,8 +198,8 @@ pipeline {
 		      echo Branch Name: $BRANCH_NAME
 	              ls -lrth
 	              echo "${env.WORKSPACE}"
-		      git tag -a ${datetime} -m 'Jenkinsfile push tag'
-                    git push --tags
+		      git tag -a ${BUILD_TAG} -m '${datetime}'
+                    git push origin develop --tags
                   echo "pushed the code"
                   echo "pulled the code"				 
                    """)
