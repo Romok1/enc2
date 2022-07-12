@@ -25,7 +25,7 @@ pipeline {
     stages {
         stage('Create NEW SCM workspace') {
 		when {
-                   branch 'feature/*' 
+                     anyOf { branch 'feature/*'; branch 'develop' }
                  }
            steps {
 		  dir('/home/dockuser/workspace') {
@@ -54,7 +54,7 @@ pipeline {
         }
 	stage('Dependencies') {
                  when {
-                     anyOf { branch 'feature/*'; branch 'fix*' }
+                     anyOf { branch 'feature/*'; branch 'fix*'; branch 'develop' }
                  }
                 steps {
                     script {
@@ -70,7 +70,7 @@ pipeline {
         }	 
 	stage('Prepare') {
                  when {
-                     anyOf { branch 'feature/*'; branch 'fix*' }
+                     anyOf { branch 'feature/*'; branch 'fix*'; branch 'develop' }
                  }
                 steps {
                     script {
@@ -85,7 +85,7 @@ pipeline {
          }
 	 stage('Build') {
                  when {
-                     anyOf { branch 'feature/*'; branch 'fix*' }
+                     anyOf { branch 'feature/*'; branch 'fix*'; branch 'develop' }
                  }
 		 environment {
                    BUNDLER_VERSION = sh(script: 'awk "/BUNDLED WITH/{getline; print}" Gemfile.lock', returnStdout: true)
@@ -114,7 +114,7 @@ pipeline {
          }
 	 stage('Prepare ENV') {
                  when {
-                     anyOf { branch 'feature/*'; branch 'fix*' }
+                     anyOf { branch 'feature/*'; branch 'fix*'; branch 'develop' }
                  }
 		 environment {
                   EXAMPLE_KEY = credentials('ENC-CONFIG-MASTER')
@@ -217,6 +217,7 @@ pipeline {
 		   CI_ERROR = "Failed: Deploy to Staging"
 		   CI_OK = "Success: Deploy to Staging"
 	          dir('/home/dockuser/workspace/scmfolder') {
+	         checkout scm
                   sh '''#!/bin/bash -l
 		  git branch 
 		  echo "11"
@@ -224,6 +225,7 @@ pipeline {
 		  git branch -a
 		  echo "22"
 		  git checkout develop
+		  git branch
 		  git diff develop origin/develop
 		  echo "33"
 		  ls -lrth
