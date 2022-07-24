@@ -1,0 +1,69 @@
+services:
+  web: 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: /bin/bash -l -c "bundle exec rails s -p 3000 -b '0.0.0.0'" 
+    depends_on:     
+      - database
+      - redis
+      - webpacker
+    ports: 
+      - "3000:3000"
+    volumes:
+      - .:/enc2-changeR
+      - gem_cache:/usr/local/bundle/gems
+      - bundler_gems:/usr/loacl/bundle/
+    env_file: .env
+    environment:
+      RAILS_ENV: development
+
+  database:
+    image: postgres:12.1
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432"
+    env_file:
+      - '.env'
+
+  redis:
+    image: redis
+    ports:
+      - "6379"
+    env_file:
+      - '.env'
+    volumes:
+      - enc2_redis_data:/data
+ 
+  sidekiq:
+    build:
+      context: .
+    command: bundle exec sidekiq
+    volumes:
+      - .:/enc2-changeR
+    user: wcmc
+    depends_on:
+      - database
+      - redis
+    env_file:
+      - '.env'
+    entrypoint: ./entrypoints/sidekiq-entrypoint.sh
+
+  webpacker:
+    build: .
+    volumes:
+      - '.:/enc2-changeR'
+      - enc2_bundler:/usr/local/bundle
+    ports:
+      - '3035:3035'
+    entrypoint: ./entrypoints/webpacker-entrypoint.sh
+  
+volumes:
+  gem_cache:
+  db_data:
+  enc2_redis_data: 
+  enc2_bundler: 
+  node_modules:  
+  bundler_gems: 

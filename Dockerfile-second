@@ -1,0 +1,109 @@
+#FROM ubuntu:20.04
+FROM ruby:3.1.0
+
+RUN mkdir -p /enc2
+
+WORKDIR /enc2
+#create user and group
+#ARG USER_ID
+#ARG GROUP_ID
+#RUN addgroup --gid $GROUP_ID 1001 && adduser --disabled-password --gecos '' --uid $USER_ID --gid $GROUP_ID user 
+#USER $USER_ID
+
+#Install packages
+RUN apt-get update -qq && apt-get install -y vim curl nano gnupg ca-certificates build-essential checkinstall libssl-dev   postgresql-client
+#RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -\
+#   && apt-get update -qq && apt-get install -qq --no-install-recommends \
+#    nodejs \
+#   && apt-get upgrade -qq \
+#   && apt-get clean \
+#   && rm -rf /var/lib/apt/lists/*\
+#   && npm install -g yarn@1
+
+#RUN ln -s /usr/bin/nodejs /usr/local/bin/node
+# Install nvm
+ENV NVM_DIR /usr/local/nvm
+RUN mkdir -p /usr/local/nvm
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+ENV NODE_VERSION 12.18.3
+RUN /bin/bash -c "source $NVM_DIR/nvm.sh && nvm install $NODE_VERSION && nvm use $NODE_VERSION && npm install -g yarn"
+
+ENV NODE_PATH $NVM_DIR/versions/node/$NODE_VERSION/lib/node_modules
+ENV PATH      $NVM_DIR/versions/node/$NODE_VERSION/bin:$PATH
+
+RUN ln -sf $NVM_DIR/versions/node/$NODE_VERSION/bin/bin/node /usr/bin/nodejs
+RUN ln -sf $NVM_DIR/versions/node/$NODE_VERSION/bin/bin/node /usr/bin/node
+RUN ln -sf $NVM_DIR/versions/node/$NODE_VERSION/bin/bin/npm /usr/bin/npm
+
+#RUN ln -s /usr/bin/nodejs /usr/bin/node
+#RUN ln -fs /usr/bin/nodejs /usr/local/bin/node
+#CMD /bin/bash -c "source \$NVM_DIR/nvm.sh && npm start"
+RUN nodepath=$(which node); ln -s $nodepath /usr/bin/node
+RUN /bin/bash -c "source $NVM_DIR/nvm.sh && npm install -g yarn"
+
+# RVM version to install
+#ARG RVM_VERSION=3.1.0
+ARG BUNDLER_VERSION=2.3.16
+
+#ENV RVM_VERSION=${RVM_VERSION}
+ENV BUNDLER_VERSION=${BUNDLER_VERSION}
+
+RUN gem install bundler -v ${BUNDLER_VERSION}
+#RUN curl -sSL https://get.rvm.io | bash -s
+
+#ENV PATH /usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+#SHELL [ "/bin/bash", "-l", "-c" ]
+#RUN rvm requirements
+#RUN rvm install ${RVM_VERSION} \
+#  && rvm use ${RVM_VERSION} --default
+#CMD source /etc/profile.d/rvm.sh
+#CMD source ~/.rvm/scripts/rvm
+
+#ENV PATH $PATH:/usr/local/rvm/bin
+
+#ENV GEM_HOME="/usr/local/bundle"
+#ENV PATH $GEM_HOME/bin:$GEM_HOME/gems/bin:$PATH
+
+
+ENV EDITOR="nano"
+# Set Rails environment to production
+ENV RAILS_ENV test
+
+RUN . $NVM_DIR/nvm.sh
+# Run yarn install
+COPY package.json yarn.lock ./
+RUN yarn install --check-files
+
+
+
+#bundle install
+ADD Gemfile /enc2/Gemfile
+COPY Gemfile.lock /enc2/Gemfile.lock
+
+RUN bundle _${BUNDLER_VERSION}_ install
+
+
+# Create a user group 'xyzgroup'
+RUN addgroup -S wcmc
+
+# Create a user 'appuser' under 'xyzgroup'
+RUN adduser -S -D -h /enc2 wcmc wcmc
+
+# Chown all the files to the app user.
+RUN chown -R wcmc:wcmc /enc2
+
+# Switch to 'appuser'
+USER wcmc
+
+RUN echo "Node: " && node -v
+RUN echo "NPM: " && npm -v
+RUN echo "Ruby: " && ruby -v
+
+COPY . .
+
+EXPOSE 3000
+ENV PORT 3000
+
+#CMD ["/bin/bash", "-c, -l", "bundle", "exec", "rails" ]
+CMD ["rails", "server", "-b", "0.0.0.0"]

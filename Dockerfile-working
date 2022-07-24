@@ -1,0 +1,60 @@
+FROM ruby:2.5.0-alpine
+
+ARG BUNDLER_VERSION=1.17.3
+ENV BUNDLER_VERSION=${BUNDLER_VERSION}
+
+RUN apk add --update --no-cache \
+      binutils-gold \
+      build-base \
+      curl \
+      file \
+      g++ \
+      gcc \
+      git \
+      less \
+      libstdc++ \
+      libffi-dev \
+      libc-dev \ 
+      linux-headers \
+      libxml2-dev \
+      libxslt-dev \
+      libgcrypt-dev \
+      make \
+      netcat-openbsd \
+      nodejs \
+      openssl \
+      pkgconfig \
+      postgresql-dev \
+      python \
+      tzdata \
+      yarn 
+
+RUN gem install bundler -v ${BUNDLER_VERSION}
+
+WORKDIR /enc2
+
+COPY Gemfile* package.json yarn.lock ./
+
+RUN bundle check || bundle install
+
+
+RUN bundle check || bundle install --without production:assets -j4 --retry 3 --path=vendor/bundle \
+      # Remove unneeded files (cached *.gem, *.o, *.c)
+      && rm -rf vendor/bundle/ruby/2.5.0/cache/*.gem \
+      && find vendor/bundle/ruby/2.5.0/gems/ -name "*.c" -delete \
+      && find vendor/bundle/ruby/2.5.0/gems/ -name "*.o" -delete 
+
+
+RUN yarn install --check-files --without production
+
+COPY . ./ 
+RUN bin/rails webpacker:compile
+RUN bin/rails assets:precompile
+
+ENTRYPOINT ["./entrypoints/docker-entrypoint.sh"]
+
+# Remove folders not needed in resulting image
+RUN rm -rf node_modules tmp/cache app/assets vendor/assets spec
+
+EXPOSE 3000
+CMD ["rails", "server", "-b", "0.0.0.0"]
