@@ -2,9 +2,9 @@
 
 set -e
 
-if [ -f tmp/pids/server.pid ]; then
-  rm tmp/pids/server.pid
+if [ -f /enc2/tmp/pids/server.pid ]; then
+  rm /enc2/tmp/pids/server.pid
 fi
 
-exec "$@"
 
+exec "$@"

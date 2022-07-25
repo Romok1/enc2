@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 set -e
 
@@ -8,6 +8,6 @@ fi
 
 #yarn check || yarn install
 #bundle check || bundle install
-bundle exec sidekiq
+#bundle exec sidekiq
 
 exec "$@" 
